@@ -1,0 +1,92 @@
+# Visual Studio general
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Maui platforms
+# Android
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# iOS
+*.dSYM
+*.ipa
+*.xcarchive
+*.xcuserstate
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+
+# Windows (UWP/WinUI)
+AppPackages/
+BundleArtifacts/
+Package.StoreAssociation.xml
+Package.appxmanifest
+*.appx
+*.appxbundle
+*.appxupload
+
+# macOS
+*.app
+*.xcworkspace/
+*.xcuserdata/
+
+# Cache
+*.pidb
+*.svclog
+*.scc
+*.cache
+*.dbmdl
+*.bak
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*_h.h
+*.iobj
+*.ipdb
+*.pdb
+
+# IDE files
+.idea/
+*.swp
+*.userprefs
+
+# NuGet
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+artifacts/
+.nuget/
+packages/
+*.nuget.props
+*.nuget.targets
+
+# Rider
+.idea/
+*.sln.iml
+
+# JetBrains Rider / VS Code
+.idea/
+.vscode/
+
+# Other
+*.DS_Store
+Thumbs.db
+desktop.ini

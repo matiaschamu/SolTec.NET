@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Soltec.NET.MainPage"
+             Title="Soltec 4.0">
+
+    <ScrollView>
+        <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Start" JustifyContent="Start" Margin="10" Padding="0">
+
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#007BFF" StrokeShape="RoundRectangle 15,15,15,15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPañolClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Pañol 🛠️" TextColor="White" FontSize="20"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#28A745" StrokeShape="RoundRectangle 15,15,15,15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnManualesClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Manuales 📖" TextColor="White" FontSize="20"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#DC3545" StrokeShape="RoundRectangle 15,15,15,15">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPlanosClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Planos 🗺️" TextColor="White" FontSize="20"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#6C757D" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPoliticasClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Políticas y&#10;Procedimientos&#10;📜" 
+               TextColor="White"
+               HorizontalOptions="Center"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               LineBreakMode="WordWrap"
+               FontSize="14" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#FFC107" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnCeldasDeCargaClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Celdas&#10;de carga&#10;⚖️" TextColor="#343A40"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#17A2B8" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnGPIDClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="GPID 🤖" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#6610F2" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnClavesClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Claves 🔑" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#20C997" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnQRClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="QR 📱" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#FD7E14" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnTermocuplaClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Termocupla&#10;PT100 🌡️" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#E83E8C" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMachosClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Machos 🔩" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#2C3E50" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnRoscasClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Roscas&#10;de gas 🗜️" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#3498DB" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnHPKwCorrienteClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="HP/Kw&#10;Corriente&#10;⚡" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#9B59B6" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnMotoresClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Motores 💥" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#F39C12" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnConversionClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Conversión de unidades 🔄" TextColor="White"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       LineBreakMode="WordWrap" />
+                </Grid>
+            </Border>
+
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

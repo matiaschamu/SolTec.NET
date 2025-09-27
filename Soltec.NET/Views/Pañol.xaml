@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Soltec.NET.PanolPage"
+             Title="Pañol">
+
+    <Grid RowDefinitions="Auto,*">
+        <!-- Entrada de búsqueda fija arriba -->
+        <Entry Grid.Row="0"
+               x:Name="BusquedaEntry"
+               Placeholder="Buscar repuestos..."
+               TextChanged="OnEntryTextChanged" />
+
+        <!-- Lista con scroll -->
+        <CollectionView Grid.Row="1"
+                        ItemsSource="{Binding ResultadosBusqueda}"
+                        Margin="10"
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border BackgroundColor="#F9F9F9" 
+                            Stroke="#BDBDBD" 
+                            StrokeThickness="2" 
+                            Padding="10" 
+                            Margin="0,0,0,8">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                                   Text="{Binding Nombre}"
+                                   FontSize="18"
+                                   FontFamily="OpenSans-SemiBold"
+                                   TextColor="#333" 
+                                   FontAttributes="Bold" />
+
+                            <VerticalStackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Start">
+                                <Label Text="{Binding Codigo}"
+                                       FontSize="14"
+                                       FontFamily="OpenSans-Regular"
+                                       TextColor="#555"
+                                       FontAttributes="Bold"/>
+                                <Label Text="{Binding Ubicacion}"
+                                       FontSize="14"
+                                       FontFamily="OpenSans-Light"
+                                       TextColor="#777"
+                                       FontAttributes="Bold" />
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center">
+                                <Label Text="Costo unitario"
+                                       FontSize="12"
+                                       FontFamily="OpenSans-Regular"
+                                       TextColor="#555"
+                                       HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding Precio, StringFormat='${0}'}"
+                                       FontSize="16"
+                                       FontFamily="OpenSans-SemiBold"
+                                       TextColor="#28a745"
+                                       HorizontalTextAlignment="Center"
+                                       FontAttributes="Bold"/>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Grid.Row="1" Grid.Column="2" HorizontalOptions="End" Margin="10,0,0,0">
+                                <Label Text="Cant."
+                                       FontSize="12"
+                                       FontFamily="OpenSans-Regular"
+                                       TextColor="#555"
+                                       HorizontalTextAlignment="Center" />
+                                <Label Text="{Binding Cantidad}"
+                                       FontSize="16"
+                                       FontFamily="OpenSans-SemiBold"
+                                       TextColor="#007bff"
+                                       HorizontalTextAlignment="Center"
+                                       FontAttributes="Bold"/>
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>
