@@ -1,0 +1,15 @@
+# Asegura LF en repos
+* text=auto eol=lf
+
+# Tratar los archivos de solución y proyecto como texto
+*.cs     diff=csharp
+*.csproj text
+*.sln    text
+*.xaml   text
+
+# Imágenes y binarios como binarios
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.mp4    binary
