@@ -1,6 +1,3 @@
-# Asegura LF en repos
-* text=auto eol=lf
-
 # Tratar los archivos de solución y proyecto como texto
 *.cs     diff=csharp
 *.csproj text

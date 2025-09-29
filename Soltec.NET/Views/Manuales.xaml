@@ -2,45 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:local="clr-namespace:Soltec.NET"
              x:Class="Soltec.NET.ManualesPage"
              Title="Manuales">
 
-    <ScrollView Padding="10"
-            xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-            xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <ScrollView Padding="10">
         <VerticalStackLayout Spacing="12">
+
             <CollectionView ItemsSource="{Binding Fabricantes}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
+                    <DataTemplate x:DataType="local:Fabricante">
                         <toolkit:Expander>
 
                             <!-- Header -->
                             <toolkit:Expander.Header>
                                 <Border StrokeShape="RoundRectangle 12"
-                                    BackgroundColor="{Binding Color}"
-                                    Padding="10">
+                                        BackgroundColor="{Binding Color}"
+                                        Padding="10">
                                     <Border.Shadow>
                                         <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
                                     </Border.Shadow>
                                     <Label Text="{Binding Nombre}"
-                                       FontSize="18"
-                                       TextColor="White"
-                                       FontAttributes="Bold"/>
+                                           FontSize="18"
+                                           TextColor="White"
+                                           FontAttributes="Bold"/>
                                 </Border>
                             </toolkit:Expander.Header>
 
                             <!-- Contenido -->
                             <toolkit:Expander.Content>
                                 <Border StrokeShape="RoundRectangle 10"
-                                    BackgroundColor="White"
-                                    Padding="10">
+                                        BackgroundColor="White"
+                                        Padding="10">
                                     <Border.Shadow>
                                         <Shadow Brush="Black" Opacity="0.2" Offset="2,2" Radius="5"/>
                                     </Border.Shadow>
+
                                     <VerticalStackLayout Spacing="6">
                                         <CollectionView ItemsSource="{Binding Manuales}">
                                             <CollectionView.ItemTemplate>
-                                                <DataTemplate>
+                                                <DataTemplate x:DataType="local:Manual">
                                                     <Label FontSize="16">
                                                         <Label.FormattedText>
                                                             <FormattedString>
@@ -53,6 +54,7 @@
                                             </CollectionView.ItemTemplate>
                                         </CollectionView>
                                     </VerticalStackLayout>
+
                                 </Border>
                             </toolkit:Expander.Content>
 
@@ -60,6 +62,7 @@
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

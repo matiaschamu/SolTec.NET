@@ -1,4 +1,5 @@
 ﻿namespace Soltec.NET;
+
 using SQLite;
 using System.Collections.ObjectModel;
 
@@ -140,10 +141,10 @@ public class ListadoPañol
 {
 	[PrimaryKey, AutoIncrement]
 	public int Id { get; set; } // Es buena práctica tener un Id autoincremental
-	public string Codigo { get; set; }
-	public string Ubicacion { get; set; }
-	public string UnidadDeMedida { get; set; }
-	public string Cantidad { get; set; }
-	public string Precio { get; set; }
-	public string Nombre { get; set; }
+	public string Codigo { get; set; } = string.Empty;
+	public string Ubicacion { get; set; } = string.Empty;
+    public string UnidadDeMedida { get; set; } = string.Empty;
+    public string Cantidad { get; set; } = string.Empty;
+    public string Precio { get; set; } = string.Empty;
+    public string Nombre { get; set; } = string.Empty;
 }
