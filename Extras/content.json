@@ -16,7 +16,8 @@
                 {
                   "Nombre": "ABB Vital-1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/ABB/ABB%20Vital-1.pdf",
-                  "Hash": "1ba4413d9224a7d893318fa3cdb965eee2b4012e73facb75c1115fa8a2b85620"
+                  "Hash": "1ba4413d9224a7d893318fa3cdb965eee2b4012e73facb75c1115fa8a2b85620",
+                  "TamanoBytes": 1023666
                 }
               ],
               "Subcarpetas": []
@@ -27,7 +28,8 @@
                 {
                   "Nombre": "X2-Dual Access v1-1a.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/ADDERLink%20KVM/X2-Dual%20Access%20v1-1a.pdf",
-                  "Hash": "3907523874fbff73796fbaf15b8c50ce237924a0f412d31d8e0fdfb7ac194253"
+                  "Hash": "3907523874fbff73796fbaf15b8c50ce237924a0f412d31d8e0fdfb7ac194253",
+                  "TamanoBytes": 1312300
                 }
               ],
               "Subcarpetas": []
@@ -38,7 +40,8 @@
                 {
                   "Nombre": "ADZ-SML-10 (Standard).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/ADZ%20Nagano/ADZ-SML-10%20%28Standard%29.pdf",
-                  "Hash": "5d08e5bf23834e1f2177c0872e99c73817d54fdc66f1b95d736bf2c0f8ed7445"
+                  "Hash": "5d08e5bf23834e1f2177c0872e99c73817d54fdc66f1b95d736bf2c0f8ed7445",
+                  "TamanoBytes": 81391
                 }
               ],
               "Subcarpetas": []
@@ -49,282 +52,338 @@
                 {
                   "Nombre": "20comm E Ethernet-um010_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/20comm%20E%20Ethernet-um010_-en-p.pdf",
-                  "Hash": "1490aa8f32c15a116dfb4938f4dd21aeba135749687234bbac391015dfb84cd6"
+                  "Hash": "1490aa8f32c15a116dfb4938f4dd21aeba135749687234bbac391015dfb84cd6",
+                  "TamanoBytes": 7398492
                 },
                 {
                   "Nombre": "Allen Bradley 1305.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Allen%20Bradley%201305.pdf",
-                  "Hash": "ac92fa7693b86902199bf4e9b3f2ff0618f8091cb21b3c8bb30d0cdb3d1d11d1"
+                  "Hash": "ac92fa7693b86902199bf4e9b3f2ff0618f8091cb21b3c8bb30d0cdb3d1d11d1",
+                  "TamanoBytes": 978697
                 },
                 {
                   "Nombre": "Flex IO Analog Modules.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Flex%20IO%20Analog%20Modules.pdf",
-                  "Hash": "b5cc7e594141db5c6a9c1094fc23b7ec51c32e2644e49c65594e15fc6161d7ce"
+                  "Hash": "b5cc7e594141db5c6a9c1094fc23b7ec51c32e2644e49c65594e15fc6161d7ce",
+                  "TamanoBytes": 1026781
                 },
                 {
                   "Nombre": "Flex IO Modulos analogicos.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Flex%20IO%20Modulos%20analogicos.pdf",
-                  "Hash": "62d138ce49d7944f9c678e18ed485c4505053efb3f1bdfa1c1b804d48e06cfa4"
+                  "Hash": "62d138ce49d7944f9c678e18ed485c4505053efb3f1bdfa1c1b804d48e06cfa4",
+                  "TamanoBytes": 862631
                 },
                 {
                   "Nombre": "GuardMaster 440c-CR30 Configurable1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440c-CR30%20Configurable1.pdf",
-                  "Hash": "c4358826a66530d870f7c33fdf1ccfefe18330cc113a1d55eeffccf008ba1acb"
+                  "Hash": "c4358826a66530d870f7c33fdf1ccfefe18330cc113a1d55eeffccf008ba1acb",
+                  "TamanoBytes": 6885519
                 },
                 {
                   "Nombre": "GuardMaster 440c-CR30 Configurable2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440c-CR30%20Configurable2.pdf",
-                  "Hash": "aeb588f8fa7d137f9425effa4c3f70491dd934f03d5613978558758f033ec374"
+                  "Hash": "aeb588f8fa7d137f9425effa4c3f70491dd934f03d5613978558758f033ec374",
+                  "TamanoBytes": 2578780
                 },
                 {
                   "Nombre": "GuardMaster 440c-CR30 Configurable3.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440c-CR30%20Configurable3.pdf",
-                  "Hash": "0e0daec19d56c1b1175fa75df45065655b7d1efb7227c65977cbd59bd77ce860"
+                  "Hash": "0e0daec19d56c1b1175fa75df45065655b7d1efb7227c65977cbd59bd77ce860",
+                  "TamanoBytes": 13375607
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo1.pdf",
-                  "Hash": "547b329b2b9db697679421d1482388466d8cd7ec44860e6efb848ead72d34e46"
+                  "Hash": "547b329b2b9db697679421d1482388466d8cd7ec44860e6efb848ead72d34e46",
+                  "TamanoBytes": 883737
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo2.pdf",
-                  "Hash": "ea03c4a496dd4c8c2517668843b10f3af8615a265c103bbacc1ad2aaacd66ac6"
+                  "Hash": "ea03c4a496dd4c8c2517668843b10f3af8615a265c103bbacc1ad2aaacd66ac6",
+                  "TamanoBytes": 1955196
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo3.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo3.pdf",
-                  "Hash": "c1cce152353d6b7a60b9b367ffc8f3f2d763ddd796e22cc51802b2cec573e30a"
+                  "Hash": "c1cce152353d6b7a60b9b367ffc8f3f2d763ddd796e22cc51802b2cec573e30a",
+                  "TamanoBytes": 990915
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo4.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo4.pdf",
-                  "Hash": "748c0fde36a97bd810fc4f9ce69b5ccf3aa63378f778c2d15baf882f8dfd2dbc"
+                  "Hash": "748c0fde36a97bd810fc4f9ce69b5ccf3aa63378f778c2d15baf882f8dfd2dbc",
+                  "TamanoBytes": 758241
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo5.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo5.pdf",
-                  "Hash": "12aef3e0fe93aa350aaa9a8ff556cfe6ebe648a208fe4bb0b696963839a3d5f2"
+                  "Hash": "12aef3e0fe93aa350aaa9a8ff556cfe6ebe648a208fe4bb0b696963839a3d5f2",
+                  "TamanoBytes": 761845
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo6.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo6.pdf",
-                  "Hash": "9b561797b5f162b7a4f89f635e8c33327b6afae0c5550460984129d0cc8bc292"
+                  "Hash": "9b561797b5f162b7a4f89f635e8c33327b6afae0c5550460984129d0cc8bc292",
+                  "TamanoBytes": 305554
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo7.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo7.pdf",
-                  "Hash": "c7f7d84cb14a0d377b64097f5c3a95a9985ce385dd6b22c6288a6e695dd45264"
+                  "Hash": "c7f7d84cb14a0d377b64097f5c3a95a9985ce385dd6b22c6288a6e695dd45264",
+                  "TamanoBytes": 1795052
                 },
                 {
                   "Nombre": "GuardMaster 440n - Sensor Tipo8.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440n%20-%20Sensor%20Tipo8.pdf",
-                  "Hash": "492027318a83d535ee753c882edc70448d9af828e97743af6c33af3de465c1c9"
+                  "Hash": "492027318a83d535ee753c882edc70448d9af828e97743af6c33af3de465c1c9",
+                  "TamanoBytes": 1749606
                 },
                 {
                   "Nombre": "GuardMaster 440r-GuardLink.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440r-GuardLink.pdf",
-                  "Hash": "277fe9fb2b41c256a03ce75f89a73b84255d86a0d565552fad94cd694a87ab4d"
+                  "Hash": "277fe9fb2b41c256a03ce75f89a73b84255d86a0d565552fad94cd694a87ab4d",
+                  "TamanoBytes": 5406191
                 },
                 {
                   "Nombre": "GuardMaster 440r-s12r2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440r-s12r2.pdf",
-                  "Hash": "e94a839d98cc2138012fc42f18486e1bf609dfae1827365c2487cc6e8710248e"
+                  "Hash": "e94a839d98cc2138012fc42f18486e1bf609dfae1827365c2487cc6e8710248e",
+                  "TamanoBytes": 5814835
                 },
                 {
                   "Nombre": "GuardMaster SIPHA1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20SIPHA1.pdf",
-                  "Hash": "40af3b88435b3e8c9494c3d74ece51ad56b283b2c306426567f02d7700845fe2"
+                  "Hash": "40af3b88435b3e8c9494c3d74ece51ad56b283b2c306426567f02d7700845fe2",
+                  "TamanoBytes": 312652
                 },
                 {
                   "Nombre": "Instrucciones Logix5000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Instrucciones%20Logix5000.pdf",
-                  "Hash": "b1d865c23b6a9121443bc70bebc401226811b9885aea5477104d57b99904b389"
+                  "Hash": "b1d865c23b6a9121443bc70bebc401226811b9885aea5477104d57b99904b389",
+                  "TamanoBytes": 11246625
                 },
                 {
                   "Nombre": "Kinetix 6000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Kinetix%206000.pdf",
-                  "Hash": "b0ede8cf5edbf7dc853dfb6a5464264e8ee656acc9b46ecd8d6d2db2d3dfa0a1"
+                  "Hash": "b0ede8cf5edbf7dc853dfb6a5464264e8ee656acc9b46ecd8d6d2db2d3dfa0a1",
+                  "TamanoBytes": 24324915
                 },
                 {
                   "Nombre": "Kinetix 6000M.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Kinetix%206000M.pdf",
-                  "Hash": "fe27acd30d896ea310f5614002ae9585b8130b3905012e0ca242ffc0b40cb15c"
+                  "Hash": "fe27acd30d896ea310f5614002ae9585b8130b3905012e0ca242ffc0b40cb15c",
+                  "TamanoBytes": 5588960
                 },
                 {
                   "Nombre": "Logix 500 Instruccion Set.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Logix%20500%20Instruccion%20Set.pdf",
-                  "Hash": "85f90c78ddbdea0dc4abbb8218611385430ab744b29a67220e13721d8a56f185"
+                  "Hash": "85f90c78ddbdea0dc4abbb8218611385430ab744b29a67220e13721d8a56f185",
+                  "TamanoBytes": 5443588
                 },
                 {
                   "Nombre": "Logix 5000 Instruccion Set.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Logix%205000%20Instruccion%20Set.pdf",
-                  "Hash": "8c478f18fa337063c56696fbf46119f9772d633980acbaf46bd010e6ce16bbff"
+                  "Hash": "8c478f18fa337063c56696fbf46119f9772d633980acbaf46bd010e6ce16bbff",
+                  "TamanoBytes": 8642656
                 },
                 {
                   "Nombre": "Manual de referencia Instrucciones Logix5000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Manual%20de%20referencia%20Instrucciones%20Logix5000.pdf",
-                  "Hash": "636a87700176e0c532f048a7b7d10d40dc5540ba276c4b3e2284689f5eabf263"
+                  "Hash": "636a87700176e0c532f048a7b7d10d40dc5540ba276c4b3e2284689f5eabf263",
+                  "TamanoBytes": 8136761
                 },
                 {
                   "Nombre": "Micrologix 1200.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Micrologix%201200.pdf",
-                  "Hash": "be912b10fb7bc1a0941faffdad4cd742f3102230d8279fa88ba1e57cb7dfb422"
+                  "Hash": "be912b10fb7bc1a0941faffdad4cd742f3102230d8279fa88ba1e57cb7dfb422",
+                  "TamanoBytes": 3502522
                 },
                 {
                   "Nombre": "Minotaur MSR126 R T.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR126%20R%20T.pdf",
-                  "Hash": "8c0389b604932655d267a618affc40b6052261771425432da74fc73c48574843"
+                  "Hash": "8c0389b604932655d267a618affc40b6052261771425432da74fc73c48574843",
+                  "TamanoBytes": 636812
                 },
                 {
                   "Nombre": "Minotaur MSR127RR MSR127RP.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR127RR%20MSR127RP.pdf",
-                  "Hash": "5219edf285bed36fd2099e96133a7d8d5a9998a4291923c1597141f3db76cf11"
+                  "Hash": "5219edf285bed36fd2099e96133a7d8d5a9998a4291923c1597141f3db76cf11",
+                  "TamanoBytes": 512831
                 },
                 {
                   "Nombre": "Minotaur MSR138DP - 440r-in063-mu-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR138DP%20-%20440r-in063-mu-p.pdf",
-                  "Hash": "d95d42fcfb07e0ca6c327962fefbac78702340d72b71d5e4f99f30afc962f053"
+                  "Hash": "d95d42fcfb07e0ca6c327962fefbac78702340d72b71d5e4f99f30afc962f053",
+                  "TamanoBytes": 513640
                 },
                 {
                   "Nombre": "Minotaur MSR138DP - 440r-in088_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR138DP%20-%20440r-in088_-en-p.pdf",
-                  "Hash": "3acc1aeb40b65d1828fd2ae4fcb0bc4ad651c5801788489680158adb2e0f837c"
+                  "Hash": "3acc1aeb40b65d1828fd2ae4fcb0bc4ad651c5801788489680158adb2e0f837c",
+                  "TamanoBytes": 1048388
                 },
                 {
                   "Nombre": "Minotaur MSR138DP.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR138DP.PDF",
-                  "Hash": "1330663428c9921d81f4b33025086acdb8df80b0b7152b5decb9422c96b563b3"
+                  "Hash": "1330663428c9921d81f4b33025086acdb8df80b0b7152b5decb9422c96b563b3",
+                  "TamanoBytes": 83952
                 },
                 {
                   "Nombre": "Modulo seguridad Point Guard IO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Modulo%20seguridad%20Point%20Guard%20IO.pdf",
-                  "Hash": "ff008d2777862cb432f08c27cc397cfcb2902c461e79de9e1d87d9aed983a629"
+                  "Hash": "ff008d2777862cb432f08c27cc397cfcb2902c461e79de9e1d87d9aed983a629",
+                  "TamanoBytes": 5524134
                 },
                 {
                   "Nombre": "MSR 127 - 440r-in079_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/MSR%20127%20-%20440r-in079_-en-p.pdf",
-                  "Hash": "277010e9af8c3d373c67b6286fad7ae64517be3e6ecd7abbd03372580d0dac74"
+                  "Hash": "277010e9af8c3d373c67b6286fad7ae64517be3e6ecd7abbd03372580d0dac74",
+                  "TamanoBytes": 163871
                 },
                 {
                   "Nombre": "MSR127RTP .pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/MSR127RTP%20.pdf",
-                  "Hash": "853176051f20e3c0d1a9596f843f757f2b6f5c1bef19e70151a6688fd7f28006"
+                  "Hash": "853176051f20e3c0d1a9596f843f757f2b6f5c1bef19e70151a6688fd7f28006",
+                  "TamanoBytes": 109074
                 },
                 {
                   "Nombre": "Panel View Plus 400 600.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Panel%20View%20Plus%20400%20600.pdf",
-                  "Hash": "9b5dc668b49be33dc93913048cda148840f916bca9a65ce9876a23ba4ecb5086"
+                  "Hash": "9b5dc668b49be33dc93913048cda148840f916bca9a65ce9876a23ba4ecb5086",
+                  "TamanoBytes": 1405896
                 },
                 {
                   "Nombre": "PanelView Plus - 2711p-um001_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PanelView%20Plus%20-%202711p-um001_-en-p.pdf",
-                  "Hash": "649e8647a4ac730c48c4d6d3b03320b0981909a1cada4956ebafe1a39f16f136"
+                  "Hash": "649e8647a4ac730c48c4d6d3b03320b0981909a1cada4956ebafe1a39f16f136",
+                  "TamanoBytes": 9180940
                 },
                 {
                   "Nombre": "PanelView Plus 6 - 2711p-um006_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PanelView%20Plus%206%20-%202711p-um006_-en-p.pdf",
-                  "Hash": "6352a570eb1667c0116dd68a9c512888f50ed17b756b4401f3affe333d773b2d"
+                  "Hash": "6352a570eb1667c0116dd68a9c512888f50ed17b756b4401f3affe333d773b2d",
+                  "TamanoBytes": 11427450
                 },
                 {
                   "Nombre": "PanelView Plus 6.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PanelView%20Plus%206.pdf",
-                  "Hash": "5a6f83fbcca751a52f177f437d187d79b3fe9a5a780d96878afd2773a8e05c89"
+                  "Hash": "5a6f83fbcca751a52f177f437d187d79b3fe9a5a780d96878afd2773a8e05c89",
+                  "TamanoBytes": 8358852
                 },
                 {
                   "Nombre": "PanelView Plus 7 Performance.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PanelView%20Plus%207%20Performance.pdf",
-                  "Hash": "7075a81d656b0513d12001d0f0cc6107a3d5d1487028e96429aa91770379ca1c"
+                  "Hash": "7075a81d656b0513d12001d0f0cc6107a3d5d1487028e96429aa91770379ca1c",
+                  "TamanoBytes": 12758724
                 },
                 {
                   "Nombre": "Point IO Field Potential Distribution.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Point%20IO%20Field%20Potential%20Distribution.pdf",
-                  "Hash": "506582e6eb23235227bf02ef1883da7d6195a60a52144394051181ce376c6fd6"
+                  "Hash": "506582e6eb23235227bf02ef1883da7d6195a60a52144394051181ce376c6fd6",
+                  "TamanoBytes": 397671
                 },
                 {
                   "Nombre": "Point IO Input Output.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Point%20IO%20Input%20Output.pdf",
-                  "Hash": "03ce1483f4d45c6f513bf284d6a8b8d3290eaab7a531f28e3b797b9c922f0ad6"
+                  "Hash": "03ce1483f4d45c6f513bf284d6a8b8d3290eaab7a531f28e3b797b9c922f0ad6",
+                  "TamanoBytes": 281909
                 },
                 {
                   "Nombre": "Point IO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Point%20IO.pdf",
-                  "Hash": "c76e3401db8bd46fa2ed201502a3d5f006934ba9e8e3baf5c4a4d8d206388f76"
+                  "Hash": "c76e3401db8bd46fa2ed201502a3d5f006934ba9e8e3baf5c4a4d8d206388f76",
+                  "TamanoBytes": 326398
                 },
                 {
                   "Nombre": "PowerFlex 4 Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%204%20Completo.pdf",
-                  "Hash": "e730bac62adae4c2fe058e2b2f38ec9c0b28e80929aa11e730b91e22cd5c928e"
+                  "Hash": "e730bac62adae4c2fe058e2b2f38ec9c0b28e80929aa11e730b91e22cd5c928e",
+                  "TamanoBytes": 1240799
                 },
                 {
                   "Nombre": "PowerFlex 4 Inicio Rapido.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%204%20Inicio%20Rapido.pdf",
-                  "Hash": "4684bc8978ff4f9a72abc2ff6ed1b435fcf88e8ff7d6a0da08c8569b308d66f3"
+                  "Hash": "4684bc8978ff4f9a72abc2ff6ed1b435fcf88e8ff7d6a0da08c8569b308d66f3",
+                  "TamanoBytes": 274397
                 },
                 {
                   "Nombre": "PowerFlex 40 Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%2040%20Completo.pdf",
-                  "Hash": "e4909d4033da81e71c6646b922df000a28826bc20654c1594d6af459d3f6a9f0"
+                  "Hash": "e4909d4033da81e71c6646b922df000a28826bc20654c1594d6af459d3f6a9f0",
+                  "TamanoBytes": 2037949
                 },
                 {
                   "Nombre": "PowerFlex 40 Inicio Rapido.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%2040%20Inicio%20Rapido.pdf",
-                  "Hash": "0805f6a87d0ee7f9ea00093dfc81ad791c70b9c64c3799c111efb6e7a8675d26"
+                  "Hash": "0805f6a87d0ee7f9ea00093dfc81ad791c70b9c64c3799c111efb6e7a8675d26",
+                  "TamanoBytes": 1027816
                 },
                 {
                   "Nombre": "PowerFlex 400 Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%20400%20Completo.pdf",
-                  "Hash": "955fa9333683fbca7805952d748ce7e492fe86870f7e2377abd6e3ebd779e93a"
+                  "Hash": "955fa9333683fbca7805952d748ce7e492fe86870f7e2377abd6e3ebd779e93a",
+                  "TamanoBytes": 4326577
                 },
                 {
                   "Nombre": "PowerFlex 400 Inicio Rapido.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%20400%20Inicio%20Rapido.pdf",
-                  "Hash": "7dddd9e7f2570e9b5adca84113819d9ddf35ec4eeb2541e668aed7ca312d2671"
+                  "Hash": "7dddd9e7f2570e9b5adca84113819d9ddf35ec4eeb2541e668aed7ca312d2671",
+                  "TamanoBytes": 1013535
                 },
                 {
                   "Nombre": "PowerFlex 4M.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%204M.pdf",
-                  "Hash": "8ec6ce3926231feec4a2be21bf422165ba45da69f3d67603b33e0d20d21449ec"
+                  "Hash": "8ec6ce3926231feec4a2be21bf422165ba45da69f3d67603b33e0d20d21449ec",
+                  "TamanoBytes": 2957370
                 },
                 {
                   "Nombre": "PowerFlex 525 Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%20525%20Completo.pdf",
-                  "Hash": "44dac83c4c353fc87bd303fceb2425ce93cd93abab38a6680c0f8d48baa374a5"
+                  "Hash": "44dac83c4c353fc87bd303fceb2425ce93cd93abab38a6680c0f8d48baa374a5",
+                  "TamanoBytes": 6431821
                 },
                 {
                   "Nombre": "PowerFlex 525 Inicio Rapido.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%20525%20Inicio%20Rapido.pdf",
-                  "Hash": "0167be6e08a24419a4cd943f494829119ad5b3a004383901f8ca4c8a541037db"
+                  "Hash": "0167be6e08a24419a4cd943f494829119ad5b3a004383901f8ca4c8a541037db",
+                  "TamanoBytes": 1045347
                 },
                 {
                   "Nombre": "PowerFlex 70 Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%2070%20Completo.pdf",
-                  "Hash": "1a0c997d68003a7071b6d1d86e6a1b2da3c474c8f37643c148f61e8c3c808f9e"
+                  "Hash": "1a0c997d68003a7071b6d1d86e6a1b2da3c474c8f37643c148f61e8c3c808f9e",
+                  "TamanoBytes": 3233885
                 },
                 {
                   "Nombre": "PowerFlex 750-753 Programacion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/PowerFlex%20750-753%20Programacion.pdf",
-                  "Hash": "a9c289b53cf10be37b83ca02d65b791ae58764c730a0f5262e16c636456b88ea"
+                  "Hash": "a9c289b53cf10be37b83ca02d65b791ae58764c730a0f5262e16c636456b88ea",
+                  "TamanoBytes": 6551280
                 },
                 {
                   "Nombre": "Safety Switches Specifications - switch-td001_-en-p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Safety%20Switches%20Specifications%20-%20switch-td001_-en-p.pdf",
-                  "Hash": "1a12241fdb306a4d3a4c228f0de67eed608e6246af2f5cc3274464970fa2c6d2"
+                  "Hash": "1a12241fdb306a4d3a4c228f0de67eed608e6246af2f5cc3274464970fa2c6d2",
+                  "TamanoBytes": 3890671
                 },
                 {
                   "Nombre": "Stratix 5700.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Stratix%205700.pdf",
-                  "Hash": "cb3d9682711a5c674e64dc1d1303983df9c8ee907b50c033f8bb56d2091c1a3b"
+                  "Hash": "cb3d9682711a5c674e64dc1d1303983df9c8ee907b50c033f8bb56d2091c1a3b",
+                  "TamanoBytes": 736706
                 },
                 {
                   "Nombre": "Stratix 8000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Stratix%208000.pdf",
-                  "Hash": "22d6ecd315bbd1435abba85af2c79809328835a12e1788d3fcc60c45934a17f6"
+                  "Hash": "22d6ecd315bbd1435abba85af2c79809328835a12e1788d3fcc60c45934a17f6",
+                  "TamanoBytes": 4204316
                 },
                 {
                   "Nombre": "Terminal HMI PanelView.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Terminal%20HMI%20PanelView.pdf",
-                  "Hash": "90c9f37cfdf5dca1168fb4d4ee3c6e149a77445833e177532dd34a42fae42b9d"
+                  "Hash": "90c9f37cfdf5dca1168fb4d4ee3c6e149a77445833e177532dd34a42fae42b9d",
+                  "TamanoBytes": 4851569
                 }
               ],
               "Subcarpetas": []
@@ -335,52 +394,62 @@
                 {
                   "Nombre": "Atlas Copco  Compresores de tornillo rotativos con inyeccion de aceite.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20%20Compresores%20de%20tornillo%20rotativos%20con%20inyeccion%20de%20aceite.pdf",
-                  "Hash": "4d3c14945c67b423e5da4b54b9c452710ab899a7860408c0d148353ab4936eb2"
+                  "Hash": "4d3c14945c67b423e5da4b54b9c452710ab899a7860408c0d148353ab4936eb2",
+                  "TamanoBytes": 3691151
                 },
                 {
                   "Nombre": "Atlas Copco  Secadores frigorificos.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20%20Secadores%20frigorificos.pdf",
-                  "Hash": "c40ebe0b46381695d4ab6d5b1d623526968bf932125e4d61330568894aa3b926"
+                  "Hash": "c40ebe0b46381695d4ab6d5b1d623526968bf932125e4d61330568894aa3b926",
+                  "TamanoBytes": 1544771
                 },
                 {
                   "Nombre": "Atlas Copco Elektrinikon 1 y 2 GA45.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20Elektrinikon%201%20y%202%20GA45.pdf",
-                  "Hash": "a3d5bb354f1b552ca147367c17bb7f20559504029c2d0cba1ef7e47d1b0e321b"
+                  "Hash": "a3d5bb354f1b552ca147367c17bb7f20559504029c2d0cba1ef7e47d1b0e321b",
+                  "TamanoBytes": 536100
                 },
                 {
                   "Nombre": "Atlas Copco Elektrinikon 1 y 2 Instrucciones.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20Elektrinikon%201%20y%202%20Instrucciones.pdf",
-                  "Hash": "c4acef621633e8c88f387b18dcd78b2d8926d7ce6b8c104eeeefed178580a26e"
+                  "Hash": "c4acef621633e8c88f387b18dcd78b2d8926d7ce6b8c104eeeefed178580a26e",
+                  "TamanoBytes": 1198723
                 },
                 {
                   "Nombre": "Atlas Copco Elektrinikon 1 y 2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20Elektrinikon%201%20y%202.pdf",
-                  "Hash": "a3d5bb354f1b552ca147367c17bb7f20559504029c2d0cba1ef7e47d1b0e321b"
+                  "Hash": "a3d5bb354f1b552ca147367c17bb7f20559504029c2d0cba1ef7e47d1b0e321b",
+                  "TamanoBytes": 536100
                 },
                 {
                   "Nombre": "Atlas Copco Fd 185 Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20Fd%20185%20Manual.pdf",
-                  "Hash": "d6fc5d236d882b8fe795d05e3a14fa2b7be4b0e2dbc6948167cb7dddb86481a8"
+                  "Hash": "d6fc5d236d882b8fe795d05e3a14fa2b7be4b0e2dbc6948167cb7dddb86481a8",
+                  "TamanoBytes": 18435
                 },
                 {
                   "Nombre": "Atlas copco fd 380 manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20copco%20fd%20380%20manual.pdf",
-                  "Hash": "02a8142319a49d753e1e9c68b9198e45ae9df9e251f0e25d042e0691f28fc21e"
+                  "Hash": "02a8142319a49d753e1e9c68b9198e45ae9df9e251f0e25d042e0691f28fc21e",
+                  "TamanoBytes": 18010
                 },
                 {
                   "Nombre": "Atlas Copco GA75.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20GA75.pdf",
-                  "Hash": "004ae5fc691364af4b0550a7c5a6283cbb20edeb16cb7ac315db49d423089682"
+                  "Hash": "004ae5fc691364af4b0550a7c5a6283cbb20edeb16cb7ac315db49d423089682",
+                  "TamanoBytes": 5482496
                 },
                 {
                   "Nombre": "Atlas Copco Stationary Air Compressors.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco%20Stationary%20Air%20Compressors.pdf",
-                  "Hash": "cf585b9dbd510e7114c16de294083a967702c910ca4c6c42d2e4e93087cb135e"
+                  "Hash": "cf585b9dbd510e7114c16de294083a967702c910ca4c6c42d2e4e93087cb135e",
+                  "TamanoBytes": 2566703
                 },
                 {
                   "Nombre": "Atlas Copco.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Atlas%20Copco/Atlas%20Copco.pdf",
-                  "Hash": "cf585b9dbd510e7114c16de294083a967702c910ca4c6c42d2e4e93087cb135e"
+                  "Hash": "cf585b9dbd510e7114c16de294083a967702c910ca4c6c42d2e4e93087cb135e",
+                  "TamanoBytes": 2566703
                 }
               ],
               "Subcarpetas": []
@@ -391,7 +460,8 @@
                 {
                   "Nombre": "VRF180913.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Bindicator/VRF180913.pdf",
-                  "Hash": "53e4f2f23807a226a57e52df4dce11f268e7fd6a1d0d4f7b64a3441ce11b09fb"
+                  "Hash": "53e4f2f23807a226a57e52df4dce11f268e7fd6a1d0d4f7b64a3441ce11b09fb",
+                  "TamanoBytes": 4732307
                 }
               ],
               "Subcarpetas": []
@@ -402,32 +472,38 @@
                 {
                   "Nombre": "Carel IR33.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Carel%20IR33.pdf",
-                  "Hash": "b030c365fee06344cc6143652f8d541b5dad27af58d5908e13286655ba30c908"
+                  "Hash": "b030c365fee06344cc6143652f8d541b5dad27af58d5908e13286655ba30c908",
+                  "TamanoBytes": 3471666
                 },
                 {
                   "Nombre": "Carel pCO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Carel%20pCO.pdf",
-                  "Hash": "607616c6ac8a66240bd679e1206a97ee2b1a8c72694870ef43a47d3201907c17"
+                  "Hash": "607616c6ac8a66240bd679e1206a97ee2b1a8c72694870ef43a47d3201907c17",
+                  "TamanoBytes": 3449894
                 },
                 {
                   "Nombre": "Carel UC2SE(2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Carel%20UC2SE%282%29.pdf",
-                  "Hash": "da200b46877e0eb099c8a1be7351c9b10f123bd295baeeb7e2cea8b2f7f99533"
+                  "Hash": "da200b46877e0eb099c8a1be7351c9b10f123bd295baeeb7e2cea8b2f7f99533",
+                  "TamanoBytes": 1679465
                 },
                 {
                   "Nombre": "Carel UC2SE.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Carel%20UC2SE.pdf",
-                  "Hash": "2b8ca1b5c45f40a18d743005b9a9b72dcf216f072b04449c1091a166c2cab495"
+                  "Hash": "2b8ca1b5c45f40a18d743005b9a9b72dcf216f072b04449c1091a166c2cab495",
+                  "TamanoBytes": 753286
                 },
                 {
                   "Nombre": "Controlador Aire.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Controlador%20Aire.pdf",
-                  "Hash": "122f07ce278a3c9f91ab8f3b7759ce73e3a0c4ca8d5172d253ab26ac868dee7c"
+                  "Hash": "122f07ce278a3c9f91ab8f3b7759ce73e3a0c4ca8d5172d253ab26ac868dee7c",
+                  "TamanoBytes": 2288243
                 },
                 {
                   "Nombre": "Controlador Carel UC2SE.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Carel/Controlador%20Carel%20UC2SE.pdf",
-                  "Hash": "a8719f748ca4cee972048418a6770f463118b5f6c8f4757ac43de3d5f18da55d"
+                  "Hash": "a8719f748ca4cee972048418a6770f463118b5f6c8f4757ac43de3d5f18da55d",
+                  "TamanoBytes": 1820596
                 }
               ],
               "Subcarpetas": []
@@ -438,32 +514,38 @@
                 {
                   "Nombre": "CEIA spanish.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/CEIA%20spanish.pdf",
-                  "Hash": "1de4498eea5211b00cec5c4c17bb8d034956317d3c57f9fbd36fe1799cf7a90f"
+                  "Hash": "1de4498eea5211b00cec5c4c17bb8d034956317d3c57f9fbd36fe1799cf7a90f",
+                  "TamanoBytes": 3379871
                 },
                 {
                   "Nombre": "Installation Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/Installation%20Manual.pdf",
-                  "Hash": "dd4a51f9965b0c9b73697a63eb5b4995afa10933b395985965c7064feccedd89"
+                  "Hash": "dd4a51f9965b0c9b73697a63eb5b4995afa10933b395985965c7064feccedd89",
+                  "TamanoBytes": 3140444
                 },
                 {
                   "Nombre": "Manual Programacion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/Manual%20Programacion.pdf",
-                  "Hash": "74d9014feef7b2d3b6da51f0464c7686434043b17f4e31eaf2413d31743585cc"
+                  "Hash": "74d9014feef7b2d3b6da51f0464c7686434043b17f4e31eaf2413d31743585cc",
+                  "TamanoBytes": 1400255
                 },
                 {
                   "Nombre": "MD_SCOPE Instruction.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/MD_SCOPE%20Instruction.pdf",
-                  "Hash": "30f3ad2ba5c53159c22b5d546fd583ede44c31bea0e2567e09067d9a65942efb"
+                  "Hash": "30f3ad2ba5c53159c22b5d546fd583ede44c31bea0e2567e09067d9a65942efb",
+                  "TamanoBytes": 926169
                 },
                 {
                   "Nombre": "Operator Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/Operator%20Manual.pdf",
-                  "Hash": "42800be234db16ccceedec756e53ef013aaea349663cd061905f48b971f5d679"
+                  "Hash": "42800be234db16ccceedec756e53ef013aaea349663cd061905f48b971f5d679",
+                  "TamanoBytes": 1752729
                 },
                 {
                   "Nombre": "Programming Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ceia/Programming%20Manual.pdf",
-                  "Hash": "41cca83d41bc9c5db1506c942ea945f2727ee5e8daa911aafc0d98939c6e3fff"
+                  "Hash": "41cca83d41bc9c5db1506c942ea945f2727ee5e8daa911aafc0d98939c6e3fff",
+                  "TamanoBytes": 835421
                 }
               ],
               "Subcarpetas": []
@@ -474,22 +556,26 @@
                 {
                   "Nombre": "CoBot UR10e Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/CoBot/CoBot%20UR10e%20Manual.pdf",
-                  "Hash": "bf9919e46fec4e17b7066fd700301db7837cc7a080c5763432204fa2a21c38ce"
+                  "Hash": "bf9919e46fec4e17b7066fd700301db7837cc7a080c5763432204fa2a21c38ce",
+                  "TamanoBytes": 23968886
                 },
                 {
                   "Nombre": "CURSO BASICO INICIAL UR \u002B PRACTICA MURTEN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/CoBot/CURSO%20BASICO%20INICIAL%20UR%20%2B%20PRACTICA%20MURTEN.pdf",
-                  "Hash": "6b112f0161023c41bbfa153ccf19acc8aa8913d10ca09e30dac015780e481ab0"
+                  "Hash": "6b112f0161023c41bbfa153ccf19acc8aa8913d10ca09e30dac015780e481ab0",
+                  "TamanoBytes": 9815682
                 },
                 {
                   "Nombre": "IPs_Cobot.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/CoBot/IPs_Cobot.pdf",
-                  "Hash": "a05d4d98ab1cce91d174a3da3e275e90468903e3c71c500051dec99e8bf78cb6"
+                  "Hash": "a05d4d98ab1cce91d174a3da3e275e90468903e3c71c500051dec99e8bf78cb6",
+                  "TamanoBytes": 76913
                 },
                 {
                   "Nombre": "Uso de Archivos Magic - Actualizacion Software.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/CoBot/Uso%20de%20Archivos%20Magic%20-%20Actualizacion%20Software.pdf",
-                  "Hash": "08c159a0fb35465dc106ad3979ec610bb58ee7b5eb9157e8d313deb6f2f1d1a5"
+                  "Hash": "08c159a0fb35465dc106ad3979ec610bb58ee7b5eb9157e8d313deb6f2f1d1a5",
+                  "TamanoBytes": 274293
                 }
               ],
               "Subcarpetas": []
@@ -500,7 +586,8 @@
                 {
                   "Nombre": "Poweredge-r200_owner\u0027s manual_en-us.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Dell/Poweredge-r200_owner%27s%20manual_en-us.pdf",
-                  "Hash": "608c54eb315e5c52ad0ef99bbe4a5339dcdcee2a68acd9e98d2488a4dbe7ba67"
+                  "Hash": "608c54eb315e5c52ad0ef99bbe4a5339dcdcee2a68acd9e98d2488a4dbe7ba67",
+                  "TamanoBytes": 13698563
                 }
               ],
               "Subcarpetas": []
@@ -511,27 +598,32 @@
                 {
                   "Nombre": "Celda de carga DVP02LC-SL.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Delta/Celda%20de%20carga%20DVP02LC-SL.pdf",
-                  "Hash": "30d089b2e3705453226b1f4503bf52e3df7f10fb9201c4b578bef86826fc121e"
+                  "Hash": "30d089b2e3705453226b1f4503bf52e3df7f10fb9201c4b578bef86826fc121e",
+                  "TamanoBytes": 898913
                 },
                 {
                   "Nombre": "DELTA_IA-PLC_DVP-ES2-EX2-SS2-SA2-SX2_PM_SP_20110630.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Delta/DELTA_IA-PLC_DVP-ES2-EX2-SS2-SA2-SX2_PM_SP_20110630.pdf",
-                  "Hash": "2d07f2f431f0a6bcb8581bb5aa928b71a20550860c06a895d88e6f9cbada6fc9"
+                  "Hash": "2d07f2f431f0a6bcb8581bb5aa928b71a20550860c06a895d88e6f9cbada6fc9",
+                  "TamanoBytes": 5721977
                 },
                 {
                   "Nombre": "DELTA_IA-PLC_DVP-PLC_PM_EN_20170615.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Delta/DELTA_IA-PLC_DVP-PLC_PM_EN_20170615.pdf",
-                  "Hash": "aa9573da5abe204a89093e72325ceecd933f91e7b248e94755a2751f740cd62d"
+                  "Hash": "aa9573da5abe204a89093e72325ceecd933f91e7b248e94755a2751f740cd62d",
+                  "TamanoBytes": 7739958
                 },
                 {
                   "Nombre": "DELTA_VFD-M-Variador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Delta/DELTA_VFD-M-Variador.pdf",
-                  "Hash": "208d51323f33fc24a292ede940bfac74b64f4b0e467f23ed6c2ae2d4c02c7c8a"
+                  "Hash": "208d51323f33fc24a292ede940bfac74b64f4b0e467f23ed6c2ae2d4c02c7c8a",
+                  "TamanoBytes": 5301911
                 },
                 {
                   "Nombre": "Modulo celda de carga DVP02LC-SL.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Delta/Modulo%20celda%20de%20carga%20DVP02LC-SL.pdf",
-                  "Hash": "1f708f892dbfe1dfb3b1491827c2e35cf9d27c0da12b7dacea0a43048b8e652f"
+                  "Hash": "1f708f892dbfe1dfb3b1491827c2e35cf9d27c0da12b7dacea0a43048b8e652f",
+                  "TamanoBytes": 569861
                 }
               ],
               "Subcarpetas": []
@@ -542,7 +634,8 @@
                 {
                   "Nombre": "Dungs VPS 504.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Dungs/Dungs%20VPS%20504.pdf",
-                  "Hash": "121a4affd907604ec253ba0b2907fec935d037ebfc177f9016a493181fddae1e"
+                  "Hash": "121a4affd907604ec253ba0b2907fec935d037ebfc177f9016a493181fddae1e",
+                  "TamanoBytes": 889349
                 }
               ],
               "Subcarpetas": []
@@ -553,7 +646,8 @@
                 {
                   "Nombre": "Eaton EMT6_DE_EN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Eaton/Eaton%20EMT6_DE_EN.pdf",
-                  "Hash": "49cd8ec03652b5f73014ee99bc16a88fbac35afde96019b7011183197efb4d40"
+                  "Hash": "49cd8ec03652b5f73014ee99bc16a88fbac35afde96019b7011183197efb4d40",
+                  "TamanoBytes": 4190142
                 }
               ],
               "Subcarpetas": []
@@ -564,17 +658,20 @@
                 {
                   "Nombre": "Emerson Commander SK.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Emerson/Emerson%20Commander%20SK.pdf",
-                  "Hash": "16c8277229c24da77bccd2c2572d3f14c18cd866a18a417b9af3dde7049c5c3b"
+                  "Hash": "16c8277229c24da77bccd2c2572d3f14c18cd866a18a417b9af3dde7049c5c3b",
+                  "TamanoBytes": 1100047
                 },
                 {
                   "Nombre": "Emerson CommanderSK Avanzado.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Emerson/Emerson%20CommanderSK%20Avanzado.pdf",
-                  "Hash": "0f35ad2dbae340e6c563c5c586f7dd317cb26c76765bb8a559e41974225890b8"
+                  "Hash": "0f35ad2dbae340e6c563c5c586f7dd317cb26c76765bb8a559e41974225890b8",
+                  "TamanoBytes": 2227894
                 },
                 {
                   "Nombre": "Emerson_Fisher-dvc6200-dvc6200-Controladores de valvulas2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Emerson/Emerson_Fisher-dvc6200-dvc6200-Controladores%20de%20valvulas2.pdf",
-                  "Hash": "cbb375f3514a6e3ee747641684a80af4c4511e2fb71702008cc4469ac3ff6157"
+                  "Hash": "cbb375f3514a6e3ee747641684a80af4c4511e2fb71702008cc4469ac3ff6157",
+                  "TamanoBytes": 1988799
                 }
               ],
               "Subcarpetas": []
@@ -585,32 +682,38 @@
                 {
                   "Nombre": "Brief Operating Instructions Deltapilot M FMB50.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Brief%20Operating%20Instructions%20Deltapilot%20M%20FMB50.pdf",
-                  "Hash": "305b5d2395ecca1aa1bf22f521ea4aaacb8f6a0cdb028f8f71fce2cae21d1fb3"
+                  "Hash": "305b5d2395ecca1aa1bf22f521ea4aaacb8f6a0cdb028f8f71fce2cae21d1fb3",
+                  "TamanoBytes": 1422292
                 },
                 {
                   "Nombre": "Informacion tecnica Deltapilot M.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Informacion%20tecnica%20Deltapilot%20M.pdf",
-                  "Hash": "dfbbb5e7cece2492fc2504d8caa13ff05541c2bd855da0d90a7c0ba25ea77c67"
+                  "Hash": "dfbbb5e7cece2492fc2504d8caa13ff05541c2bd855da0d90a7c0ba25ea77c67",
+                  "TamanoBytes": 3162752
                 },
                 {
                   "Nombre": "Operating Instructions Deltapilot M FMB53.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Operating%20Instructions%20Deltapilot%20M%20FMB53.pdf",
-                  "Hash": "58eae954cd37b9a6b924e5afd47777408a201387aa17e60211bcd90c06c3a15e"
+                  "Hash": "58eae954cd37b9a6b924e5afd47777408a201387aa17e60211bcd90c06c3a15e",
+                  "TamanoBytes": 5035010
                 },
                 {
                   "Nombre": "Soliphant M FTM50-2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Soliphant%20M%20FTM50-2.pdf",
-                  "Hash": "deb876b0c5c1ded5f7966cb6d8928fe8e9850e4c011f440027adaa074ec4d25b"
+                  "Hash": "deb876b0c5c1ded5f7966cb6d8928fe8e9850e4c011f440027adaa074ec4d25b",
+                  "TamanoBytes": 2545065
                 },
                 {
                   "Nombre": "Soliphant M FTM50.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Soliphant%20M%20FTM50.pdf",
-                  "Hash": "acaa98784ebbf8a300f8d26fbabeab9e796ddf17578bb5125559606ffc94d119"
+                  "Hash": "acaa98784ebbf8a300f8d26fbabeab9e796ddf17578bb5125559606ffc94d119",
+                  "TamanoBytes": 1290182
                 },
                 {
                   "Nombre": "Technical Information Deltapilot M.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Endress%2BHauser/Technical%20Information%20Deltapilot%20M.pdf",
-                  "Hash": "dfb229f01c57fdb4e39be62daee3fba5c1ff35b8633030ebb84e59624206820e"
+                  "Hash": "dfb229f01c57fdb4e39be62daee3fba5c1ff35b8633030ebb84e59624206820e",
+                  "TamanoBytes": 3541667
                 }
               ],
               "Subcarpetas": []
@@ -621,7 +724,8 @@
                 {
                   "Nombre": "eWON Cosy 131 Installation Guide en 1115.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/eWON/eWON%20Cosy%20131%20Installation%20Guide%20en%201115.pdf",
-                  "Hash": "90a09c239d0bf3b828ad45f452bd9c57c7a59b4faebcefa0b967ae3d814e9b17"
+                  "Hash": "90a09c239d0bf3b828ad45f452bd9c57c7a59b4faebcefa0b967ae3d814e9b17",
+                  "TamanoBytes": 2326055
                 }
               ],
               "Subcarpetas": []
@@ -632,27 +736,32 @@
                 {
                   "Nombre": "CPE-G_ES.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/CPE-G_ES.PDF",
-                  "Hash": "507c54799518f1bbc150206378ea30b91ad7185906942565fb3aa7aabcd1f5c9"
+                  "Hash": "507c54799518f1bbc150206378ea30b91ad7185906942565fb3aa7aabcd1f5c9",
+                  "TamanoBytes": 3675290
                 },
                 {
                   "Nombre": "Festo SPAB Sensor de presion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/Festo%20SPAB%20Sensor%20de%20presion.pdf",
-                  "Hash": "aa82e5cbc9eb3b6c38b99d1ce0957f3f7821a651e78c54bb50a0707950b38cab"
+                  "Hash": "aa82e5cbc9eb3b6c38b99d1ce0957f3f7821a651e78c54bb50a0707950b38cab",
+                  "TamanoBytes": 3156445
                 },
                 {
                   "Nombre": "SPAB_2009-11b.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/SPAB_2009-11b.pdf",
-                  "Hash": "bb675ab28db39653b5eda6f2cbc2a36a42d172d83821ba34f10bcb81b56a94ab"
+                  "Hash": "bb675ab28db39653b5eda6f2cbc2a36a42d172d83821ba34f10bcb81b56a94ab",
+                  "TamanoBytes": 1142317
                 },
                 {
                   "Nombre": "SPAB_EN.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/SPAB_EN.PDF",
-                  "Hash": "ab802803b4f3a6fe501e68858f7bbfefbd3d50189a2408017871c1e00cf5f358"
+                  "Hash": "ab802803b4f3a6fe501e68858f7bbfefbd3d50189a2408017871c1e00cf5f358",
+                  "TamanoBytes": 286599
                 },
                 {
                   "Nombre": "Valvulas Apiladoras Festo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/Valvulas%20Apiladoras%20Festo.pdf",
-                  "Hash": "8f718783d22d830918c80d7df400a1278d9f9fc1cb9d12af6f72d0de5fe38df6"
+                  "Hash": "8f718783d22d830918c80d7df400a1278d9f9fc1cb9d12af6f72d0de5fe38df6",
+                  "TamanoBytes": 2570029
                 }
               ],
               "Subcarpetas": []
@@ -663,7 +772,8 @@
                 {
                   "Nombre": "Fisher-dvc6200-dvc6200-Controladores de valvulas.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Fisher/Fisher-dvc6200-dvc6200-Controladores%20de%20valvulas.pdf",
-                  "Hash": "cbb375f3514a6e3ee747641684a80af4c4511e2fb71702008cc4469ac3ff6157"
+                  "Hash": "cbb375f3514a6e3ee747641684a80af4c4511e2fb71702008cc4469ac3ff6157",
+                  "TamanoBytes": 1988799
                 }
               ],
               "Subcarpetas": []
@@ -674,7 +784,8 @@
                 {
                   "Nombre": "Manual FL Serie 9 SPANISH.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/FL%20Serie%209/Manual%20FL%20Serie%209%20SPANISH.pdf",
-                  "Hash": "2018f265232e4e025c8d93ec1a3afb54805f23e33d8e942d1ba21f2d2f3e5c88"
+                  "Hash": "2018f265232e4e025c8d93ec1a3afb54805f23e33d8e942d1ba21f2d2f3e5c88",
+                  "TamanoBytes": 4734880
                 }
               ],
               "Subcarpetas": []
@@ -685,12 +796,14 @@
                 {
                   "Nombre": "Caldera Luxus SC.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Flowing/Caldera%20Luxus%20SC.pdf",
-                  "Hash": "421ae2ad79a64469e15c746fe08b40c2a2526696e3003eade4b41d5566dab475"
+                  "Hash": "421ae2ad79a64469e15c746fe08b40c2a2526696e3003eade4b41d5566dab475",
+                  "TamanoBytes": 1204425
                 },
                 {
                   "Nombre": "Caldera LuxusCLi.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Flowing/Caldera%20LuxusCLi.pdf",
-                  "Hash": "a40abe121c08db23382f9aad174fd71363531e20184a7594ea60929e863e10cd"
+                  "Hash": "a40abe121c08db23382f9aad174fd71363531e20184a7594ea60929e863e10cd",
+                  "TamanoBytes": 1405897
                 }
               ],
               "Subcarpetas": []
@@ -701,7 +814,8 @@
                 {
                   "Nombre": "Fluke Raytek t40-lt-30-sf0-0-manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Fluke/Fluke%20Raytek%20t40-lt-30-sf0-0-manual.pdf",
-                  "Hash": "a0f3bc6594e0d6099b6c7082a56a242a18bb8b7e6b1e03d176473b098f0e2cbb"
+                  "Hash": "a0f3bc6594e0d6099b6c7082a56a242a18bb8b7e6b1e03d176473b098f0e2cbb",
+                  "TamanoBytes": 3256635
                 }
               ],
               "Subcarpetas": []
@@ -712,7 +826,8 @@
                 {
                   "Nombre": "Grundfos DDA Bomba Dosificadora.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Grundfos/Grundfos%20DDA%20Bomba%20Dosificadora.pdf",
-                  "Hash": "4ce11611ddf4f67db7a6a97c0199bc8ab8969bd9c8bb51afdb60282904d77abe"
+                  "Hash": "4ce11611ddf4f67db7a6a97c0199bc8ab8969bd9c8bb51afdb60282904d77abe",
+                  "TamanoBytes": 4774715
                 }
               ],
               "Subcarpetas": []
@@ -723,117 +838,140 @@
                 {
                   "Nombre": "01 Caza Fallas  - Manual Rapido - 1-1502 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/01%20Caza%20Fallas%20%20-%20Manual%20Rapido%20-%201-1502%20-%20REVISADO.pdf",
-                  "Hash": "d72659da94634cf7bb85324aeba366d60fdc037e1b57f691686fbe778237d51d"
+                  "Hash": "d72659da94634cf7bb85324aeba366d60fdc037e1b57f691686fbe778237d51d",
+                  "TamanoBytes": 4411131
                 },
                 {
                   "Nombre": "02 Caza Fallas - Manual Rapido - 2201-2501 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/02%20Caza%20Fallas%20-%20Manual%20Rapido%20-%202201-2501%20-%20REVISADO.pdf",
-                  "Hash": "ec55898285826fdbfdf6a036f0e4389c8e2900ef0d2554ae2cd23b6132106494"
+                  "Hash": "ec55898285826fdbfdf6a036f0e4389c8e2900ef0d2554ae2cd23b6132106494",
+                  "TamanoBytes": 1094577
                 },
                 {
                   "Nombre": "03 Caza Fallas - Manual Rapido - 3101 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/03%20Caza%20Fallas%20-%20Manual%20Rapido%20-%203101%20-%20REVISADO.pdf",
-                  "Hash": "05ae7f4c633dd9c5fea2c8a905ef89bdccbaa111ec0e184062e17e29b0244b25"
+                  "Hash": "05ae7f4c633dd9c5fea2c8a905ef89bdccbaa111ec0e184062e17e29b0244b25",
+                  "TamanoBytes": 787773
                 },
                 {
                   "Nombre": "04 Caza Fallas - Manual Rapido - 3102 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/04%20Caza%20Fallas%20-%20Manual%20Rapido%20-%203102%20-%20REVISADO.pdf",
-                  "Hash": "368cd111abf0899d256ddf99c186a708336ec390b0f0aca9619b49d791a24fdc"
+                  "Hash": "368cd111abf0899d256ddf99c186a708336ec390b0f0aca9619b49d791a24fdc",
+                  "TamanoBytes": 800541
                 },
                 {
                   "Nombre": "05 Caza Fallas - Manual Rapido - 3103 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/05%20Caza%20Fallas%20-%20Manual%20Rapido%20-%203103%20-%20REVISADO.pdf",
-                  "Hash": "5b67e421a0921a24f6a407f04a6d0e50dcee5d0a180c61b6c6fd71705163b6c6"
+                  "Hash": "5b67e421a0921a24f6a407f04a6d0e50dcee5d0a180c61b6c6fd71705163b6c6",
+                  "TamanoBytes": 1544409
                 },
                 {
                   "Nombre": "06 Caza Fallas - Manual Rapido - 3104 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/06%20Caza%20Fallas%20-%20Manual%20Rapido%20-%203104%20-%20REVISADO.pdf",
-                  "Hash": "5c47eedd81b0eefccf8f10726485198654557bc70a977fde36828227b8908cfc"
+                  "Hash": "5c47eedd81b0eefccf8f10726485198654557bc70a977fde36828227b8908cfc",
+                  "TamanoBytes": 1570248
                 },
                 {
                   "Nombre": "07 Caza Fallas - Manual Rapido - 3201-3427 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/07%20Caza%20Fallas%20-%20Manual%20Rapido%20-%203201-3427%20-%20REVISADO.pdf",
-                  "Hash": "11c7869f4f23ac0f7fd5987111c03d9bba5eb2378370b8651306cb81882f466c"
+                  "Hash": "11c7869f4f23ac0f7fd5987111c03d9bba5eb2378370b8651306cb81882f466c",
+                  "TamanoBytes": 3178388
                 },
                 {
                   "Nombre": "08 Caza Fallas - Manual Rapido - 4101 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/08%20Caza%20Fallas%20-%20Manual%20Rapido%20-%204101%20-%20REVISADO.pdf",
-                  "Hash": "7da58b34646cc62ee8f3f54e8c0f8de5c20b6117c7a7c92d21b198420aca1904"
+                  "Hash": "7da58b34646cc62ee8f3f54e8c0f8de5c20b6117c7a7c92d21b198420aca1904",
+                  "TamanoBytes": 830922
                 },
                 {
                   "Nombre": "09 Caza Fallas - Manual Rapido - 4102 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/09%20Caza%20Fallas%20-%20Manual%20Rapido%20-%204102%20-%20REVISADO.pdf",
-                  "Hash": "4457ac43ecf113813a005a1e7a90f81fbee8d74f2999383c29eb20454a174831"
+                  "Hash": "4457ac43ecf113813a005a1e7a90f81fbee8d74f2999383c29eb20454a174831",
+                  "TamanoBytes": 817007
                 },
                 {
                   "Nombre": "10 Caza Fallas - Manual Rapido - 4201-4502 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/10%20Caza%20Fallas%20-%20Manual%20Rapido%20-%204201-4502%20-%20REVISADO.pdf",
-                  "Hash": "c7aca21d1190122cc273e4cab06aa216302143ac9405bab20ca5cbdc5a3452e9"
+                  "Hash": "c7aca21d1190122cc273e4cab06aa216302143ac9405bab20ca5cbdc5a3452e9",
+                  "TamanoBytes": 1857216
                 },
                 {
                   "Nombre": "11 Caza Fallas - Manual Rapido - 5101 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/11%20Caza%20Fallas%20-%20Manual%20Rapido%20-%205101%20-%20REVISADO.pdf",
-                  "Hash": "313ae8814bf2d201734f2849a052bdc4ec228647640c4ad391aa672293e17c29"
+                  "Hash": "313ae8814bf2d201734f2849a052bdc4ec228647640c4ad391aa672293e17c29",
+                  "TamanoBytes": 840621
                 },
                 {
                   "Nombre": "12 Caza Fallas - Manual Rapido - 5201-5501 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/12%20Caza%20Fallas%20-%20Manual%20Rapido%20-%205201-5501%20-%20REVISADO.pdf",
-                  "Hash": "888c357db2e3aeac28114be17ed3ca49c6479fecf0ff640e83f7deacc5a61f95"
+                  "Hash": "888c357db2e3aeac28114be17ed3ca49c6479fecf0ff640e83f7deacc5a61f95",
+                  "TamanoBytes": 4065305
                 },
                 {
                   "Nombre": "13 Caza Fallas - Manual Rapido -3428-3508 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/13%20Caza%20Fallas%20-%20Manual%20Rapido%20-3428-3508%20-%20REVISADO.pdf",
-                  "Hash": "ebf25bb52986da1b6100bbd08bf415a9fc17841a8c5ec178ecec5b2004124369"
+                  "Hash": "ebf25bb52986da1b6100bbd08bf415a9fc17841a8c5ec178ecec5b2004124369",
+                  "TamanoBytes": 1645208
                 },
                 {
                   "Nombre": "14 Caza Fallas - Manual Rapido - 6301-6505 - REVISADO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/14%20Caza%20Fallas%20-%20Manual%20Rapido%20-%206301-6505%20-%20REVISADO.pdf",
-                  "Hash": "8e60ed5c55b39b64d7f58751dcb298180023e78de9498550a1b2ac4e46656fea"
+                  "Hash": "8e60ed5c55b39b64d7f58751dcb298180023e78de9498550a1b2ac4e46656fea",
+                  "TamanoBytes": 1806173
                 },
                 {
                   "Nombre": "L0 - Instructivo de Limpieza - Lubricacion de GUACP_Registro.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/L0%20-%20Instructivo%20de%20Limpieza%20-%20Lubricacion%20de%20GUACP_Registro.pdf",
-                  "Hash": "5aaad7914d0db4bd04fdd4ca0cd7d772cd1f62caeeb2b970773c2085777adaa0"
+                  "Hash": "5aaad7914d0db4bd04fdd4ca0cd7d772cd1f62caeeb2b970773c2085777adaa0",
+                  "TamanoBytes": 225009
                 },
                 {
                   "Nombre": "L1 - Instructivo de Limpieza - Lubricacion de GUACP_Seccion_1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/L1%20-%20Instructivo%20de%20Limpieza%20-%20Lubricacion%20de%20GUACP_Seccion_1.pdf",
-                  "Hash": "462758216ee47c23b01214d0b026c232cf4c1171d191abe6e0be7d45632b233d"
+                  "Hash": "462758216ee47c23b01214d0b026c232cf4c1171d191abe6e0be7d45632b233d",
+                  "TamanoBytes": 851682
                 },
                 {
                   "Nombre": "L2 - Instructivo de Limpieza - Lubricacion de GUACP_Seccion_2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/L2%20-%20Instructivo%20de%20Limpieza%20-%20Lubricacion%20de%20GUACP_Seccion_2.pdf",
-                  "Hash": "befd6c4ce88fab60e1001ec4f6c04fb3bc266b2fd069060e8f41199c6c69a7c6"
+                  "Hash": "befd6c4ce88fab60e1001ec4f6c04fb3bc266b2fd069060e8f41199c6c69a7c6",
+                  "TamanoBytes": 1733034
                 },
                 {
                   "Nombre": "L3 - Instructivo de Limpieza - Lubricacion de GUACP_Seccion_3.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/L3%20-%20Instructivo%20de%20Limpieza%20-%20Lubricacion%20de%20GUACP_Seccion_3.pdf",
-                  "Hash": "4ec7879a0ce2db472d4cef5dc53f1ce15d3e3e17744831815f537aa75cdfaefe"
+                  "Hash": "4ec7879a0ce2db472d4cef5dc53f1ce15d3e3e17744831815f537aa75cdfaefe",
+                  "TamanoBytes": 788214
                 },
                 {
                   "Nombre": "L4 - Instructivo de Limpieza - Lubricacion de GUACP_Seccion_4.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/L4%20-%20Instructivo%20de%20Limpieza%20-%20Lubricacion%20de%20GUACP_Seccion_4.pdf",
-                  "Hash": "f62067baa11d2a6d99885114d9ca95a3d8f6af2c71b0d0d465b381db422837df"
+                  "Hash": "f62067baa11d2a6d99885114d9ca95a3d8f6af2c71b0d0d465b381db422837df",
+                  "TamanoBytes": 480343
                 },
                 {
                   "Nombre": "M1 - Mtto Shutter paso paso.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/M1%20-%20Mtto%20Shutter%20paso%20paso.pdf",
-                  "Hash": "34f806da350b8e90b3454cba6b37931194371bda25329356ddc24605f0ff47e2"
+                  "Hash": "34f806da350b8e90b3454cba6b37931194371bda25329356ddc24605f0ff47e2",
+                  "TamanoBytes": 1099072
                 },
                 {
                   "Nombre": "M2 - Mantencion Preventiva - Lubricacion GUACP_52_puntos.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/M2%20-%20Mantencion%20Preventiva%20-%20Lubricacion%20GUACP_52_puntos.pdf",
-                  "Hash": "41bf31a06700b82b659cd27c883a7e692e6c579191ff3ee30b1deb24bc20fad3"
+                  "Hash": "41bf31a06700b82b659cd27c883a7e692e6c579191ff3ee30b1deb24bc20fad3",
+                  "TamanoBytes": 4573032
                 },
                 {
                   "Nombre": "M3 - Puntos de Calibracion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/M3%20-%20Puntos%20de%20Calibracion.pdf",
-                  "Hash": "b3a09d8c1a24fa2f716d6d44fcabd7feaffcb1771d7763e4d00e8c64659ef24f"
+                  "Hash": "b3a09d8c1a24fa2f716d6d44fcabd7feaffcb1771d7763e4d00e8c64659ef24f",
+                  "TamanoBytes": 3152413
                 },
                 {
                   "Nombre": "Manual de parametros GUACP.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/Manual%20de%20parametros%20GUACP.pdf",
-                  "Hash": "b6cf0f5eb5ef3c02a4d76e3ca494536ba041e63c34d4a1f56fb0fe9f1230790f"
+                  "Hash": "b6cf0f5eb5ef3c02a4d76e3ca494536ba041e63c34d4a1f56fb0fe9f1230790f",
+                  "TamanoBytes": 1844586
                 }
               ],
               "Subcarpetas": []
@@ -844,22 +982,26 @@
                 {
                   "Nombre": "Hardy 4050 - Controller_Parameters.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Hardy%204050%20-%20Controller_Parameters.pdf",
-                  "Hash": "2688b41433b954809664f8b75c42d80919945f104084a821abfab414254a2835"
+                  "Hash": "2688b41433b954809664f8b75c42d80919945f104084a821abfab414254a2835",
+                  "TamanoBytes": 1497986
                 },
                 {
                   "Nombre": "Hardy HI1734 Point IO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Hardy%20HI1734%20Point%20IO.pdf",
-                  "Hash": "bf8a26df741e9cd9e0f9d416b2143734fa26cde4842e24a1a10cf3345b54e9c5"
+                  "Hash": "bf8a26df741e9cd9e0f9d416b2143734fa26cde4842e24a1a10cf3345b54e9c5",
+                  "TamanoBytes": 2454069
                 },
                 {
                   "Nombre": "Hardy HI4050bk.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Hardy%20HI4050bk.pdf",
-                  "Hash": "7a52dba3b3aa7b4698be426c683fe505e03f002a0c37061cb2b4bea8b2c2c564"
+                  "Hash": "7a52dba3b3aa7b4698be426c683fe505e03f002a0c37061cb2b4bea8b2c2c564",
+                  "TamanoBytes": 3557241
                 },
                 {
                   "Nombre": "Load_Cell Calibration.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Load_Cell%20Calibration.pdf",
-                  "Hash": "73178108aed969f717690bca4b8b4b7a3e01850384aed2782968a9e362845347"
+                  "Hash": "73178108aed969f717690bca4b8b4b7a3e01850384aed2782968a9e362845347",
+                  "TamanoBytes": 401230
                 }
               ],
               "Subcarpetas": []
@@ -870,32 +1012,38 @@
                 {
                   "Nombre": "Control Llama RM7890.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Control%20Llama%20RM7890.pdf",
-                  "Hash": "b530a5951fc8e35ead4d6bfaae5591ea3be95845a7cf94ecd70cf63a2ecb0470"
+                  "Hash": "b530a5951fc8e35ead4d6bfaae5591ea3be95845a7cf94ecd70cf63a2ecb0470",
+                  "TamanoBytes": 1991345
                 },
                 {
                   "Nombre": "Honeywell DC1000 Series.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Honeywell%20DC1000%20Series.pdf",
-                  "Hash": "1792e58bbddf57a852f67320113937f07c444a3b9e2a5c44a5430aa65f8fb517"
+                  "Hash": "1792e58bbddf57a852f67320113937f07c444a3b9e2a5c44a5430aa65f8fb517",
+                  "TamanoBytes": 923673
                 },
                 {
                   "Nombre": "Honeywell L91B Presuretrol.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Honeywell%20L91B%20Presuretrol.pdf",
-                  "Hash": "00803896826a4ff4f5fb53ab85dee810ca4c1e21bc75acb1d3a35c8ee3bf59ad"
+                  "Hash": "00803896826a4ff4f5fb53ab85dee810ca4c1e21bc75acb1d3a35c8ee3bf59ad",
+                  "TamanoBytes": 692998
                 },
                 {
                   "Nombre": "Honeywell serie 7800.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Honeywell%20serie%207800.pdf",
-                  "Hash": "1070eca8105a9035f7274443aa1181cc296aff1e160eb38ecf8852019dc8535a"
+                  "Hash": "1070eca8105a9035f7274443aa1181cc296aff1e160eb38ecf8852019dc8535a",
+                  "TamanoBytes": 547765
                 },
                 {
                   "Nombre": "Honeywell UDC2500.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Honeywell%20UDC2500.pdf",
-                  "Hash": "267f48b26adf8c17fa8c5ff59b2d4230764c2d58f1c0e138f220b558f2cde2f0"
+                  "Hash": "267f48b26adf8c17fa8c5ff59b2d4230764c2d58f1c0e138f220b558f2cde2f0",
+                  "TamanoBytes": 1562772
                 },
                 {
                   "Nombre": "UDC 1200 1700 Honeywell.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/UDC%201200%201700%20Honeywell.pdf",
-                  "Hash": "ac2df02ebfa77e5e372c917f65aa28282c88994d98cafb8cdbfaaf67104dae9e"
+                  "Hash": "ac2df02ebfa77e5e372c917f65aa28282c88994d98cafb8cdbfaaf67104dae9e",
+                  "TamanoBytes": 474700
                 }
               ],
               "Subcarpetas": []
@@ -906,22 +1054,26 @@
                 {
                   "Nombre": "HYDEPARK SM902-EN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/HydePark/HYDEPARK%20SM902-EN.pdf",
-                  "Hash": "03ff287785efce754e4b146669ff32d9ac0179982d67889cdf7f4c02ad4e1f46"
+                  "Hash": "03ff287785efce754e4b146669ff32d9ac0179982d67889cdf7f4c02ad4e1f46",
+                  "TamanoBytes": 883310
                 },
                 {
                   "Nombre": "SC956A8C0.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/HydePark/SC956A8C0.pdf",
-                  "Hash": "76971ea9b7894c9d433584e826c46e230b1be8c654b22a154e0813cc0eefa52c"
+                  "Hash": "76971ea9b7894c9d433584e826c46e230b1be8c654b22a154e0813cc0eefa52c",
+                  "TamanoBytes": 81969
                 },
                 {
                   "Nombre": "superprox\u002B.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/HydePark/superprox%2B.pdf",
-                  "Hash": "ea13cf3e37446a131dd46c807ba5441b4f8a5172098ea4629990f7424f131a55"
+                  "Hash": "ea13cf3e37446a131dd46c807ba5441b4f8a5172098ea4629990f7424f131a55",
+                  "TamanoBytes": 118491
                 },
                 {
                   "Nombre": "V_106_H.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/HydePark/V_106_H.pdf",
-                  "Hash": "1b06673c1c379d951321515d2c84381055c2182129318ec7bf951a229aa5dee4"
+                  "Hash": "1b06673c1c379d951321515d2c84381055c2182129318ec7bf951a229aa5dee4",
+                  "TamanoBytes": 8016534
                 }
               ],
               "Subcarpetas": []
@@ -932,37 +1084,44 @@
                 {
                   "Nombre": "Capacitivo KN5101 01 EN US2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/Capacitivo%20KN5101%2001%20EN%20US2.pdf",
-                  "Hash": "90c1d28cba0aa653c15f6b3ae1c5729559582c3ff271dcefb0830df4a0282ce4"
+                  "Hash": "90c1d28cba0aa653c15f6b3ae1c5729559582c3ff271dcefb0830df4a0282ce4",
+                  "TamanoBytes": 33264
                 },
                 {
                   "Nombre": "ifm 01D100 Sensor Optico 2.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/ifm%2001D100%20Sensor%20Optico%202.PDF",
-                  "Hash": "5d16d41965f6e271e2d0ce8c393b0da21a72c48faa034bf5d5f4cada6ab39836"
+                  "Hash": "5d16d41965f6e271e2d0ce8c393b0da21a72c48faa034bf5d5f4cada6ab39836",
+                  "TamanoBytes": 281457
                 },
                 {
                   "Nombre": "ifm 01D100 Sensor Optico.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/ifm%2001D100%20Sensor%20Optico.pdf",
-                  "Hash": "b3ec6388fe81365267e9d478bedfc64bd4e19799529f0ee7a616ed8113f0004b"
+                  "Hash": "b3ec6388fe81365267e9d478bedfc64bd4e19799529f0ee7a616ed8113f0004b",
+                  "TamanoBytes": 592363
                 },
                 {
                   "Nombre": "IFM IF5811-02_ES-ES.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/IFM%20IF5811-02_ES-ES.pdf",
-                  "Hash": "7213d67b45555d8b385915f227eed61c294c03ccf26980d22ad150929ecf84f5"
+                  "Hash": "7213d67b45555d8b385915f227eed61c294c03ccf26980d22ad150929ecf84f5",
+                  "TamanoBytes": 180496
                 },
                 {
                   "Nombre": "IFM PG27xx Sensor de presion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/IFM%20PG27xx%20Sensor%20de%20presion.pdf",
-                  "Hash": "1abe9b99ac548663e7b5dd422540b143660a3c8ebf9b656cd6da9d9f8297c330"
+                  "Hash": "1abe9b99ac548663e7b5dd422540b143660a3c8ebf9b656cd6da9d9f8297c330",
+                  "TamanoBytes": 430465
                 },
                 {
                   "Nombre": "IFM TW2000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/IFM%20TW2000.pdf",
-                  "Hash": "e3fb12fd6ecb5d687be122459c115770cb9b2c193114dd3515759d839c09f777"
+                  "Hash": "e3fb12fd6ecb5d687be122459c115770cb9b2c193114dd3515759d839c09f777",
+                  "TamanoBytes": 465606
                 },
                 {
                   "Nombre": "KN5101 01 EN US.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/KN5101%2001%20EN%20US.pdf",
-                  "Hash": "ab8b4e9d3b2b74769f2e9151c8b28d499b8f2ae5402bc9325865c892d9c8536c"
+                  "Hash": "ab8b4e9d3b2b74769f2e9151c8b28d499b8f2ae5402bc9325865c892d9c8536c",
+                  "TamanoBytes": 227056
                 }
               ],
               "Subcarpetas": []
@@ -973,7 +1132,8 @@
                 {
                   "Nombre": "Imaforni Quad.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Imaforni/Imaforni%20Quad.pdf",
-                  "Hash": "7c05fb884a787d12ef864460ebf788d6ee736e891a6d66a06303df8bb19f2ccb"
+                  "Hash": "7c05fb884a787d12ef864460ebf788d6ee736e891a6d66a06303df8bb19f2ccb",
+                  "TamanoBytes": 1645208
                 }
               ],
               "Subcarpetas": []
@@ -984,97 +1144,116 @@
                 {
                   "Nombre": "00-Partes - CCW R218 09-11217-014.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/00-Partes%20-%20CCW%20R218%2009-11217-014.pdf",
-                  "Hash": "ebb3976f269a1084cc23ac432f2dfe9123edc3863dff315c7d1c10b44652606a"
+                  "Hash": "ebb3976f269a1084cc23ac432f2dfe9123edc3863dff315c7d1c10b44652606a",
+                  "TamanoBytes": 2513009
                 },
                 {
                   "Nombre": "01-Partes - ATLAS 222 Izq.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/01-Partes%20-%20ATLAS%20222%20Izq.pdf",
-                  "Hash": "8e220f7c55d2b49c187bc6bed72c8a2c43ead9da7d59c7bdef632f6f61b1518c"
+                  "Hash": "8e220f7c55d2b49c187bc6bed72c8a2c43ead9da7d59c7bdef632f6f61b1518c",
+                  "TamanoBytes": 4098762
                 },
                 {
                   "Nombre": "02-Partes - ATLAS 204R Der.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/02-Partes%20-%20ATLAS%20204R%20Der.pdf",
-                  "Hash": "99ea2e18363ecc1033647cf680144da7063b757a37b030679dad3486d9113cfb"
+                  "Hash": "99ea2e18363ecc1033647cf680144da7063b757a37b030679dad3486d9113cfb",
+                  "TamanoBytes": 4421279
                 },
                 {
                   "Nombre": "03-Partes - ATLAS 204L Izq.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/03-Partes%20-%20ATLAS%20204L%20Izq.pdf",
-                  "Hash": "5aef24309f1738294898bf99d9c1afe0f7f1a48df9b4bc2d8232e35493a1cb3e"
+                  "Hash": "5aef24309f1738294898bf99d9c1afe0f7f1a48df9b4bc2d8232e35493a1cb3e",
+                  "TamanoBytes": 5887716
                 },
                 {
                   "Nombre": "04-Atlas 202 Mantenimiento Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/04-Atlas%20202%20Mantenimiento%20Completo.pdf",
-                  "Hash": "cc2b2703a79d2c938453a8b6e3a5e65d520236613149f2c870660a58307fc971"
+                  "Hash": "cc2b2703a79d2c938453a8b6e3a5e65d520236613149f2c870660a58307fc971",
+                  "TamanoBytes": 10798086
                 },
                 {
                   "Nombre": "05-Atlas 204 Mantenimiento Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/05-Atlas%20204%20Mantenimiento%20Completo.pdf",
-                  "Hash": "f9c2c669a3f96107abdbfc1f9357fa1acf1b13d5e5dbf083a0ebb01317e62d41"
+                  "Hash": "f9c2c669a3f96107abdbfc1f9357fa1acf1b13d5e5dbf083a0ebb01317e62d41",
+                  "TamanoBytes": 25439744
                 },
                 {
                   "Nombre": "06-CCW-R-2XX Mantenimiento Completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/06-CCW-R-2XX%20Mantenimiento%20Completo.pdf",
-                  "Hash": "a8f087b0bc87ea23bd312056d4e41636bfa6afc0b3c89435a56fbbfcf5011301"
+                  "Hash": "a8f087b0bc87ea23bd312056d4e41636bfa6afc0b3c89435a56fbbfcf5011301",
+                  "TamanoBytes": 23507801
                 },
                 {
                   "Nombre": "07-Alineacion mordaza Ishida Atlas 122 y 222.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/07-Alineacion%20mordaza%20Ishida%20Atlas%20122%20y%20222.pdf",
-                  "Hash": "f86d2ea3a36d5c4c5081507c21f117b9d925c30370a46170d630803bc2ee1fb0"
+                  "Hash": "f86d2ea3a36d5c4c5081507c21f117b9d925c30370a46170d630803bc2ee1fb0",
+                  "TamanoBytes": 784791
                 },
                 {
                   "Nombre": "08-Calibracion de encoder de carro debobinador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/08-Calibracion%20de%20encoder%20de%20carro%20debobinador.pdf",
-                  "Hash": "8ad7abe836720c21c22e0b6ebdacc317a9f0b44752a340aa67dd2370a8c99e72"
+                  "Hash": "8ad7abe836720c21c22e0b6ebdacc317a9f0b44752a340aa67dd2370a8c99e72",
+                  "TamanoBytes": 91700
                 },
                 {
                   "Nombre": "09-Instalacion de lainas.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/09-Instalacion%20de%20lainas.pdf",
-                  "Hash": "2f8a9d9189f653eb78532cfe8b47952ea63a383dc00efc5468273372788d29df"
+                  "Hash": "2f8a9d9189f653eb78532cfe8b47952ea63a383dc00efc5468273372788d29df",
+                  "TamanoBytes": 110481
                 },
                 {
                   "Nombre": "10-Cambio de IP Envasadoras y Balanzas -  204 ITPS.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/10-Cambio%20de%20IP%20Envasadoras%20y%20Balanzas%20-%20%20204%20ITPS.pdf",
-                  "Hash": "784f0e1ee5062200d42e704921dd67ff15e73a903851882d61f8d2f8ff722e74"
+                  "Hash": "784f0e1ee5062200d42e704921dd67ff15e73a903851882d61f8d2f8ff722e74",
+                  "TamanoBytes": 993471
                 },
                 {
                   "Nombre": "11-Cambio de IP Envasadoras y Balanzas - ITPS.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/11-Cambio%20de%20IP%20Envasadoras%20y%20Balanzas%20-%20ITPS.pdf",
-                  "Hash": "1fbd41c63fdfd625b9cc5a3705a63b9298bf76b28e17c5fc21a4feed28af06e6"
+                  "Hash": "1fbd41c63fdfd625b9cc5a3705a63b9298bf76b28e17c5fc21a4feed28af06e6",
+                  "TamanoBytes": 1249078
                 },
                 {
                   "Nombre": "12-IP Address Reset Tech Report for Ishida CCW, DACS, BAGMAKER, TSC, IPS.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/12-IP%20Address%20Reset%20Tech%20Report%20for%20Ishida%20CCW%2C%20DACS%2C%20BAGMAKER%2C%20TSC%2C%20IPS.pdf",
-                  "Hash": "4610baab3de0b63b7d778488c79773b5eaa4771eef68479d9869ebd07eb93248"
+                  "Hash": "4610baab3de0b63b7d778488c79773b5eaa4771eef68479d9869ebd07eb93248",
+                  "TamanoBytes": 1111705
                 },
                 {
                   "Nombre": "13-Reemplazo de Software DMU RCU - ATLAS_222.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/13-Reemplazo%20de%20Software%20DMU%20RCU%20-%20ATLAS_222.pdf",
-                  "Hash": "da5b85d976d6032f100f619d7f8ca1c1bb3411d5f3829eb2cf89ef39205b596c"
+                  "Hash": "da5b85d976d6032f100f619d7f8ca1c1bb3411d5f3829eb2cf89ef39205b596c",
+                  "TamanoBytes": 4551794
                 },
                 {
                   "Nombre": "14-Reset memoria RAM_DMU.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/14-Reset%20memoria%20RAM_DMU.pdf",
-                  "Hash": "34e52ae1f06ee4155ba1511876bf900855694dc4aa77cdc015c448d718004890"
+                  "Hash": "34e52ae1f06ee4155ba1511876bf900855694dc4aa77cdc015c448d718004890",
+                  "TamanoBytes": 255326
                 },
                 {
                   "Nombre": "15-Reemplazo TouchScreen.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/15-Reemplazo%20TouchScreen.pdf",
-                  "Hash": "ec5c89f03ed770763a198e1781b03eb46ce17a6cab75c7e3b03366c11de0dab3"
+                  "Hash": "ec5c89f03ed770763a198e1781b03eb46ce17a6cab75c7e3b03366c11de0dab3",
+                  "TamanoBytes": 1919884
                 },
                 {
                   "Nombre": "16-Calibracion Celda de Carga.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/16-Calibracion%20Celda%20de%20Carga.pdf",
-                  "Hash": "87fa89503b4f14b4344fd41d81b2531db26733deab0917a1a4be79ae07dec11c"
+                  "Hash": "87fa89503b4f14b4344fd41d81b2531db26733deab0917a1a4be79ae07dec11c",
+                  "TamanoBytes": 25181635
                 },
                 {
                   "Nombre": "17-Color_LCD_replacement_procedure.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/17-Color_LCD_replacement_procedure.pdf",
-                  "Hash": "10b3de5531265206ab2ec9c1ca28a9ba5dabdccfca11094f56d5f333249cb886"
+                  "Hash": "10b3de5531265206ab2ec9c1ca28a9ba5dabdccfca11094f56d5f333249cb886",
+                  "TamanoBytes": 426178
                 },
                 {
                   "Nombre": "Menu Diabolica.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ishida/Menu%20Diabolica.pdf",
-                  "Hash": "6358c2424f93a5d747410e0968e1a726874a78933c248abae417aa45c2c2b464"
+                  "Hash": "6358c2424f93a5d747410e0968e1a726874a78933c248abae417aa45c2c2b464",
+                  "TamanoBytes": 2019884
                 }
               ],
               "Subcarpetas": []
@@ -1085,7 +1264,8 @@
                 {
                   "Nombre": "Dosificadora IWAKI-EHE46E2 Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Iwaki/Dosificadora%20IWAKI-EHE46E2%20Manual.pdf",
-                  "Hash": "7e55fcae97618cfa15d4466c3e9a1c4a60061d21b87d3e905bb45395e4f61e88"
+                  "Hash": "7e55fcae97618cfa15d4466c3e9a1c4a60061d21b87d3e905bb45395e4f61e88",
+                  "TamanoBytes": 5024768
                 }
               ],
               "Subcarpetas": []
@@ -1096,7 +1276,8 @@
                 {
                   "Nombre": "Sigma_control espanol 7_7000_0-00_04S.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Kaeser%20Compresores/Sigma_control%20espanol%207_7000_0-00_04S.pdf",
-                  "Hash": "b0f4c6b9cb5b03646c5796e507969249da4e029d9e8bde521710287e6c6c769b"
+                  "Hash": "b0f4c6b9cb5b03646c5796e507969249da4e029d9e8bde521710287e6c6c769b",
+                  "TamanoBytes": 1658837
                 }
               ],
               "Subcarpetas": []
@@ -1107,12 +1288,14 @@
                 {
                   "Nombre": "GC 1000.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Keyence/GC%201000.pdf",
-                  "Hash": "b953c7cdc2fed2006f6237855ed9e8f04b1d64d295fe6462347d3651f3bcaf40"
+                  "Hash": "b953c7cdc2fed2006f6237855ed9e8f04b1d64d295fe6462347d3651f3bcaf40",
+                  "TamanoBytes": 2638849
                 },
                 {
                   "Nombre": "GC Series.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Keyence/GC%20Series.pdf",
-                  "Hash": "a0fe06006e32f198c0f1a6e0647d512313ae400d0c348a4f589bd313556284fe"
+                  "Hash": "a0fe06006e32f198c0f1a6e0647d512313ae400d0c348a4f589bd313556284fe",
+                  "TamanoBytes": 35143091
                 }
               ],
               "Subcarpetas": []
@@ -1123,12 +1306,14 @@
                 {
                   "Nombre": "AD_OPTIMASS_400_Haz_Areas_en_230223_4003491807_R07_.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krohne/AD_OPTIMASS_400_Haz_Areas_en_230223_4003491807_R07_.pdf",
-                  "Hash": "f41565362ad612c42006e33723386f334385af59217e5e2f8035205dc3bcd93c"
+                  "Hash": "f41565362ad612c42006e33723386f334385af59217e5e2f8035205dc3bcd93c",
+                  "TamanoBytes": 2708685
                 },
                 {
                   "Nombre": "Caudalimetro Krohne OPTIMASS 7400.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krohne/Caudalimetro%20Krohne%20OPTIMASS%207400.pdf",
-                  "Hash": "61bf5f82330983e72e04a998d33c421f948e482e34a714f2c0f348ccf3696087"
+                  "Hash": "61bf5f82330983e72e04a998d33c421f948e482e34a714f2c0f348ccf3696087",
+                  "TamanoBytes": 4027401
                 }
               ],
               "Subcarpetas": []
@@ -1139,17 +1324,20 @@
                 {
                   "Nombre": "Krom Schroder IC20.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krom%20Schroder/Krom%20Schroder%20IC20.pdf",
-                  "Hash": "4f23faaa5df6ac86ddadd92bb420eec8bbbaa4a5f69df6c7ba52feeee8fb1d6f"
+                  "Hash": "4f23faaa5df6ac86ddadd92bb420eec8bbbaa4a5f69df6c7ba52feeee8fb1d6f",
+                  "TamanoBytes": 288569
                 },
                 {
                   "Nombre": "Krom Schroder IFD-258 Espanol.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krom%20Schroder/Krom%20Schroder%20IFD-258%20Espanol.pdf",
-                  "Hash": "4ea0cefe3854892b43864b6bae2e7ffeb0cb6d270d2fa71e21ce89edecb2a354"
+                  "Hash": "4ea0cefe3854892b43864b6bae2e7ffeb0cb6d270d2fa71e21ce89edecb2a354",
+                  "TamanoBytes": 1232082
                 },
                 {
                   "Nombre": "Krom Schroder IFD-258.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krom%20Schroder/Krom%20Schroder%20IFD-258.pdf",
-                  "Hash": "c9cbe27e26922380a6d6f75aa78919357b50d75f67f70e7fb72641d3ca0a5de7"
+                  "Hash": "c9cbe27e26922380a6d6f75aa78919357b50d75f67f70e7fb72641d3ca0a5de7",
+                  "TamanoBytes": 1149489
                 }
               ],
               "Subcarpetas": []
@@ -1160,17 +1348,20 @@
                 {
                   "Nombre": "Lenze Motec 8400 EthernetIP.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Lenze/Lenze%20Motec%208400%20EthernetIP.pdf",
-                  "Hash": "62c95498513291928f14cccd41b42a097190967032bf44e0c18dfb65449a673f"
+                  "Hash": "62c95498513291928f14cccd41b42a097190967032bf44e0c18dfb65449a673f",
+                  "TamanoBytes": 8374181
                 },
                 {
                   "Nombre": "Lenze Motec 8400.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Lenze/Lenze%20Motec%208400.pdf",
-                  "Hash": "d3e39db30f1ded790a01fd8077f6087ab7250eaeb5061401a0659bc9ea95cddc"
+                  "Hash": "d3e39db30f1ded790a01fd8077f6087ab7250eaeb5061401a0659bc9ea95cddc",
+                  "TamanoBytes": 14578328
                 },
                 {
                   "Nombre": "Servo Inverter i950 Firmware.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Lenze/Servo%20Inverter%20i950%20Firmware.pdf",
-                  "Hash": "6e662fc648d7244ac015c46d8d9e9d0eeab9f7f1a3d99a7e1da99bfed99323b2"
+                  "Hash": "6e662fc648d7244ac015c46d8d9e9d0eeab9f7f1a3d99a7e1da99bfed99323b2",
+                  "TamanoBytes": 4169797
                 }
               ],
               "Subcarpetas": []
@@ -1181,7 +1372,8 @@
                 {
                   "Nombre": "DS_PRK46C-4P-M12.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Leuze/DS_PRK46C-4P-M12.pdf",
-                  "Hash": "0b37d8beecba2b15c7c53819e373b30e1b5d0c15719412db54b230f419c7630c"
+                  "Hash": "0b37d8beecba2b15c7c53819e373b30e1b5d0c15719412db54b230f419c7630c",
+                  "TamanoBytes": 464412
                 }
               ],
               "Subcarpetas": []
@@ -1192,17 +1384,20 @@
                 {
                   "Nombre": "ezwareplus-programming-manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Maple/ezwareplus-programming-manual.pdf",
-                  "Hash": "732ff7d48e999218d867fd5de63e18804f175501dd91b870e45a6730964e2c38"
+                  "Hash": "732ff7d48e999218d867fd5de63e18804f175501dd91b870e45a6730964e2c38",
+                  "TamanoBytes": 19583731
                 },
                 {
                   "Nombre": "HMI500L.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Maple/HMI500L.pdf",
-                  "Hash": "6ae7bc76440368ca902e9fe57a3cda9fd728fb850c07fb140d67e67d221faa54"
+                  "Hash": "6ae7bc76440368ca902e9fe57a3cda9fd728fb850c07fb140d67e67d221faa54",
+                  "TamanoBytes": 978005
                 },
                 {
                   "Nombre": "macro-reference-manual-for-ezwareplus.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Maple/macro-reference-manual-for-ezwareplus.pdf",
-                  "Hash": "2e8471e2a8c230aa7c4e8344ba460993a07a7c94eac05682c65318a4ee55e969"
+                  "Hash": "2e8471e2a8c230aa7c4e8344ba460993a07a7c94eac05682c65318a4ee55e969",
+                  "TamanoBytes": 3366562
                 }
               ],
               "Subcarpetas": []
@@ -1213,7 +1408,8 @@
                 {
                   "Nombre": "Load Cell_en.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/MeterToledo/Load%20Cell_en.pdf",
-                  "Hash": "43088a1f0b3df4d6fe09bfb9f70eda8ac8ccaf45fe214882ce1cc4f587f4193b"
+                  "Hash": "43088a1f0b3df4d6fe09bfb9f70eda8ac8ccaf45fe214882ce1cc4f587f4193b",
+                  "TamanoBytes": 891139
                 }
               ],
               "Subcarpetas": []
@@ -1224,12 +1420,14 @@
                 {
                   "Nombre": "FR-S540 520 Variador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Mitsubishi/FR-S540%20520%20Variador.pdf",
-                  "Hash": "439ddc7e806f31e26312513d21506a98187a641be0139349693d0c3dffbc45d2"
+                  "Hash": "439ddc7e806f31e26312513d21506a98187a641be0139349693d0c3dffbc45d2",
+                  "TamanoBytes": 2449129
                 },
                 {
                   "Nombre": "Mitsubishi FR-A700.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Mitsubishi/Mitsubishi%20FR-A700.pdf",
-                  "Hash": "def86f4e317862b6eb360864aa713a7084ff0bec312b119e5cfd1dc676c84a8d"
+                  "Hash": "def86f4e317862b6eb360864aa713a7084ff0bec312b119e5cfd1dc676c84a8d",
+                  "TamanoBytes": 20647920
                 }
               ],
               "Subcarpetas": []
@@ -1240,12 +1438,14 @@
                 {
                   "Nombre": "Moeller ESR4-NO-21, ESR4-NM-21.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Moeller/Moeller%20ESR4-NO-21%2C%20ESR4-NM-21.pdf",
-                  "Hash": "6ee7984e700251bdfee81b98ddbc9820e4e9a4c0f10965bd62d307855f38a96d"
+                  "Hash": "6ee7984e700251bdfee81b98ddbc9820e4e9a4c0f10965bd62d307855f38a96d",
+                  "TamanoBytes": 575066
                 },
                 {
                   "Nombre": "Moeller Safety relay ESR4-NO-30.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Moeller/Moeller%20Safety%20relay%20ESR4-NO-30.pdf",
-                  "Hash": "9df13104c45c1b7515c31c8a28685ac0897cdeb62e6a8d1b024470fac93cec9b"
+                  "Hash": "9df13104c45c1b7515c31c8a28685ac0897cdeb62e6a8d1b024470fac93cec9b",
+                  "TamanoBytes": 376245
                 }
               ],
               "Subcarpetas": []
@@ -1256,12 +1456,14 @@
                 {
                   "Nombre": "Novus n2000s.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Novus/Novus%20n2000s.pdf",
-                  "Hash": "94a73427c81727a9ec41e48e56e72253a75f525e122aea57f85473a571bb84c9"
+                  "Hash": "94a73427c81727a9ec41e48e56e72253a75f525e122aea57f85473a571bb84c9",
+                  "TamanoBytes": 676922
                 },
                 {
                   "Nombre": "Novus n2000_v30x_h_spanish.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Novus/Novus%20n2000_v30x_h_spanish.pdf",
-                  "Hash": "ccf71bc76a7451fe03713944a41c5aac46bf3018318cf4fde27da50a853bf0f9"
+                  "Hash": "ccf71bc76a7451fe03713944a41c5aac46bf3018318cf4fde27da50a853bf0f9",
+                  "TamanoBytes": 866467
                 }
               ],
               "Subcarpetas": []
@@ -1272,7 +1474,8 @@
                 {
                   "Nombre": "Nuvo-4000-series-User-Manual-RevA2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Nuvo/Nuvo-4000-series-User-Manual-RevA2.pdf",
-                  "Hash": "56b3e9ba77eaf3e6df780a987437762101f257439fa3fa14d8b06ea85f23a446"
+                  "Hash": "56b3e9ba77eaf3e6df780a987437762101f257439fa3fa14d8b06ea85f23a446",
+                  "TamanoBytes": 3992511
                 }
               ],
               "Subcarpetas": []
@@ -1283,17 +1486,20 @@
                 {
                   "Nombre": "Omron g9sx-ex401.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Omron/Omron%20g9sx-ex401.pdf",
-                  "Hash": "6dbff053405cd8d0cbd71b23a52c9d59e70f61bd2ff8e1f0882ba5f8b8ae8f76"
+                  "Hash": "6dbff053405cd8d0cbd71b23a52c9d59e70f61bd2ff8e1f0882ba5f8b8ae8f76",
+                  "TamanoBytes": 1288508
                 },
                 {
                   "Nombre": "Omron g9sx-nsa222-t03.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Omron/Omron%20g9sx-nsa222-t03.pdf",
-                  "Hash": "d81f38411ed11a9db297181cb395f69db33df3e358ce36e94f3e99f721770330"
+                  "Hash": "d81f38411ed11a9db297181cb395f69db33df3e358ce36e94f3e99f721770330",
+                  "TamanoBytes": 2522497
                 },
                 {
                   "Nombre": "Omron_e5cc-800.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Omron/Omron_e5cc-800.pdf",
-                  "Hash": "1d3aef924e9dc75d630115b4ef0b849cbbdf2d4afdaf81ca9ee9aeaedd096142"
+                  "Hash": "1d3aef924e9dc75d630115b4ef0b849cbbdf2d4afdaf81ca9ee9aeaedd096142",
+                  "TamanoBytes": 23931073
                 }
               ],
               "Subcarpetas": []
@@ -1304,12 +1510,14 @@
                 {
                   "Nombre": "Optex DM18T.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Optex/Optex%20DM18T.pdf",
-                  "Hash": "1ce37496d3e0a54cce99265c2c98bea707c39e4ad406106e6e94c916e0c087b7"
+                  "Hash": "1ce37496d3e0a54cce99265c2c98bea707c39e4ad406106e6e94c916e0c087b7",
+                  "TamanoBytes": 315135
                 },
                 {
                   "Nombre": "optex_dm-18t_series_instruction_manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Optex/optex_dm-18t_series_instruction_manual.pdf",
-                  "Hash": "0dd21ff321afb217a7e9f483a905116cba83138da04d1848514358781ff17b57"
+                  "Hash": "0dd21ff321afb217a7e9f483a905116cba83138da04d1848514358781ff17b57",
+                  "TamanoBytes": 427467
                 }
               ],
               "Subcarpetas": []
@@ -1320,22 +1528,26 @@
                 {
                   "Nombre": "Minas A Series.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/Minas%20A%20Series.pdf",
-                  "Hash": "9efcb43dc2d04bce8378f0c15b90d3a47fa1ca6c13f719b17f0badb9435d506b"
+                  "Hash": "9efcb43dc2d04bce8378f0c15b90d3a47fa1ca6c13f719b17f0badb9435d506b",
+                  "TamanoBytes": 1853099
                 },
                 {
                   "Nombre": "MINAS A4P.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/MINAS%20A4P.pdf",
-                  "Hash": "eaff2a0ebf7450032aef550e90ffd5231a8a84b0679f40c7326572aaa4e612a1"
+                  "Hash": "eaff2a0ebf7450032aef550e90ffd5231a8a84b0679f40c7326572aaa4e612a1",
+                  "TamanoBytes": 1911734
                 },
                 {
                   "Nombre": "MINAS A5II.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/MINAS%20A5II.pdf",
-                  "Hash": "87db49337885058a4191b2e5ff6c107948fd2eb6a604377f5f682ae9eb316db4"
+                  "Hash": "87db49337885058a4191b2e5ff6c107948fd2eb6a604377f5f682ae9eb316db4",
+                  "TamanoBytes": 10484128
                 },
                 {
                   "Nombre": "Panasonic Minas4 Instruction.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/Panasonic%20Minas4%20Instruction.pdf",
-                  "Hash": "ce620f89213a6ccad66d851c60f06c80320c4230a1d3dd8dfed524372b1a9a89"
+                  "Hash": "ce620f89213a6ccad66d851c60f06c80320c4230a1d3dd8dfed524372b1a9a89",
+                  "TamanoBytes": 7277853
                 }
               ],
               "Subcarpetas": []
@@ -1346,7 +1558,8 @@
                 {
                   "Nombre": "MINI MCR-SL-PT100-UI-NC.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Phoenix%20Contact/MINI%20MCR-SL-PT100-UI-NC.pdf",
-                  "Hash": "52a3449662e7caf3ec575be4801936e6b0c9dd3a2c9b5fb0b6da7a730e7c705b"
+                  "Hash": "52a3449662e7caf3ec575be4801936e6b0c9dd3a2c9b5fb0b6da7a730e7c705b",
+                  "TamanoBytes": 1001374
                 }
               ],
               "Subcarpetas": []
@@ -1357,67 +1570,80 @@
                 {
                   "Nombre": "Pilz Pnoz Catalogo general.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/Pilz%20Pnoz%20Catalogo%20general.pdf",
-                  "Hash": "c4d1460e5d901ae462802e3ff9cee359b30184ed7a2879e899f361a8ebf3ac47"
+                  "Hash": "c4d1460e5d901ae462802e3ff9cee359b30184ed7a2879e899f361a8ebf3ac47",
+                  "TamanoBytes": 15623654
                 },
                 {
                   "Nombre": "PILZ PNOZ Interface (2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20Interface%20%282%29.pdf",
-                  "Hash": "04c4b441b29e0c4ab2ca82a21fe4edf34e59a496caae62d1aca3f5359102fb33"
+                  "Hash": "04c4b441b29e0c4ab2ca82a21fe4edf34e59a496caae62d1aca3f5359102fb33",
+                  "TamanoBytes": 1745290
                 },
                 {
                   "Nombre": "PILZ PNOZ Interface.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20Interface.pdf",
-                  "Hash": "2f4312317095112f906813c276a4935671d1483f76e0058d0bcef0d3b0b63f1e"
+                  "Hash": "2f4312317095112f906813c276a4935671d1483f76e0058d0bcef0d3b0b63f1e",
+                  "TamanoBytes": 1247621
                 },
                 {
                   "Nombre": "PILZ PNOZ m1p (2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20m1p%20%282%29.pdf",
-                  "Hash": "5fcb5b4d73553603e677bd61ceb1b29248b1f57c1cd60576644b3e2c246188c0"
+                  "Hash": "5fcb5b4d73553603e677bd61ceb1b29248b1f57c1cd60576644b3e2c246188c0",
+                  "TamanoBytes": 1360976
                 },
                 {
                   "Nombre": "PILZ PNOZ m1p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20m1p.pdf",
-                  "Hash": "d717c64c0ef063de23ee878a9fe5076057b256b3f103e3442d53e7a67b192f7a"
+                  "Hash": "d717c64c0ef063de23ee878a9fe5076057b256b3f103e3442d53e7a67b192f7a",
+                  "TamanoBytes": 749477
                 },
                 {
                   "Nombre": "PILZ PNOZ mc8p (2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20mc8p%20%282%29.pdf",
-                  "Hash": "83b61ca726e670532702394df22c3b60aef22e8dab3198050a216f11077d4a0d"
+                  "Hash": "83b61ca726e670532702394df22c3b60aef22e8dab3198050a216f11077d4a0d",
+                  "TamanoBytes": 791733
                 },
                 {
                   "Nombre": "PILZ PNOZ mc8p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20mc8p.pdf",
-                  "Hash": "80d8d2cf412c84b683b322d049039ad6aa1cb4c194ffcd27282a6faa287f899d"
+                  "Hash": "80d8d2cf412c84b683b322d049039ad6aa1cb4c194ffcd27282a6faa287f899d",
+                  "TamanoBytes": 355624
                 },
                 {
                   "Nombre": "PILZ PNOZ mi1p (2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20mi1p%20%282%29.pdf",
-                  "Hash": "7cb20360d8e14822a018093feec5fb0183d966519e5beac93908da2635f0bcf1"
+                  "Hash": "7cb20360d8e14822a018093feec5fb0183d966519e5beac93908da2635f0bcf1",
+                  "TamanoBytes": 793587
                 },
                 {
                   "Nombre": "PILZ PNOZ mi1p.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PILZ%20PNOZ%20mi1p.pdf",
-                  "Hash": "ac89f340ed7b0b0de3f8edce70b059e52a28adc62d2e74c373cf969c8ae3afbd"
+                  "Hash": "ac89f340ed7b0b0de3f8edce70b059e52a28adc62d2e74c373cf969c8ae3afbd",
+                  "TamanoBytes": 358931
                 },
                 {
                   "Nombre": "Pilz PNOZ X4.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/Pilz%20PNOZ%20X4.pdf",
-                  "Hash": "2baebb3d00b0e20b05a8f334273b0d8883cca764b474d98477a096a2a0f86455"
+                  "Hash": "2baebb3d00b0e20b05a8f334273b0d8883cca764b474d98477a096a2a0f86455",
+                  "TamanoBytes": 414321
                 },
                 {
                   "Nombre": "Pilz PNOZ_X4.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/Pilz%20PNOZ_X4.pdf",
-                  "Hash": "98bd4800cc5df9647af124b08183595b970227daa252d64a588254cdec03605f"
+                  "Hash": "98bd4800cc5df9647af124b08183595b970227daa252d64a588254cdec03605f",
+                  "TamanoBytes": 1133594
                 },
                 {
                   "Nombre": "Pilz PNOZ_X4_Operating_Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/Pilz%20PNOZ_X4_Operating_Manual.pdf",
-                  "Hash": "67672f64c0691d54f61b727709af3991fdef05172d9453455d585dc672980a72"
+                  "Hash": "67672f64c0691d54f61b727709af3991fdef05172d9453455d585dc672980a72",
+                  "TamanoBytes": 2283391
                 },
                 {
                   "Nombre": "PSEN p-20_Operat_Manual_20990-EN-10.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Pilz/PSEN%20p-20_Operat_Manual_20990-EN-10.pdf",
-                  "Hash": "f8ce8ec2689980e32dcf952b260548837a672c800c75ee28baf2525505eaa5b8"
+                  "Hash": "f8ce8ec2689980e32dcf952b260548837a672c800c75ee28baf2525505eaa5b8",
+                  "TamanoBytes": 795374
                 }
               ],
               "Subcarpetas": []
@@ -1428,17 +1654,20 @@
                 {
                   "Nombre": "REO MFS268IP54.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Reovib/REO%20MFS268IP54.pdf",
-                  "Hash": "a73ab519306d44bc48ea27a7e68aa3bc731735e4b7a3d32400fc9abc01a0d230"
+                  "Hash": "a73ab519306d44bc48ea27a7e68aa3bc731735e4b7a3d32400fc9abc01a0d230",
+                  "TamanoBytes": 1054738
                 },
                 {
                   "Nombre": "Reovib MFS268.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Reovib/Reovib%20MFS268.pdf",
-                  "Hash": "71b8da45db1567e679820db2b999a1e48e18b043a2b14a015c37ff9c46a78ac7"
+                  "Hash": "71b8da45db1567e679820db2b999a1e48e18b043a2b14a015c37ff9c46a78ac7",
+                  "TamanoBytes": 948384
                 },
                 {
                   "Nombre": "Reovib MFS368.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Reovib/Reovib%20MFS368.pdf",
-                  "Hash": "84a8fe785c5a5d72aa7169ebbff5c7c1b163d678f20f124c862089632931aebf"
+                  "Hash": "84a8fe785c5a5d72aa7169ebbff5c7c1b163d678f20f124c862089632931aebf",
+                  "TamanoBytes": 2452509
                 }
               ],
               "Subcarpetas": []
@@ -1449,17 +1678,20 @@
                 {
                   "Nombre": "Rice Lake 880 Operation Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Rice%20Lake/Rice%20Lake%20880%20Operation%20Manual.pdf",
-                  "Hash": "3e81568b5f1ca3a213ace5bfe91e35430bdb35437eb77d61f05aa89ffa8b511a"
+                  "Hash": "3e81568b5f1ca3a213ace5bfe91e35430bdb35437eb77d61f05aa89ffa8b511a",
+                  "TamanoBytes": 724162
                 },
                 {
                   "Nombre": "Rice Lake 880 Technical Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Rice%20Lake/Rice%20Lake%20880%20Technical%20Manual.pdf",
-                  "Hash": "9bf73db90d13519504253ccd43ad8a95187b07d6258be255bcc24c5a31bf071c"
+                  "Hash": "9bf73db90d13519504253ccd43ad8a95187b07d6258be255bcc24c5a31bf071c",
+                  "TamanoBytes": 2820395
                 },
                 {
                   "Nombre": "Ricelake 880_tech_revd.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Rice%20Lake/Ricelake%20880_tech_revd.pdf",
-                  "Hash": "3162f0ba1a73d30d2a3205138bf60f8b62b5925f24fb922173f5e541dac2ec39"
+                  "Hash": "3162f0ba1a73d30d2a3205138bf60f8b62b5925f24fb922173f5e541dac2ec39",
+                  "TamanoBytes": 4198061
                 }
               ],
               "Subcarpetas": []
@@ -1470,7 +1702,8 @@
                 {
                   "Nombre": "Sartorius PR 5230 Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sartorius/Sartorius%20PR%205230%20Manual.pdf",
-                  "Hash": "d5fff16b11a1753b3cf2533f265e54da4cd84428ba6e164d3032aec25db2a6c4"
+                  "Hash": "d5fff16b11a1753b3cf2533f265e54da4cd84428ba6e164d3032aec25db2a6c4",
+                  "TamanoBytes": 4480213
                 }
               ],
               "Subcarpetas": []
@@ -1481,22 +1714,26 @@
                 {
                   "Nombre": "Schmersal AES 1135 1136 1145 1146.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schmersal/Schmersal%20AES%201135%201136%201145%201146.pdf",
-                  "Hash": "782bd808915acf1c63d50ff226dcad27d076655dd3a8b9da4e9a27e41a0e1221"
+                  "Hash": "782bd808915acf1c63d50ff226dcad27d076655dd3a8b9da4e9a27e41a0e1221",
+                  "TamanoBytes": 60093
                 },
                 {
                   "Nombre": "Schmersal AES 1135(1).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schmersal/Schmersal%20AES%201135%281%29.pdf",
-                  "Hash": "ce1a2937e4434653ad5ca5d96c756d7a09f4c0937ed2c2c0842d415f7e9dc870"
+                  "Hash": "ce1a2937e4434653ad5ca5d96c756d7a09f4c0937ed2c2c0842d415f7e9dc870",
+                  "TamanoBytes": 219461
                 },
                 {
                   "Nombre": "Schmersal SRB211AN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schmersal/Schmersal%20SRB211AN.pdf",
-                  "Hash": "67f2f6eab5bf738f24824d60b04f1713b84e8f2dcdc6264d856f3028ac2cf989"
+                  "Hash": "67f2f6eab5bf738f24824d60b04f1713b84e8f2dcdc6264d856f3028ac2cf989",
+                  "TamanoBytes": 640652
                 },
                 {
                   "Nombre": "SRB211-AN (V.2).pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schmersal/SRB211-AN%20%28V.2%29.pdf",
-                  "Hash": "03311c0a238b22e9fc8754f3934be53a21c08545fce40b43dfe15dcd10e6ad71"
+                  "Hash": "03311c0a238b22e9fc8754f3934be53a21c08545fce40b43dfe15dcd10e6ad71",
+                  "TamanoBytes": 1136965
                 }
               ],
               "Subcarpetas": []
@@ -1507,72 +1744,86 @@
                 {
                   "Nombre": "Altistart ATS01_IS_ATS01N2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Altistart%20ATS01_IS_ATS01N2.pdf",
-                  "Hash": "7df9dd4d59a29dca37fa22329edbeac7570bbe03bc386af3800eaa3221cb979c"
+                  "Hash": "7df9dd4d59a29dca37fa22329edbeac7570bbe03bc386af3800eaa3221cb979c",
+                  "TamanoBytes": 223872
                 },
                 {
                   "Nombre": "Altivar 11.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Altivar%2011.pdf",
-                  "Hash": "338d917c0adc884ad12b0c63cefd4bc6255a5b71e610b5e73c4159547ee4150e"
+                  "Hash": "338d917c0adc884ad12b0c63cefd4bc6255a5b71e610b5e73c4159547ee4150e",
+                  "TamanoBytes": 2581623
                 },
                 {
                   "Nombre": "altivar 312HU22N4.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/altivar%20312HU22N4.pdf",
-                  "Hash": "1cafe8f62ec12f6f9a154f611ec07a61f3f54e9d4bf8c88ffdf442ec58810e29"
+                  "Hash": "1cafe8f62ec12f6f9a154f611ec07a61f3f54e9d4bf8c88ffdf442ec58810e29",
+                  "TamanoBytes": 2564817
                 },
                 {
                   "Nombre": "ATV312_31_212_IS_FAN_KIT_VZ3V3101-102_1598347_04.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/ATV312_31_212_IS_FAN_KIT_VZ3V3101-102_1598347_04.pdf",
-                  "Hash": "ca9267006650d54ed3a68821990b7fb80ed26a424852904db849ee5fe2e580ac"
+                  "Hash": "ca9267006650d54ed3a68821990b7fb80ed26a424852904db849ee5fe2e580ac",
+                  "TamanoBytes": 398726
                 },
                 {
                   "Nombre": "ATV312_programming_manual_EN_BBV46385_04.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/ATV312_programming_manual_EN_BBV46385_04.pdf",
-                  "Hash": "c129e7bb9e0bdf84db8fc25e479e41cb4c109fe8db010cec08d8e72c99cad491"
+                  "Hash": "c129e7bb9e0bdf84db8fc25e479e41cb4c109fe8db010cec08d8e72c99cad491",
+                  "TamanoBytes": 1934585
                 },
                 {
                   "Nombre": "ATV312_programming_manual_SP_BBV46387_04.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/ATV312_programming_manual_SP_BBV46387_04.pdf",
-                  "Hash": "7c90dbb164ff2b7f3488aa62a7607d16faad2f864f49198e672bd0e18e48fbf0"
+                  "Hash": "7c90dbb164ff2b7f3488aa62a7607d16faad2f864f49198e672bd0e18e48fbf0",
+                  "TamanoBytes": 1951219
                 },
                 {
                   "Nombre": "Detector Huella XB5S Harmony.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Detector%20Huella%20XB5S%20Harmony.pdf",
-                  "Hash": "e0817f1e60089d577b878ad877e9b1031751280849e60b5ef3d5bf67490277c5"
+                  "Hash": "e0817f1e60089d577b878ad877e9b1031751280849e60b5ef3d5bf67490277c5",
+                  "TamanoBytes": 2301167
                 },
                 {
                   "Nombre": "REVGATE_LMD_EIP.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/REVGATE_LMD_EIP.pdf",
-                  "Hash": "0af4c94e64766fba62fb361ed9ea4a11c71dfff714199612e49d13716bb739a1"
+                  "Hash": "0af4c94e64766fba62fb361ed9ea4a11c71dfff714199612e49d13716bb739a1",
+                  "TamanoBytes": 2625001
                 },
                 {
                   "Nombre": "REVGATE_lmd_software_suite.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/REVGATE_lmd_software_suite.pdf",
-                  "Hash": "2f2d7f0302420b0cc681c94d1cb55e20594553127c31a916fac89393d2df99a6"
+                  "Hash": "2f2d7f0302420b0cc681c94d1cb55e20594553127c31a916fac89393d2df99a6",
+                  "TamanoBytes": 3944148
                 },
                 {
                   "Nombre": "REVGATE_MCode_LMD 2015.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/REVGATE_MCode_LMD%202015.pdf",
-                  "Hash": "48c796d3f175cdf6334fe2c89922fd6507cf8d4443461260e077adc6b67b7e01"
+                  "Hash": "48c796d3f175cdf6334fe2c89922fd6507cf8d4443461260e077adc6b67b7e01",
+                  "TamanoBytes": 2463898
                 },
                 {
                   "Nombre": "REVGATE_PH018_Rev00_REVGATE_SERVO_MOTOR_SETUP_AND_WIRING_09_13_16.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/REVGATE_PH018_Rev00_REVGATE_SERVO_MOTOR_SETUP_AND_WIRING_09_13_16.pdf",
-                  "Hash": "ac154b5bee3b7dd7bb6e8af1f7a9504c6630bcdddb32bec7b9112c7e573096fe"
+                  "Hash": "ac154b5bee3b7dd7bb6e8af1f7a9504c6630bcdddb32bec7b9112c7e573096fe",
+                  "TamanoBytes": 2066514
                 },
                 {
                   "Nombre": "Schneider Altivar 312 Programacion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Schneider%20Altivar%20312%20Programacion.pdf",
-                  "Hash": "7c90dbb164ff2b7f3488aa62a7607d16faad2f864f49198e672bd0e18e48fbf0"
+                  "Hash": "7c90dbb164ff2b7f3488aa62a7607d16faad2f864f49198e672bd0e18e48fbf0",
+                  "TamanoBytes": 1951219
                 },
                 {
                   "Nombre": "Soft starters ATS 01.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Soft%20starters%20ATS%2001.pdf",
-                  "Hash": "6efede9fbd9f39f611f67a8e3e8886e310910e7ca3cd45bb329864d0fd0d936d"
+                  "Hash": "6efede9fbd9f39f611f67a8e3e8886e310910e7ca3cd45bb329864d0fd0d936d",
+                  "TamanoBytes": 3415681
                 },
                 {
                   "Nombre": "Soft starters ATS01_IS_ATS01N2_1624686_05.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Schneider/Soft%20starters%20ATS01_IS_ATS01N2_1624686_05.pdf",
-                  "Hash": "7df9dd4d59a29dca37fa22329edbeac7570bbe03bc386af3800eaa3221cb979c"
+                  "Hash": "7df9dd4d59a29dca37fa22329edbeac7570bbe03bc386af3800eaa3221cb979c",
+                  "TamanoBytes": 223872
                 }
               ],
               "Subcarpetas": []
@@ -1583,57 +1834,68 @@
                 {
                   "Nombre": "Selec PID528.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Selec%20PID528.pdf",
-                  "Hash": "91c96a88d1885824e9d97caaf0a34616a22ac449b53b36e6a51500aed3a06a40"
+                  "Hash": "91c96a88d1885824e9d97caaf0a34616a22ac449b53b36e6a51500aed3a06a40",
+                  "TamanoBytes": 279066
                 },
                 {
                   "Nombre": "Selec TC544A TC244AX TC344AX DTC204A-2  DTC324A-2 OP294.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Selec%20TC544A%20TC244AX%20TC344AX%20DTC204A-2%20%20DTC324A-2%20OP294.pdf",
-                  "Hash": "1211e432ef26166c3afb224a2e246a1f101446bc07693de7d1b2a126b4b18dbb"
+                  "Hash": "1211e432ef26166c3afb224a2e246a1f101446bc07693de7d1b2a126b4b18dbb",
+                  "TamanoBytes": 239431
                 },
                 {
                   "Nombre": "Select TC344.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC344.pdf",
-                  "Hash": "a9831f304b895dbeacb6d8c5de435afea592b95dae0d2bfe2e666a3c0f763dcc"
+                  "Hash": "a9831f304b895dbeacb6d8c5de435afea592b95dae0d2bfe2e666a3c0f763dcc",
+                  "TamanoBytes": 137092
                 },
                 {
                   "Nombre": "Select TC513-temprature-controllers.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC513-temprature-controllers.pdf",
-                  "Hash": "ee335ab813b317ac6c27b04bddf68ef23273d36ea548302d843300528b1ef749"
+                  "Hash": "ee335ab813b317ac6c27b04bddf68ef23273d36ea548302d843300528b1ef749",
+                  "TamanoBytes": 451995
                 },
                 {
                   "Nombre": "Select TC513BX TC203BX TC303BX OP464-V01 Final.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC513BX%20TC203BX%20TC303BX%20OP464-V01%20Final.pdf",
-                  "Hash": "eef69f1b10fd619d0e052dc9f65e4eb050fc2c84beaa1f4c232389df16da9a91"
+                  "Hash": "eef69f1b10fd619d0e052dc9f65e4eb050fc2c84beaa1f4c232389df16da9a91",
+                  "TamanoBytes": 234993
                 },
                 {
                   "Nombre": "Select TC513_TC203_TC303_MAN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC513_TC203_TC303_MAN.pdf",
-                  "Hash": "737282729821c5226ee0c0afb52fd7839225d270888a3fb6e77db18210a7c8f6"
+                  "Hash": "737282729821c5226ee0c0afb52fd7839225d270888a3fb6e77db18210a7c8f6",
+                  "TamanoBytes": 208674
                 },
                 {
                   "Nombre": "Select TC518.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC518.pdf",
-                  "Hash": "ab25926415ef47c4320bee0894a94b1898b2c936228700c39d94121d1909e5e1"
+                  "Hash": "ab25926415ef47c4320bee0894a94b1898b2c936228700c39d94121d1909e5e1",
+                  "TamanoBytes": 195155
                 },
                 {
                   "Nombre": "Select TC533-TC533NX-TC233-TC333_OP293-V01_121110.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC533-TC533NX-TC233-TC333_OP293-V01_121110.pdf",
-                  "Hash": "f196c7c062b4ba368c686b754d0846efb4e5f85cfbb482baa594d7fbe6ed7095"
+                  "Hash": "f196c7c062b4ba368c686b754d0846efb4e5f85cfbb482baa594d7fbe6ed7095",
+                  "TamanoBytes": 224410
                 },
                 {
                   "Nombre": "Select TC533.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC533.pdf",
-                  "Hash": "1b6e803a43c9feca929b17686c886ebbff1e2e0a91176ce53d432e1bf23b9ecd"
+                  "Hash": "1b6e803a43c9feca929b17686c886ebbff1e2e0a91176ce53d432e1bf23b9ecd",
+                  "TamanoBytes": 780792
                 },
                 {
                   "Nombre": "Select TC544 - TC344 - TC244 2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC544%20-%20TC344%20-%20TC244%202.pdf",
-                  "Hash": "eab7db02c4d727ea1a5f80a986ffeca2d63192de4edff4cf4c3bf8b6d35857a3"
+                  "Hash": "eab7db02c4d727ea1a5f80a986ffeca2d63192de4edff4cf4c3bf8b6d35857a3",
+                  "TamanoBytes": 305682
                 },
                 {
                   "Nombre": "Select TC544 - TC344 - TC244.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Selec/Select%20TC544%20-%20TC344%20-%20TC244.pdf",
-                  "Hash": "bbb62c760dd70b98f5c60cbec0c60c69c55b6de0c9886f0d23ab437162cc9195"
+                  "Hash": "bbb62c760dd70b98f5c60cbec0c60c69c55b6de0c9886f0d23ab437162cc9195",
+                  "TamanoBytes": 3043402
                 }
               ],
               "Subcarpetas": []
@@ -1644,17 +1906,20 @@
                 {
                   "Nombre": "DCL32CE3.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Shinko/DCL32CE3.pdf",
-                  "Hash": "b672858525a18f3a56c8b7d5fa919635871d7da4fe3fdf9d8a315ea321cf66ca"
+                  "Hash": "b672858525a18f3a56c8b7d5fa919635871d7da4fe3fdf9d8a315ea321cf66ca",
+                  "TamanoBytes": 885665
                 },
                 {
                   "Nombre": "DCL32E5.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Shinko/DCL32E5.pdf",
-                  "Hash": "a79031bcbeedee5e77f9adb26d5e9e4f86ac6975f0789e760e5c7f4610a1ae71"
+                  "Hash": "a79031bcbeedee5e77f9adb26d5e9e4f86ac6975f0789e760e5c7f4610a1ae71",
+                  "TamanoBytes": 14896312
                 },
                 {
                   "Nombre": "Shinko DCL-33A Control Temperatura.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Shinko/Shinko%20DCL-33A%20Control%20Temperatura.pdf",
-                  "Hash": "6f50ae42b9ebe455fc95ba953b2b9313443efc088389236f5e4268ab1284f5bb"
+                  "Hash": "6f50ae42b9ebe455fc95ba953b2b9313443efc088389236f5e4268ab1284f5bb",
+                  "TamanoBytes": 464084
                 }
               ],
               "Subcarpetas": []
@@ -1665,27 +1930,32 @@
                 {
                   "Nombre": "Sensor SICK WT 36.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/Sensor%20SICK%20WT%2036.pdf",
-                  "Hash": "c1a07e9843810139143108b12ef7a9f00b8d21c766d1e3a7440d5600f8d10673"
+                  "Hash": "c1a07e9843810139143108b12ef7a9f00b8d21c766d1e3a7440d5600f8d10673",
+                  "TamanoBytes": 805992
                 },
                 {
                   "Nombre": "Sick C4000 XC40E.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/Sick%20C4000%20XC40E.PDF",
-                  "Hash": "26f02313f07d837b5901d4bf324854707b6df767f33d686deb659148a7728f04"
+                  "Hash": "26f02313f07d837b5901d4bf324854707b6df767f33d686deb659148a7728f04",
+                  "TamanoBytes": 2638929
                 },
                 {
                   "Nombre": "SICK C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.PDF",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/SICK%20C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.PDF",
-                  "Hash": "7515dfcf2910212630062e058afc32ca69d2b83bedd60a807cac6185b542007b"
+                  "Hash": "7515dfcf2910212630062e058afc32ca69d2b83bedd60a807cac6185b542007b",
+                  "TamanoBytes": 1332505
                 },
                 {
                   "Nombre": "Sick WSE2S-2P3230.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/Sick%20WSE2S-2P3230.pdf",
-                  "Hash": "4911915bfc701bd572017455fd412bcb610aef320e1e2bf2af7b6661de65fa45"
+                  "Hash": "4911915bfc701bd572017455fd412bcb610aef320e1e2bf2af7b6661de65fa45",
+                  "TamanoBytes": 747170
                 },
                 {
                   "Nombre": "SICK WS_WE2S-F213_1023650_en.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/SICK%20WS_WE2S-F213_1023650_en.pdf",
-                  "Hash": "b85ac398c18c643ec2a9c9b4c16063026889082b60ed2039fd1838e20b82a28d"
+                  "Hash": "b85ac398c18c643ec2a9c9b4c16063026889082b60ed2039fd1838e20b82a28d",
+                  "TamanoBytes": 966457
                 }
               ],
               "Subcarpetas": []
@@ -1696,47 +1966,56 @@
                 {
                   "Nombre": "controlador quemador LMV5 Instalacion.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/controlador%20quemador%20LMV5%20Instalacion.pdf",
-                  "Hash": "8a39c11e513ee1ae7fb66007da72ec205dd1550bc755b35fcc018bc81c44b4f2"
+                  "Hash": "8a39c11e513ee1ae7fb66007da72ec205dd1550bc755b35fcc018bc81c44b4f2",
+                  "TamanoBytes": 1572285
                 },
                 {
                   "Nombre": "Modutrol Siemens SQM1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Modutrol%20Siemens%20SQM1.pdf",
-                  "Hash": "b395e7b83906db665a9cb844c56bab81f93340f5e4edd43ad5376749578ee59e"
+                  "Hash": "b395e7b83906db665a9cb844c56bab81f93340f5e4edd43ad5376749578ee59e",
+                  "TamanoBytes": 120308
                 },
                 {
                   "Nombre": "Procedimiento Reemplazo Placa.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Procedimiento%20Reemplazo%20Placa.pdf",
-                  "Hash": "d05766d5d5c00d604d44ee57c53d527f65f5ec68ba549f38a7b5458812ddaba4"
+                  "Hash": "d05766d5d5c00d604d44ee57c53d527f65f5ec68ba549f38a7b5458812ddaba4",
+                  "TamanoBytes": 317845
                 },
                 {
                   "Nombre": "Siemens display-unit-azl-52-00-b1-for-lmv.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20display-unit-azl-52-00-b1-for-lmv.pdf",
-                  "Hash": "981cc4436126295fdd0329a4addef74c186cf348126410300a36c4bfe4b1849d"
+                  "Hash": "981cc4436126295fdd0329a4addef74c186cf348126410300a36c4bfe4b1849d",
+                  "TamanoBytes": 186995
                 },
                 {
                   "Nombre": "Siemens lfl1.335 Controlador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20lfl1.335%20Controlador.pdf",
-                  "Hash": "1f0bf85f38a08487b1e43eabe09239e8f61624e41f638f908e66b637be82f729"
+                  "Hash": "1f0bf85f38a08487b1e43eabe09239e8f61624e41f638f908e66b637be82f729",
+                  "TamanoBytes": 436252
                 },
                 {
                   "Nombre": "Siemens LMV50 LMV51 LMV52.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20LMV50%20LMV51%20LMV52.pdf",
-                  "Hash": "700f3af9aa56730b8690c024b909472266bcb34427e18dc064c646e7039a4c15"
+                  "Hash": "700f3af9aa56730b8690c024b909472266bcb34427e18dc064c646e7039a4c15",
+                  "TamanoBytes": 1059124
                 },
                 {
                   "Nombre": "Siemens Micromaster 420 Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20Micromaster%20420%20Manual.pdf",
-                  "Hash": "36d96ef51c0b53d72260b19a2622c007dd651f3439cddfe5a90691bd2f965a0e"
+                  "Hash": "36d96ef51c0b53d72260b19a2622c007dd651f3439cddfe5a90691bd2f965a0e",
+                  "TamanoBytes": 3086999
                 },
                 {
                   "Nombre": "Siemens Micromaster 420 Parametros.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20Micromaster%20420%20Parametros.pdf",
-                  "Hash": "00fff8acb8048286783966f33c1e1207222f57f661825bbf35fd6ed94c7ff90b"
+                  "Hash": "00fff8acb8048286783966f33c1e1207222f57f661825bbf35fd6ed94c7ff90b",
+                  "TamanoBytes": 1451010
                 },
                 {
                   "Nombre": "Siemens Servo SQM45-48 .pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Siemens/Siemens%20Servo%20SQM45-48%20.pdf",
-                  "Hash": "bb8c9e09082c03dd2241817c9668d5fdd8e75c7efa1c718e6f7b1c070f7bb2f6"
+                  "Hash": "bb8c9e09082c03dd2241817c9668d5fdd8e75c7efa1c718e6f7b1c070f7bb2f6",
+                  "TamanoBytes": 1201303
                 }
               ],
               "Subcarpetas": []
@@ -1747,12 +2026,14 @@
                 {
                   "Nombre": "Simex 94 Caudalimetro1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Simex/Simex%2094%20Caudalimetro1.pdf",
-                  "Hash": "e788fdd0b320685af691fb846dab881a554bdca29290067370c3df5b006875e2"
+                  "Hash": "e788fdd0b320685af691fb846dab881a554bdca29290067370c3df5b006875e2",
+                  "TamanoBytes": 1783636
                 },
                 {
                   "Nombre": "Simex 94 Caudalimetro2.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Simex/Simex%2094%20Caudalimetro2.pdf",
-                  "Hash": "a384fb765184f954e0dc0381310f206fb70522ec973d95209514ec18808dd743"
+                  "Hash": "a384fb765184f954e0dc0381310f206fb70522ec973d95209514ec18808dd743",
+                  "TamanoBytes": 760570
                 }
               ],
               "Subcarpetas": []
@@ -1763,7 +2044,8 @@
                 {
                   "Nombre": "Manual Lubricadores SKF.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/SKF/Manual%20Lubricadores%20SKF.pdf",
-                  "Hash": "68b85cf707b37c8139aa051a980082c9cb3185a0e96799a9cf15e9f404bedf60"
+                  "Hash": "68b85cf707b37c8139aa051a980082c9cb3185a0e96799a9cf15e9f404bedf60",
+                  "TamanoBytes": 2125795
                 }
               ],
               "Subcarpetas": []
@@ -1774,12 +2056,14 @@
                 {
                   "Nombre": "SMC Catalogo Manyfold.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/SMC/SMC%20Catalogo%20Manyfold.pdf",
-                  "Hash": "310f025efb2c3ad4b0fa78b4da7c846dd239e9e95fa8e7461c275d67de3af7e6"
+                  "Hash": "310f025efb2c3ad4b0fa78b4da7c846dd239e9e95fa8e7461c275d67de3af7e6",
+                  "TamanoBytes": 18294401
                 },
                 {
                   "Nombre": "SMC Flex Soft Starter.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/SMC/SMC%20Flex%20Soft%20Starter.pdf",
-                  "Hash": "416a9dda9aaaace86387333489c686c94def3be04ee36e102ea804c35623a26f"
+                  "Hash": "416a9dda9aaaace86387333489c686c94def3be04ee36e102ea804c35623a26f",
+                  "TamanoBytes": 6564804
                 }
               ],
               "Subcarpetas": []
@@ -1790,7 +2074,8 @@
                 {
                   "Nombre": "Controlador de purga Bc3250.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Spirax%20Sarco/Controlador%20de%20purga%20Bc3250.pdf",
-                  "Hash": "223e694c065497f7ef29fa75bbcbc468c3db2c53f102360b42aa616dfad9ff4d"
+                  "Hash": "223e694c065497f7ef29fa75bbcbc468c3db2c53f102360b42aa616dfad9ff4d",
+                  "TamanoBytes": 1432301
                 }
               ],
               "Subcarpetas": []
@@ -1801,7 +2086,8 @@
                 {
                   "Nombre": "SR103AM.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/STI/SR103AM.pdf",
-                  "Hash": "ffe2548a93360ed5c47fc76f1656b8104b1dc9e05fa574e61ba60017e6dc8e13"
+                  "Hash": "ffe2548a93360ed5c47fc76f1656b8104b1dc9e05fa574e61ba60017e6dc8e13",
+                  "TamanoBytes": 581200
                 }
               ],
               "Subcarpetas": []
@@ -1812,42 +2098,50 @@
                 {
                   "Nombre": "TAE_Viejo-TA-BA_Parameter-e.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/TAE_Viejo-TA-BA_Parameter-e.pdf",
-                  "Hash": "c2bc877da7694b19225b4785452e014c72af9f7bcabb9c64b7c5dc59cdfd8d16"
+                  "Hash": "c2bc877da7694b19225b4785452e014c72af9f7bcabb9c64b7c5dc59cdfd8d16",
+                  "TamanoBytes": 592441
                 },
                 {
                   "Nombre": "TAE_Viejo-TA-BL-P.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/TAE_Viejo-TA-BL-P.pdf",
-                  "Hash": "3a4db75287206f92e2595bcbafdf724e71e4759ca7ebb70bb32bdfc7d93c6ddd"
+                  "Hash": "3a4db75287206f92e2595bcbafdf724e71e4759ca7ebb70bb32bdfc7d93c6ddd",
+                  "TamanoBytes": 1080028
                 },
                 {
                   "Nombre": "TAE_Viejo-TA-BL-P1.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/TAE_Viejo-TA-BL-P1.pdf",
-                  "Hash": "97f864b9aeb486befabe9bd785e0c622e90fa52e6d11bbd0487c67873584678a"
+                  "Hash": "97f864b9aeb486befabe9bd785e0c622e90fa52e6d11bbd0487c67873584678a",
+                  "TamanoBytes": 1870832
                 },
                 {
                   "Nombre": "ta_series.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/ta_series.pdf",
-                  "Hash": "a530f3469987658552c19e8da48bfbec89cb13e7b81fd64673273a7813a7082f"
+                  "Hash": "a530f3469987658552c19e8da48bfbec89cb13e7b81fd64673273a7813a7082f",
+                  "TamanoBytes": 2173159
                 },
                 {
                   "Nombre": "UDRIVE-BA UD-Parameter-e.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/UDRIVE-BA%20UD-Parameter-e.pdf",
-                  "Hash": "fbe014d3e98f8f2e33b9f0919ed68d963c114c604b78c7facb0650c295a549a9"
+                  "Hash": "fbe014d3e98f8f2e33b9f0919ed68d963c114c604b78c7facb0650c295a549a9",
+                  "TamanoBytes": 1935755
                 },
                 {
                   "Nombre": "UDRIVE-BA_TA-U2_U150-es.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/UDRIVE-BA_TA-U2_U150-es.pdf",
-                  "Hash": "94a7f0fbd3e2cc7a1045299b2a004bf8444800f7a6ab45c843ba7c069df80dde"
+                  "Hash": "94a7f0fbd3e2cc7a1045299b2a004bf8444800f7a6ab45c843ba7c069df80dde",
+                  "TamanoBytes": 1506129
                 },
                 {
                   "Nombre": "UDRIVE-Prospekt-e.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/UDRIVE-Prospekt-e.pdf",
-                  "Hash": "3884ebb8a2e6c0fe669fde4ce7140f9052580b1b7b8347ebb0f93e45fe8edad1"
+                  "Hash": "3884ebb8a2e6c0fe669fde4ce7140f9052580b1b7b8347ebb0f93e45fe8edad1",
+                  "TamanoBytes": 1420949
                 },
                 {
                   "Nombre": "UDRIVE-TAE_BA_INST-BL-N_DE-SERVO.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TAE%20UDrive/UDRIVE-TAE_BA_INST-BL-N_DE-SERVO.pdf",
-                  "Hash": "2eb7c3babcc9b3b17dd92ae1662e4c21d1a1958b3f07e105063437cee563ca86"
+                  "Hash": "2eb7c3babcc9b3b17dd92ae1662e4c21d1a1958b3f07e105063437cee563ca86",
+                  "TamanoBytes": 2683991
                 }
               ],
               "Subcarpetas": []
@@ -1858,7 +2152,8 @@
                 {
                   "Nombre": "Altivar 11.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Telemecanique/Altivar%2011.pdf",
-                  "Hash": "338d917c0adc884ad12b0c63cefd4bc6255a5b71e610b5e73c4159547ee4150e"
+                  "Hash": "338d917c0adc884ad12b0c63cefd4bc6255a5b71e610b5e73c4159547ee4150e",
+                  "TamanoBytes": 2581623
                 }
               ],
               "Subcarpetas": []
@@ -1869,7 +2164,8 @@
                 {
                   "Nombre": "Empalmadora Termodrive V2.0.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Termodrive/Empalmadora%20Termodrive%20V2.0.pdf",
-                  "Hash": "e54c84d24e9c51a42b9cf0f13696c35fc9648371987d8801bde7aea7b2ab6e0c"
+                  "Hash": "e54c84d24e9c51a42b9cf0f13696c35fc9648371987d8801bde7aea7b2ab6e0c",
+                  "TamanoBytes": 833661
                 }
               ],
               "Subcarpetas": []
@@ -1880,7 +2176,8 @@
                 {
                   "Nombre": "TNA VCE 10 SXWXW_EN.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TNA/TNA%20VCE%2010%20SXWXW_EN.pdf",
-                  "Hash": "f2281af41862dfc5cc06390fabe3198101cce821a12f5532b29e90388a4a2268"
+                  "Hash": "f2281af41862dfc5cc06390fabe3198101cce821a12f5532b29e90388a4a2268",
+                  "TamanoBytes": 314089
                 }
               ],
               "Subcarpetas": []
@@ -1891,12 +2188,14 @@
                 {
                   "Nombre": "Tosibox Lock100 User Manual Rapido.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Tosibox/Tosibox%20Lock100%20User%20Manual%20Rapido.pdf",
-                  "Hash": "3fe67a6537a109e35181f060ac2a9f6323695aa6326ca4c9a24fab18a2c17a50"
+                  "Hash": "3fe67a6537a109e35181f060ac2a9f6323695aa6326ca4c9a24fab18a2c17a50",
+                  "TamanoBytes": 1129358
                 },
                 {
                   "Nombre": "Tosibox Lock100 User Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Tosibox/Tosibox%20Lock100%20User%20Manual.pdf",
-                  "Hash": "470d26ea46aad1ccf5a86c2aae2712735c246eb2ab549db457d51bc1c2502b26"
+                  "Hash": "470d26ea46aad1ccf5a86c2aae2712735c246eb2ab549db457d51bc1c2502b26",
+                  "TamanoBytes": 5115867
                 }
               ],
               "Subcarpetas": []
@@ -1907,7 +2206,8 @@
                 {
                   "Nombre": "H72324ag_ES_8472_ECT_Industrial_Pressure_Transmitter.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Trafag/H72324ag_ES_8472_ECT_Industrial_Pressure_Transmitter.pdf",
-                  "Hash": "30c2d8a11f24e5346e9b5bc0b1e221e37ddb9bcd7bff893553196d6dbf9e6f14"
+                  "Hash": "30c2d8a11f24e5346e9b5bc0b1e221e37ddb9bcd7bff893553196d6dbf9e6f14",
+                  "TamanoBytes": 1084776
                 }
               ],
               "Subcarpetas": []
@@ -1918,7 +2218,8 @@
                 {
                   "Nombre": "Triac WE 1350.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Triac/Triac%20WE%201350.pdf",
-                  "Hash": "2886412f6a43ccbd67ba446cbdda62f9c964ac5b8e6f18359916b361cbd73b72"
+                  "Hash": "2886412f6a43ccbd67ba446cbdda62f9c964ac5b8e6f18359916b361cbd73b72",
+                  "TamanoBytes": 742679
                 }
               ],
               "Subcarpetas": []
@@ -1929,12 +2230,14 @@
                 {
                   "Nombre": "Tripp Lite Owners Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Tripp%20Lite/Tripp%20Lite%20Owners%20Manual.pdf",
-                  "Hash": "d3c72d63e49d4100fc1526eeb8a24772b2de059a294e8e5a7702c7fe23d098c7"
+                  "Hash": "d3c72d63e49d4100fc1526eeb8a24772b2de059a294e8e5a7702c7fe23d098c7",
+                  "TamanoBytes": 30718857
                 },
                 {
                   "Nombre": "Tripp-Lite KVM Switch B022-002-KT-R B022-004-R.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Tripp%20Lite/Tripp-Lite%20KVM%20Switch%20B022-002-KT-R%20B022-004-R.pdf",
-                  "Hash": "325fb8fce1a807ab13cb23f1839c4427ee4c7478cb1e3260acdc886a5271c428"
+                  "Hash": "325fb8fce1a807ab13cb23f1839c4427ee4c7478cb1e3260acdc886a5271c428",
+                  "TamanoBytes": 1032712
                 }
               ],
               "Subcarpetas": []
@@ -1945,32 +2248,38 @@
                 {
                   "Nombre": "Conectores M12-EUROFAST.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/Conectores%20M12-EUROFAST.pdf",
-                  "Hash": "9f13b680dd0b29b0d9e0dbd92c4956eb9e8dcdfe8e65cf717bf67d8d842b06ff"
+                  "Hash": "9f13b680dd0b29b0d9e0dbd92c4956eb9e8dcdfe8e65cf717bf67d8d842b06ff",
+                  "TamanoBytes": 18805212
                 },
                 {
                   "Nombre": "Connectivity Codes.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/Connectivity%20Codes.pdf",
-                  "Hash": "be36b16caae4599f331fc9597319eaff569c30d4409902f4e0d7d135cbdcf3bc"
+                  "Hash": "be36b16caae4599f331fc9597319eaff569c30d4409902f4e0d7d135cbdcf3bc",
+                  "TamanoBytes": 365925
                 },
                 {
                   "Nombre": "Industrial connectivity conector.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/Industrial%20connectivity%20conector.pdf",
-                  "Hash": "42cbb3df07d2bb584c823ea01cddecdd437853dd081b4392afcf1d04b5bcb488"
+                  "Hash": "42cbb3df07d2bb584c823ea01cddecdd437853dd081b4392afcf1d04b5bcb488",
+                  "TamanoBytes": 466504
                 },
                 {
                   "Nombre": "TURCK FEN20  Quick Start.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/TURCK%20FEN20%20%20Quick%20Start.pdf",
-                  "Hash": "006b783c566141d8b2239651712a9ca98b88e733e1a0ee3b8387d0ad8839b25c"
+                  "Hash": "006b783c566141d8b2239651712a9ca98b88e733e1a0ee3b8387d0ad8839b25c",
+                  "TamanoBytes": 3611252
                 },
                 {
                   "Nombre": "Turck FEN20-16DXP.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/Turck%20FEN20-16DXP.pdf",
-                  "Hash": "95c3f0cf11d79e7082ec5c8e2ace28f33423b436c0cb40e39851d3048bf1edae"
+                  "Hash": "95c3f0cf11d79e7082ec5c8e2ace28f33423b436c0cb40e39851d3048bf1edae",
+                  "TamanoBytes": 225010
                 },
                 {
                   "Nombre": "TURCK VB 403M PX5 Picofast-Junction-Boxes.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Turck/TURCK%20VB%20403M%20PX5%20Picofast-Junction-Boxes.pdf",
-                  "Hash": "8a4b730015c81ca0ea58afb6cd516f7c3f40a465f04b45446f37ca5b1a323810"
+                  "Hash": "8a4b730015c81ca0ea58afb6cd516f7c3f40a465f04b45446f37ca5b1a323810",
+                  "TamanoBytes": 746104
                 }
               ],
               "Subcarpetas": []
@@ -1981,27 +2290,32 @@
                 {
                   "Nombre": "KFlex Pepsico ENGLISH software manual V3.0.0.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/VideoJet/KFlex%20Pepsico%20ENGLISH%20software%20manual%20V3.0.0.pdf",
-                  "Hash": "ef0f40a9cde45c211ce9ee833af727daf1d6e4ecfde238921c3844af5ed097dc"
+                  "Hash": "ef0f40a9cde45c211ce9ee833af727daf1d6e4ecfde238921c3844af5ed097dc",
+                  "TamanoBytes": 54288
                 },
                 {
                   "Nombre": "Videojet 9450i Manual Operador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/VideoJet/Videojet%209450i%20Manual%20Operador.pdf",
-                  "Hash": "5cf190d89b376676735f7f80e8b6529e5d0c9bb22504e9e1281fb8322d283164"
+                  "Hash": "5cf190d89b376676735f7f80e8b6529e5d0c9bb22504e9e1281fb8322d283164",
+                  "TamanoBytes": 6289425
                 },
                 {
                   "Nombre": "Videojet 9550 Service Manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/VideoJet/Videojet%209550%20Service%20Manual.pdf",
-                  "Hash": "6c7c7022bb48876b1360a7049d88c09b594f947c8e2747ba595253372fabafc6"
+                  "Hash": "6c7c7022bb48876b1360a7049d88c09b594f947c8e2747ba595253372fabafc6",
+                  "TamanoBytes": 11038583
                 },
                 {
                   "Nombre": "Videojet dataflex 6420 service-manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/VideoJet/Videojet%20dataflex%206420%20service-manual.pdf",
-                  "Hash": "d8be463e67f621da3adeb84369ed36df5d7c7b8836126da2d16d1a339e4f5a7e"
+                  "Hash": "d8be463e67f621da3adeb84369ed36df5d7c7b8836126da2d16d1a339e4f5a7e",
+                  "TamanoBytes": 8414285
                 },
                 {
                   "Nombre": "VideoJet Dataflex 6530 Manual Operador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/VideoJet/VideoJet%20Dataflex%206530%20Manual%20Operador.pdf",
-                  "Hash": "bf1bb0c4dc5ec8069f1daef7e23f2f54bc8a70de89338a517b9b30a5138a8270"
+                  "Hash": "bf1bb0c4dc5ec8069f1daef7e23f2f54bc8a70de89338a517b9b30a5138a8270",
+                  "TamanoBytes": 6079442
                 }
               ],
               "Subcarpetas": []
@@ -2012,7 +2326,8 @@
                 {
                   "Nombre": "ehe-series-pump-meter-2016-manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Walchem/ehe-series-pump-meter-2016-manual.pdf",
-                  "Hash": "f2f2ef76aa083a4badca2b197abe807dd4303a272aad72e2b152587f191fe561"
+                  "Hash": "f2f2ef76aa083a4badca2b197abe807dd4303a272aad72e2b152587f191fe561",
+                  "TamanoBytes": 3960666
                 }
               ],
               "Subcarpetas": []
@@ -2023,7 +2338,8 @@
                 {
                   "Nombre": "Watson-Marlow qdos.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Watson-Marlow/Watson-Marlow%20qdos.pdf",
-                  "Hash": "92517afdfc83f3387c87a3fd7912c5f2a446813517279235b39226de65b60140"
+                  "Hash": "92517afdfc83f3387c87a3fd7912c5f2a446813517279235b39226de65b60140",
+                  "TamanoBytes": 6528683
                 }
               ],
               "Subcarpetas": []
@@ -2034,12 +2350,14 @@
                 {
                   "Nombre": "Plano Intercambiador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Weishaupt/Plano%20Intercambiador.pdf",
-                  "Hash": "9c26b3eaee8557d44d4d66d6b588cb7363a61e3683accb7a1d85b90ad48b8a86"
+                  "Hash": "9c26b3eaee8557d44d4d66d6b588cb7363a61e3683accb7a1d85b90ad48b8a86",
+                  "TamanoBytes": 785432
                 },
                 {
                   "Nombre": "W-FM 100 y 200 Espanol completo.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Weishaupt/W-FM%20100%20y%20200%20Espanol%20completo.pdf",
-                  "Hash": "88d082e4ca6f875bb994b084923aa85192e3ab3e2ae5dd3e11969a5b15ae6877"
+                  "Hash": "88d082e4ca6f875bb994b084923aa85192e3ab3e2ae5dd3e11969a5b15ae6877",
+                  "TamanoBytes": 1760421
                 }
               ],
               "Subcarpetas": []
@@ -2050,17 +2368,20 @@
                 {
                   "Nombre": "CD30 Conveyor Drive.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Wright/CD30%20Conveyor%20Drive.pdf",
-                  "Hash": "ee8be5973351fede9973592fbe72998a4ffb83c9ae14d892dc28c988876ccd21"
+                  "Hash": "ee8be5973351fede9973592fbe72998a4ffb83c9ae14d892dc28c988876ccd21",
+                  "TamanoBytes": 287951
                 },
                 {
                   "Nombre": "Driver CD30.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Wright/Driver%20CD30.pdf",
-                  "Hash": "ca6d74a7b0f5163cab64655c6aec3f71c25b3d51bdedde601d4a4cdc01cd9c5f"
+                  "Hash": "ca6d74a7b0f5163cab64655c6aec3f71c25b3d51bdedde601d4a4cdc01cd9c5f",
+                  "TamanoBytes": 822743
                 },
                 {
                   "Nombre": "Driver vibrador.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Wright/Driver%20vibrador.pdf",
-                  "Hash": "045f3653e0b2ac070994fea479e9e3f19498251b04e3b78dd3543c6655726027"
+                  "Hash": "045f3653e0b2ac070994fea479e9e3f19498251b04e3b78dd3543c6655726027",
+                  "TamanoBytes": 317192
                 }
               ],
               "Subcarpetas": []
@@ -2071,42 +2392,50 @@
                 {
                   "Nombre": "Manual Usuario.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/Manual%20Usuario.pdf",
-                  "Hash": "3d99e0cc1d63d77c9f1acd00aa40b86fe5562bfdbac6d94b833abec0dff735ae"
+                  "Hash": "3d99e0cc1d63d77c9f1acd00aa40b86fe5562bfdbac6d94b833abec0dff735ae",
+                  "TamanoBytes": 5192406
                 },
                 {
                   "Nombre": "MotionWorksIEC_CM_EN_YEA-SIA-IEC-4H.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/MotionWorksIEC_CM_EN_YEA-SIA-IEC-4H.pdf",
-                  "Hash": "e07d9659b65ffae300705a0cf9a24b9a85cde8af16c002e8ae18833aaeab0235"
+                  "Hash": "e07d9659b65ffae300705a0cf9a24b9a85cde8af16c002e8ae18833aaeab0235",
+                  "TamanoBytes": 3281709
                 },
                 {
                   "Nombre": "MP2000_IndividualFunctionDocument_RevC.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/MP2000_IndividualFunctionDocument_RevC.pdf",
-                  "Hash": "8646ded457376c2093dd5943f6013ebfa6cf0bc955efb59bf13cf564f9f7cb2d"
+                  "Hash": "8646ded457376c2093dd5943f6013ebfa6cf0bc955efb59bf13cf564f9f7cb2d",
+                  "TamanoBytes": 1925471
                 },
                 {
                   "Nombre": "MPE720CntrllrSftwrApplGuide_1.0.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/MPE720CntrllrSftwrApplGuide_1.0.pdf",
-                  "Hash": "a1d1164140f5d7b1917eed4e625a243c9d306cbd8d5a73b4bc8d15772e5e5f93"
+                  "Hash": "a1d1164140f5d7b1917eed4e625a243c9d306cbd8d5a73b4bc8d15772e5e5f93",
+                  "TamanoBytes": 301189
                 },
                 {
                   "Nombre": "QRG.MP2000iecSeries.01.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/QRG.MP2000iecSeries.01.pdf",
-                  "Hash": "8455cc86092094d377bbcbfee59dfd222523be4b91748f784468e59c2ef1a481"
+                  "Hash": "8455cc86092094d377bbcbfee59dfd222523be4b91748f784468e59c2ef1a481",
+                  "TamanoBytes": 276451
                 },
                 {
                   "Nombre": "Resolver TS2640N321E64 PG-RT3.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/Resolver%20TS2640N321E64%20PG-RT3.pdf",
-                  "Hash": "c6a603e0e0fa17abad6f2e432957f6a6aff1cd58e7b45995fafa8d76c0b8242c"
+                  "Hash": "c6a603e0e0fa17abad6f2e432957f6a6aff1cd58e7b45995fafa8d76c0b8242c",
+                  "TamanoBytes": 3232011
                 },
                 {
                   "Nombre": "YAI-SIA-IEC-2R.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/YAI-SIA-IEC-2R.pdf",
-                  "Hash": "f3077af7f193392487049447829cbf9e9c6a8d9e95b043c74713e5e81febc5c3"
+                  "Hash": "f3077af7f193392487049447829cbf9e9c6a8d9e95b043c74713e5e81febc5c3",
+                  "TamanoBytes": 6560977
                 },
                 {
                   "Nombre": "yaskawa-mp-ethernet-manual.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yaskawa/yaskawa-mp-ethernet-manual.pdf",
-                  "Hash": "1cbe092d8e7152431e6efad678b597e770c7390d68013fb2bfac00eb71749800"
+                  "Hash": "1cbe092d8e7152431e6efad678b597e770c7390d68013fb2bfac00eb71749800",
+                  "TamanoBytes": 1092326
                 }
               ],
               "Subcarpetas": []
@@ -2117,12 +2446,14 @@
                 {
                   "Nombre": "Vortex-meter-model-DY7150.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yokogawa/Vortex-meter-model-DY7150.pdf",
-                  "Hash": "994bad3b0f8db678aea7fa9049b984ed50c7eb30f0aa74cc2b688dc4960f10ec"
+                  "Hash": "994bad3b0f8db678aea7fa9049b984ed50c7eb30f0aa74cc2b688dc4960f10ec",
+                  "TamanoBytes": 5312910
                 },
                 {
                   "Nombre": "Yewflow Vortex Flowmeter Flujometro.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Yokogawa/Yewflow%20Vortex%20Flowmeter%20Flujometro.pdf",
-                  "Hash": "bfa922ebd10b7a2555d4550178f293a3ae0ee9d07b8c92457830c7867f576aa9"
+                  "Hash": "bfa922ebd10b7a2555d4550178f293a3ae0ee9d07b8c92457830c7867f576aa9",
+                  "TamanoBytes": 11597626
                 }
               ],
               "Subcarpetas": []
@@ -2135,252 +2466,302 @@
             {
               "Nombre": "AUT000 - IPs Planta.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT000%20-%20IPs%20Planta.pdf",
-              "Hash": "17e12f81758ddf2c4b111364b76344640b6a4312eaedc1a167557575d83c59ec"
+              "Hash": "17e12f81758ddf2c4b111364b76344640b6a4312eaedc1a167557575d83c59ec",
+              "TamanoBytes": 1965388
             },
             {
               "Nombre": "AUT001 - Politica de Backups de Automatismos.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT001%20-%20Politica%20de%20Backups%20de%20Automatismos.pdf",
-              "Hash": "f45664fc77acc1ccfd675a9e0c7939273a1a80c5036544d9d2bd6a2173faac1a"
+              "Hash": "f45664fc77acc1ccfd675a9e0c7939273a1a80c5036544d9d2bd6a2173faac1a",
+              "TamanoBytes": 172072
             },
             {
               "Nombre": "AUT002 - Politica de Modificaciones en Automatismos.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT002%20-%20Politica%20de%20Modificaciones%20en%20Automatismos.pdf",
-              "Hash": "fc494c039d5f3be840abee6978774cff20973b6b5e9950029f10c6aa9be12032"
+              "Hash": "fc494c039d5f3be840abee6978774cff20973b6b5e9950029f10c6aa9be12032",
+              "TamanoBytes": 171276
             },
             {
               "Nombre": "AUT003 - Politica de Control de accesos a salas de tableros.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT003%20-%20Politica%20de%20Control%20de%20accesos%20a%20salas%20de%20tableros.pdf",
-              "Hash": "2a1aacc74acc34d7faacc652e4d46c61567a6a878ba4f624933650b5f7537e56"
+              "Hash": "2a1aacc74acc34d7faacc652e4d46c61567a6a878ba4f624933650b5f7537e56",
+              "TamanoBytes": 143624
             },
             {
               "Nombre": "AUT004 - Politica de cobertura ante ausencia de CSS.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT004%20-%20Politica%20de%20cobertura%20ante%20ausencia%20de%20CSS.pdf",
-              "Hash": "9e7d4d4022edfc2a9b6080c69cb2146a8a638e2bd6e79cac12a7d949bea3fc92"
+              "Hash": "9e7d4d4022edfc2a9b6080c69cb2146a8a638e2bd6e79cac12a7d949bea3fc92",
+              "TamanoBytes": 181234
             },
             {
               "Nombre": "AUT005 - Politica de standarizacion de firmwares.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT005%20-%20Politica%20de%20standarizacion%20de%20firmwares.pdf",
-              "Hash": "0adb221d624e0dceed2b1a4efd4d424f53fa5e599fb69588591d0ece4d9e4fba"
+              "Hash": "0adb221d624e0dceed2b1a4efd4d424f53fa5e599fb69588591d0ece4d9e4fba",
+              "TamanoBytes": 142368
             },
             {
               "Nombre": "AUT006 - Politica de Gestion de OITs Planta MDP.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT006%20-%20Politica%20de%20Gestion%20de%20OITs%20Planta%20MDP.pdf",
-              "Hash": "b503086ad80d09056632936cb971ec8a797dfa49b6d41fa680e6367dc399dac9"
+              "Hash": "b503086ad80d09056632936cb971ec8a797dfa49b6d41fa680e6367dc399dac9",
+              "TamanoBytes": 166154
             },
             {
               "Nombre": "ENERGIA - Arranque MG Guascor en SET1.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Arranque%20MG%20Guascor%20en%20SET1.pdf",
-              "Hash": "a16051d5d362d04d805889405a30c972cd9bbd6963ff6bde4a78b64cac4a70ed"
+              "Hash": "a16051d5d362d04d805889405a30c972cd9bbd6963ff6bde4a78b64cac4a70ed",
+              "TamanoBytes": 620337
             },
             {
               "Nombre": "ENERGIA - Arranque MMGG en SET4.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Arranque%20MMGG%20en%20SET4.pdf",
-              "Hash": "a7424af1f8008e7c90fe1a1f9337687c8aaaebda8d8b803cfcbe83ff7871512d"
+              "Hash": "a7424af1f8008e7c90fe1a1f9337687c8aaaebda8d8b803cfcbe83ff7871512d",
+              "TamanoBytes": 715802
             },
             {
               "Nombre": "ENERGIA - Plano electrico unifilar de Planta Mar del Plata.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Plano%20electrico%20unifilar%20de%20Planta%20Mar%20del%20Plata.pdf",
-              "Hash": "0375b0d573444d8f12a427a3ea9f6fcde59ad10de6c4c79c2469047881f2d252"
+              "Hash": "0375b0d573444d8f12a427a3ea9f6fcde59ad10de6c4c79c2469047881f2d252",
+              "TamanoBytes": 729085
             },
             {
               "Nombre": "ENERGIA - Procedimiento Reposicion de energia.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Procedimiento%20Reposicion%20de%20energia.pdf",
-              "Hash": "1435e17a5ccb3ec79b3927b7f85d2094596c21ee9bda1ee739d688a23c30d298"
+              "Hash": "1435e17a5ccb3ec79b3927b7f85d2094596c21ee9bda1ee739d688a23c30d298",
+              "TamanoBytes": 1269045
             },
             {
               "Nombre": "ENERGIA - Reposicion de servicios ante corte del suministro electrico externo.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Reposicion%20de%20servicios%20ante%20corte%20del%20suministro%20electrico%20externo.pdf",
-              "Hash": "3d125c66935695692dd01f4a53386cf2089869ff778fa45946b562eabbfc8d47"
+              "Hash": "3d125c66935695692dd01f4a53386cf2089869ff778fa45946b562eabbfc8d47",
+              "TamanoBytes": 715174
             },
             {
               "Nombre": "PROC000 - Biblioteca Procedimientos Planta Mar del Plata -OPL-2025.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC000%20-%20Biblioteca%20Procedimientos%20Planta%20Mar%20del%20Plata%20-OPL-2025.pdf",
-              "Hash": "44b856293c962ca0fb7c3c980b3eda45465af657e8183852e9bf1d6a72938717"
+              "Hash": "44b856293c962ca0fb7c3c980b3eda45465af657e8183852e9bf1d6a72938717",
+              "TamanoBytes": 1035902
             },
             {
               "Nombre": "PROC001 - Procedimiento de cambio de firmware controladores Allen-Bradley.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC001%20-%20Procedimiento%20de%20cambio%20de%20firmware%20controladores%20Allen-Bradley.pdf",
-              "Hash": "9d7780f00a231fd40a38f44b5e3f8b471f0841af3612b6e411b3e05f3501319a"
+              "Hash": "9d7780f00a231fd40a38f44b5e3f8b471f0841af3612b6e411b3e05f3501319a",
+              "TamanoBytes": 273805
             },
             {
               "Nombre": "PROC002 - Lista de verificacion estado salas de control.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC002%20-%20Lista%20de%20verificacion%20estado%20salas%20de%20control.pdf",
-              "Hash": "ab4d1d23d498f7e78f2e9f81b8c86277630f167dd0a4a963db967cd4dd7f36d7"
+              "Hash": "ab4d1d23d498f7e78f2e9f81b8c86277630f167dd0a4a963db967cd4dd7f36d7",
+              "TamanoBytes": 136177
             },
             {
               "Nombre": "PROC003 - Procedimiento actualizacion antivirus PCs de control de procesos.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC003%20-%20Procedimiento%20actualizacion%20antivirus%20PCs%20de%20control%20de%20procesos.pdf",
-              "Hash": "33843c0b21945ce7cd23b27434046d433fba04180cc566f6609a33c1fd758100"
+              "Hash": "33843c0b21945ce7cd23b27434046d433fba04180cc566f6609a33c1fd758100",
+              "TamanoBytes": 336520
             },
             {
               "Nombre": "PROC004 - Procedimiento configuracion de red balanzas Metler Toledo Jaguar.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC004%20-%20Procedimiento%20configuracion%20de%20red%20balanzas%20Metler%20Toledo%20Jaguar.pdf",
-              "Hash": "82c84a34b81a400cbd691df2cf1c1f5d2f57fb7b29727263cdb466fa97c0f02e"
+              "Hash": "82c84a34b81a400cbd691df2cf1c1f5d2f57fb7b29727263cdb466fa97c0f02e",
+              "TamanoBytes": 245882
             },
             {
               "Nombre": "PROC005 - Comprobacion celdas de carga K-tron linea MAPA.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC005%20-%20Comprobacion%20celdas%20de%20carga%20K-tron%20linea%20MAPA.pdf",
-              "Hash": "77125e36ee7b073358c139e7d27a8de14ad05204465b51a078a14b8bad780cad"
+              "Hash": "77125e36ee7b073358c139e7d27a8de14ad05204465b51a078a14b8bad780cad",
+              "TamanoBytes": 231874
             },
             {
               "Nombre": "PROC006 - Revision de Recursos PC.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC006%20-%20Revision%20de%20Recursos%20PC.pdf",
-              "Hash": "6887073ce50be7c98b8dd3b496b9222c7a63bb98c3e99a3b3164a714e1d40756"
+              "Hash": "6887073ce50be7c98b8dd3b496b9222c7a63bb98c3e99a3b3164a714e1d40756",
+              "TamanoBytes": 651998
             },
             {
               "Nombre": "PROC007 - Cambio de HMI.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC007%20-%20Cambio%20de%20HMI.pdf",
-              "Hash": "9ec109557f4c4d5ae847985ba8f3a31876c4c55dcf854e7e0bcbf4d7a06d1dbf"
+              "Hash": "9ec109557f4c4d5ae847985ba8f3a31876c4c55dcf854e7e0bcbf4d7a06d1dbf",
+              "TamanoBytes": 139072
             },
             {
               "Nombre": "PROC008 - Cambio de PLC.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC008%20-%20Cambio%20de%20PLC.pdf",
-              "Hash": "3a8dce366b28687ae1714a887ef5038e927206844daa69292441778914437abc"
+              "Hash": "3a8dce366b28687ae1714a887ef5038e927206844daa69292441778914437abc",
+              "TamanoBytes": 798354
             },
             {
               "Nombre": "PROC009 - Cambio de OIT.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC009%20-%20Cambio%20de%20OIT.pdf",
-              "Hash": "45055068edfb72abb92e4a2715505d58edfa57528c99c0ccce8ef5e6b778fb2a"
+              "Hash": "45055068edfb72abb92e4a2715505d58edfa57528c99c0ccce8ef5e6b778fb2a",
+              "TamanoBytes": 174482
             },
             {
               "Nombre": "PROC010 - Cambio de Powerflex 525.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC010%20-%20Cambio%20de%20Powerflex%20525.pdf",
-              "Hash": "ae204903ae21f0a44147ebdd96d8f4749059f7dc3020b46069c86a13d588d17d"
+              "Hash": "ae204903ae21f0a44147ebdd96d8f4749059f7dc3020b46069c86a13d588d17d",
+              "TamanoBytes": 136683
             },
             {
               "Nombre": "PROC011 - Cambio de Reovib MFS 268.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC011%20-%20Cambio%20de%20Reovib%20MFS%20268.pdf",
-              "Hash": "fb0f392683519acb1d9324b846b2f50eb66945dcce47a4ceda3815b7075e1f28"
+              "Hash": "fb0f392683519acb1d9324b846b2f50eb66945dcce47a4ceda3815b7075e1f28",
+              "TamanoBytes": 139332
             },
             {
               "Nombre": "PROC012 - Cambio de Modulo de Pesaje DELTA.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC012%20-%20Cambio%20de%20Modulo%20de%20Pesaje%20DELTA.pdf",
-              "Hash": "4a1041bb0f9720539159d51d04df3f051d57d7c60b91b01314eb422ae5b8c5a8"
+              "Hash": "4a1041bb0f9720539159d51d04df3f051d57d7c60b91b01314eb422ae5b8c5a8",
+              "TamanoBytes": 131922
             },
             {
               "Nombre": "PROC013 - Cambio de Scanner Devicenet 1769.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC013%20-%20Cambio%20de%20Scanner%20Devicenet%201769.pdf",
-              "Hash": "825fe9d66230341d0986db125c5eb756958a6d5b61e769fbc99a30e49af0a9cf"
+              "Hash": "825fe9d66230341d0986db125c5eb756958a6d5b61e769fbc99a30e49af0a9cf",
+              "TamanoBytes": 145351
             },
             {
               "Nombre": "PROC014 - Asignacion IP con BOOTP DHCP.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC014%20-%20Asignacion%20IP%20con%20BOOTP%20DHCP.pdf",
-              "Hash": "6ee26fcfbc63ece06b1ae6328a59d654c2074c76cd00bdf07d53eb4c19582581"
+              "Hash": "6ee26fcfbc63ece06b1ae6328a59d654c2074c76cd00bdf07d53eb4c19582581",
+              "TamanoBytes": 248409
             },
             {
               "Nombre": "PROC015 - Cambio de Powerflex 40 con HIM.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC015%20-%20Cambio%20de%20Powerflex%2040%20con%20HIM.pdf",
-              "Hash": "0b26e3649b30f3925665a80cabda47863674f5d3fc0e8e9bb1928e146dc5effa"
+              "Hash": "0b26e3649b30f3925665a80cabda47863674f5d3fc0e8e9bb1928e146dc5effa",
+              "TamanoBytes": 209692
             },
             {
               "Nombre": "PROC016 - Cambio de Servo Revgate.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC016%20-%20Cambio%20de%20Servo%20Revgate.pdf",
-              "Hash": "e1e8b9366041c51cf3409d27bb86ff3891ef9769763a15d954365495172eb718"
+              "Hash": "e1e8b9366041c51cf3409d27bb86ff3891ef9769763a15d954365495172eb718",
+              "TamanoBytes": 2073278
             },
             {
               "Nombre": "PROC017 - Cambio de Sensor Ultrasonico Hydepark Telemechanique.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC017%20-%20Cambio%20de%20Sensor%20Ultrasonico%20Hydepark%20Telemechanique.pdf",
-              "Hash": "28e68e483bcc309a83b2ef5ffbc8b89f5e81dc87dc02692e021efa0b90bdf725"
+              "Hash": "28e68e483bcc309a83b2ef5ffbc8b89f5e81dc87dc02692e021efa0b90bdf725",
+              "TamanoBytes": 332105
             },
             {
               "Nombre": "PROC018 - Cambio de Panel DELTA.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC018%20-%20Cambio%20de%20Panel%20DELTA.pdf",
-              "Hash": "278e3d9cff39f4d5ea1ea651d9038cc59579db001c21b4c3d97a70b9e1fd21f0"
+              "Hash": "278e3d9cff39f4d5ea1ea651d9038cc59579db001c21b4c3d97a70b9e1fd21f0",
+              "TamanoBytes": 181491
             },
             {
               "Nombre": "PROC019 - Cambio de PanelView Plus.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC019%20-%20Cambio%20de%20PanelView%20Plus.pdf",
-              "Hash": "63a363ec94514167f1cfc26eca5de201e6143ace5c10c7f40eb27d0a6ee5eb2a"
+              "Hash": "63a363ec94514167f1cfc26eca5de201e6143ace5c10c7f40eb27d0a6ee5eb2a",
+              "TamanoBytes": 241379
             },
             {
               "Nombre": "PROC020 - Cambio de Pantalla FATEK.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC020%20-%20Cambio%20de%20Pantalla%20FATEK.pdf",
-              "Hash": "521bd7ced701d0888fb4d78b29607f3a0aaf3de49cb179c97f56ce7b1f7b010e"
+              "Hash": "521bd7ced701d0888fb4d78b29607f3a0aaf3de49cb179c97f56ce7b1f7b010e",
+              "TamanoBytes": 137330
             },
             {
               "Nombre": "PROC021 - Montaje de imagen con Macrium Reflect.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC021%20-%20Montaje%20de%20imagen%20con%20Macrium%20Reflect.pdf",
-              "Hash": "f38540db69b134777215ec2a4535c80b2842ed80834d06216ac61e4711e16132"
+              "Hash": "f38540db69b134777215ec2a4535c80b2842ed80834d06216ac61e4711e16132",
+              "TamanoBytes": 274434
             },
             {
               "Nombre": "PROC022 - Cambio de CPU Roflo3 - TNA.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC022%20-%20Cambio%20de%20CPU%20Roflo3%20-%20TNA.pdf",
-              "Hash": "93290af6a8132f6e4c585fb3d4163314a3f335c48e4e980629ab64c4ca0f5510"
+              "Hash": "93290af6a8132f6e4c585fb3d4163314a3f335c48e4e980629ab64c4ca0f5510",
+              "TamanoBytes": 254101
             },
             {
               "Nombre": "PROC023 - Imagen de disco con Macrium Reflect.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC023%20-%20Imagen%20de%20disco%20con%20Macrium%20Reflect.pdf",
-              "Hash": "7beca29e26d5bdc3979f3a8cfeb048de4f4f3077d7591f933297dbb9bd6f6111"
+              "Hash": "7beca29e26d5bdc3979f3a8cfeb048de4f4f3077d7591f933297dbb9bd6f6111",
+              "TamanoBytes": 612615
             },
             {
               "Nombre": "PROC024 - Descarga Eventos Detectores CEIA.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC024%20-%20Descarga%20Eventos%20Detectores%20CEIA.pdf",
-              "Hash": "b4a8396a22a1cb5def8c83443bc5970593d715d94650f9f30d0290a60288ea9b"
+              "Hash": "b4a8396a22a1cb5def8c83443bc5970593d715d94650f9f30d0290a60288ea9b",
+              "TamanoBytes": 431333
             },
             {
               "Nombre": "PROC025 - Backup programa HMI PanelView Allen-Bradley.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC025%20-%20Backup%20programa%20HMI%20PanelView%20Allen-Bradley.pdf",
-              "Hash": "903cbcd84e65dae683c6ec57391c914f7fa33ccb595fc92cd350ea5c31ac6801"
+              "Hash": "903cbcd84e65dae683c6ec57391c914f7fa33ccb595fc92cd350ea5c31ac6801",
+              "TamanoBytes": 744866
             },
             {
               "Nombre": "PROC026 - Backup programa Backup PLC Control CompactLogix Allen-Bradley.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC026%20-%20Backup%20programa%20Backup%20PLC%20Control%20CompactLogix%20Allen-Bradley.pdf",
-              "Hash": "ad384406b1053855cb75b6f78ece4331785c9b8e6064f79146dd0a05fac25056"
+              "Hash": "ad384406b1053855cb75b6f78ece4331785c9b8e6064f79146dd0a05fac25056",
+              "TamanoBytes": 882662
             },
             {
               "Nombre": "PROC027 - BACKUP IMAGEN S.O. COBOT.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC027%20-%20BACKUP%20IMAGEN%20S.O.%20COBOT.pdf",
-              "Hash": "fa4056e496ed608e122b389d5c78c4632839b7ab1d8d38d05b8cf2c22fa59805"
+              "Hash": "fa4056e496ed608e122b389d5c78c4632839b7ab1d8d38d05b8cf2c22fa59805",
+              "TamanoBytes": 269948
             },
             {
               "Nombre": "PROC028 - Backup archivos y programas COBOT.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC028%20-%20Backup%20archivos%20y%20programas%20COBOT.pdf",
-              "Hash": "42f0321b630486c354b82d3fb7a96e05c570cc42e1e6e42b09add846063a8560"
+              "Hash": "42f0321b630486c354b82d3fb7a96e05c570cc42e1e6e42b09add846063a8560",
+              "TamanoBytes": 374933
             },
             {
               "Nombre": "PROC029 - Backup programa NATR Allen Bradley.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC029%20-%20Backup%20programa%20NATR%20Allen%20Bradley.pdf",
-              "Hash": "7bb99a33d6fde89285b9d179444f057caecdd6133fb141c6da040cc457fe65c2"
+              "Hash": "7bb99a33d6fde89285b9d179444f057caecdd6133fb141c6da040cc457fe65c2",
+              "TamanoBytes": 325318
             },
             {
               "Nombre": "PROC030 - Backup programa Stratix Allen Bradley.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC030%20-%20Backup%20programa%20Stratix%20Allen%20Bradley.pdf",
-              "Hash": "c6c21caa3f8eab1d91f15993838045a154c2b558cc97b30b4cd8f1d6f56e9906"
+              "Hash": "c6c21caa3f8eab1d91f15993838045a154c2b558cc97b30b4cd8f1d6f56e9906",
+              "TamanoBytes": 289913
             },
             {
               "Nombre": "PROC031 - Reemplazo de partes unidad lineal CTJ.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC031%20-%20Reemplazo%20de%20partes%20unidad%20lineal%20CTJ.pdf",
-              "Hash": "e917ad1312d5b6bc246a29b3c3e3e8959620a147b7851a2329cb7555bd465420"
+              "Hash": "e917ad1312d5b6bc246a29b3c3e3e8959620a147b7851a2329cb7555bd465420",
+              "TamanoBytes": 514506
             },
             {
               "Nombre": "PROC032 - Procedimiento uso de USB.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC032%20-%20Procedimiento%20uso%20de%20USB.pdf",
-              "Hash": "ad2aa1dfaf34939b3347ba122b04935054d2b51ba61552118528d0ba3b1a56e2"
+              "Hash": "ad2aa1dfaf34939b3347ba122b04935054d2b51ba61552118528d0ba3b1a56e2",
+              "TamanoBytes": 358023
             },
             {
               "Nombre": "PROC033 - Revision Interlock Horno Schaaf.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC033%20-%20Revision%20Interlock%20Horno%20Schaaf.pdf",
-              "Hash": "3ab679ffeeb5dd54b36caffb6844b5246c219b696fd0de11382b8b082de38719"
+              "Hash": "3ab679ffeeb5dd54b36caffb6844b5246c219b696fd0de11382b8b082de38719",
+              "TamanoBytes": 207086
             },
             {
               "Nombre": "PROC034 \u2013 Migracion Programa de PLC con Workbench Connection .pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC034%20%E2%80%93%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection%20.pdf",
-              "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7"
+              "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7",
+              "TamanoBytes": 623361
             },
             {
               "Nombre": "PROC035 \u2013 Carga de Parametros del PLC al controlador del motor GUACP.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC035%20%E2%80%93%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
-              "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62"
+              "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62",
+              "TamanoBytes": 482515
             },
             {
               "Nombre": "PROC036 - Verificacion del Antivirus.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC036%20-%20Verificacion%20del%20Antivirus.pdf",
-              "Hash": "96bd23af0f3b5a883f37d70d538bf9bbd5a140cda03f6ce6bbc03d881a552e02"
+              "Hash": "96bd23af0f3b5a883f37d70d538bf9bbd5a140cda03f6ce6bbc03d881a552e02",
+              "TamanoBytes": 219874
             },
             {
               "Nombre": "PROC038 - Limpieza PCs.pdf",
               "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC038%20-%20Limpieza%20PCs.pdf",
-              "Hash": "aaadd7b2d8936381c6f4083b5eb4d64c32bd6003e34441f385833bfa898ee7f3"
+              "Hash": "aaadd7b2d8936381c6f4083b5eb4d64c32bd6003e34441f385833bfa898ee7f3",
+              "TamanoBytes": 437102
             }
           ],
           "Subcarpetas": []

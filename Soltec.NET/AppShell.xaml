@@ -35,5 +35,10 @@
     <FlyoutItem Title="Calculo Motores" Icon="settings.png">
         <ShellContent ContentTemplate="{DataTemplate local:MotoresPage}" />
     </FlyoutItem>
+    
+    <!-- Otra página -->
+    <FlyoutItem Title="Configuracion" Icon="settings.png">
+        <ShellContent ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+    </FlyoutItem>
 
 </Shell>
