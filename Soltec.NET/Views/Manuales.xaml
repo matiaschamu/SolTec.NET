@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage x:Name="PageRoot"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:local="clr-namespace:Soltec.NET"
@@ -23,7 +24,7 @@
                                         <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
                                     </Border.Shadow>
                                     <Label Text="{Binding Nombre}"
-                                           FontSize="18"
+                                           FontSize="20"
                                            TextColor="White"
                                            FontAttributes="Bold"/>
                                 </Border>
@@ -42,13 +43,12 @@
                                         <CollectionView ItemsSource="{Binding Manuales}">
                                             <CollectionView.ItemTemplate>
                                                 <DataTemplate x:DataType="local:Manual">
-                                                    <Label FontSize="16">
-                                                        <Label.FormattedText>
-                                                            <FormattedString>
-                                                                <Span Text="📄 " />
-                                                                <Span Text="{Binding Nombre}" />
-                                                            </FormattedString>
-                                                        </Label.FormattedText>
+                                                    <Label FontSize="16" TextColor="Black" Text="{Binding NombreConIcono}" Margin="0,0,0,8">
+                                                        <Label.GestureRecognizers>
+                                                            <TapGestureRecognizer 
+                                                                Command="{Binding Source={x:Reference PageRoot}, Path=AbrirManualCommand}"
+                                                                CommandParameter="{Binding Url}" />
+                                                        </Label.GestureRecognizers>
                                                     </Label>
                                                 </DataTemplate>
                                             </CollectionView.ItemTemplate>
