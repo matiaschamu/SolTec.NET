@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36401.2 d17.14
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11012.119 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soltec.NET", "Soltec.NET\Soltec.NET.csproj", "{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actualizar Json Soltec", "Actualizar Json Soltec\Actualizar Json Soltec.csproj", "{0EEF1CA1-7D60-0702-C2DE-675324617FE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,8 +15,13 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDCAAE80-781F-4029-8C6B-CDDFB9A080CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
