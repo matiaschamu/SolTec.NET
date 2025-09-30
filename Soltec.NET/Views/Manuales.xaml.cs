@@ -8,12 +8,12 @@ namespace Soltec.NET;
 public partial class ManualesPage : ContentPage
 {
     public ICommand AbrirManualCommand { get; }
-    public ObservableCollection<Fabricante> Fabricantes { get; set; }
+    public ObservableCollection<Models.Fabricante> Fabricantes { get; set; }
 
     public ManualesPage()
     {
         InitializeComponent();
-        Fabricantes = new ObservableCollection<Fabricante>();
+        Fabricantes = new ObservableCollection<Models.Fabricante>();
         BindingContext = this;
         AbrirManualCommand = new Command<string>(async (url) => await AbrirManual(url));
         _ = CargarDatos();
@@ -42,7 +42,7 @@ public partial class ManualesPage : ContentPage
             var url = "https://matiaschamu.github.io/SolTec.NET/Extras/content.json";
 
             // Deserializa al modelo de carpetas
-            var raiz = await http.GetFromJsonAsync<Carpeta>(url);
+            var raiz = await http.GetFromJsonAsync<Models.Carpeta>(url);
 
             if (raiz == null) return;
 
@@ -59,11 +59,11 @@ public partial class ManualesPage : ContentPage
             // Cada subcarpeta de "Manuales" es un fabricante
             foreach (var carpetaFabricante in carpetaManuales.Subcarpetas)
             {
-                var fabricante = new Fabricante
+                var fabricante = new Models.Fabricante
                 {
                     Nombre = $"🏭 {carpetaFabricante.Nombre}",
                     Color = "#4CAF50",
-                    Manuales = carpetaFabricante.Archivos.Select(a => new Manual
+                    Manuales = carpetaFabricante.Archivos.Select(a => new Models.Manual
                     {
                         Nombre = a.Nombre,
                         Url = a.Url
@@ -80,45 +80,6 @@ public partial class ManualesPage : ContentPage
     }
 }
 
-public class Fabricante
-{
-    public string Nombre { get; set; } = string.Empty;
-    public string Color { get; set; } = "#4CAF50";
-    public List<Manual> Manuales { get; set; } = new();
-}
 
-    public class Manual
-{
-    public string Nombre { get; set; } = string.Empty;
-    public string Url { get; set; } = string.Empty;
-    public string NombreConIcono => $"📄 {Nombre}";
-                                                                   
-}
 
-public class PdfInfo
-{
-    public string Nombre { get; set; }
-    public string Url { get; set; }
-    public string Hash { get; set; }
-}
-
-public class FolderInfo
-{
-    public string Nombre { get; set; }
-    public List<PdfInfo> Archivos { get; set; } = new();
-    public List<FolderInfo> Subcarpetas { get; set; } = new();
-}
-public class Carpeta
-{
-    public string Nombre { get; set; } = string.Empty;
-    public List<Archivo> Archivos { get; set; } = new();
-    public List<Carpeta> Subcarpetas { get; set; } = new();
-}
-
-public class Archivo
-{
-    public string Nombre { get; set; } = string.Empty;
-    public string Url { get; set; } = string.Empty;
-    public string Hash { get; set; } = string.Empty;
-    public long TamanoBytes { get; set; }
-}
+    

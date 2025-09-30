@@ -10,6 +10,7 @@
 			Routing.RegisterRoute("PlanosPage", typeof(PlanosPage));
 			Routing.RegisterRoute("PoliticasPage", typeof(PoliticasPage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
-		}
+            Routing.RegisterRoute( nameof(ConfiguracionPage), typeof(ConfiguracionPage));
+        }
 	}
 }
