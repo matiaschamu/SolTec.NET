@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Soltec.NET.ConfiguracionPage"
+             Title="Configuracion"
+             x:Name="PageRoot">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="Configuracion" FontSize="24" HorizontalOptions="Center" />
+
+        <!-- Switch para modo offline -->
+        <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+            <Label Text="Usar manuales offline" VerticalOptions="Center"/>
+            <Switch IsToggled="{Binding Config.ModoOffline}" />
+        </HorizontalStackLayout>
+
+        <!-- Botón de sincronización -->
+        <Button Text="Sincronizar manuales" 
+            Command="{Binding SincronizarCommand}" />
+
+        <!-- Estado de archivos -->
+        <Label Text="{Binding EstadoArchivos}" 
+           TextColor="Red"
+           FontAttributes="Bold"/>
+
+        <!-- Progreso de descarga -->
+        <Label Text="{Binding ProgresoDescarga}" 
+           TextColor="Blue"
+           FontAttributes="Italic"/>
+    </VerticalStackLayout>
+</ContentPage>
