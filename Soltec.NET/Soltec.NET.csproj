@@ -42,6 +42,38 @@
 Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y funciones necesarias en el día a día.</Description>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-maccatalyst|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android36.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-maccatalyst|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android36.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
+	  <ApplicationVersion>78</ApplicationVersion>
+	</PropertyGroup>
 
 	<ItemGroup>
 		<!-- App Icon -->
@@ -97,6 +129,9 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
+		<Compile Update="Views\Configuracion.xaml.cs">
+		  <DependentUpon>Configuracion.xaml</DependentUpon>
+		</Compile>
 		<Compile Update="Views\CalculoMotores.xaml.cs">
 			<DependentUpon>CalculoMotores.xaml</DependentUpon>
 		</Compile>
@@ -122,6 +157,9 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	</ItemGroup>
 
 	<ItemGroup>
+		<MauiXaml Update="Views\Configuracion.xaml">
+		  <Generator>MSBuild:Compile</Generator>
+		</MauiXaml>
 		<MauiXaml Update="Views\CalculoMotores.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>

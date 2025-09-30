@@ -2461,310 +2461,346 @@
           ]
         },
         {
-          "Nombre": "ProcedimientosPoliticas",
-          "Archivos": [
+          "Nombre": "Planos",
+          "Archivos": [],
+          "Subcarpetas": [
             {
-              "Nombre": "AUT000 - IPs Planta.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT000%20-%20IPs%20Planta.pdf",
-              "Hash": "17e12f81758ddf2c4b111364b76344640b6a4312eaedc1a167557575d83c59ec",
-              "TamanoBytes": 1965388
-            },
-            {
-              "Nombre": "AUT001 - Politica de Backups de Automatismos.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT001%20-%20Politica%20de%20Backups%20de%20Automatismos.pdf",
-              "Hash": "f45664fc77acc1ccfd675a9e0c7939273a1a80c5036544d9d2bd6a2173faac1a",
-              "TamanoBytes": 172072
-            },
-            {
-              "Nombre": "AUT002 - Politica de Modificaciones en Automatismos.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT002%20-%20Politica%20de%20Modificaciones%20en%20Automatismos.pdf",
-              "Hash": "fc494c039d5f3be840abee6978774cff20973b6b5e9950029f10c6aa9be12032",
-              "TamanoBytes": 171276
-            },
-            {
-              "Nombre": "AUT003 - Politica de Control de accesos a salas de tableros.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT003%20-%20Politica%20de%20Control%20de%20accesos%20a%20salas%20de%20tableros.pdf",
-              "Hash": "2a1aacc74acc34d7faacc652e4d46c61567a6a878ba4f624933650b5f7537e56",
-              "TamanoBytes": 143624
-            },
-            {
-              "Nombre": "AUT004 - Politica de cobertura ante ausencia de CSS.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT004%20-%20Politica%20de%20cobertura%20ante%20ausencia%20de%20CSS.pdf",
-              "Hash": "9e7d4d4022edfc2a9b6080c69cb2146a8a638e2bd6e79cac12a7d949bea3fc92",
-              "TamanoBytes": 181234
-            },
-            {
-              "Nombre": "AUT005 - Politica de standarizacion de firmwares.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT005%20-%20Politica%20de%20standarizacion%20de%20firmwares.pdf",
-              "Hash": "0adb221d624e0dceed2b1a4efd4d424f53fa5e599fb69588591d0ece4d9e4fba",
-              "TamanoBytes": 142368
-            },
-            {
-              "Nombre": "AUT006 - Politica de Gestion de OITs Planta MDP.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/AUT006%20-%20Politica%20de%20Gestion%20de%20OITs%20Planta%20MDP.pdf",
-              "Hash": "b503086ad80d09056632936cb971ec8a797dfa49b6d41fa680e6367dc399dac9",
-              "TamanoBytes": 166154
-            },
-            {
-              "Nombre": "ENERGIA - Arranque MG Guascor en SET1.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Arranque%20MG%20Guascor%20en%20SET1.pdf",
-              "Hash": "a16051d5d362d04d805889405a30c972cd9bbd6963ff6bde4a78b64cac4a70ed",
-              "TamanoBytes": 620337
-            },
-            {
-              "Nombre": "ENERGIA - Arranque MMGG en SET4.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Arranque%20MMGG%20en%20SET4.pdf",
-              "Hash": "a7424af1f8008e7c90fe1a1f9337687c8aaaebda8d8b803cfcbe83ff7871512d",
-              "TamanoBytes": 715802
-            },
-            {
-              "Nombre": "ENERGIA - Plano electrico unifilar de Planta Mar del Plata.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Plano%20electrico%20unifilar%20de%20Planta%20Mar%20del%20Plata.pdf",
-              "Hash": "0375b0d573444d8f12a427a3ea9f6fcde59ad10de6c4c79c2469047881f2d252",
-              "TamanoBytes": 729085
-            },
-            {
-              "Nombre": "ENERGIA - Procedimiento Reposicion de energia.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Procedimiento%20Reposicion%20de%20energia.pdf",
-              "Hash": "1435e17a5ccb3ec79b3927b7f85d2094596c21ee9bda1ee739d688a23c30d298",
-              "TamanoBytes": 1269045
-            },
-            {
-              "Nombre": "ENERGIA - Reposicion de servicios ante corte del suministro electrico externo.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/ENERGIA%20-%20Reposicion%20de%20servicios%20ante%20corte%20del%20suministro%20electrico%20externo.pdf",
-              "Hash": "3d125c66935695692dd01f4a53386cf2089869ff778fa45946b562eabbfc8d47",
-              "TamanoBytes": 715174
-            },
-            {
-              "Nombre": "PROC000 - Biblioteca Procedimientos Planta Mar del Plata -OPL-2025.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC000%20-%20Biblioteca%20Procedimientos%20Planta%20Mar%20del%20Plata%20-OPL-2025.pdf",
-              "Hash": "44b856293c962ca0fb7c3c980b3eda45465af657e8183852e9bf1d6a72938717",
-              "TamanoBytes": 1035902
-            },
-            {
-              "Nombre": "PROC001 - Procedimiento de cambio de firmware controladores Allen-Bradley.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC001%20-%20Procedimiento%20de%20cambio%20de%20firmware%20controladores%20Allen-Bradley.pdf",
-              "Hash": "9d7780f00a231fd40a38f44b5e3f8b471f0841af3612b6e411b3e05f3501319a",
-              "TamanoBytes": 273805
-            },
-            {
-              "Nombre": "PROC002 - Lista de verificacion estado salas de control.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC002%20-%20Lista%20de%20verificacion%20estado%20salas%20de%20control.pdf",
-              "Hash": "ab4d1d23d498f7e78f2e9f81b8c86277630f167dd0a4a963db967cd4dd7f36d7",
-              "TamanoBytes": 136177
-            },
-            {
-              "Nombre": "PROC003 - Procedimiento actualizacion antivirus PCs de control de procesos.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC003%20-%20Procedimiento%20actualizacion%20antivirus%20PCs%20de%20control%20de%20procesos.pdf",
-              "Hash": "33843c0b21945ce7cd23b27434046d433fba04180cc566f6609a33c1fd758100",
-              "TamanoBytes": 336520
-            },
-            {
-              "Nombre": "PROC004 - Procedimiento configuracion de red balanzas Metler Toledo Jaguar.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC004%20-%20Procedimiento%20configuracion%20de%20red%20balanzas%20Metler%20Toledo%20Jaguar.pdf",
-              "Hash": "82c84a34b81a400cbd691df2cf1c1f5d2f57fb7b29727263cdb466fa97c0f02e",
-              "TamanoBytes": 245882
-            },
-            {
-              "Nombre": "PROC005 - Comprobacion celdas de carga K-tron linea MAPA.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC005%20-%20Comprobacion%20celdas%20de%20carga%20K-tron%20linea%20MAPA.pdf",
-              "Hash": "77125e36ee7b073358c139e7d27a8de14ad05204465b51a078a14b8bad780cad",
-              "TamanoBytes": 231874
-            },
-            {
-              "Nombre": "PROC006 - Revision de Recursos PC.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC006%20-%20Revision%20de%20Recursos%20PC.pdf",
-              "Hash": "6887073ce50be7c98b8dd3b496b9222c7a63bb98c3e99a3b3164a714e1d40756",
-              "TamanoBytes": 651998
-            },
-            {
-              "Nombre": "PROC007 - Cambio de HMI.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC007%20-%20Cambio%20de%20HMI.pdf",
-              "Hash": "9ec109557f4c4d5ae847985ba8f3a31876c4c55dcf854e7e0bcbf4d7a06d1dbf",
-              "TamanoBytes": 139072
-            },
-            {
-              "Nombre": "PROC008 - Cambio de PLC.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC008%20-%20Cambio%20de%20PLC.pdf",
-              "Hash": "3a8dce366b28687ae1714a887ef5038e927206844daa69292441778914437abc",
-              "TamanoBytes": 798354
-            },
-            {
-              "Nombre": "PROC009 - Cambio de OIT.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC009%20-%20Cambio%20de%20OIT.pdf",
-              "Hash": "45055068edfb72abb92e4a2715505d58edfa57528c99c0ccce8ef5e6b778fb2a",
-              "TamanoBytes": 174482
-            },
-            {
-              "Nombre": "PROC010 - Cambio de Powerflex 525.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC010%20-%20Cambio%20de%20Powerflex%20525.pdf",
-              "Hash": "ae204903ae21f0a44147ebdd96d8f4749059f7dc3020b46069c86a13d588d17d",
-              "TamanoBytes": 136683
-            },
-            {
-              "Nombre": "PROC011 - Cambio de Reovib MFS 268.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC011%20-%20Cambio%20de%20Reovib%20MFS%20268.pdf",
-              "Hash": "fb0f392683519acb1d9324b846b2f50eb66945dcce47a4ceda3815b7075e1f28",
-              "TamanoBytes": 139332
-            },
-            {
-              "Nombre": "PROC012 - Cambio de Modulo de Pesaje DELTA.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC012%20-%20Cambio%20de%20Modulo%20de%20Pesaje%20DELTA.pdf",
-              "Hash": "4a1041bb0f9720539159d51d04df3f051d57d7c60b91b01314eb422ae5b8c5a8",
-              "TamanoBytes": 131922
-            },
-            {
-              "Nombre": "PROC013 - Cambio de Scanner Devicenet 1769.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC013%20-%20Cambio%20de%20Scanner%20Devicenet%201769.pdf",
-              "Hash": "825fe9d66230341d0986db125c5eb756958a6d5b61e769fbc99a30e49af0a9cf",
-              "TamanoBytes": 145351
-            },
-            {
-              "Nombre": "PROC014 - Asignacion IP con BOOTP DHCP.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC014%20-%20Asignacion%20IP%20con%20BOOTP%20DHCP.pdf",
-              "Hash": "6ee26fcfbc63ece06b1ae6328a59d654c2074c76cd00bdf07d53eb4c19582581",
-              "TamanoBytes": 248409
-            },
-            {
-              "Nombre": "PROC015 - Cambio de Powerflex 40 con HIM.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC015%20-%20Cambio%20de%20Powerflex%2040%20con%20HIM.pdf",
-              "Hash": "0b26e3649b30f3925665a80cabda47863674f5d3fc0e8e9bb1928e146dc5effa",
-              "TamanoBytes": 209692
-            },
-            {
-              "Nombre": "PROC016 - Cambio de Servo Revgate.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC016%20-%20Cambio%20de%20Servo%20Revgate.pdf",
-              "Hash": "e1e8b9366041c51cf3409d27bb86ff3891ef9769763a15d954365495172eb718",
-              "TamanoBytes": 2073278
-            },
-            {
-              "Nombre": "PROC017 - Cambio de Sensor Ultrasonico Hydepark Telemechanique.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC017%20-%20Cambio%20de%20Sensor%20Ultrasonico%20Hydepark%20Telemechanique.pdf",
-              "Hash": "28e68e483bcc309a83b2ef5ffbc8b89f5e81dc87dc02692e021efa0b90bdf725",
-              "TamanoBytes": 332105
-            },
-            {
-              "Nombre": "PROC018 - Cambio de Panel DELTA.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC018%20-%20Cambio%20de%20Panel%20DELTA.pdf",
-              "Hash": "278e3d9cff39f4d5ea1ea651d9038cc59579db001c21b4c3d97a70b9e1fd21f0",
-              "TamanoBytes": 181491
-            },
-            {
-              "Nombre": "PROC019 - Cambio de PanelView Plus.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC019%20-%20Cambio%20de%20PanelView%20Plus.pdf",
-              "Hash": "63a363ec94514167f1cfc26eca5de201e6143ace5c10c7f40eb27d0a6ee5eb2a",
-              "TamanoBytes": 241379
-            },
-            {
-              "Nombre": "PROC020 - Cambio de Pantalla FATEK.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC020%20-%20Cambio%20de%20Pantalla%20FATEK.pdf",
-              "Hash": "521bd7ced701d0888fb4d78b29607f3a0aaf3de49cb179c97f56ce7b1f7b010e",
-              "TamanoBytes": 137330
-            },
-            {
-              "Nombre": "PROC021 - Montaje de imagen con Macrium Reflect.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC021%20-%20Montaje%20de%20imagen%20con%20Macrium%20Reflect.pdf",
-              "Hash": "f38540db69b134777215ec2a4535c80b2842ed80834d06216ac61e4711e16132",
-              "TamanoBytes": 274434
-            },
-            {
-              "Nombre": "PROC022 - Cambio de CPU Roflo3 - TNA.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC022%20-%20Cambio%20de%20CPU%20Roflo3%20-%20TNA.pdf",
-              "Hash": "93290af6a8132f6e4c585fb3d4163314a3f335c48e4e980629ab64c4ca0f5510",
-              "TamanoBytes": 254101
-            },
-            {
-              "Nombre": "PROC023 - Imagen de disco con Macrium Reflect.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC023%20-%20Imagen%20de%20disco%20con%20Macrium%20Reflect.pdf",
-              "Hash": "7beca29e26d5bdc3979f3a8cfeb048de4f4f3077d7591f933297dbb9bd6f6111",
-              "TamanoBytes": 612615
-            },
-            {
-              "Nombre": "PROC024 - Descarga Eventos Detectores CEIA.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC024%20-%20Descarga%20Eventos%20Detectores%20CEIA.pdf",
-              "Hash": "b4a8396a22a1cb5def8c83443bc5970593d715d94650f9f30d0290a60288ea9b",
-              "TamanoBytes": 431333
-            },
-            {
-              "Nombre": "PROC025 - Backup programa HMI PanelView Allen-Bradley.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC025%20-%20Backup%20programa%20HMI%20PanelView%20Allen-Bradley.pdf",
-              "Hash": "903cbcd84e65dae683c6ec57391c914f7fa33ccb595fc92cd350ea5c31ac6801",
-              "TamanoBytes": 744866
-            },
-            {
-              "Nombre": "PROC026 - Backup programa Backup PLC Control CompactLogix Allen-Bradley.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC026%20-%20Backup%20programa%20Backup%20PLC%20Control%20CompactLogix%20Allen-Bradley.pdf",
-              "Hash": "ad384406b1053855cb75b6f78ece4331785c9b8e6064f79146dd0a05fac25056",
-              "TamanoBytes": 882662
-            },
-            {
-              "Nombre": "PROC027 - BACKUP IMAGEN S.O. COBOT.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC027%20-%20BACKUP%20IMAGEN%20S.O.%20COBOT.pdf",
-              "Hash": "fa4056e496ed608e122b389d5c78c4632839b7ab1d8d38d05b8cf2c22fa59805",
-              "TamanoBytes": 269948
-            },
-            {
-              "Nombre": "PROC028 - Backup archivos y programas COBOT.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC028%20-%20Backup%20archivos%20y%20programas%20COBOT.pdf",
-              "Hash": "42f0321b630486c354b82d3fb7a96e05c570cc42e1e6e42b09add846063a8560",
-              "TamanoBytes": 374933
-            },
-            {
-              "Nombre": "PROC029 - Backup programa NATR Allen Bradley.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC029%20-%20Backup%20programa%20NATR%20Allen%20Bradley.pdf",
-              "Hash": "7bb99a33d6fde89285b9d179444f057caecdd6133fb141c6da040cc457fe65c2",
-              "TamanoBytes": 325318
-            },
-            {
-              "Nombre": "PROC030 - Backup programa Stratix Allen Bradley.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC030%20-%20Backup%20programa%20Stratix%20Allen%20Bradley.pdf",
-              "Hash": "c6c21caa3f8eab1d91f15993838045a154c2b558cc97b30b4cd8f1d6f56e9906",
-              "TamanoBytes": 289913
-            },
-            {
-              "Nombre": "PROC031 - Reemplazo de partes unidad lineal CTJ.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC031%20-%20Reemplazo%20de%20partes%20unidad%20lineal%20CTJ.pdf",
-              "Hash": "e917ad1312d5b6bc246a29b3c3e3e8959620a147b7851a2329cb7555bd465420",
-              "TamanoBytes": 514506
-            },
-            {
-              "Nombre": "PROC032 - Procedimiento uso de USB.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC032%20-%20Procedimiento%20uso%20de%20USB.pdf",
-              "Hash": "ad2aa1dfaf34939b3347ba122b04935054d2b51ba61552118528d0ba3b1a56e2",
-              "TamanoBytes": 358023
-            },
-            {
-              "Nombre": "PROC033 - Revision Interlock Horno Schaaf.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC033%20-%20Revision%20Interlock%20Horno%20Schaaf.pdf",
-              "Hash": "3ab679ffeeb5dd54b36caffb6844b5246c219b696fd0de11382b8b082de38719",
-              "TamanoBytes": 207086
-            },
-            {
-              "Nombre": "PROC034 \u2013 Migracion Programa de PLC con Workbench Connection .pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC034%20%E2%80%93%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection%20.pdf",
-              "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7",
-              "TamanoBytes": 623361
-            },
-            {
-              "Nombre": "PROC035 \u2013 Carga de Parametros del PLC al controlador del motor GUACP.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC035%20%E2%80%93%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
-              "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62",
-              "TamanoBytes": 482515
-            },
-            {
-              "Nombre": "PROC036 - Verificacion del Antivirus.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC036%20-%20Verificacion%20del%20Antivirus.pdf",
-              "Hash": "96bd23af0f3b5a883f37d70d538bf9bbd5a140cda03f6ce6bbc03d881a552e02",
-              "TamanoBytes": 219874
-            },
-            {
-              "Nombre": "PROC038 - Limpieza PCs.pdf",
-              "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/PROC038%20-%20Limpieza%20PCs.pdf",
-              "Hash": "aaadd7b2d8936381c6f4083b5eb4d64c32bd6003e34441f385833bfa898ee7f3",
-              "TamanoBytes": 437102
+              "Nombre": "Schaaf1",
+              "Archivos": [
+                {
+                  "Nombre": "Plano Schaaf1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/Schaaf1/Plano%20Schaaf1.pdf",
+                  "Hash": "1ba4413d9224a7d893318fa3cdb965eee2b4012e73facb75c1115fa8a2b85620",
+                  "TamanoBytes": 1023666
+                }
+              ],
+              "Subcarpetas": []
             }
-          ],
-          "Subcarpetas": []
+          ]
+        },
+        {
+          "Nombre": "ProcedimientosPoliticas",
+          "Archivos": [],
+          "Subcarpetas": [
+            {
+              "Nombre": "Automatismo",
+              "Archivos": [
+                {
+                  "Nombre": "AUT000 - IPs Planta.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT000%20-%20IPs%20Planta.pdf",
+                  "Hash": "17e12f81758ddf2c4b111364b76344640b6a4312eaedc1a167557575d83c59ec",
+                  "TamanoBytes": 1965388
+                },
+                {
+                  "Nombre": "AUT001 - Politica de Backups de Automatismos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT001%20-%20Politica%20de%20Backups%20de%20Automatismos.pdf",
+                  "Hash": "f45664fc77acc1ccfd675a9e0c7939273a1a80c5036544d9d2bd6a2173faac1a",
+                  "TamanoBytes": 172072
+                },
+                {
+                  "Nombre": "AUT002 - Politica de Modificaciones en Automatismos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT002%20-%20Politica%20de%20Modificaciones%20en%20Automatismos.pdf",
+                  "Hash": "fc494c039d5f3be840abee6978774cff20973b6b5e9950029f10c6aa9be12032",
+                  "TamanoBytes": 171276
+                },
+                {
+                  "Nombre": "AUT003 - Politica de Control de accesos a salas de tableros.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT003%20-%20Politica%20de%20Control%20de%20accesos%20a%20salas%20de%20tableros.pdf",
+                  "Hash": "2a1aacc74acc34d7faacc652e4d46c61567a6a878ba4f624933650b5f7537e56",
+                  "TamanoBytes": 143624
+                },
+                {
+                  "Nombre": "AUT004 - Politica de cobertura ante ausencia de CSS.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT004%20-%20Politica%20de%20cobertura%20ante%20ausencia%20de%20CSS.pdf",
+                  "Hash": "9e7d4d4022edfc2a9b6080c69cb2146a8a638e2bd6e79cac12a7d949bea3fc92",
+                  "TamanoBytes": 181234
+                },
+                {
+                  "Nombre": "AUT005 - Politica de standarizacion de firmwares.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT005%20-%20Politica%20de%20standarizacion%20de%20firmwares.pdf",
+                  "Hash": "0adb221d624e0dceed2b1a4efd4d424f53fa5e599fb69588591d0ece4d9e4fba",
+                  "TamanoBytes": 142368
+                },
+                {
+                  "Nombre": "AUT006 - Politica de Gestion de OITs Planta MDP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Automatismo/AUT006%20-%20Politica%20de%20Gestion%20de%20OITs%20Planta%20MDP.pdf",
+                  "Hash": "b503086ad80d09056632936cb971ec8a797dfa49b6d41fa680e6367dc399dac9",
+                  "TamanoBytes": 166154
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "Energia",
+              "Archivos": [
+                {
+                  "Nombre": "ENERGIA - Arranque MG Guascor en SET1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Energia/ENERGIA%20-%20Arranque%20MG%20Guascor%20en%20SET1.pdf",
+                  "Hash": "a16051d5d362d04d805889405a30c972cd9bbd6963ff6bde4a78b64cac4a70ed",
+                  "TamanoBytes": 620337
+                },
+                {
+                  "Nombre": "ENERGIA - Arranque MMGG en SET4.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Energia/ENERGIA%20-%20Arranque%20MMGG%20en%20SET4.pdf",
+                  "Hash": "a7424af1f8008e7c90fe1a1f9337687c8aaaebda8d8b803cfcbe83ff7871512d",
+                  "TamanoBytes": 715802
+                },
+                {
+                  "Nombre": "ENERGIA - Plano electrico unifilar de Planta Mar del Plata.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Energia/ENERGIA%20-%20Plano%20electrico%20unifilar%20de%20Planta%20Mar%20del%20Plata.pdf",
+                  "Hash": "0375b0d573444d8f12a427a3ea9f6fcde59ad10de6c4c79c2469047881f2d252",
+                  "TamanoBytes": 729085
+                },
+                {
+                  "Nombre": "ENERGIA - Procedimiento Reposicion de energia.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Energia/ENERGIA%20-%20Procedimiento%20Reposicion%20de%20energia.pdf",
+                  "Hash": "1435e17a5ccb3ec79b3927b7f85d2094596c21ee9bda1ee739d688a23c30d298",
+                  "TamanoBytes": 1269045
+                },
+                {
+                  "Nombre": "ENERGIA - Reposicion de servicios ante corte del suministro electrico externo.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Energia/ENERGIA%20-%20Reposicion%20de%20servicios%20ante%20corte%20del%20suministro%20electrico%20externo.pdf",
+                  "Hash": "3d125c66935695692dd01f4a53386cf2089869ff778fa45946b562eabbfc8d47",
+                  "TamanoBytes": 715174
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "Procedimientos Comunes",
+              "Archivos": [
+                {
+                  "Nombre": "PROC000 - Biblioteca Procedimientos Planta Mar del Plata -OPL-2025.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC000%20-%20Biblioteca%20Procedimientos%20Planta%20Mar%20del%20Plata%20-OPL-2025.pdf",
+                  "Hash": "44b856293c962ca0fb7c3c980b3eda45465af657e8183852e9bf1d6a72938717",
+                  "TamanoBytes": 1035902
+                },
+                {
+                  "Nombre": "PROC001 - Procedimiento de cambio de firmware controladores Allen-Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC001%20-%20Procedimiento%20de%20cambio%20de%20firmware%20controladores%20Allen-Bradley.pdf",
+                  "Hash": "9d7780f00a231fd40a38f44b5e3f8b471f0841af3612b6e411b3e05f3501319a",
+                  "TamanoBytes": 273805
+                },
+                {
+                  "Nombre": "PROC002 - Lista de verificacion estado salas de control.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC002%20-%20Lista%20de%20verificacion%20estado%20salas%20de%20control.pdf",
+                  "Hash": "ab4d1d23d498f7e78f2e9f81b8c86277630f167dd0a4a963db967cd4dd7f36d7",
+                  "TamanoBytes": 136177
+                },
+                {
+                  "Nombre": "PROC003 - Procedimiento actualizacion antivirus PCs de control de procesos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC003%20-%20Procedimiento%20actualizacion%20antivirus%20PCs%20de%20control%20de%20procesos.pdf",
+                  "Hash": "33843c0b21945ce7cd23b27434046d433fba04180cc566f6609a33c1fd758100",
+                  "TamanoBytes": 336520
+                },
+                {
+                  "Nombre": "PROC004 - Procedimiento configuracion de red balanzas Metler Toledo Jaguar.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC004%20-%20Procedimiento%20configuracion%20de%20red%20balanzas%20Metler%20Toledo%20Jaguar.pdf",
+                  "Hash": "82c84a34b81a400cbd691df2cf1c1f5d2f57fb7b29727263cdb466fa97c0f02e",
+                  "TamanoBytes": 245882
+                },
+                {
+                  "Nombre": "PROC005 - Comprobacion celdas de carga K-tron linea MAPA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC005%20-%20Comprobacion%20celdas%20de%20carga%20K-tron%20linea%20MAPA.pdf",
+                  "Hash": "77125e36ee7b073358c139e7d27a8de14ad05204465b51a078a14b8bad780cad",
+                  "TamanoBytes": 231874
+                },
+                {
+                  "Nombre": "PROC006 - Revision de Recursos PC.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC006%20-%20Revision%20de%20Recursos%20PC.pdf",
+                  "Hash": "6887073ce50be7c98b8dd3b496b9222c7a63bb98c3e99a3b3164a714e1d40756",
+                  "TamanoBytes": 651998
+                },
+                {
+                  "Nombre": "PROC007 - Cambio de HMI.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC007%20-%20Cambio%20de%20HMI.pdf",
+                  "Hash": "9ec109557f4c4d5ae847985ba8f3a31876c4c55dcf854e7e0bcbf4d7a06d1dbf",
+                  "TamanoBytes": 139072
+                },
+                {
+                  "Nombre": "PROC008 - Cambio de PLC.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC008%20-%20Cambio%20de%20PLC.pdf",
+                  "Hash": "3a8dce366b28687ae1714a887ef5038e927206844daa69292441778914437abc",
+                  "TamanoBytes": 798354
+                },
+                {
+                  "Nombre": "PROC009 - Cambio de OIT.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC009%20-%20Cambio%20de%20OIT.pdf",
+                  "Hash": "45055068edfb72abb92e4a2715505d58edfa57528c99c0ccce8ef5e6b778fb2a",
+                  "TamanoBytes": 174482
+                },
+                {
+                  "Nombre": "PROC010 - Cambio de Powerflex 525.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC010%20-%20Cambio%20de%20Powerflex%20525.pdf",
+                  "Hash": "ae204903ae21f0a44147ebdd96d8f4749059f7dc3020b46069c86a13d588d17d",
+                  "TamanoBytes": 136683
+                },
+                {
+                  "Nombre": "PROC011 - Cambio de Reovib MFS 268.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC011%20-%20Cambio%20de%20Reovib%20MFS%20268.pdf",
+                  "Hash": "fb0f392683519acb1d9324b846b2f50eb66945dcce47a4ceda3815b7075e1f28",
+                  "TamanoBytes": 139332
+                },
+                {
+                  "Nombre": "PROC012 - Cambio de Modulo de Pesaje DELTA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC012%20-%20Cambio%20de%20Modulo%20de%20Pesaje%20DELTA.pdf",
+                  "Hash": "4a1041bb0f9720539159d51d04df3f051d57d7c60b91b01314eb422ae5b8c5a8",
+                  "TamanoBytes": 131922
+                },
+                {
+                  "Nombre": "PROC013 - Cambio de Scanner Devicenet 1769.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC013%20-%20Cambio%20de%20Scanner%20Devicenet%201769.pdf",
+                  "Hash": "825fe9d66230341d0986db125c5eb756958a6d5b61e769fbc99a30e49af0a9cf",
+                  "TamanoBytes": 145351
+                },
+                {
+                  "Nombre": "PROC014 - Asignacion IP con BOOTP DHCP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC014%20-%20Asignacion%20IP%20con%20BOOTP%20DHCP.pdf",
+                  "Hash": "6ee26fcfbc63ece06b1ae6328a59d654c2074c76cd00bdf07d53eb4c19582581",
+                  "TamanoBytes": 248409
+                },
+                {
+                  "Nombre": "PROC015 - Cambio de Powerflex 40 con HIM.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC015%20-%20Cambio%20de%20Powerflex%2040%20con%20HIM.pdf",
+                  "Hash": "0b26e3649b30f3925665a80cabda47863674f5d3fc0e8e9bb1928e146dc5effa",
+                  "TamanoBytes": 209692
+                },
+                {
+                  "Nombre": "PROC016 - Cambio de Servo Revgate.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC016%20-%20Cambio%20de%20Servo%20Revgate.pdf",
+                  "Hash": "e1e8b9366041c51cf3409d27bb86ff3891ef9769763a15d954365495172eb718",
+                  "TamanoBytes": 2073278
+                },
+                {
+                  "Nombre": "PROC017 - Cambio de Sensor Ultrasonico Hydepark Telemechanique.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC017%20-%20Cambio%20de%20Sensor%20Ultrasonico%20Hydepark%20Telemechanique.pdf",
+                  "Hash": "28e68e483bcc309a83b2ef5ffbc8b89f5e81dc87dc02692e021efa0b90bdf725",
+                  "TamanoBytes": 332105
+                },
+                {
+                  "Nombre": "PROC018 - Cambio de Panel DELTA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC018%20-%20Cambio%20de%20Panel%20DELTA.pdf",
+                  "Hash": "278e3d9cff39f4d5ea1ea651d9038cc59579db001c21b4c3d97a70b9e1fd21f0",
+                  "TamanoBytes": 181491
+                },
+                {
+                  "Nombre": "PROC019 - Cambio de PanelView Plus.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC019%20-%20Cambio%20de%20PanelView%20Plus.pdf",
+                  "Hash": "63a363ec94514167f1cfc26eca5de201e6143ace5c10c7f40eb27d0a6ee5eb2a",
+                  "TamanoBytes": 241379
+                },
+                {
+                  "Nombre": "PROC020 - Cambio de Pantalla FATEK.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC020%20-%20Cambio%20de%20Pantalla%20FATEK.pdf",
+                  "Hash": "521bd7ced701d0888fb4d78b29607f3a0aaf3de49cb179c97f56ce7b1f7b010e",
+                  "TamanoBytes": 137330
+                },
+                {
+                  "Nombre": "PROC021 - Montaje de imagen con Macrium Reflect.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC021%20-%20Montaje%20de%20imagen%20con%20Macrium%20Reflect.pdf",
+                  "Hash": "f38540db69b134777215ec2a4535c80b2842ed80834d06216ac61e4711e16132",
+                  "TamanoBytes": 274434
+                },
+                {
+                  "Nombre": "PROC022 - Cambio de CPU Roflo3 - TNA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC022%20-%20Cambio%20de%20CPU%20Roflo3%20-%20TNA.pdf",
+                  "Hash": "93290af6a8132f6e4c585fb3d4163314a3f335c48e4e980629ab64c4ca0f5510",
+                  "TamanoBytes": 254101
+                },
+                {
+                  "Nombre": "PROC023 - Imagen de disco con Macrium Reflect.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC023%20-%20Imagen%20de%20disco%20con%20Macrium%20Reflect.pdf",
+                  "Hash": "7beca29e26d5bdc3979f3a8cfeb048de4f4f3077d7591f933297dbb9bd6f6111",
+                  "TamanoBytes": 612615
+                },
+                {
+                  "Nombre": "PROC024 - Descarga Eventos Detectores CEIA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC024%20-%20Descarga%20Eventos%20Detectores%20CEIA.pdf",
+                  "Hash": "b4a8396a22a1cb5def8c83443bc5970593d715d94650f9f30d0290a60288ea9b",
+                  "TamanoBytes": 431333
+                },
+                {
+                  "Nombre": "PROC025 - Backup programa HMI PanelView Allen-Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC025%20-%20Backup%20programa%20HMI%20PanelView%20Allen-Bradley.pdf",
+                  "Hash": "903cbcd84e65dae683c6ec57391c914f7fa33ccb595fc92cd350ea5c31ac6801",
+                  "TamanoBytes": 744866
+                },
+                {
+                  "Nombre": "PROC026 - Backup programa Backup PLC Control CompactLogix Allen-Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC026%20-%20Backup%20programa%20Backup%20PLC%20Control%20CompactLogix%20Allen-Bradley.pdf",
+                  "Hash": "ad384406b1053855cb75b6f78ece4331785c9b8e6064f79146dd0a05fac25056",
+                  "TamanoBytes": 882662
+                },
+                {
+                  "Nombre": "PROC027 - BACKUP IMAGEN S.O. COBOT.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC027%20-%20BACKUP%20IMAGEN%20S.O.%20COBOT.pdf",
+                  "Hash": "fa4056e496ed608e122b389d5c78c4632839b7ab1d8d38d05b8cf2c22fa59805",
+                  "TamanoBytes": 269948
+                },
+                {
+                  "Nombre": "PROC028 - Backup archivos y programas COBOT.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC028%20-%20Backup%20archivos%20y%20programas%20COBOT.pdf",
+                  "Hash": "42f0321b630486c354b82d3fb7a96e05c570cc42e1e6e42b09add846063a8560",
+                  "TamanoBytes": 374933
+                },
+                {
+                  "Nombre": "PROC029 - Backup programa NATR Allen Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC029%20-%20Backup%20programa%20NATR%20Allen%20Bradley.pdf",
+                  "Hash": "7bb99a33d6fde89285b9d179444f057caecdd6133fb141c6da040cc457fe65c2",
+                  "TamanoBytes": 325318
+                },
+                {
+                  "Nombre": "PROC030 - Backup programa Stratix Allen Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC030%20-%20Backup%20programa%20Stratix%20Allen%20Bradley.pdf",
+                  "Hash": "c6c21caa3f8eab1d91f15993838045a154c2b558cc97b30b4cd8f1d6f56e9906",
+                  "TamanoBytes": 289913
+                },
+                {
+                  "Nombre": "PROC031 - Reemplazo de partes unidad lineal CTJ.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC031%20-%20Reemplazo%20de%20partes%20unidad%20lineal%20CTJ.pdf",
+                  "Hash": "e917ad1312d5b6bc246a29b3c3e3e8959620a147b7851a2329cb7555bd465420",
+                  "TamanoBytes": 514506
+                },
+                {
+                  "Nombre": "PROC032 - Procedimiento uso de USB.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC032%20-%20Procedimiento%20uso%20de%20USB.pdf",
+                  "Hash": "ad2aa1dfaf34939b3347ba122b04935054d2b51ba61552118528d0ba3b1a56e2",
+                  "TamanoBytes": 358023
+                },
+                {
+                  "Nombre": "PROC033 - Revision Interlock Horno Schaaf.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC033%20-%20Revision%20Interlock%20Horno%20Schaaf.pdf",
+                  "Hash": "3ab679ffeeb5dd54b36caffb6844b5246c219b696fd0de11382b8b082de38719",
+                  "TamanoBytes": 207086
+                },
+                {
+                  "Nombre": "PROC034 \u2013 Migracion Programa de PLC con Workbench Connection .pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC034%20%E2%80%93%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection%20.pdf",
+                  "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7",
+                  "TamanoBytes": 623361
+                },
+                {
+                  "Nombre": "PROC035 \u2013 Carga de Parametros del PLC al controlador del motor GUACP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC035%20%E2%80%93%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
+                  "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62",
+                  "TamanoBytes": 482515
+                },
+                {
+                  "Nombre": "PROC036 - Verificacion del Antivirus.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC036%20-%20Verificacion%20del%20Antivirus.pdf",
+                  "Hash": "96bd23af0f3b5a883f37d70d538bf9bbd5a140cda03f6ce6bbc03d881a552e02",
+                  "TamanoBytes": 219874
+                },
+                {
+                  "Nombre": "PROC038 - Limpieza PCs.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC038%20-%20Limpieza%20PCs.pdf",
+                  "Hash": "aaadd7b2d8936381c6f4083b5eb4d64c32bd6003e34441f385833bfa898ee7f3",
+                  "TamanoBytes": 437102
+                }
+              ],
+              "Subcarpetas": []
+            }
+          ]
         }
       ]
     }
