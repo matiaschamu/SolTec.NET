@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
-using Soltec.NET.Service;
+using Soltec.NET.Services;
+using Soltec.NET.ViewModels;
+using Soltec.NET.Views;
 
 namespace Soltec.NET
 {
@@ -21,11 +23,15 @@ namespace Soltec.NET
 				.UseMauiCommunityToolkit(); ;
 
             // Registro de servicios
-            builder.Services.AddSingleton<Soltec.NET.Services.IArchivoService, Soltec.NET.Services.ArchivoService>();
-            builder.Services.AddSingleton<PreferenciasService>();
+            builder.Services.AddSingleton<IArchivoService, ArchivoService>();
+			builder.Services.AddSingleton<IPreferenciasService, PreferenciasService>();
+            builder.Services.AddSingleton<IContenidoService, ContenidoService>();
+
+            // ViewModels
+            builder.Services.AddTransient<ConfiguracionViewModel>();
 
             // Registro de páginas (si usás inyección en el constructor)
-            builder.Services.AddTransient<ConfiguracionPage>();
+            builder.Services.AddTransient<ConfiguracionView>();
 
 
 

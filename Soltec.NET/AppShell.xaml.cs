@@ -1,4 +1,6 @@
-﻿namespace Soltec.NET
+﻿using Soltec.NET.Views;
+
+namespace Soltec.NET
 {
 	public partial class AppShell : Shell
 	{
@@ -10,7 +12,7 @@
 			Routing.RegisterRoute("PlanosPage", typeof(PlanosPage));
 			Routing.RegisterRoute("PoliticasPage", typeof(PoliticasPage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
-            Routing.RegisterRoute( nameof(ConfiguracionPage), typeof(ConfiguracionPage));
+            Routing.RegisterRoute( nameof(ConfiguracionView), typeof(ConfiguracionView));
         }
 	}
 }

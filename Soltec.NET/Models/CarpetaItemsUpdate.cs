@@ -2,7 +2,7 @@
 
 namespace Soltec.NET.Models
 {
-    public class CarpetaItem : INotifyPropertyChanged
+    public class CarpetaItemsUpdate : INotifyPropertyChanged
     {
         public string Nombre { get; set; }
 

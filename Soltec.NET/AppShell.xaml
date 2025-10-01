@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Soltec.NET"
+    xmlns:views="clr-namespace:Soltec.NET.Views"
     Title="Soltec.NET">
 
     <!-- Página principal -->
@@ -38,7 +39,7 @@
     
     <!-- Otra página -->
     <FlyoutItem Title="Configuracion" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:ConfiguracionPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:ConfiguracionView}" />
     </FlyoutItem>
 
 </Shell>

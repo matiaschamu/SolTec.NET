@@ -1,8 +1,18 @@
 ﻿using System.Text.Json;
 
-namespace Soltec.NET.Service
+namespace Soltec.NET.Services
 {
-    public class PreferenciasService
+    public interface IPreferenciasService
+    {
+        void GuardarModoOffline(string nombreCarpeta, bool modoOffline);
+
+        bool LeerModoOffline(string nombreCarpeta);
+
+        void GuardarHashArchivos(Dictionary<string, string> hashes);
+
+        Dictionary<string, string> LeerHashArchivos();
+    }
+    public class PreferenciasService: IPreferenciasService
     {
         public void GuardarModoOffline(string nombreCarpeta, bool modoOffline)
         {
