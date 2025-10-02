@@ -20,9 +20,17 @@ public class ContenidoService : IContenidoService
     public async Task<Carpeta?> ObtenerCarpetaRemota(string nombreCarpeta)
     {
         var raiz = await _http.GetFromJsonAsync<Carpeta>("https://matiaschamu.github.io/SolTec.NET/Extras/content.json");
-        return raiz?.Subcarpetas
-                   .FirstOrDefault(c => c.Nombre == "Content")?
-                   .Subcarpetas
+
+        if (raiz == null) return null;
+
+        // Si piden "Content", devolver esa directamente
+        if (nombreCarpeta == "Content")
+            return raiz.Subcarpetas?.FirstOrDefault(c => c.Nombre == "Content");
+
+        // Si piden otra subcarpeta dentro de Content
+        return raiz.Subcarpetas
+                   ?.FirstOrDefault(c => c.Nombre == "Content")
+                   ?.Subcarpetas
                    .FirstOrDefault(c => c.Nombre == nombreCarpeta);
     }
 }

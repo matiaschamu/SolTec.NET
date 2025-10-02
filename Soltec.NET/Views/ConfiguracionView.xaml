@@ -1,64 +1,71 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:views="clr-namespace:Soltec.NET.Views" 
              xmlns:viewmodels="clr-namespace:Soltec.NET.ViewModels" 
-             x:DataType="viewmodels:ConfiguracionViewModel"
+             xmlns:models="clr-namespace:Soltec.NET.Models"
              x:Class="Soltec.NET.Views.ConfiguracionView"
              x:Name="ViewConfiguracion"
              Title="Configuracion"
-             BackgroundColor="#F5F7FA">
+             BackgroundColor="#F5F7FA"
+             x:DataType="viewmodels:ConfiguracionViewModel">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
 
-    <VerticalStackLayout Padding="20" Spacing="20">
-
-        <Label Text="Configuración" 
+            <Label Text="Configuración" 
                FontSize="26" 
                FontAttributes="Bold"
                TextColor="#607D8B"
                HorizontalOptions="Center" />
 
-        <CollectionView ItemsSource="{Binding CarpetasUpdate}">
-            <CollectionView.ItemTemplate>
-                <DataTemplate>
-                    <Frame HasShadow="True"
+            <CollectionView ItemsSource="{Binding CarpetasUpdate}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:CarpetaItemsUpdate">
+                        <Frame HasShadow="True"
                            CornerRadius="12"
                            Padding="15"
                            BackgroundColor="Gray"
                            Margin="0,0,0,15">
 
-                        <VerticalStackLayout Spacing="12">
+                            <VerticalStackLayout Spacing="12">
 
-                            <Label Text="{Binding Nombre}" 
+                                <Label Text="{Binding Nombre}" 
                                    FontAttributes="Bold" 
                                    FontSize="18"
                                    TextColor="#37474F"/>
 
-                            <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                                <Label Text="Usar offline" 
+                                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                                    <Label Text="Usar offline" 
                                        VerticalOptions="Center"
                                        TextColor="#455A64"/>
-                                <Switch IsToggled="{Binding ModoOffline}"
+                                    <Switch IsToggled="{Binding ModoOffline}"
                                         OnColor="#4CAF50" />
-                            </HorizontalStackLayout>
+                                </HorizontalStackLayout>
 
-                            <Button Text="Sincronizar"
-                                BackgroundColor="#4CAF50"
-                                TextColor="White"
-                                CornerRadius="8"
-                                Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.SincronizarCarpetaCommand}"
-                                CommandParameter="{Binding .}" />       
+                                <Button Text="Sincronizar"
+                                    CornerRadius="8"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.SincronizarCarpetaCommand}"
+                                    CommandParameter="{Binding .}"
+                                    IsEnabled="{Binding ModoOffline}" 
+                                    BackgroundColor="{Binding BotonColor}"
+                                    TextColor="{Binding TextoBotonColor}"/>
 
-                            <Label Text="{Binding EstadoArchivos}" 
+                                <Label Text="{Binding EstadoArchivos}" 
                                    FontAttributes="Bold"
                                    TextColor="{Binding EstadoArchivos, Converter={StaticResource EstadoToColorConverter}}" />
 
-                            <Label Text="{Binding ProgresoDescarga}" 
+                                <Label Text="{Binding ProgresoDescarga}" 
                                    FontAttributes="Italic"
                                    FontSize="13"
                                    TextColor="#1565C0"/>
-                        </VerticalStackLayout>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
-    </VerticalStackLayout>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <Button Text="Borrar todo el contenido"
+        BackgroundColor="Red"
+        TextColor="White"
+        CornerRadius="8"
+        Command="{Binding BorrarTodoCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

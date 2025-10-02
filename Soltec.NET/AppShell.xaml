@@ -14,27 +14,27 @@
 
     <!-- Otra página -->
     <FlyoutItem Title="Pañol" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:PanolPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:PanolPage}" />
     </FlyoutItem>
 
     <!-- Otra página -->
     <FlyoutItem Title="Manuales" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:ManualesPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:ManualesPage}" />
     </FlyoutItem>
 
     <!-- Otra página -->
     <FlyoutItem Title="Politicas" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:PoliticasPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:PoliticasPage}" />
     </FlyoutItem>
 
     <!-- Otra página -->
     <FlyoutItem Title="Planos" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:PlanosPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:PlanosPage}" />
     </FlyoutItem>
 
     <!-- Otra página -->
     <FlyoutItem Title="Calculo Motores" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MotoresPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:MotoresPage}" />
     </FlyoutItem>
     
     <!-- Otra página -->

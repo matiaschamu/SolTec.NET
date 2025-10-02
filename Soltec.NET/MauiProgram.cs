@@ -10,9 +10,7 @@ namespace Soltec.NET
 	{
 		public static MauiApp CreateMauiApp()
 		{
-            
-
-            var builder = MauiApp.CreateBuilder();
+			var builder = MauiApp.CreateBuilder();
 			builder
 				.UseMauiApp<App>()
 				.ConfigureFonts(fonts =>
@@ -22,24 +20,24 @@ namespace Soltec.NET
 				})
 				.UseMauiCommunityToolkit(); ;
 
-            // Registro de servicios
+			// Registro de servicios
+
             builder.Services.AddSingleton<IArchivoService, ArchivoService>();
-			builder.Services.AddSingleton<IPreferenciasService, PreferenciasService>();
+            builder.Services.AddSingleton<IPreferenciasService, PreferenciasService>();
             builder.Services.AddSingleton<IContenidoService, ContenidoService>();
+            builder.Services.AddSingleton<ISincronizacionService, SincronizacionService>();
+            builder.Services.AddSingleton<ICarpetasOnline, CarpetasOnline>();
+            builder.Services.AddHttpClient(); // necesario para ContenidoService
 
             // ViewModels
             builder.Services.AddTransient<ConfiguracionViewModel>();
 
-            // Registro de páginas (si usás inyección en el constructor)
-            builder.Services.AddTransient<ConfiguracionView>();
-
-
-
+			// Registro de páginas (si usás inyección en el constructor)
+			builder.Services.AddTransient<ConfiguracionView>();
 
 #if DEBUG
-            builder.Logging.AddDebug();
+			builder.Logging.AddDebug();
 #endif
-
 			return builder.Build();
 		}
 	}

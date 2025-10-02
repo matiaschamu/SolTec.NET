@@ -1,4 +1,4 @@
-﻿namespace Soltec.NET;
+﻿namespace Soltec.NET.Views;
 
 using SQLite;
 using System.Collections.ObjectModel;

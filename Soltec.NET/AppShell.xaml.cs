@@ -12,7 +12,7 @@ namespace Soltec.NET
 			Routing.RegisterRoute("PlanosPage", typeof(PlanosPage));
 			Routing.RegisterRoute("PoliticasPage", typeof(PoliticasPage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
-            Routing.RegisterRoute( nameof(ConfiguracionView), typeof(ConfiguracionView));
+            Routing.RegisterRoute("ConfiguracionView", typeof(ConfiguracionView));
         }
 	}
 }

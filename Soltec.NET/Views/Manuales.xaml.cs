@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 using System.Windows.Input;
 using Microsoft.Maui.ApplicationModel;
 
-namespace Soltec.NET;
+namespace Soltec.NET.Views;
 
 public partial class ManualesPage : ContentPage
 {

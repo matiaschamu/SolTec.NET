@@ -10,7 +10,19 @@ namespace Soltec.NET.Models
         public bool ModoOffline
         {
             get => _modoOffline;
-            set { _modoOffline = value; OnPropertyChanged(); }
+            set
+            {
+                if (_modoOffline != value)
+                {
+                    _modoOffline = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged(nameof(BotonColor));
+                    OnPropertyChanged(nameof(TextoBotonColor));
+
+                    // Guardar en preferencias
+                    Preferences.Set($"ModoOffline_{Nombre}", value);
+                }
+            }
         }
 
         private string _estadoArchivos = "";
@@ -26,6 +38,9 @@ namespace Soltec.NET.Models
             get => _progresoDescarga;
             set { _progresoDescarga = value; OnPropertyChanged(); }
         }
+
+        public Color BotonColor => ModoOffline ? Colors.Green : Colors.LightGray;
+        public Color TextoBotonColor => ModoOffline ? Colors.White : Colors.DarkGray;
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string name = null)

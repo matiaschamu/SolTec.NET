@@ -8,6 +8,7 @@ public interface IArchivoService
     string CalcularHashLocal(string pathArchivo);
     Task GuardarArchivoLocal(string carpeta, string nombreArchivo, byte[] contenido);
     bool ArchivoExiste(string carpeta, string nombreArchivo);
+    void BorrarTodo();
 }
 
 public class ArchivoService : IArchivoService
@@ -40,5 +41,25 @@ public class ArchivoService : IArchivoService
     {
         var pathArchivo = Path.Combine(FileSystem.AppDataDirectory, carpeta, nombreArchivo);
         return File.Exists(pathArchivo);
+    }
+
+    public void BorrarTodo()
+    {
+        try
+        {
+            var pathData = FileSystem.AppDataDirectory;
+
+            if (Directory.Exists(pathData))
+            {
+                Directory.Delete(pathData, true); // elimina todo recursivamente
+                Directory.CreateDirectory(pathData); // recrea vacío
+            }
+        }
+        catch (Exception ex)
+        {
+            // Podés loguear el error si querés
+            System.Diagnostics.Debug.WriteLine($"Error al borrar contenido: {ex.Message}");
+            throw;
+        }
     }
 }
