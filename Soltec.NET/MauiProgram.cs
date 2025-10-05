@@ -24,19 +24,20 @@ namespace Soltec.NET
 
             builder.Services.AddSingleton<IArchivoService, ArchivoService>();
             builder.Services.AddSingleton<IPreferenciasService, PreferenciasService>();
-            builder.Services.AddSingleton<IContenidoService, ContenidoService>();
             builder.Services.AddSingleton<ISincronizacionService, SincronizacionService>();
-            builder.Services.AddSingleton<ICarpetasOnline, CarpetasOnline>();
+            builder.Services.AddSingleton<IContenidoJsonService, ContenidoJsonService>();
             builder.Services.AddHttpClient(); // necesario para ContenidoService
 
             // ViewModels
             builder.Services.AddTransient<ConfiguracionViewModel>();
+            builder.Services.AddTransient<ManualesViewModel>();
 
-			// Registro de páginas (si usás inyección en el constructor)
-			builder.Services.AddTransient<ConfiguracionView>();
+            // Registro de páginas (si usás inyección en el constructor)
+            builder.Services.AddTransient<ConfiguracionView>();
+            builder.Services.AddTransient<ManualesPage>();
 
 #if DEBUG
-			builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 			return builder.Build();
 		}

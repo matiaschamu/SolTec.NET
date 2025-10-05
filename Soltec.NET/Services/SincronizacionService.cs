@@ -13,15 +13,15 @@ public interface ISincronizacionService
 public class SincronizacionService : ISincronizacionService
 {
     private readonly IArchivoService _archivoService;
-    private readonly IContenidoService _contenidoService;
+    private readonly IContenidoJsonService  _contenidoJsonService;
     private readonly IPreferenciasService _prefs;
 
     public SincronizacionService(IArchivoService archivoService,
-                                 IContenidoService contenidoService,
+                                 IContenidoJsonService contenidoJsonService,
                                  IPreferenciasService prefs)
     {
         _archivoService = archivoService;
-        _contenidoService = contenidoService;
+        _contenidoJsonService = contenidoJsonService;
         _prefs = prefs;
     }
 
@@ -42,7 +42,7 @@ public class SincronizacionService : ISincronizacionService
         try
         {
             // Obtener carpeta remota
-            var carpetaRemota = await _contenidoService.ObtenerCarpetaRemota(carpetaItem.Nombre);
+            var carpetaRemota = await _contenidoJsonService.CargarCarpetaDesdeJSonAsync("Content/" + carpetaItem.Nombre);
             if (carpetaRemota == null)
                 return ("No encontrada en servidor", "");
 

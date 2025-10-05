@@ -143,7 +143,7 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 		<Compile Update="Views\Politicas.xaml.cs">
 			<DependentUpon>Politicas.xaml</DependentUpon>
 		</Compile>
-		<Compile Update="Views\Manuales.xaml.cs">
+		<Compile Update="Views\ManualesView.xaml.cs">
 			<DependentUpon>Manuales.xaml</DependentUpon>
 		</Compile>
 		<Compile Update="Views\Pañol.xaml.cs">
@@ -171,7 +171,7 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 		<MauiXaml Update="Views\Politicas.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
-		<MauiXaml Update="Views\Manuales.xaml">
+		<MauiXaml Update="Views\ManualesView.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="Views\Pañol.xaml">

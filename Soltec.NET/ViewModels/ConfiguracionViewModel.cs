@@ -17,47 +17,22 @@ namespace Soltec.NET.ViewModels
         private readonly IArchivoService _archivoService;
         private readonly IPreferenciasService _prefs;
         private readonly ISincronizacionService _sincronizacionService;
-        private readonly ICarpetasOnline _carpetasOnline;
+        private readonly IContenidoJsonService _contenidoJsonService;
 
-        //private string _estadoArchivos = "Verificar...";
-        //public string EstadoArchivos
-        //{
-        //    get => _estadoArchivos;
-        //    set
-        //    {
-        //        if (_estadoArchivos != value)
-        //        {
-        //            _estadoArchivos = value;
-        //            OnPropertyChanged();
-        //        }
-        //    }
-        //}
+        public event PropertyChangedEventHandler PropertyChanged;
 
-        //private string _progresoDescarga = "";
-        //public string ProgresoDescarga
-        //{
-        //    get => _progresoDescarga;
-        //    set
-        //    {
-        //        if (_progresoDescarga != value)
-        //        {
-        //            _progresoDescarga = value;
-        //            OnPropertyChanged();
-        //        }
-        //    }
-        //}
 
         public Models.ConfiguracionManual Config { get; set; } = new Models.ConfiguracionManual();
         public ObservableCollection<Models.CarpetaItemsUpdate> CarpetasUpdate { get; set; } = new ObservableCollection<Models.CarpetaItemsUpdate>();
         public ICommand SincronizarCarpetaCommand { get; set; }
         public ICommand BorrarTodoCommand { get; set; }
 
-        public ConfiguracionViewModel(IArchivoService archivoService, IPreferenciasService prefs, ISincronizacionService sincronizacionService, ICarpetasOnline carpetasonline)
+        public ConfiguracionViewModel(IArchivoService archivoService, IPreferenciasService prefs, ISincronizacionService sincronizacionService, IContenidoJsonService contenidoJsonService)
         {
             _archivoService = archivoService;
             _prefs = prefs;
             _sincronizacionService = sincronizacionService;
-            _carpetasOnline= carpetasonline;
+            _contenidoJsonService= contenidoJsonService;
 
             SincronizarCarpetaCommand = new Command<Models.CarpetaItemsUpdate>(async (carpetaItem) =>
                 await SincronizarCarpeta(carpetaItem));
@@ -68,12 +43,10 @@ namespace Soltec.NET.ViewModels
         }
         private async Task CargarCarpetas()
         {
-            var carpetas = await _carpetasOnline.ObtenerCarpetasInicialesAsync();
+            var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
             foreach (var carpeta in carpetas)
                 CarpetasUpdate.Add(carpeta);
         }
-
-
         private async Task BorrarTodo()
         {
             try
@@ -93,9 +66,6 @@ namespace Soltec.NET.ViewModels
                 await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo borrar: {ex.Message}", "OK");
             }
         }
-
-
-
         private async Task SincronizarCarpeta(Models.CarpetaItemsUpdate carpetaItem)
         {
             if (carpetaItem == null) return;
@@ -103,9 +73,6 @@ namespace Soltec.NET.ViewModels
             carpetaItem.EstadoArchivos = estado;
             carpetaItem.ProgresoDescarga = progreso;
         }
-   
-
-        public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = "")
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         private void Switch_Toggled(object sender, ToggledEventArgs e)
