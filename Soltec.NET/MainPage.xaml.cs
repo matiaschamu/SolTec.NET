@@ -1,4 +1,6 @@
-﻿namespace Soltec.NET
+﻿using Soltec.NET.Views;
+
+namespace Soltec.NET
 {
 	public partial class MainPage : ContentPage
 	{
@@ -14,18 +16,18 @@
 
 		private async void OnManualesClicked(object sender, TappedEventArgs e)
 		{
-			await Shell.Current.GoToAsync("ManualesPage");
+			await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Manuales"}");
 		}
 
 		private async void OnPlanosClicked(object sender, TappedEventArgs e)
 		{
-			await Shell.Current.GoToAsync("PlanosPage");
-		}
+            await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Planos"}");
+        }
 
 		private async void OnPoliticasClicked(object sender, TappedEventArgs e)
 		{
-			await Shell.Current.GoToAsync("PoliticasPage");
-		}
+            await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/ProcedimientosPoliticas"}");
+        }
 
 		private async void OnCeldasDeCargaClicked(object sender, TappedEventArgs e)
 		{

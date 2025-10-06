@@ -1,15 +1,12 @@
-﻿using System;
+﻿using Microsoft.Maui.Controls;
+using Microsoft.Maui.Graphics;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Soltec.NET.Models
 {
-    public class Fabricante
+    public class Contenidos
     {
         public string Nombre { get; set; } = string.Empty;
-        public string Color { get; set; } = "#4CAF50";
+        public Brush Color { get; set; } = new SolidColorBrush(Colors.Green);
         public List<Manual> Manuales { get; set; } = new();
     }
 }

@@ -1,0 +1,35 @@
+﻿<linker>
+	<!-- Preservar todo el ensamblado MAUI -->
+	<assembly fullname="Microsoft.Maui">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<assembly fullname="Microsoft.Maui.Controls">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<!-- Preservar tu proyecto principal -->
+	<assembly fullname="Soltec.NET">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<!-- Preservar Newtonsoft.Json si lo usas -->
+	<assembly fullname="Newtonsoft.Json">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<!-- SQLite-net -->
+	<assembly fullname="SQLite-net">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<!-- System.Reflection, necesario si usas reflection -->
+	<assembly fullname="System.Reflection">
+		<type fullname="*" preserve="all"/>
+	</assembly>
+
+	<!-- Para cualquier librería adicional que uses dinámicamente -->
+	<!-- <assembly fullname="NombreDeTuLibreria">
+       <type fullname="*" preserve="all"/>
+       </assembly> -->
+</linker>

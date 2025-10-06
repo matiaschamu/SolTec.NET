@@ -8,9 +8,7 @@ namespace Soltec.NET
 		{
 			InitializeComponent();
 			Routing.RegisterRoute("PanolPage", typeof(PanolPage));
-			Routing.RegisterRoute("ManualesPage", typeof(ManualesPage));
-			Routing.RegisterRoute("PlanosPage", typeof(PlanosPage));
-			Routing.RegisterRoute("PoliticasPage", typeof(PoliticasPage));
+			Routing.RegisterRoute("ContenidoDetallePage", typeof(ContenidoDetallePage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
             Routing.RegisterRoute("ConfiguracionView", typeof(ConfiguracionView));
         }

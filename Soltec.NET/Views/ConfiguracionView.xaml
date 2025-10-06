@@ -50,7 +50,7 @@
 
                                 <Label Text="{Binding EstadoArchivos}" 
                                    FontAttributes="Bold"
-                                   TextColor="{Binding EstadoArchivos, Converter={StaticResource EstadoToColorConverter}}" />
+                                   TextColor="Red" />
 
                                 <Label Text="{Binding ProgresoDescarga}" 
                                    FontAttributes="Italic"

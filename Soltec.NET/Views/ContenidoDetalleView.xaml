@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage x:Name="ManualesView"
+<ContentPage x:Name="ContenidoDetalleView"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:views="clr-namespace:Soltec.NET.Views"
              xmlns:model="clr-namespace:Soltec.NET.Models"
+             xmlns:converters="clr-namespace:Soltec.NET.Services"
              xmlns:viewmodels="clr-namespace:Soltec.NET.ViewModels"
-             x:Class="Soltec.NET.Views.ManualesPage"
-             x:DataType="viewmodels:ManualesViewModel"
-             Title="Manuales">
+             x:Class="Soltec.NET.Views.ContenidoDetallePage"
+             x:DataType="viewmodels:ContenidoDetalleViewModel"
+             Title="{Binding Titulo}">
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
     <ScrollView Padding="10">
         <VerticalStackLayout Spacing="12">
-            <CollectionView ItemsSource="{Binding Fabricantes}">
+            <CollectionView ItemsSource="{Binding Contenidos}">
                 <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Fabricante">
+                    <DataTemplate x:DataType="model:Contenidos">
                         <toolkit:Expander>
 
                              <!--Header--> 
                             <toolkit:Expander.Header>
                                 <Border StrokeShape="RoundRectangle 12"
-                                        BackgroundColor="{Binding Color}"
+                                        Background="{Binding Color}"
                                         Padding="10">
                                     <Border.Shadow>
                                         <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
@@ -45,9 +52,11 @@
                                         <CollectionView ItemsSource="{Binding Manuales}">
                                             <CollectionView.ItemTemplate>
                                                 <DataTemplate x:DataType="model:Manual">
-                                                    <Label FontSize="16" TextColor="Black" Text="{Binding NombreConIcono}" Margin="0,0,0,8">
+                                                    <Label FontSize="16" Text="{Binding NombreConIcono}"
+                                                            TextColor="{Binding EstaOffline, Converter={StaticResource BoolToColorConverter}}"
+                                                            Margin="0,0,0,8">
                                                         <Label.GestureRecognizers>
-                                                            <TapGestureRecognizer Command="{Binding Source={x:Reference ManualesView}, Path=BindingContext.AbrirManualCommand}" CommandParameter="{Binding .}" />
+                                                            <TapGestureRecognizer Command="{Binding Source={x:Reference ContenidoDetalleView}, Path=BindingContext.AbrirManualCommand}" CommandParameter="{Binding .}" />
                                                         </Label.GestureRecognizers>
                                                     </Label>
                                                 </DataTemplate>

@@ -12,30 +12,30 @@
         <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
-    <!-- Otra página -->
+    <!-- Otra página --><!--
     <FlyoutItem Title="Pañol" Icon="settings.png">
         <ShellContent ContentTemplate="{DataTemplate views:PanolPage}" />
     </FlyoutItem>
 
-    <!-- Otra página -->
+    --><!-- Otra página --><!--
     <FlyoutItem Title="Manuales" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate views:ManualesPage}" />
+        <ShellContent ContentTemplate="{DataTemplate views:ContenidoDetallePage}" />
     </FlyoutItem>
 
-    <!-- Otra página -->
+    --><!-- Otra página --><!--
     <FlyoutItem Title="Politicas" Icon="settings.png">
         <ShellContent ContentTemplate="{DataTemplate views:PoliticasPage}" />
     </FlyoutItem>
 
-    <!-- Otra página -->
+    --><!-- Otra página --><!--
     <FlyoutItem Title="Planos" Icon="settings.png">
         <ShellContent ContentTemplate="{DataTemplate views:PlanosPage}" />
     </FlyoutItem>
 
-    <!-- Otra página -->
+    --><!-- Otra página --><!--
     <FlyoutItem Title="Calculo Motores" Icon="settings.png">
         <ShellContent ContentTemplate="{DataTemplate views:MotoresPage}" />
-    </FlyoutItem>
+    </FlyoutItem>-->
     
     <!-- Otra página -->
     <FlyoutItem Title="Configuracion" Icon="settings.png">

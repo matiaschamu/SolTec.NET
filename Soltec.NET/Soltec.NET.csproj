@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-ios;net9.0-maccatalyst;net9.0-android36.0</TargetFrameworks>
+		<TargetFrameworks>net9.0-ios;net9.0-maccatalyst;net9.0-android35.0</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
@@ -43,38 +43,70 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-maccatalyst|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android36.0|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.79</ApplicationDisplayVersion>
+	  <ApplicationVersion>79</ApplicationVersion>
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-maccatalyst|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android36.0|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.79</ApplicationDisplayVersion>
+	  <ApplicationVersion>79</ApplicationVersion>
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationDisplayVersion>1.0.78</ApplicationDisplayVersion>
-	  <ApplicationVersion>78</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
 	</PropertyGroup>
-
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <AndroidPackageFormat>aab</AndroidPackageFormat>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
+	  <ApplicationDisplayVersion>1.0.81</ApplicationDisplayVersion>
+	  <ApplicationVersion>81</ApplicationVersion>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
+	  <AndroidPackageFormat>aab</AndroidPackageFormat>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+	
 	<ItemGroup>
 		<!-- App Icon -->
 		<!-- Splash Screen -->
@@ -137,14 +169,8 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 		<Compile Update="Views\CalculoMotores.xaml.cs">
 			<DependentUpon>CalculoMotores.xaml</DependentUpon>
 		</Compile>
-		<Compile Update="Views\Planos.xaml.cs">
-			<DependentUpon>Planos.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\Politicas.xaml.cs">
-			<DependentUpon>Politicas.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\ManualesView.xaml.cs">
-			<DependentUpon>Manuales.xaml</DependentUpon>
+		<Compile Update="Views\ContenidoDetalleView.xaml.cs">
+			<DependentUpon>ContenidoDetalleView.xaml</DependentUpon>
 		</Compile>
 		<Compile Update="Views\Pañol.xaml.cs">
 			<DependentUpon>Pañol.xaml</DependentUpon>
@@ -165,13 +191,7 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 		<MauiXaml Update="Views\CalculoMotores.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
-		<MauiXaml Update="Views\Planos.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
-		<MauiXaml Update="Views\Politicas.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
-		<MauiXaml Update="Views\ManualesView.xaml">
+		<MauiXaml Update="Views\ContenidoDetalleView.xaml">
 			<Generator>MSBuild:Compile</Generator>
 		</MauiXaml>
 		<MauiXaml Update="Views\Pañol.xaml">

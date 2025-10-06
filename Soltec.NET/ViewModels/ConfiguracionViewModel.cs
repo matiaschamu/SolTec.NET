@@ -1,13 +1,7 @@
 ﻿using Soltec.NET.Models;
 using Soltec.NET.Services;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Soltec.NET.ViewModels
@@ -23,7 +17,7 @@ namespace Soltec.NET.ViewModels
 
 
         public Models.ConfiguracionManual Config { get; set; } = new Models.ConfiguracionManual();
-        public ObservableCollection<Models.CarpetaItemsUpdate> CarpetasUpdate { get; set; } = new ObservableCollection<Models.CarpetaItemsUpdate>();
+        public ObservableCollection<CarpetaItemsUpdate> CarpetasUpdate { get; set; } = new ObservableCollection<Models.CarpetaItemsUpdate>();
         public ICommand SincronizarCarpetaCommand { get; set; }
         public ICommand BorrarTodoCommand { get; set; }
 
@@ -43,9 +37,18 @@ namespace Soltec.NET.ViewModels
         }
         private async Task CargarCarpetas()
         {
-            var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
-            foreach (var carpeta in carpetas)
-                CarpetasUpdate.Add(carpeta);
+            try
+            {
+                var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
+                foreach (var carpeta in carpetas)
+                    CarpetasUpdate.Add(carpeta);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         private async Task BorrarTodo()
         {

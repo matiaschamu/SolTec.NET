@@ -1,4 +1,5 @@
 ﻿using Soltec.NET.ViewModels;
+using Microsoft.Maui.Controls;
 
 namespace Soltec.NET.Views;
 

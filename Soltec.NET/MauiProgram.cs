@@ -30,11 +30,11 @@ namespace Soltec.NET
 
             // ViewModels
             builder.Services.AddTransient<ConfiguracionViewModel>();
-            builder.Services.AddTransient<ManualesViewModel>();
+            builder.Services.AddTransient<ContenidoDetalleViewModel>();
 
             // Registro de páginas (si usás inyección en el constructor)
             builder.Services.AddTransient<ConfiguracionView>();
-            builder.Services.AddTransient<ManualesPage>();
+            builder.Services.AddTransient<ContenidoDetallePage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
