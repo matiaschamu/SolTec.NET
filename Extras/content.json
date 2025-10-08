@@ -2477,17 +2477,17 @@
           "Archivos": [],
           "Subcarpetas": [
             {
-              "Nombre": "PLANOS ALMIDON",
+              "Nombre": "00 - PLANOS ALMIDON",
               "Archivos": [
                 {
-                  "Nombre": "I - Pepsico 2017-12-11 Almidon - Revamping \u002B Recupero.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ALMIDON/I%20-%20Pepsico%202017-12-11%20Almidon%20-%20Revamping%20%2B%20Recupero.pdf",
+                  "Nombre": "00 - Almidon - Revamping \u002B Recupero.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/00%20-%20PLANOS%20ALMIDON/00%20-%20Almidon%20-%20Revamping%20%2B%20Recupero.pdf",
                   "Hash": "b9df6fff764609ab9d0cd7bc104b02a8f186f377724e0aa7bd7e9ad74a97b822",
                   "TamanoBytes": 3740744
                 },
                 {
-                  "Nombre": "Planos_Almidon_20171212.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ALMIDON/Planos_Almidon_20171212.pdf",
+                  "Nombre": "01 - Planos Almidon 20171212.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/00%20-%20PLANOS%20ALMIDON/01%20-%20Planos%20Almidon%2020171212.pdf",
                   "Hash": "6ce81609e66dc3418728389c0f286b8c9f82fece53b145a51c6e1305e747d0c8",
                   "TamanoBytes": 1145129
                 }
@@ -2495,101 +2495,357 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS DISTRIBUCION FLEX",
+              "Nombre": "01 - PLANOS SCHAAF1",
               "Archivos": [
                 {
-                  "Nombre": "11604413-DISTMCP-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-DISTMCP-E_0.pdf",
-                  "Hash": "700178007edad75c2c49af83b3e4ed6a52b26f56ba6a11d727777b636377a527",
-                  "TamanoBytes": 5268150
+                  "Nombre": "00 - PLANOS HORNO 1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/00%20-%20PLANOS%20HORNO%201.pdf",
+                  "Hash": "88602665e5bd3f4481628ae3f964976f31759b71e734c78bd0db2d0fb540e534",
+                  "TamanoBytes": 262606
                 },
                 {
-                  "Nombre": "11604413-OMSCP1-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSCP1-E_0.pdf",
-                  "Hash": "9e1d94653aa35627c9d611cfcb93690a4c50172f7d758872c2ab0c64fd56f65b",
-                  "TamanoBytes": 2846571
+                  "Nombre": "01 - PLANOS HORNO 2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/01%20-%20PLANOS%20HORNO%202.pdf",
+                  "Hash": "2760f3d43a68f5ea2ac743b4e3b7e1bcfe062306e65127eb88febe96458cfa2a",
+                  "TamanoBytes": 260563
                 },
                 {
-                  "Nombre": "11604413-OMSCP2-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSCP2-E_0.pdf",
-                  "Hash": "b18c92408fe3eb2ddef7300752cc2d162843909963db5eb1c63cd70f1c1fc016",
-                  "TamanoBytes": 2843194
+                  "Nombre": "02 - PLANOS HORNO 3.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/02%20-%20PLANOS%20HORNO%203.pdf",
+                  "Hash": "cb6b6e3e7fe5bbd8c015e9de2a5ad74ed7a58a64133a384515194888c0ae04bc",
+                  "TamanoBytes": 240552
                 },
                 {
-                  "Nombre": "11604413-OMSCP3-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSCP3-E_0.pdf",
-                  "Hash": "4b696fe9979332851b06c9b95723241f5c9a1a8672bd6241beb9c4840661ceed",
-                  "TamanoBytes": 2900679
+                  "Nombre": "03 - PLANOS HORNO 4.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/03%20-%20PLANOS%20HORNO%204.pdf",
+                  "Hash": "8a0bbc3df7c8a5075b9f85ca5a1c57f11eca51a88e22f50154c58c7080513543",
+                  "TamanoBytes": 273448
                 },
                 {
-                  "Nombre": "11604413-OMSCP4-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSCP4-E_0.pdf",
-                  "Hash": "48513a8a2ed8a307f909ec9caf4c5c74c7af1651dc4047261e3cd5f493d0b443",
-                  "TamanoBytes": 2908372
+                  "Nombre": "04 - PLANOS HORNO 5.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/04%20-%20PLANOS%20HORNO%205.pdf",
+                  "Hash": "3a4b27c36d02c1aca7c411435d2ba82c5b71948312b54b5919756ca1a89956f4",
+                  "TamanoBytes": 282414
                 },
                 {
-                  "Nombre": "11604413-OMSOS1-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSOS1-E_0.pdf",
-                  "Hash": "f98994a71c3c3bcb38458ddc62905a86c99b7966460c6b86fa8e325d4eaf9f70",
-                  "TamanoBytes": 869551
+                  "Nombre": "05 - PLANOS HORNO 6.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/05%20-%20PLANOS%20HORNO%206.pdf",
+                  "Hash": "c60bd04a594c59125171d534856b15b7c0eb50202c46fdf8eadf5047fc7e4584",
+                  "TamanoBytes": 257918
                 },
                 {
-                  "Nombre": "11604413-OMSOS2-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-OMSOS2-E_0.pdf",
-                  "Hash": "5653e9d49f0716d4c03385fa59c06c0c5f6fbf19a46d1532082507d4157f4a7b",
-                  "TamanoBytes": 837354
+                  "Nombre": "06 - PLANOS HORNO 7.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/06%20-%20PLANOS%20HORNO%207.pdf",
+                  "Hash": "8a807cabdafcf7777a229234f3e91e4e1965440835262861bbdc3c2df0b37e41",
+                  "TamanoBytes": 277537
                 },
                 {
-                  "Nombre": "11604413-SEASCP5-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/11604413-SEASCP5-E_0.pdf",
-                  "Hash": "eb48d1a84e1c8ccd34a25f27cf6252880db39920e2b8a96334f859d302fdfed0",
-                  "TamanoBytes": 3349273
+                  "Nombre": "07 - PLANOS HORNO 8.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/07%20-%20PLANOS%20HORNO%208.pdf",
+                  "Hash": "a48a4f33da8df4210fec6d411870974b9f6c4fba3445116cb6b97a99b143d5b1",
+                  "TamanoBytes": 298930
                 },
                 {
-                  "Nombre": "CONTROL TRANSPORTE MULTISAZONING.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20DISTRIBUCION%20FLEX/CONTROL%20TRANSPORTE%20MULTISAZONING.pdf",
-                  "Hash": "28bcd9e093f19432fbb3b26fbaba96d076f6cd53fe0f2e0400165f7eb20fb48b",
-                  "TamanoBytes": 540899
+                  "Nombre": "08 - PLANOS HORNO 9.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/08%20-%20PLANOS%20HORNO%209.pdf",
+                  "Hash": "368bd0f227bd4e7b34b3ad45f54340475707a0cfc37b17b993992830bf3df6fa",
+                  "TamanoBytes": 277180
+                },
+                {
+                  "Nombre": "09 - PLANOS HORNO 10.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/09%20-%20PLANOS%20HORNO%2010.pdf",
+                  "Hash": "b7f05e5117d71ac27626f1cab55ded6c4e67bbcc92b858ad46838cee768cb174",
+                  "TamanoBytes": 272731
+                },
+                {
+                  "Nombre": "10 - PLANOS HORNO 13.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/01%20-%20PLANOS%20SCHAAF1/10%20-%20PLANOS%20HORNO%2013.pdf",
+                  "Hash": "b099f8e9db5b4b1384115cfe9c09bbe4109ac0ea7052be467a555ee833aeb680",
+                  "TamanoBytes": 181519
                 }
               ],
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS ELECTRICOS COBOT FLEX",
-              "Archivos": [
-                {
-                  "Nombre": "CCPS ARGENTINA PC-32 FUP L1.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20FLEX/CCPS%20ARGENTINA%20PC-32%20FUP%20L1.pdf",
-                  "Hash": "34e29f5205c70ecded365907685ad8e59c89b1007c1b00335f3a927dcc4a3bb7",
-                  "TamanoBytes": 1907916
-                },
-                {
-                  "Nombre": "CCPS ARGENTINA PC-32 FUP L2-L8.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20FLEX/CCPS%20ARGENTINA%20PC-32%20FUP%20L2-L8.pdf",
-                  "Hash": "51c5667b73af88e6bb9284707551e9190859966992a08d47e23d63277027367a",
-                  "TamanoBytes": 1905301
-                }
-              ],
+              "Nombre": "02 - PLANOS MAPA",
+              "Archivos": [],
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS ELECTRICOS COBOT SCHAAF 2",
+              "Nombre": "03 - PLANOS PC32",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "04 - PLANOS SCHAAF2",
               "Archivos": [
                 {
-                  "Nombre": "CCPS ARGENTINA SCHAAF L1.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20SCHAAF%202/CCPS%20ARGENTINA%20SCHAAF%20L1.pdf",
+                  "Nombre": "00 -  00 - TABLERO PROCESO - ESQUEMA COMUNICACION- R1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/00%20-%20%2000%20-%20TABLERO%20PROCESO%20-%20ESQUEMA%20COMUNICACION-%20R1.pdf",
+                  "Hash": "95cfad9ae8eff9a5019cb9420f0fb2e7d7db7aca35c6e290a12251fe28f18603",
+                  "TamanoBytes": 357752
+                },
+                {
+                  "Nombre": "00 -  01 - TABLERO PROCESO - TABLERO PROCESO SCHAAF - topografico - R2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/00%20-%20%2001%20-%20TABLERO%20PROCESO%20-%20TABLERO%20PROCESO%20SCHAAF%20-%20topografico%20-%20R2.pdf",
+                  "Hash": "635d6399db5c541a311c0ffe513303665c28440c7d20b3c8c6f260ef69ef477b",
+                  "TamanoBytes": 415377
+                },
+                {
+                  "Nombre": "00 -  02 - TABLERO PROCESO - TABLERO PROCESO SCHAAF - trifilar - R2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/00%20-%20%2002%20-%20TABLERO%20PROCESO%20-%20TABLERO%20PROCESO%20SCHAAF%20-%20trifilar%20-%20R2.pdf",
+                  "Hash": "d263f2d6daba172335544880fd39a3b29ede78c6a52b1dab9864dd6b79b6a136",
+                  "TamanoBytes": 854602
+                },
+                {
+                  "Nombre": "01 -  00 - OIT PROCESO - 1 - OIT - SCHAAF - topografico - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2000%20-%20OIT%20PROCESO%20-%201%20-%20OIT%20-%20SCHAAF%20-%20topografico%20-%20R1-Model.pdf",
+                  "Hash": "79c77f05ad71a9da0c078d555a8966a4722ed68ad81d7794213adb51956f24c4",
+                  "TamanoBytes": 153476
+                },
+                {
+                  "Nombre": "01 -  01 - OIT PROCESO - 1 - OIT - SCHAAF - trifilar - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2001%20-%20OIT%20PROCESO%20-%201%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
+                  "Hash": "9e5c6bd38fd8de0f06736fce2417a4ac2aa91422d4becb227a0d1c9f15a5807e",
+                  "TamanoBytes": 152322
+                },
+                {
+                  "Nombre": "01 -  02 - OIT PROCESO - 2 - OIT - SCHAAF - topografico - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2002%20-%20OIT%20PROCESO%20-%202%20-%20OIT%20-%20SCHAAF%20-%20topografico%20-%20R1-Model.pdf",
+                  "Hash": "a200f199a036d4117a0acab6b809c8c60d0816442c32a0d0036507d322ea0bf8",
+                  "TamanoBytes": 161614
+                },
+                {
+                  "Nombre": "01 -  03 - OIT PROCESO - 2 - OIT - SCHAAF - trifilar - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2003%20-%20OIT%20PROCESO%20-%202%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
+                  "Hash": "53205a898c20794bb0a71c82a9bc6bff95ff1115f0eab635bb204e9eedeaa4a9",
+                  "TamanoBytes": 156104
+                },
+                {
+                  "Nombre": "01 -  04 - OIT PROCESO - 3 - OIT - SCHAAF - trifilar - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2004%20-%20OIT%20PROCESO%20-%203%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
+                  "Hash": "389261bd39c51a3b58526683d3e011cec0730fc8cc19886266c12ec78522781c",
+                  "TamanoBytes": 174705
+                },
+                {
+                  "Nombre": "01 -  05 - OIT PROCESO - 4 - OIT - SCHAAF - trifilar - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2005%20-%20OIT%20PROCESO%20-%204%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
+                  "Hash": "0d40f0382e24741af2f0af1c350143b44fa21104568232f20ef6906f0c424597",
+                  "TamanoBytes": 196648
+                },
+                {
+                  "Nombre": "01 -  06 - OIT PROCESO - 5 - OIT - SCHAAF - trifilar - R1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2006%20-%20OIT%20PROCESO%20-%205%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
+                  "Hash": "26f5ae3defb7851f90103ccd6dd074eaca2a5ea75a7c1091fbba8aff8b6494b1",
+                  "TamanoBytes": 350055
+                },
+                {
+                  "Nombre": "01 -  07 - OIT PROCESO - OIT - SCHAAF - topografico - R2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2007%20-%20OIT%20PROCESO%20-%20OIT%20-%20SCHAAF%20-%20topografico%20-%20R2.pdf",
+                  "Hash": "e6143da6cf2928c53f14c75e7fbf87dce3a2f6c41a777a440e4ec3e1e66cb06f",
+                  "TamanoBytes": 172890
+                },
+                {
+                  "Nombre": "01 -  08 - OIT PROCESO - OIT - SCHAAF - trifilar - R2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/01%20-%20%2008%20-%20OIT%20PROCESO%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R2.pdf",
+                  "Hash": "7b1ed318369433c775bc292cf96c61d88ed7b2f17ff3dc619e7724402a858177",
+                  "TamanoBytes": 443725
+                },
+                {
+                  "Nombre": "02 -  00 - EXTRUSOR 1200 - Topogr\u00E1fico tablero_CDI_20180507.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2000%20-%20EXTRUSOR%201200%20-%20Topogr%C3%A1fico%20tablero_CDI_20180507.pdf",
+                  "Hash": "df1ee83be6cca8003a77aadbe0091135a4c42871c62567e2a3238c2e6317c4e8",
+                  "TamanoBytes": 442142
+                },
+                {
+                  "Nombre": "02 -  01 - EXTRUSOR 1200 - Indice_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2001%20-%20EXTRUSOR%201200%20-%20Indice_CDI_20170407.pdf",
+                  "Hash": "5c3b68b4e7a1f106f451dd2025cf3ffef4cbb56ad7ae619bbbafa14fcdba0c48",
+                  "TamanoBytes": 323331
+                },
+                {
+                  "Nombre": "02 -  02 - EXTRUSOR 1200 - PE_004_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2002%20-%20EXTRUSOR%201200%20-%20PE_004_CDI_20170407.pdf",
+                  "Hash": "652a39012816566078c5922bf93b184a2869609f96f94230c94adae4f318d996",
+                  "TamanoBytes": 243404
+                },
+                {
+                  "Nombre": "02 -  03 - EXTRUSOR 1200 - PE_005_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2003%20-%20EXTRUSOR%201200%20-%20PE_005_CDI_20170407.pdf",
+                  "Hash": "4c00726852fcb6ca214ce1cffce21d75be512a673dc0545547cd25f8d9a486f0",
+                  "TamanoBytes": 216368
+                },
+                {
+                  "Nombre": "02 -  04 - EXTRUSOR 1200 - PE_006_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2004%20-%20EXTRUSOR%201200%20-%20PE_006_CDI_20170407.pdf",
+                  "Hash": "822c94d3c751b36838ffbe4dd7ef74a86b9bf85a2bbeac10c379518a65d6cc14",
+                  "TamanoBytes": 211478
+                },
+                {
+                  "Nombre": "02 -  05 - EXTRUSOR 1200 - PE_007_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2005%20-%20EXTRUSOR%201200%20-%20PE_007_CDI_20170407.pdf",
+                  "Hash": "59db23b9d591c10270ac91f407de90c17ad5e1d6aa7362cb7be0739bc276cec9",
+                  "TamanoBytes": 255926
+                },
+                {
+                  "Nombre": "02 -  06 - EXTRUSOR 1200 - PE_008_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2006%20-%20EXTRUSOR%201200%20-%20PE_008_CDI_20170407.pdf",
+                  "Hash": "64a79b7e6fa9d8fa1ecb54251d5a17372f6678a7040395bb9ec597e3ae12847b",
+                  "TamanoBytes": 177043
+                },
+                {
+                  "Nombre": "02 -  07 - EXTRUSOR 1200 - PE_010_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2007%20-%20EXTRUSOR%201200%20-%20PE_010_CDI_20170407.pdf",
+                  "Hash": "e96e4f8ab8d77fd41b60029615b301d2e0534d875b783f7aec4839354da00d56",
+                  "TamanoBytes": 149142
+                },
+                {
+                  "Nombre": "02 -  08 - EXTRUSOR 1200 - PE_011_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2008%20-%20EXTRUSOR%201200%20-%20PE_011_CDI_20170407.pdf",
+                  "Hash": "e04df1f6ee00762c1b672cd933d404efa1420eff96bb7f7db36cfccd7afe4bbb",
+                  "TamanoBytes": 213505
+                },
+                {
+                  "Nombre": "02 -  09 - EXTRUSOR 1200 - PE_011_CDI_20170407-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2009%20-%20EXTRUSOR%201200%20-%20PE_011_CDI_20170407-Model.pdf",
+                  "Hash": "3b83e74a8cd48e88428286b9651e96669443da784abc29b55bcdbada26cb96ae",
+                  "TamanoBytes": 65567
+                },
+                {
+                  "Nombre": "02 -  10 - EXTRUSOR 1200 - PE_012_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2010%20-%20EXTRUSOR%201200%20-%20PE_012_CDI_20170407.pdf",
+                  "Hash": "c0b33be08dd2b041737cb1556d9e8043fdbb64f31108b0864456359192dacd3e",
+                  "TamanoBytes": 141751
+                },
+                {
+                  "Nombre": "02 -  11 - EXTRUSOR 1200 - PE_013_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2011%20-%20EXTRUSOR%201200%20-%20PE_013_CDI_20170407.pdf",
+                  "Hash": "233ac1615508a8c3c412f0e52b47fb6a064c32fbb3f090e278a72f8670ffbf14",
+                  "TamanoBytes": 289813
+                },
+                {
+                  "Nombre": "02 -  12 - EXTRUSOR 1200 - PE_014_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2012%20-%20EXTRUSOR%201200%20-%20PE_014_CDI_20170407.pdf",
+                  "Hash": "a7d1ed2a5569a7f4367d4febc30b70d6fad4c933620a5fb9fb7f439223bfa832",
+                  "TamanoBytes": 177472
+                },
+                {
+                  "Nombre": "02 -  13 - EXTRUSOR 1200 - PE_014_CDI_20170407-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2013%20-%20EXTRUSOR%201200%20-%20PE_014_CDI_20170407-Model.pdf",
+                  "Hash": "7a1314c570a4afc67d76e2038a6879fbf2324be87eef11c729058e66f452dc1a",
+                  "TamanoBytes": 129919
+                },
+                {
+                  "Nombre": "02 -  14 - EXTRUSOR 1200 - PE_015_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2014%20-%20EXTRUSOR%201200%20-%20PE_015_CDI_20170407.pdf",
+                  "Hash": "970c74a0c7f604482b33214a64ffd301318191be9255c95414ce7d7f4b3b5dc4",
+                  "TamanoBytes": 230863
+                },
+                {
+                  "Nombre": "02 -  15 - EXTRUSOR 1200 - PE_016_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2015%20-%20EXTRUSOR%201200%20-%20PE_016_CDI_20170407.pdf",
+                  "Hash": "384786010d5f93eeec903ac434421f28b7f736e63efb9d23cadb5ffdf447654d",
+                  "TamanoBytes": 204997
+                },
+                {
+                  "Nombre": "02 -  16 - EXTRUSOR 1200 - PE_017_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2016%20-%20EXTRUSOR%201200%20-%20PE_017_CDI_20170407.pdf",
+                  "Hash": "a9afc37daec4e6657b10e2408ce82cff1a960faf73399d903606807595fc8f79",
+                  "TamanoBytes": 227865
+                },
+                {
+                  "Nombre": "02 -  17 - EXTRUSOR 1200 - PE_018_CDI_20170407.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/02%20-%20%2017%20-%20EXTRUSOR%201200%20-%20PE_018_CDI_20170407.pdf",
+                  "Hash": "08e0850b0f267076d725fffbfa1eaf1349f232ef643271f2e42e6251affb70ad",
+                  "TamanoBytes": 184506
+                },
+                {
+                  "Nombre": "03 -  00 - HORNO - HORNO SCHAAF 2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2000%20-%20HORNO%20-%20HORNO%20SCHAAF%202.pdf",
+                  "Hash": "594e1551f12801958d7568b3d8d38954933a520a0f7b4d986b6d303cf5fb0c1f",
+                  "TamanoBytes": 2960816
+                },
+                {
+                  "Nombre": "03 -  01 - HORNO - PLANOS HORNO 1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2001%20-%20HORNO%20-%20PLANOS%20HORNO%201.pdf",
+                  "Hash": "82ce14e02b01978b9c759ff8646c123e23ba65a061fd399120b246f45199c4db",
+                  "TamanoBytes": 261937
+                },
+                {
+                  "Nombre": "03 -  02 - HORNO - PLANOS HORNO 2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2002%20-%20HORNO%20-%20PLANOS%20HORNO%202.pdf",
+                  "Hash": "49b37fd693e2f74fec428cf545bfee56ecf64519cfbd9772b87da66132593bbe",
+                  "TamanoBytes": 267932
+                },
+                {
+                  "Nombre": "03 -  03 - HORNO - PLANOS HORNO 3.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2003%20-%20HORNO%20-%20PLANOS%20HORNO%203.pdf",
+                  "Hash": "2539f0c13ab86cc116fd423fd86107f45572a689141c66ea277ec6afdcb3e6b0",
+                  "TamanoBytes": 243134
+                },
+                {
+                  "Nombre": "03 -  04 - HORNO - PLANOS HORNO 4.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2004%20-%20HORNO%20-%20PLANOS%20HORNO%204.pdf",
+                  "Hash": "e5938e5af5dc74ec184ccb4d64958836c79ceb2bc007343114ede1a59f2403fb",
+                  "TamanoBytes": 271458
+                },
+                {
+                  "Nombre": "03 -  05 - HORNO - PLANOS HORNO 5 .pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2005%20-%20HORNO%20-%20PLANOS%20HORNO%205%20.pdf",
+                  "Hash": "3fa34f11cbf9dd47c0fdf7e30eba91105f3ebf8217a7381389d8fa4776836022",
+                  "TamanoBytes": 290761
+                },
+                {
+                  "Nombre": "03 -  06 - HORNO - PLANOS HORNO 6.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2006%20-%20HORNO%20-%20PLANOS%20HORNO%206.pdf",
+                  "Hash": "373f0aeacbce43ed73cc54415280d670711159a78f80ac752b5fc3da50f8c862",
+                  "TamanoBytes": 264404
+                },
+                {
+                  "Nombre": "03 -  07 - HORNO - PLANOS HORNO 7.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2007%20-%20HORNO%20-%20PLANOS%20HORNO%207.pdf",
+                  "Hash": "07ddb76b60b409bfb55564ad89d38769cafacad75036b9351ee700ab741934c2",
+                  "TamanoBytes": 279567
+                },
+                {
+                  "Nombre": "03 -  08 - HORNO - PLANOS HORNO 8 .pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2008%20-%20HORNO%20-%20PLANOS%20HORNO%208%20.pdf",
+                  "Hash": "58b273af518f06b7b62015f104bd9cf454c997baa848d24273c16f778752e990",
+                  "TamanoBytes": 308929
+                },
+                {
+                  "Nombre": "03 -  09 - HORNO - PLANOS HORNO 9.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2009%20-%20HORNO%20-%20PLANOS%20HORNO%209.pdf",
+                  "Hash": "8c4939f83a6e89c8cbfcf2e418daa0eb723b57d060ec0633adb08eb2b43197cc",
+                  "TamanoBytes": 284566
+                },
+                {
+                  "Nombre": "03 -  10 - HORNO - PLANOS HORNO 10  .pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2010%20-%20HORNO%20-%20PLANOS%20HORNO%2010%20%20.pdf",
+                  "Hash": "8aed83154d6418bd8e7011bd227a13b8c16092f567d76d6e22cca1755c960cda",
+                  "TamanoBytes": 289477
+                },
+                {
+                  "Nombre": "03 -  11 - HORNO - PLANOS HORNO 13.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/03%20-%20%2011%20-%20HORNO%20-%20PLANOS%20HORNO%2013.pdf",
+                  "Hash": "8a0cf8434a3e57e01b5fec730ccdcdfb32da550e946a94c52ba417b514b09fa1",
+                  "TamanoBytes": 218143
+                },
+                {
+                  "Nombre": "04 -  00 - COBOT - CCPS ARGENTINA SCHAAF L1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/04%20-%20%2000%20-%20COBOT%20-%20CCPS%20ARGENTINA%20SCHAAF%20L1.pdf",
                   "Hash": "47d3483a864b12925ca25643ed437290b290954a410cad1370074c11b4f45efc",
                   "TamanoBytes": 2002152
                 },
                 {
-                  "Nombre": "CCPS ARGENTINA SCHAAF L2.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20SCHAAF%202/CCPS%20ARGENTINA%20SCHAAF%20L2.pdf",
+                  "Nombre": "04 -  01 - COBOT - CCPS ARGENTINA SCHAAF L2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/04%20-%20%2001%20-%20COBOT%20-%20CCPS%20ARGENTINA%20SCHAAF%20L2.pdf",
                   "Hash": "4fce050ce5dc34c6fbc8568b03010292c8d2a0603d3f246ad67baab83c8c62fa",
                   "TamanoBytes": 1935790
                 },
                 {
-                  "Nombre": "CCPS ARGENTINA SCHAAF L3-L5-L6.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20SCHAAF%202/CCPS%20ARGENTINA%20SCHAAF%20L3-L5-L6.pdf",
+                  "Nombre": "04 -  02 - COBOT - CCPS ARGENTINA SCHAAF L3-L5-L6.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/04%20-%20PLANOS%20SCHAAF2/04%20-%20%2002%20-%20COBOT%20-%20CCPS%20ARGENTINA%20SCHAAF%20L3-L5-L6.pdf",
                   "Hash": "a7ca7a47d6de79a43c38cf797426aaa00b7b6915894bdbb5d2be0a25c0367535",
                   "TamanoBytes": 2224334
                 }
@@ -2597,17 +2853,17 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS ELECTRICOS COBOT TC",
+              "Nombre": "05 - PLANOS TC2000",
               "Archivos": [
                 {
-                  "Nombre": "CCPS ARGENTINA TC1000 L1-L2.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20TC/CCPS%20ARGENTINA%20TC1000%20L1-L2.pdf",
+                  "Nombre": "00 -  00 - COBOT - CCPS ARGENTINA TC1000 L1-L2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/05%20-%20PLANOS%20TC2000/00%20-%20%2000%20-%20COBOT%20-%20CCPS%20ARGENTINA%20TC1000%20L1-L2.pdf",
                   "Hash": "2f6584aeeb0c5143bf33e3bbf97e421371765b1846384d7533f75b02e78620eb",
                   "TamanoBytes": 1962054
                 },
                 {
-                  "Nombre": "CCPS ARGENTINA TC1000 L3-L4.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20ELECTRICOS%20COBOT%20TC/CCPS%20ARGENTINA%20TC1000%20L3-L4.pdf",
+                  "Nombre": "00 -  01 - COBOT - CCPS ARGENTINA TC1000 L3-L4.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/05%20-%20PLANOS%20TC2000/00%20-%20%2001%20-%20COBOT%20-%20CCPS%20ARGENTINA%20TC1000%20L3-L4.pdf",
                   "Hash": "47f2748620bdc65defd5975b394ca526faaf483aba5c387b3cb5cc7cb7984064",
                   "TamanoBytes": 2296343
                 }
@@ -2615,816 +2871,665 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS FORNI",
+              "Nombre": "06 - PLANOS PC32 FLEX",
               "Archivos": [
                 {
-                  "Nombre": "11701274-BLENDMCP-E_A.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FORNI/11701274-BLENDMCP-E_A.pdf",
-                  "Hash": "e49b4ce4a595c2b174486f5202d71a9cca6786ec8326574c8bdb77efae943c4c",
-                  "TamanoBytes": 4297196
-                },
-                {
-                  "Nombre": "11701274-BLENDOS1-E01_A.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FORNI/11701274-BLENDOS1-E01_A.pdf",
-                  "Hash": "672f126576050d7d329d5351f95f2cfe7a246276e1b62643730a79759ea2b51c",
-                  "TamanoBytes": 152241
-                },
-                {
-                  "Nombre": "11701274-BLENDOS2-E_A.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FORNI/11701274-BLENDOS2-E_A.pdf",
-                  "Hash": "bfe81a5076520ac181b3ca83358cb005aedff1ac24cabe8a50b9a14f80c08ea1",
-                  "TamanoBytes": 636204
-                },
-                {
-                  "Nombre": "C2778 Linea Laminado Electricos.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FORNI/C2778%20Linea%20Laminado%20Electricos.pdf",
-                  "Hash": "08e3b0145061b344d62d4035969e99255d7c9f77281fc0cc30beee1c86425f93",
-                  "TamanoBytes": 922409
-                },
-                {
-                  "Nombre": "C2778-L6 Electricos.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FORNI/C2778-L6%20Electricos.pdf",
-                  "Hash": "2db70f321f500840b45c89c04806f9c16b2b865fb797c754ea505e986444c9c3",
-                  "TamanoBytes": 393252
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "PLANOS FRYPACK",
-              "Archivos": [
-                {
-                  "Nombre": "11604164_SEASOS2-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604164_SEASOS2-E_0.pdf",
-                  "Hash": "9d00e48a1b9379bc793321b47229346e3fd50ade569cd02e0c839b392bb9c266",
-                  "TamanoBytes": 1139698
-                },
-                {
-                  "Nombre": "11604193-SEASCP2-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604193-SEASCP2-E_0.pdf",
-                  "Hash": "bbfdfe9aad2ac7e60b947e0f54feaabca5b165dd98b9e1d9ee154b872ff655d1",
-                  "TamanoBytes": 1284170
-                },
-                {
-                  "Nombre": "11604194-FRYMCP-E_0  bueno.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604194-FRYMCP-E_0%20%20bueno.pdf",
-                  "Hash": "67923072a7cb1c20038bbc66239236d04c8e82f80ece7206343519d7d8967fc4",
-                  "TamanoBytes": 4214193
-                },
-                {
-                  "Nombre": "11604194-FRYOS1-E_0   bueno.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604194-FRYOS1-E_0%20%20%20bueno.pdf",
-                  "Hash": "6b0da47cf8ff6154eacae3bd727bf3c64c62a106719ba226669efcc85ba8daf9",
-                  "TamanoBytes": 1035875
-                },
-                {
-                  "Nombre": "11604194-SEASCP2-E_0.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604194-SEASCP2-E_0.pdf",
-                  "Hash": "921a12db90cd2dff37f121eb831ef2e3dee3c179f61e997b7dfed6650b544e96",
-                  "TamanoBytes": 1159750
-                },
-                {
-                  "Nombre": "11604194-SEASOS2-E_A.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/11604194-SEASOS2-E_A.pdf",
-                  "Hash": "0b7b532adcbb686bdb09fa9244e1b66bdb354e41b2c40ddb14ec95a45a4aa5ee",
-                  "TamanoBytes": 1139682
-                },
-                {
-                  "Nombre": "JB\u00B4S.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/JB%C2%B4S.PDF",
-                  "Hash": "b26d39673eee225e1b67bd2cedc7296ea138de872095e5808c25654a0f4bae9d",
-                  "TamanoBytes": 391517
-                },
-                {
-                  "Nombre": "Planos electricos - Intercambiador.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20FRYPACK/Planos%20electricos%20-%20Intercambiador.pdf",
-                  "Hash": "9c26b3eaee8557d44d4d66d6b588cb7363a61e3683accb7a1d85b90ad48b8a86",
-                  "TamanoBytes": 785432
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "PLANOS HALOILA",
-              "Archivos": [
-                {
-                  "Nombre": "Esquemas.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20HALOILA/Esquemas.pdf",
-                  "Hash": "3688527af9427401adef400adfb149dd981257931ec114059b1dcb5fa390caae",
-                  "TamanoBytes": 6438280
-                },
-                {
-                  "Nombre": "OctoMANUAL_480318-001_es-ES.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20HALOILA/OctoMANUAL_480318-001_es-ES.pdf",
-                  "Hash": "0d885104df0f01d43782cc4fac675393928e244210d826bad793efed85d97815",
-                  "TamanoBytes": 75844636
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "PLANOS KETAN",
-              "Archivos": [
-                {
-                  "Nombre": "CABLE DE EXTENSION 9550.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20KETAN/CABLE%20DE%20EXTENSION%209550.pdf",
-                  "Hash": "b1236c108e76129311a13f9623679ab9c4a8179a178400b571de47b259f5eb7d",
-                  "TamanoBytes": 178294
-                },
-                {
-                  "Nombre": "CAJA CAMARAS.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20KETAN/CAJA%20CAMARAS.pdf",
-                  "Hash": "4464d6a1d75612f638e92666ee2c5c958ef53f17b93fbf9d576add3f131b0a9f",
-                  "TamanoBytes": 190269
-                },
-                {
-                  "Nombre": "CAJA DE CONEXIONADO.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20KETAN/CAJA%20DE%20CONEXIONADO.pdf",
-                  "Hash": "912046f073e0ebdc460d71874902aeeab98b40ab9dfdfe770e1c2bae59ac5e9e",
-                  "TamanoBytes": 202621
-                },
-                {
-                  "Nombre": "TABLERO DERECHO (CON PC).pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20KETAN/TABLERO%20DERECHO%20%28CON%20PC%29.pdf",
-                  "Hash": "a87d99366a3416d06ff531f28187e987d52840860c08ff3e2ac794b6f8aebce3",
-                  "TamanoBytes": 314252
-                },
-                {
-                  "Nombre": "TABLERO IZQUIERDO.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20KETAN/TABLERO%20IZQUIERDO.pdf",
-                  "Hash": "11830713190f18064b1bfce907218703a194ee16a56292959ae15a4cf5748aff",
-                  "TamanoBytes": 306374
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "PLANOS MAPA",
-              "Archivos": [],
-              "Subcarpetas": [
-                {
-                  "Nombre": "V361 (Linea)",
-                  "Archivos": [],
-                  "Subcarpetas": []
-                },
-                {
-                  "Nombre": "V37800 SABRITAS (Formador)",
-                  "Archivos": [],
-                  "Subcarpetas": []
-                },
-                {
-                  "Nombre": "V41000_SABRITAS (Perforador)",
-                  "Archivos": [],
-                  "Subcarpetas": []
-                }
-              ]
-            },
-            {
-              "Nombre": "PLANOS OBIN",
-              "Archivos": [
-                {
-                  "Nombre": "Planos Electricos-sistema de transporte Obin.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20OBIN/Planos%20Electricos-sistema%20de%20transporte%20Obin.pdf",
-                  "Hash": "e3855ba0c55c4d9782bdfa73909ee3a534c101ecfde6cd439ac4b2c19ea0e6e7",
-                  "TamanoBytes": 20076482
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "PLANOS PC 32Flex",
-              "Archivos": [
-                {
-                  "Nombre": "R150052 FL710 COVER SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710%20COVER%20SHEET-Model.pdf",
-                  "Hash": "6abe022843fabc6785fcd6df082b25594c10068dfbcf2cac615b111d046009d5",
-                  "TamanoBytes": 307855
-                },
-                {
-                  "Nombre": "R150052 FL710-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710-1-Model.pdf",
-                  "Hash": "f1ed48848389b45c75985d2e3ef9378dcd351e4ce40a3f04d1a9ce1a4c766736",
-                  "TamanoBytes": 436639
-                },
-                {
-                  "Nombre": "R150052 FL710-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710-2-Model.pdf",
-                  "Hash": "411b9a51d1283b6b4b7f499fc9b0d090c462c24f36477cadbbb664bf6bf545ef",
-                  "TamanoBytes": 402008
-                },
-                {
-                  "Nombre": "R150052 FL710-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710-3-Model.pdf",
-                  "Hash": "a9069c6ef573fbb8e6492aaf97532d6c898f656219bafa6cdc4054556d9a274f",
-                  "TamanoBytes": 356263
-                },
-                {
-                  "Nombre": "R150052 FL710-4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710-4-Model.pdf",
-                  "Hash": "380bd302f06a3ae20e5120e3908a185c02fdeaf56dbb5b802757385e7f4fa32b",
-                  "TamanoBytes": 161328
-                },
-                {
-                  "Nombre": "R150052 FL710-5-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FL710-5-Model.pdf",
-                  "Hash": "57fa9a3e18939b7145772ccef1ecc2c4128a56f4402a480b159c7d1e466b44e1",
-                  "TamanoBytes": 142031
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%201-Model.pdf",
-                  "Hash": "9efef3c815074fc94eb30b979e6c11ad88f0597d73b307667ba48167257af6f3",
-                  "TamanoBytes": 247176
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 1A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%201A-Model.pdf",
-                  "Hash": "539b7a2977a558ec74936a9a604117377f10e1dd5f4bbc7a79529327bbd873b3",
-                  "TamanoBytes": 224169
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%202-Model.pdf",
-                  "Hash": "2b3a581ab4d9ed299824969a15e3e49e36a884af86a6e176735ca9ec7793113d",
-                  "TamanoBytes": 220359
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 2A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%202A-Model.pdf",
-                  "Hash": "5fe38b4202600c1f3824d41d8f00a23d470b313dd2612cbdcadf7137127f5dd2",
-                  "TamanoBytes": 183871
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%203-Model.pdf",
-                  "Hash": "b30a69764aa7f97f6e9f556e6ea8a068971f75d6c135504d280739fe84397167",
-                  "TamanoBytes": 209755
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 3A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%203A-Model.pdf",
-                  "Hash": "ca2dc19211f7a7560d89317af83a55ac00a108f6b5e2015a1b908f3675c97122",
-                  "TamanoBytes": 215397
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%204-Model.pdf",
-                  "Hash": "985e584d3befcecfa3328ff01eee031ffb2a369a16dc6de970a7cacfcfd1c026",
-                  "TamanoBytes": 111780
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 4A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%204A-Model.pdf",
-                  "Hash": "804853aeadfa22a43e5cdb19eca74dfac3402d4976c220e4521c57419089dfa0",
-                  "TamanoBytes": 100711
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 5-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%205-Model.pdf",
-                  "Hash": "604a1af0432d8bef32a850a7b6196f52ef6457d1b16dec96c6ee24adbffaa7fc",
-                  "TamanoBytes": 1099750
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 5A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%205A-Model.pdf",
-                  "Hash": "b6498f7f431eb70d2208c4a36e49c41848257f5e6524c61c008bf11bef3ac8f6",
-                  "TamanoBytes": 915902
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 6-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%206-Model.pdf",
-                  "Hash": "caef491538f9b292c720aef48f893ec4c367afef89e3492c22434a46cb210b63",
-                  "TamanoBytes": 358385
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 6A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%206A-Model.pdf",
-                  "Hash": "99ebca2565c156b12c007c80558f051c60dc6905965db318dd7c865891c9f2db",
-                  "TamanoBytes": 359026
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 7A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%207A-Model.pdf",
-                  "Hash": "a8835f9eac504138393ce5fd1aa7e7d568f6c7cba8265b7734e2e93f07391558",
-                  "TamanoBytes": 141713
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 BINS SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%20BINS%20SHEET-Model.pdf",
-                  "Hash": "db9a258d19b8bdb837d5fd6771cf289246b68958cbc31c093752ae10b136deab",
-                  "TamanoBytes": 371664
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O MCP2 FLUME SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20MCP2%20FLUME%20SHEET-Model.pdf",
-                  "Hash": "ab1bb3e2285c9aa0ea800c8906b44c3220f6deddd4fb4698e6bc2fa456f5cb80",
-                  "TamanoBytes": 360913
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O PEEL SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O%20PEEL%20SHEET-Model.pdf",
-                  "Hash": "a347b1ad0fa12c69bb6fd373a719be424802e379f3ab6643970622e7c9df8837",
-                  "TamanoBytes": 402333
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-1-Model.pdf",
-                  "Hash": "d92e375f553fe07b02209f0262bac73cc13ddb3f37bc26401383c01d3b4c7358",
-                  "TamanoBytes": 211099
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-1A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-1A-Model.pdf",
-                  "Hash": "2cdbb7f598b15790841dc0c0734c141e13bfa1c1abddf96897998613ca748fab",
-                  "TamanoBytes": 168939
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-1B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-1B-Model.pdf",
-                  "Hash": "19036a23ca329c2e79119e32171c805398f1e929b2a78303f424bd83d4f9c341",
-                  "TamanoBytes": 150562
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-2-Model.pdf",
-                  "Hash": "2ced69e8f0f34abc3b87857528e19633f7a5a3a91d10cdfa586e3c5b663b815f",
-                  "TamanoBytes": 236649
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-2A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-2A-Model.pdf",
-                  "Hash": "3fc4fea5e15fe8f7b6da75ab724f00f50d3867a208b12b66011cb363a952526b",
-                  "TamanoBytes": 208088
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-2B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-2B-Model.pdf",
-                  "Hash": "f0984918ede77a1b4dc7610691cb9ec92c8c109be561e294ae603bd9525ddda8",
-                  "TamanoBytes": 194774
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-3-Model.pdf",
-                  "Hash": "087de89284874cb99a2a8353d58f72def34b63aee75de714a650a10efc9ce788",
-                  "TamanoBytes": 255303
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-3A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-3A-Model.pdf",
-                  "Hash": "a95e8301aa08ba66842f5215764fb2b196776786a296644fd9b4f4318863772c",
-                  "TamanoBytes": 177508
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-3B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-3B-Model.pdf",
-                  "Hash": "e702040e3fe58570e663629d01eafb2ebed6e014a34b75c52b5b661f28af895a",
-                  "TamanoBytes": 190982
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-4-Model.pdf",
-                  "Hash": "997e89c4faaf7c4d75229b72b59d7a95c2e1351809a3f8602931fc613023fff1",
-                  "TamanoBytes": 178097
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-4A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-4A-Model.pdf",
-                  "Hash": "d470bfa1bf5064483da9130196008a2775a1060ec6379f7339a7ddde3dcbca40",
-                  "TamanoBytes": 342491
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-4B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-4B-Model.pdf",
-                  "Hash": "93a93e5baa9699192c0172dabee1417a82b5f68e21dc5c0ea3cb0db01f52f712",
-                  "TamanoBytes": 698673
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-5-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-5-Model.pdf",
-                  "Hash": "7efcc3476b4d1c5908ee915438129a937f6eeee1cb688e2b5d12d651b943e1e6",
-                  "TamanoBytes": 143104
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-5A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-5A-Model.pdf",
-                  "Hash": "a2979630a9c6773cab8f20c03734e8055f7c84bf4d4022bbbd64bd3a267a335a",
-                  "TamanoBytes": 1100069
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-5B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-5B-Model.pdf",
-                  "Hash": "f04e37fa20108efc364f5454115a7618236b943ef842ed825f4b6e54ab02bf5d",
-                  "TamanoBytes": 136478
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-6-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-6-Model.pdf",
-                  "Hash": "3abc318f10ac45e6cf91a39970debe22a887aac1c2a97138e7defa1717549666",
-                  "TamanoBytes": 1111840
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-6A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-6A-Model.pdf",
-                  "Hash": "82f4471bec281f6ebd00915258b26d8a12a2ddda8ff98bdfe7db653c345d0440",
-                  "TamanoBytes": 932535
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-6B-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-6B-Model.pdf",
-                  "Hash": "8c7a503f7ecf9052adc420e587cb306946af6b87169979714e02cf3d6984999f",
-                  "TamanoBytes": 137572
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-7-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-7-Model.pdf",
-                  "Hash": "e5bc65e3f754eb06df768807615bf3782c925a0e47b2184914ac92b2dbdfae09",
-                  "TamanoBytes": 327467
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-7A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-7A-Model.pdf",
-                  "Hash": "10845f04efb6a608238a7c3ee24f6bcf6eca28d6a06ec26c53dd6cd01a77f7c7",
-                  "TamanoBytes": 139251
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-8-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-8-Model.pdf",
-                  "Hash": "08a913a61ff75ed8ca2273a9175a7fa87b8b698f41b98a498c9cf4c47a0dc4f6",
-                  "TamanoBytes": 138252
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-FRYER COVER-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-FRYER%20COVER-Model.pdf",
-                  "Hash": "e187725e5ef1fc8a08005435f14634de98f0970fa3f1c3b3384a65ac0bfbb436",
-                  "TamanoBytes": 355432
-                },
-                {
-                  "Nombre": "R150052 FLEX I-O-HX COVER-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20FLEX%20I-O-HX%20COVER-Model.pdf",
-                  "Hash": "eae304e6e446fe8091d753687e1ea6c1fd4fa4f6bc2db609752a99724d12c38b",
-                  "TamanoBytes": 325619
-                },
-                {
-                  "Nombre": "R150052 MCP COVER SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP%20COVER%20SHEET-Model.pdf",
+                  "Nombre": "00 - 00 - MCP1 - R150052 MCP COVER SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2000%20-%20MCP1%20-%20R150052%20MCP%20COVER%20SHEET-Model.pdf",
                   "Hash": "ef1858bee6e3319048cd6a61d53e0253f6ac78f4da21fe19ba852a7490402a3d",
                   "TamanoBytes": 647235
                 },
                 {
-                  "Nombre": "R150052 MCP-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-1-Model.pdf",
+                  "Nombre": "00 - 01 - MCP1 - R150052 MCP-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2001%20-%20MCP1%20-%20R150052%20MCP-1-Model.pdf",
                   "Hash": "a30631ce265ae5b928efa5c14a2c301a51d843d63fa8e250ace94166c6cc982a",
                   "TamanoBytes": 276601
                 },
                 {
-                  "Nombre": "R150052 MCP-10-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-10-Model.pdf",
-                  "Hash": "2a7ac638eebd92fd39fdce0f34acfd3df69a4af24f8d4bae4637168b6eb0df3a",
-                  "TamanoBytes": 230498
-                },
-                {
-                  "Nombre": "R150052 MCP-11-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-11-Model.pdf",
-                  "Hash": "c4a4c2f2f2b1036560aeee6b57c8814f9fb1271f4b091e42d4d6dff88a204343",
-                  "TamanoBytes": 243693
-                },
-                {
-                  "Nombre": "R150052 MCP-12-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-12-Model.pdf",
-                  "Hash": "ed61f4da99ff8016b073bd3766b89105273366155644de9dcaf2f23541b6d817",
-                  "TamanoBytes": 235581
-                },
-                {
-                  "Nombre": "R150052 MCP-13-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-13-Model.pdf",
-                  "Hash": "8b5bde0f186cd4c7ad037ee3bc679d72d980cb516e6aebd8d64086cf79c6a35e",
-                  "TamanoBytes": 98817
-                },
-                {
-                  "Nombre": "R150052 MCP-14-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-14-Model.pdf",
-                  "Hash": "f1ffa204d6640071108d74bf8be186f52b1e5767805d36cd81e51a08545fac0c",
-                  "TamanoBytes": 1250966
-                },
-                {
-                  "Nombre": "R150052 MCP-15-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-15-Model.pdf",
-                  "Hash": "887f5e88abefbceae01fc430513b5183deddf9c78e326f48534c4fffd67af9f9",
-                  "TamanoBytes": 1833298
-                },
-                {
-                  "Nombre": "R150052 MCP-16-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-16-Model.pdf",
-                  "Hash": "06b9d00fb1bc2ec2d49a36c06b432f6a8676d1be3210eb602371a65f9caadb6b",
-                  "TamanoBytes": 271221
-                },
-                {
-                  "Nombre": "R150052 MCP-17-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-17-Model.pdf",
-                  "Hash": "2e8a862d98a0ab4db213b92c10675eb0c18eb3d808fd7746a18a4cc7e203cc79",
-                  "TamanoBytes": 1637909
-                },
-                {
-                  "Nombre": "R150052 MCP-18-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-18-Model.pdf",
-                  "Hash": "a7424b44fcda61e70ac0a081f95121b08c67254a4aecd752173c4ae48d603b20",
-                  "TamanoBytes": 323301
-                },
-                {
-                  "Nombre": "R150052 MCP-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-2-Model.pdf",
+                  "Nombre": "00 - 02 - MCP1 - R150052 MCP-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2002%20-%20MCP1%20-%20R150052%20MCP-2-Model.pdf",
                   "Hash": "97ddcf08da9579a9bc2eb7ec3b7d7d4c7256f647776f78b948b08b351286a9d2",
                   "TamanoBytes": 227842
                 },
                 {
-                  "Nombre": "R150052 MCP-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-3-Model.pdf",
+                  "Nombre": "00 - 03 - MCP1 - R150052 MCP-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2003%20-%20MCP1%20-%20R150052%20MCP-3-Model.pdf",
                   "Hash": "d9aa9957ca3332037e9b9f4e7aa2b50ff744e19b1db61a0f72dbab78085a3bf8",
                   "TamanoBytes": 292987
                 },
                 {
-                  "Nombre": "R150052 MCP-4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-4-Model.pdf",
+                  "Nombre": "00 - 04 - MCP1 - R150052 MCP-4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2004%20-%20MCP1%20-%20R150052%20MCP-4-Model.pdf",
                   "Hash": "f30f3c563e1bf772524469cc8fbdf81dc724f79371c762e95122a9f8d8e412e3",
                   "TamanoBytes": 243857
                 },
                 {
-                  "Nombre": "R150052 MCP-5-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-5-Model.pdf",
+                  "Nombre": "00 - 05 - MCP1 - R150052 MCP-5-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2005%20-%20MCP1%20-%20R150052%20MCP-5-Model.pdf",
                   "Hash": "24542ec258070e575c0027fe74a275c70a7296a5b90698c390f4921815db4d51",
                   "TamanoBytes": 366070
                 },
                 {
-                  "Nombre": "R150052 MCP-6-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-6-Model.pdf",
+                  "Nombre": "00 - 06 - MCP1 - R150052 MCP-6-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2006%20-%20MCP1%20-%20R150052%20MCP-6-Model.pdf",
                   "Hash": "ebfed5c9c272236e48f57ee702751e9aec7492a7fd287ce084434eac16d89f52",
                   "TamanoBytes": 366502
                 },
                 {
-                  "Nombre": "R150052 MCP-7-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-7-Model.pdf",
+                  "Nombre": "00 - 07 - MCP1 - R150052 MCP-7-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2007%20-%20MCP1%20-%20R150052%20MCP-7-Model.pdf",
                   "Hash": "8d4523bd37b17e92e5c2d502a91d717aa97f4b3aca8fd9a6631ba1d62757a4b6",
                   "TamanoBytes": 109570
                 },
                 {
-                  "Nombre": "R150052 MCP-8-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-8-Model.pdf",
+                  "Nombre": "00 - 08 - MCP1 - R150052 MCP-8-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2008%20-%20MCP1%20-%20R150052%20MCP-8-Model.pdf",
                   "Hash": "5cbdd6ea8fe458c319899cc6ccbc54843aa822be64e817faf0f9982ee250187c",
                   "TamanoBytes": 234652
                 },
                 {
-                  "Nombre": "R150052 MCP-9-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-9-Model.pdf",
+                  "Nombre": "00 - 09 - MCP1 - R150052 MCP-9-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2009%20-%20MCP1%20-%20R150052%20MCP-9-Model.pdf",
                   "Hash": "e0bf2046d866b34b1d3b54d9e4910c1d18f093d28eec77d8dc92374460dcf108",
                   "TamanoBytes": 263232
                 },
                 {
-                  "Nombre": "R150052 MCP-9A-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP-9A-Model.pdf",
+                  "Nombre": "00 - 10 - MCP1 - R150052 MCP-9A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2010%20-%20MCP1%20-%20R150052%20MCP-9A-Model.pdf",
                   "Hash": "85421380709ebaf6a74828c0c81b3e15063c7c2187290e17fce45a82260d910e",
                   "TamanoBytes": 182214
                 },
                 {
-                  "Nombre": "R150052 MCP2- COVER SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-%20COVER%20SHEET-Model.pdf",
+                  "Nombre": "00 - 11 - MCP1 - R150052 MCP-10-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2011%20-%20MCP1%20-%20R150052%20MCP-10-Model.pdf",
+                  "Hash": "2a7ac638eebd92fd39fdce0f34acfd3df69a4af24f8d4bae4637168b6eb0df3a",
+                  "TamanoBytes": 230498
+                },
+                {
+                  "Nombre": "00 - 12 - MCP1 - R150052 MCP-11-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2012%20-%20MCP1%20-%20R150052%20MCP-11-Model.pdf",
+                  "Hash": "c4a4c2f2f2b1036560aeee6b57c8814f9fb1271f4b091e42d4d6dff88a204343",
+                  "TamanoBytes": 243693
+                },
+                {
+                  "Nombre": "00 - 13 - MCP1 - R150052 MCP-12-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2013%20-%20MCP1%20-%20R150052%20MCP-12-Model.pdf",
+                  "Hash": "ed61f4da99ff8016b073bd3766b89105273366155644de9dcaf2f23541b6d817",
+                  "TamanoBytes": 235581
+                },
+                {
+                  "Nombre": "00 - 14 - MCP1 - R150052 MCP-13-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2014%20-%20MCP1%20-%20R150052%20MCP-13-Model.pdf",
+                  "Hash": "8b5bde0f186cd4c7ad037ee3bc679d72d980cb516e6aebd8d64086cf79c6a35e",
+                  "TamanoBytes": 98817
+                },
+                {
+                  "Nombre": "00 - 15 - MCP1 - R150052 MCP-14-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2015%20-%20MCP1%20-%20R150052%20MCP-14-Model.pdf",
+                  "Hash": "f1ffa204d6640071108d74bf8be186f52b1e5767805d36cd81e51a08545fac0c",
+                  "TamanoBytes": 1250966
+                },
+                {
+                  "Nombre": "00 - 16 - MCP1 - R150052 MCP-15-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2016%20-%20MCP1%20-%20R150052%20MCP-15-Model.pdf",
+                  "Hash": "887f5e88abefbceae01fc430513b5183deddf9c78e326f48534c4fffd67af9f9",
+                  "TamanoBytes": 1833298
+                },
+                {
+                  "Nombre": "00 - 17 - MCP1 - R150052 MCP-16-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2017%20-%20MCP1%20-%20R150052%20MCP-16-Model.pdf",
+                  "Hash": "06b9d00fb1bc2ec2d49a36c06b432f6a8676d1be3210eb602371a65f9caadb6b",
+                  "TamanoBytes": 271221
+                },
+                {
+                  "Nombre": "00 - 18 - MCP1 - R150052 MCP-17-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2018%20-%20MCP1%20-%20R150052%20MCP-17-Model.pdf",
+                  "Hash": "2e8a862d98a0ab4db213b92c10675eb0c18eb3d808fd7746a18a4cc7e203cc79",
+                  "TamanoBytes": 1637909
+                },
+                {
+                  "Nombre": "00 - 19 - MCP1 - R150052 MCP-18-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/00%20-%2019%20-%20MCP1%20-%20R150052%20MCP-18-Model.pdf",
+                  "Hash": "a7424b44fcda61e70ac0a081f95121b08c67254a4aecd752173c4ae48d603b20",
+                  "TamanoBytes": 323301
+                },
+                {
+                  "Nombre": "01 - 00 - MCP2 - R150052 MCP2- COVER SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2000%20-%20MCP2%20-%20R150052%20MCP2-%20COVER%20SHEET-Model.pdf",
                   "Hash": "ddb8da8009b4c33bf2d9a4539e2f0c6d64f7dc999b01073e14024e3436219161",
                   "TamanoBytes": 506030
                 },
                 {
-                  "Nombre": "R150052 MCP2-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-1-Model.pdf",
+                  "Nombre": "01 - 01 - MCP2 - R150052 MCP2-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2001%20-%20MCP2%20-%20R150052%20MCP2-1-Model.pdf",
                   "Hash": "b56ffc71d98c18949539ca4ee9e755cb8b0c75024fec51561805a2d2898db07a",
                   "TamanoBytes": 282821
                 },
                 {
-                  "Nombre": "R150052 MCP2-10-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-10-Model.pdf",
-                  "Hash": "20012a752613ab9e30134a4df241acdd9d949e653060a9ff1c1fd4cc4fb4d0f4",
-                  "TamanoBytes": 115045
-                },
-                {
-                  "Nombre": "R150052 MCP2-11-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-11-Model.pdf",
-                  "Hash": "b9641d2922e35ba0c13c96206b637eb8d154fb8b342083f6cdc340804801eb73",
-                  "TamanoBytes": 159865
-                },
-                {
-                  "Nombre": "R150052 MCP2-12-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-12-Model.pdf",
-                  "Hash": "b3b33f7fb3d3cd6d69b604a78a0cae1dbfaf98ff90eebaf2ac2ef6dd013399f7",
-                  "TamanoBytes": 1746012
-                },
-                {
-                  "Nombre": "R150052 MCP2-13-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-13-Model.pdf",
-                  "Hash": "4d494dce482d330651b69e74f41ccecc062b1a56fd60911007a5704707f2b0e1",
-                  "TamanoBytes": 100013
-                },
-                {
-                  "Nombre": "R150052 MCP2-14-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-14-Model.pdf",
-                  "Hash": "6554390524e1bd86cd57cbd3c9030917139240e8a0ae22f9ee4d2ef3d535c4b7",
-                  "TamanoBytes": 187555
-                },
-                {
-                  "Nombre": "R150052 MCP2-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-2-Model.pdf",
+                  "Nombre": "01 - 02 - MCP2 - R150052 MCP2-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2002%20-%20MCP2%20-%20R150052%20MCP2-2-Model.pdf",
                   "Hash": "83983c256eba5d1a3005ef685d784b517b8ff893db8f760b358323033c40d4ee",
                   "TamanoBytes": 244675
                 },
                 {
-                  "Nombre": "R150052 MCP2-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-3-Model.pdf",
+                  "Nombre": "01 - 03 - MCP2 - R150052 MCP2-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2003%20-%20MCP2%20-%20R150052%20MCP2-3-Model.pdf",
                   "Hash": "845f705429018d67200cb50c83032b7b8c48a959eca72ce9cb2ef64553a6e76a",
                   "TamanoBytes": 133130
                 },
                 {
-                  "Nombre": "R150052 MCP2-4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-4-Model.pdf",
+                  "Nombre": "01 - 04 - MCP2 - R150052 MCP2-4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2004%20-%20MCP2%20-%20R150052%20MCP2-4-Model.pdf",
                   "Hash": "4e4029cf753ae629d0048493d199d048caf2a4d9a7ab8abc036f0f3f5b5313f7",
                   "TamanoBytes": 111225
                 },
                 {
-                  "Nombre": "R150052 MCP2-5-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-5-Model.pdf",
+                  "Nombre": "01 - 05 - MCP2 - R150052 MCP2-5-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2005%20-%20MCP2%20-%20R150052%20MCP2-5-Model.pdf",
                   "Hash": "cda2c952cf1a69a48a559f409dddd2803ac38a3bc165f4158cf13b4bcde4b976",
                   "TamanoBytes": 225264
                 },
                 {
-                  "Nombre": "R150052 MCP2-6-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-6-Model.pdf",
+                  "Nombre": "01 - 06 - MCP2 - R150052 MCP2-6-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2006%20-%20MCP2%20-%20R150052%20MCP2-6-Model.pdf",
                   "Hash": "b69ad7e767c5ea0dc3fc10199e0fe98cb2e8de1bafba4b6baca66d62db628b48",
                   "TamanoBytes": 275995
                 },
                 {
-                  "Nombre": "R150052 MCP2-7-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-7-Model.pdf",
+                  "Nombre": "01 - 07 - MCP2 - R150052 MCP2-7-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2007%20-%20MCP2%20-%20R150052%20MCP2-7-Model.pdf",
                   "Hash": "d3eaf8d5aedbff42d0af6b36f175576365cf4651abfdc8071e82b05f4a0e2b76",
                   "TamanoBytes": 409978
                 },
                 {
-                  "Nombre": "R150052 MCP2-8-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-8-Model.pdf",
+                  "Nombre": "01 - 08 - MCP2 - R150052 MCP2-8-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2008%20-%20MCP2%20-%20R150052%20MCP2-8-Model.pdf",
                   "Hash": "7e5b9512d515d13242801e6b6b5b35e2f49c568575a6527ade4218131f32d0f6",
                   "TamanoBytes": 306047
                 },
                 {
-                  "Nombre": "R150052 MCP2-9-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MCP2-9-Model.pdf",
+                  "Nombre": "01 - 09 - MCP2 - R150052 MCP2-9-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2009%20-%20MCP2%20-%20R150052%20MCP2-9-Model.pdf",
                   "Hash": "9222cf128c593549f3395d0b24df42c4bc58dea5b8ee06ccbfc5f0f18a759e60",
                   "TamanoBytes": 208905
                 },
                 {
-                  "Nombre": "R150052 MOP COVER SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MOP%20COVER%20SHEET-Model.pdf",
+                  "Nombre": "01 - 10 - MCP2 - R150052 MCP2-10-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2010%20-%20MCP2%20-%20R150052%20MCP2-10-Model.pdf",
+                  "Hash": "20012a752613ab9e30134a4df241acdd9d949e653060a9ff1c1fd4cc4fb4d0f4",
+                  "TamanoBytes": 115045
+                },
+                {
+                  "Nombre": "01 - 11 - MCP2 - R150052 MCP2-11-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2011%20-%20MCP2%20-%20R150052%20MCP2-11-Model.pdf",
+                  "Hash": "b9641d2922e35ba0c13c96206b637eb8d154fb8b342083f6cdc340804801eb73",
+                  "TamanoBytes": 159865
+                },
+                {
+                  "Nombre": "01 - 12 - MCP2 - R150052 MCP2-12-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2012%20-%20MCP2%20-%20R150052%20MCP2-12-Model.pdf",
+                  "Hash": "b3b33f7fb3d3cd6d69b604a78a0cae1dbfaf98ff90eebaf2ac2ef6dd013399f7",
+                  "TamanoBytes": 1746012
+                },
+                {
+                  "Nombre": "01 - 13 - MCP2 - R150052 MCP2-13-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2013%20-%20MCP2%20-%20R150052%20MCP2-13-Model.pdf",
+                  "Hash": "4d494dce482d330651b69e74f41ccecc062b1a56fd60911007a5704707f2b0e1",
+                  "TamanoBytes": 100013
+                },
+                {
+                  "Nombre": "01 - 14 - MCP2 - R150052 MCP2-14-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/01%20-%2014%20-%20MCP2%20-%20R150052%20MCP2-14-Model.pdf",
+                  "Hash": "6554390524e1bd86cd57cbd3c9030917139240e8a0ae22f9ee4d2ef3d535c4b7",
+                  "TamanoBytes": 187555
+                },
+                {
+                  "Nombre": "02 - 00 - MOP - R150052 MOP COVER SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/02%20-%2000%20-%20MOP%20-%20R150052%20MOP%20COVER%20SHEET-Model.pdf",
                   "Hash": "883460dc6be444076cd44058b38ac74bcf51bd1c60d98613de470fe1233103a8",
                   "TamanoBytes": 257590
                 },
                 {
-                  "Nombre": "R150052 MOP-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MOP-1-Model.pdf",
+                  "Nombre": "02 - 01 - MOP - R150052 MOP-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/02%20-%2001%20-%20MOP%20-%20R150052%20MOP-1-Model.pdf",
                   "Hash": "03237ad440aa535084262d1a42a9c5bd18a0aa4d10e0c1d028ac71fa0b88079a",
                   "TamanoBytes": 147690
                 },
                 {
-                  "Nombre": "R150052 MOP-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MOP-2-Model.pdf",
+                  "Nombre": "02 - 02 - MOP - R150052 MOP-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/02%20-%2002%20-%20MOP%20-%20R150052%20MOP-2-Model.pdf",
                   "Hash": "88949542b79af5db3bbcbecb9445bdd1b2de4d68415e88e5940e25e258e02aa2",
                   "TamanoBytes": 189064
                 },
                 {
-                  "Nombre": "R150052 MOP-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20MOP-3-Model.pdf",
+                  "Nombre": "02 - 03 - MOP - R150052 MOP-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/02%20-%2003%20-%20MOP%20-%20R150052%20MOP-3-Model.pdf",
                   "Hash": "538f45c6a66b4eb1b29b25bb3b93e9ff1015f6bdfada7828d2e3aa43d22e6633",
                   "TamanoBytes": 115609
                 },
                 {
-                  "Nombre": "R150052 RACK-1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20RACK-1-Model.pdf",
+                  "Nombre": "03 - 00 - RACK - R150052 RACK-COVER SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/03%20-%2000%20-%20RACK%20-%20R150052%20RACK-COVER%20SHEET-Model.pdf",
+                  "Hash": "84956880a68d780fb63e749f5c19d5181155778cd6da0831a7ad103d793070bc",
+                  "TamanoBytes": 296419
+                },
+                {
+                  "Nombre": "03 - 01 - RACK - R150052 RACK-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/03%20-%2001%20-%20RACK%20-%20R150052%20RACK-1-Model.pdf",
                   "Hash": "ddf9e3c881605577bc478eb6670bcb06f14efcfebd63e1cb1ded443efb7ea67e",
                   "TamanoBytes": 527720
                 },
                 {
-                  "Nombre": "R150052 RACK-2-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20RACK-2-Model.pdf",
+                  "Nombre": "03 - 02 - RACK - R150052 RACK-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/03%20-%2002%20-%20RACK%20-%20R150052%20RACK-2-Model.pdf",
                   "Hash": "16c04e85d0fcbfcf71de1d83116c1308ce7ef16612899876587089352d945474",
                   "TamanoBytes": 162387
                 },
                 {
-                  "Nombre": "R150052 RACK-3-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20RACK-3-Model.pdf",
+                  "Nombre": "03 - 03 - RACK - R150052 RACK-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/03%20-%2003%20-%20RACK%20-%20R150052%20RACK-3-Model.pdf",
                   "Hash": "bc9e603220f4d48acaec9a45995c7aafbd0a34eee35c52d5923c67914d8cb159",
                   "TamanoBytes": 209665
                 },
                 {
-                  "Nombre": "R150052 RACK-4-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20RACK-4-Model.pdf",
+                  "Nombre": "03 - 04 - RACK - R150052 RACK-4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/03%20-%2004%20-%20RACK%20-%20R150052%20RACK-4-Model.pdf",
                   "Hash": "c05fa8876a64a46f84541c50962bb46b9b65d7f8e61f8e800e9943fc4f33caa8",
                   "TamanoBytes": 141214
                 },
                 {
-                  "Nombre": "R150052 RACK-COVER SHEET-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20PC%2032Flex/R150052%20RACK-COVER%20SHEET-Model.pdf",
-                  "Hash": "84956880a68d780fb63e749f5c19d5181155778cd6da0831a7ad103d793070bc",
-                  "TamanoBytes": 296419
+                  "Nombre": "04 - 00 - BINES - R150052 FLEX I-O MCP2 BINS SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2000%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%20BINS%20SHEET-Model.pdf",
+                  "Hash": "db9a258d19b8bdb837d5fd6771cf289246b68958cbc31c093752ae10b136deab",
+                  "TamanoBytes": 371664
+                },
+                {
+                  "Nombre": "04 - 01 - BINES - R150052 FLEX I-O MCP2 1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2001%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%201-Model.pdf",
+                  "Hash": "9efef3c815074fc94eb30b979e6c11ad88f0597d73b307667ba48167257af6f3",
+                  "TamanoBytes": 247176
+                },
+                {
+                  "Nombre": "04 - 02 - BINES - R150052 FLEX I-O MCP2 2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2002%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%202-Model.pdf",
+                  "Hash": "2b3a581ab4d9ed299824969a15e3e49e36a884af86a6e176735ca9ec7793113d",
+                  "TamanoBytes": 220359
+                },
+                {
+                  "Nombre": "04 - 03 - BINES - R150052 FLEX I-O MCP2 3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2003%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%203-Model.pdf",
+                  "Hash": "b30a69764aa7f97f6e9f556e6ea8a068971f75d6c135504d280739fe84397167",
+                  "TamanoBytes": 209755
+                },
+                {
+                  "Nombre": "04 - 04 - BINES - R150052 FLEX I-O MCP2 4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2004%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%204-Model.pdf",
+                  "Hash": "985e584d3befcecfa3328ff01eee031ffb2a369a16dc6de970a7cacfcfd1c026",
+                  "TamanoBytes": 111780
+                },
+                {
+                  "Nombre": "04 - 05 - BINES - R150052 FLEX I-O MCP2 5-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2005%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%205-Model.pdf",
+                  "Hash": "604a1af0432d8bef32a850a7b6196f52ef6457d1b16dec96c6ee24adbffaa7fc",
+                  "TamanoBytes": 1099750
+                },
+                {
+                  "Nombre": "04 - 06 - BINES - R150052 FLEX I-O MCP2 6-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/04%20-%2006%20-%20BINES%20-%20R150052%20FLEX%20I-O%20MCP2%206-Model.pdf",
+                  "Hash": "caef491538f9b292c720aef48f893ec4c367afef89e3492c22434a46cb210b63",
+                  "TamanoBytes": 358385
+                },
+                {
+                  "Nombre": "05 - 00 - FLUME - R150052 FLEX I-O MCP2 FLUME SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2000%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%20FLUME%20SHEET-Model.pdf",
+                  "Hash": "ab1bb3e2285c9aa0ea800c8906b44c3220f6deddd4fb4698e6bc2fa456f5cb80",
+                  "TamanoBytes": 360913
+                },
+                {
+                  "Nombre": "05 - 01 - FLUME - R150052 FLEX I-O MCP2 1A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2001%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%201A-Model.pdf",
+                  "Hash": "539b7a2977a558ec74936a9a604117377f10e1dd5f4bbc7a79529327bbd873b3",
+                  "TamanoBytes": 224169
+                },
+                {
+                  "Nombre": "05 - 02 - FLUME - R150052 FLEX I-O MCP2 2A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2002%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%202A-Model.pdf",
+                  "Hash": "5fe38b4202600c1f3824d41d8f00a23d470b313dd2612cbdcadf7137127f5dd2",
+                  "TamanoBytes": 183871
+                },
+                {
+                  "Nombre": "05 - 03 - FLUME - R150052 FLEX I-O MCP2 3A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2003%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%203A-Model.pdf",
+                  "Hash": "ca2dc19211f7a7560d89317af83a55ac00a108f6b5e2015a1b908f3675c97122",
+                  "TamanoBytes": 215397
+                },
+                {
+                  "Nombre": "05 - 04 - FLUME - R150052 FLEX I-O MCP2 4A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2004%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%204A-Model.pdf",
+                  "Hash": "804853aeadfa22a43e5cdb19eca74dfac3402d4976c220e4521c57419089dfa0",
+                  "TamanoBytes": 100711
+                },
+                {
+                  "Nombre": "05 - 05 - FLUME - R150052 FLEX I-O MCP2 5A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2005%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%205A-Model.pdf",
+                  "Hash": "b6498f7f431eb70d2208c4a36e49c41848257f5e6524c61c008bf11bef3ac8f6",
+                  "TamanoBytes": 915902
+                },
+                {
+                  "Nombre": "05 - 06 - FLUME - R150052 FLEX I-O MCP2 6A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2006%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%206A-Model.pdf",
+                  "Hash": "99ebca2565c156b12c007c80558f051c60dc6905965db318dd7c865891c9f2db",
+                  "TamanoBytes": 359026
+                },
+                {
+                  "Nombre": "05 - 07 - FLUME - R150052 FLEX I-O MCP2 7A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/05%20-%2007%20-%20FLUME%20-%20R150052%20FLEX%20I-O%20MCP2%207A-Model.pdf",
+                  "Hash": "a8835f9eac504138393ce5fd1aa7e7d568f6c7cba8265b7734e2e93f07391558",
+                  "TamanoBytes": 141713
+                },
+                {
+                  "Nombre": "06 - 00 - PELADORAS - R150052 FLEX I-O PEEL SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2000%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O%20PEEL%20SHEET-Model.pdf",
+                  "Hash": "a347b1ad0fa12c69bb6fd373a719be424802e379f3ab6643970622e7c9df8837",
+                  "TamanoBytes": 402333
+                },
+                {
+                  "Nombre": "06 - 01 - PELADORAS - R150052 FLEX I-O-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2001%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-1-Model.pdf",
+                  "Hash": "d92e375f553fe07b02209f0262bac73cc13ddb3f37bc26401383c01d3b4c7358",
+                  "TamanoBytes": 211099
+                },
+                {
+                  "Nombre": "06 - 02 - PELADORAS - R150052 FLEX I-O-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2002%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-2-Model.pdf",
+                  "Hash": "2ced69e8f0f34abc3b87857528e19633f7a5a3a91d10cdfa586e3c5b663b815f",
+                  "TamanoBytes": 236649
+                },
+                {
+                  "Nombre": "06 - 03 - PELADORAS - R150052 FLEX I-O-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2003%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-3-Model.pdf",
+                  "Hash": "087de89284874cb99a2a8353d58f72def34b63aee75de714a650a10efc9ce788",
+                  "TamanoBytes": 255303
+                },
+                {
+                  "Nombre": "06 - 04 - PELADORAS - R150052 FLEX I-O-4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2004%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-4-Model.pdf",
+                  "Hash": "997e89c4faaf7c4d75229b72b59d7a95c2e1351809a3f8602931fc613023fff1",
+                  "TamanoBytes": 178097
+                },
+                {
+                  "Nombre": "06 - 05 - PELADORAS - R150052 FLEX I-O-5-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2005%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-5-Model.pdf",
+                  "Hash": "7efcc3476b4d1c5908ee915438129a937f6eeee1cb688e2b5d12d651b943e1e6",
+                  "TamanoBytes": 143104
+                },
+                {
+                  "Nombre": "06 - 06 - PELADORAS - R150052 FLEX I-O-6-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2006%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-6-Model.pdf",
+                  "Hash": "3abc318f10ac45e6cf91a39970debe22a887aac1c2a97138e7defa1717549666",
+                  "TamanoBytes": 1111840
+                },
+                {
+                  "Nombre": "06 - 07 - PELADORAS - R150052 FLEX I-O-7-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2007%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-7-Model.pdf",
+                  "Hash": "e5bc65e3f754eb06df768807615bf3782c925a0e47b2184914ac92b2dbdfae09",
+                  "TamanoBytes": 327467
+                },
+                {
+                  "Nombre": "06 - 08 - PELADORAS - R150052 FLEX I-O-8-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/06%20-%2008%20-%20PELADORAS%20-%20R150052%20FLEX%20I-O-8-Model.pdf",
+                  "Hash": "08a913a61ff75ed8ca2273a9175a7fa87b8b698f41b98a498c9cf4c47a0dc4f6",
+                  "TamanoBytes": 138252
+                },
+                {
+                  "Nombre": "07 - 00 - FREIDOR - R150052 FLEX I-O-FRYER COVER-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2000%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-FRYER%20COVER-Model.pdf",
+                  "Hash": "e187725e5ef1fc8a08005435f14634de98f0970fa3f1c3b3384a65ac0bfbb436",
+                  "TamanoBytes": 355432
+                },
+                {
+                  "Nombre": "07 - 01 - FREIDOR - R150052 FLEX I-O-1A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2001%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-1A-Model.pdf",
+                  "Hash": "2cdbb7f598b15790841dc0c0734c141e13bfa1c1abddf96897998613ca748fab",
+                  "TamanoBytes": 168939
+                },
+                {
+                  "Nombre": "07 - 02 - FREIDOR - R150052 FLEX I-O-2A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2002%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-2A-Model.pdf",
+                  "Hash": "3fc4fea5e15fe8f7b6da75ab724f00f50d3867a208b12b66011cb363a952526b",
+                  "TamanoBytes": 208088
+                },
+                {
+                  "Nombre": "07 - 03 - FREIDOR - R150052 FLEX I-O-3A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2003%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-3A-Model.pdf",
+                  "Hash": "a95e8301aa08ba66842f5215764fb2b196776786a296644fd9b4f4318863772c",
+                  "TamanoBytes": 177508
+                },
+                {
+                  "Nombre": "07 - 04 - FREIDOR - R150052 FLEX I-O-4A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2004%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-4A-Model.pdf",
+                  "Hash": "d470bfa1bf5064483da9130196008a2775a1060ec6379f7339a7ddde3dcbca40",
+                  "TamanoBytes": 342491
+                },
+                {
+                  "Nombre": "07 - 05 - FREIDOR - R150052 FLEX I-O-5A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2005%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-5A-Model.pdf",
+                  "Hash": "a2979630a9c6773cab8f20c03734e8055f7c84bf4d4022bbbd64bd3a267a335a",
+                  "TamanoBytes": 1100069
+                },
+                {
+                  "Nombre": "07 - 06 - FREIDOR - R150052 FLEX I-O-6A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2006%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-6A-Model.pdf",
+                  "Hash": "82f4471bec281f6ebd00915258b26d8a12a2ddda8ff98bdfe7db653c345d0440",
+                  "TamanoBytes": 932535
+                },
+                {
+                  "Nombre": "07 - 07 - FREIDOR - R150052 FLEX I-O-7A-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/07%20-%2007%20-%20FREIDOR%20-%20R150052%20FLEX%20I-O-7A-Model.pdf",
+                  "Hash": "10845f04efb6a608238a7c3ee24f6bcf6eca28d6a06ec26c53dd6cd01a77f7c7",
+                  "TamanoBytes": 139251
+                },
+                {
+                  "Nombre": "08 - 00 - INTERCAMBIADOR - R150052 FLEX I-O-HX COVER-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2000%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-HX%20COVER-Model.pdf",
+                  "Hash": "eae304e6e446fe8091d753687e1ea6c1fd4fa4f6bc2db609752a99724d12c38b",
+                  "TamanoBytes": 325619
+                },
+                {
+                  "Nombre": "08 - 01 - INTERCAMBIADOR - R150052 FLEX I-O-1B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2001%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-1B-Model.pdf",
+                  "Hash": "19036a23ca329c2e79119e32171c805398f1e929b2a78303f424bd83d4f9c341",
+                  "TamanoBytes": 150562
+                },
+                {
+                  "Nombre": "08 - 02 - INTERCAMBIADOR - R150052 FLEX I-O-2B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2002%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-2B-Model.pdf",
+                  "Hash": "f0984918ede77a1b4dc7610691cb9ec92c8c109be561e294ae603bd9525ddda8",
+                  "TamanoBytes": 194774
+                },
+                {
+                  "Nombre": "08 - 03 - INTERCAMBIADOR - R150052 FLEX I-O-3B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2003%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-3B-Model.pdf",
+                  "Hash": "e702040e3fe58570e663629d01eafb2ebed6e014a34b75c52b5b661f28af895a",
+                  "TamanoBytes": 190982
+                },
+                {
+                  "Nombre": "08 - 04 - INTERCAMBIADOR - R150052 FLEX I-O-4B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2004%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-4B-Model.pdf",
+                  "Hash": "93a93e5baa9699192c0172dabee1417a82b5f68e21dc5c0ea3cb0db01f52f712",
+                  "TamanoBytes": 698673
+                },
+                {
+                  "Nombre": "08 - 05 - INTERCAMBIADOR - R150052 FLEX I-O-5B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2005%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-5B-Model.pdf",
+                  "Hash": "f04e37fa20108efc364f5454115a7618236b943ef842ed825f4b6e54ab02bf5d",
+                  "TamanoBytes": 136478
+                },
+                {
+                  "Nombre": "08 - 06 - INTERCAMBIADOR - R150052 FLEX I-O-6B-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/08%20-%2006%20-%20INTERCAMBIADOR%20-%20R150052%20FLEX%20I-O-6B-Model.pdf",
+                  "Hash": "8c7a503f7ecf9052adc420e587cb306946af6b87169979714e02cf3d6984999f",
+                  "TamanoBytes": 137572
+                },
+                {
+                  "Nombre": "09 - 00 - FL710 - R150052 FL710 COVER SHEET-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2000%20-%20FL710%20-%20R150052%20FL710%20COVER%20SHEET-Model.pdf",
+                  "Hash": "6abe022843fabc6785fcd6df082b25594c10068dfbcf2cac615b111d046009d5",
+                  "TamanoBytes": 307855
+                },
+                {
+                  "Nombre": "09 - 01 - FL710 - R150052 FL710-1-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2001%20-%20FL710%20-%20R150052%20FL710-1-Model.pdf",
+                  "Hash": "f1ed48848389b45c75985d2e3ef9378dcd351e4ce40a3f04d1a9ce1a4c766736",
+                  "TamanoBytes": 436639
+                },
+                {
+                  "Nombre": "09 - 02 - FL710 - R150052 FL710-2-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2002%20-%20FL710%20-%20R150052%20FL710-2-Model.pdf",
+                  "Hash": "411b9a51d1283b6b4b7f499fc9b0d090c462c24f36477cadbbb664bf6bf545ef",
+                  "TamanoBytes": 402008
+                },
+                {
+                  "Nombre": "09 - 03 - FL710 - R150052 FL710-3-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2003%20-%20FL710%20-%20R150052%20FL710-3-Model.pdf",
+                  "Hash": "a9069c6ef573fbb8e6492aaf97532d6c898f656219bafa6cdc4054556d9a274f",
+                  "TamanoBytes": 356263
+                },
+                {
+                  "Nombre": "09 - 04 - FL710 - R150052 FL710-4-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2004%20-%20FL710%20-%20R150052%20FL710-4-Model.pdf",
+                  "Hash": "380bd302f06a3ae20e5120e3908a185c02fdeaf56dbb5b802757385e7f4fa32b",
+                  "TamanoBytes": 161328
+                },
+                {
+                  "Nombre": "09 - 05 - FL710 - R150052 FL710-5-Model.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/09%20-%2005%20-%20FL710%20-%20R150052%20FL710-5-Model.pdf",
+                  "Hash": "57fa9a3e18939b7145772ccef1ecc2c4128a56f4402a480b159c7d1e466b44e1",
+                  "TamanoBytes": 142031
+                },
+                {
+                  "Nombre": "10 - 00 - EmpaqueFlex - 11604413-DISTMCP-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2000%20-%20EmpaqueFlex%20-%2011604413-DISTMCP-E_0.pdf",
+                  "Hash": "700178007edad75c2c49af83b3e4ed6a52b26f56ba6a11d727777b636377a527",
+                  "TamanoBytes": 5268150
+                },
+                {
+                  "Nombre": "10 - 01 - EmpaqueFlex - 11604413-OMSCP1-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2001%20-%20EmpaqueFlex%20-%2011604413-OMSCP1-E_0.pdf",
+                  "Hash": "9e1d94653aa35627c9d611cfcb93690a4c50172f7d758872c2ab0c64fd56f65b",
+                  "TamanoBytes": 2846571
+                },
+                {
+                  "Nombre": "10 - 02 - EmpaqueFlex - 11604413-OMSCP2-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2002%20-%20EmpaqueFlex%20-%2011604413-OMSCP2-E_0.pdf",
+                  "Hash": "b18c92408fe3eb2ddef7300752cc2d162843909963db5eb1c63cd70f1c1fc016",
+                  "TamanoBytes": 2843194
+                },
+                {
+                  "Nombre": "10 - 03 - EmpaqueFlex - 11604413-OMSCP3-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2003%20-%20EmpaqueFlex%20-%2011604413-OMSCP3-E_0.pdf",
+                  "Hash": "4b696fe9979332851b06c9b95723241f5c9a1a8672bd6241beb9c4840661ceed",
+                  "TamanoBytes": 2900679
+                },
+                {
+                  "Nombre": "10 - 04 - EmpaqueFlex - 11604413-OMSCP4-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2004%20-%20EmpaqueFlex%20-%2011604413-OMSCP4-E_0.pdf",
+                  "Hash": "48513a8a2ed8a307f909ec9caf4c5c74c7af1651dc4047261e3cd5f493d0b443",
+                  "TamanoBytes": 2908372
+                },
+                {
+                  "Nombre": "10 - 05 - EmpaqueFlex - 11604413-OMSOS1-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2005%20-%20EmpaqueFlex%20-%2011604413-OMSOS1-E_0.pdf",
+                  "Hash": "f98994a71c3c3bcb38458ddc62905a86c99b7966460c6b86fa8e325d4eaf9f70",
+                  "TamanoBytes": 869551
+                },
+                {
+                  "Nombre": "10 - 06 - EmpaqueFlex - 11604413-OMSOS2-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2006%20-%20EmpaqueFlex%20-%2011604413-OMSOS2-E_0.pdf",
+                  "Hash": "5653e9d49f0716d4c03385fa59c06c0c5f6fbf19a46d1532082507d4157f4a7b",
+                  "TamanoBytes": 837354
+                },
+                {
+                  "Nombre": "10 - 07 - EmpaqueFlex - 11604413-SEASCP5-E_0.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2007%20-%20EmpaqueFlex%20-%2011604413-SEASCP5-E_0.pdf",
+                  "Hash": "eb48d1a84e1c8ccd34a25f27cf6252880db39920e2b8a96334f859d302fdfed0",
+                  "TamanoBytes": 3349273
+                },
+                {
+                  "Nombre": "10 - 08 - EmpaqueFlex - CONTROL TRANSPORTE MULTISAZONING.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/10%20-%2008%20-%20EmpaqueFlex%20-%20CONTROL%20TRANSPORTE%20MULTISAZONING.pdf",
+                  "Hash": "28bcd9e093f19432fbb3b26fbaba96d076f6cd53fe0f2e0400165f7eb20fb48b",
+                  "TamanoBytes": 540899
+                },
+                {
+                  "Nombre": "11 - 00 - COBOT - CCPS ARGENTINA PC-32 FUP L1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/11%20-%2000%20-%20COBOT%20-%20CCPS%20ARGENTINA%20PC-32%20FUP%20L1.pdf",
+                  "Hash": "34e29f5205c70ecded365907685ad8e59c89b1007c1b00335f3a927dcc4a3bb7",
+                  "TamanoBytes": 1907916
+                },
+                {
+                  "Nombre": "11 - 01 - COBOT - CCPS ARGENTINA PC-32 FUP L2-L8.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/06%20-%20PLANOS%20PC32%20FLEX/11%20-%2001%20-%20COBOT%20-%20CCPS%20ARGENTINA%20PC-32%20FUP%20L2-L8.pdf",
+                  "Hash": "51c5667b73af88e6bb9284707551e9190859966992a08d47e23d63277027367a",
+                  "TamanoBytes": 1905301
                 }
               ],
               "Subcarpetas": []
             },
             {
-              "Nombre": "PLANOS SCHAAF 2",
+              "Nombre": "07 - PLANOS PALITOS3",
               "Archivos": [
                 {
-                  "Nombre": "1 - OIT - SCHAAF - topografico - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/1%20-%20OIT%20-%20SCHAAF%20-%20topografico%20-%20R1-Model.pdf",
-                  "Hash": "79c77f05ad71a9da0c078d555a8966a4722ed68ad81d7794213adb51956f24c4",
-                  "TamanoBytes": 153476
+                  "Nombre": "00 - 00 - AMASADO - C2778-L6 Electricos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/07%20-%20PLANOS%20PALITOS3/00%20-%2000%20-%20AMASADO%20-%20C2778-L6%20Electricos.pdf",
+                  "Hash": "2db70f321f500840b45c89c04806f9c16b2b865fb797c754ea505e986444c9c3",
+                  "TamanoBytes": 393252
                 },
                 {
-                  "Nombre": "1 - OIT - SCHAAF - trifilar - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/1%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
-                  "Hash": "9e5c6bd38fd8de0f06736fce2417a4ac2aa91422d4becb227a0d1c9f15a5807e",
-                  "TamanoBytes": 152322
+                  "Nombre": "00 - 01 - AMASADO - 11701274-BLENDMCP-E_A.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/07%20-%20PLANOS%20PALITOS3/00%20-%2001%20-%20AMASADO%20-%2011701274-BLENDMCP-E_A.pdf",
+                  "Hash": "e49b4ce4a595c2b174486f5202d71a9cca6786ec8326574c8bdb77efae943c4c",
+                  "TamanoBytes": 4297196
                 },
                 {
-                  "Nombre": "2 - OIT - SCHAAF - topografico - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/2%20-%20OIT%20-%20SCHAAF%20-%20topografico%20-%20R1-Model.pdf",
-                  "Hash": "a200f199a036d4117a0acab6b809c8c60d0816442c32a0d0036507d322ea0bf8",
-                  "TamanoBytes": 161614
+                  "Nombre": "00 - 02 - AMASADO - 11701274-BLENDOS1-E01_A.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/07%20-%20PLANOS%20PALITOS3/00%20-%2002%20-%20AMASADO%20-%2011701274-BLENDOS1-E01_A.pdf",
+                  "Hash": "672f126576050d7d329d5351f95f2cfe7a246276e1b62643730a79759ea2b51c",
+                  "TamanoBytes": 152241
                 },
                 {
-                  "Nombre": "2 - OIT - SCHAAF - trifilar - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/2%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
-                  "Hash": "53205a898c20794bb0a71c82a9bc6bff95ff1115f0eab635bb204e9eedeaa4a9",
-                  "TamanoBytes": 156104
+                  "Nombre": "00 - 03 - AMASADO - 11701274-BLENDOS2-E_A.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/07%20-%20PLANOS%20PALITOS3/00%20-%2003%20-%20AMASADO%20-%2011701274-BLENDOS2-E_A.pdf",
+                  "Hash": "bfe81a5076520ac181b3ca83358cb005aedff1ac24cabe8a50b9a14f80c08ea1",
+                  "TamanoBytes": 636204
                 },
                 {
-                  "Nombre": "23500-1_BatchMixer_Wiring.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/23500-1_BatchMixer_Wiring.pdf",
-                  "Hash": "a89cc3a3bc95feb853b02612c526f4a301713cebc011ad8a80575632f53a6d53",
-                  "TamanoBytes": 72772
-                },
-                {
-                  "Nombre": "3 - OIT - SCHAAF - trifilar - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/3%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
-                  "Hash": "389261bd39c51a3b58526683d3e011cec0730fc8cc19886266c12ec78522781c",
-                  "TamanoBytes": 174705
-                },
-                {
-                  "Nombre": "4 - OIT - SCHAAF - trifilar - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/4%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
-                  "Hash": "0d40f0382e24741af2f0af1c350143b44fa21104568232f20ef6906f0c424597",
-                  "TamanoBytes": 196648
-                },
-                {
-                  "Nombre": "5 - OIT - SCHAAF - trifilar - R1-Model.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/5%20-%20OIT%20-%20SCHAAF%20-%20trifilar%20-%20R1-Model.pdf",
-                  "Hash": "26f5ae3defb7851f90103ccd6dd074eaca2a5ea75a7c1091fbba8aff8b6494b1",
-                  "TamanoBytes": 350055
-                },
-                {
-                  "Nombre": "cable plan.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/cable%20plan.PDF",
-                  "Hash": "53a60af631779fad71a1a24851a3733c0b34dd7899533f8bb6a8e26f2f159da7",
-                  "TamanoBytes": 76348
-                },
-                {
-                  "Nombre": "circuit diagram.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/circuit%20diagram.PDF",
-                  "Hash": "fe44a360a4a333088e393cacf498c1b3bf0bc8c9f43492b64fea6f0e4467ccf9",
-                  "TamanoBytes": 1246661
-                },
-                {
-                  "Nombre": "plan of places.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/plan%20of%20places.PDF",
-                  "Hash": "772233d4cbfc29dbdb782a78c029f53ff4137888533d655187a2c76c6632c864",
-                  "TamanoBytes": 34143
-                },
-                {
-                  "Nombre": "project plan.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/project%20plan.PDF",
-                  "Hash": "a823e436f7c4783dee9eb8145e5c33ddc5cab2cdd1f5ce5453c96831b091ee7c",
-                  "TamanoBytes": 49542
-                },
-                {
-                  "Nombre": "terminal strip plan.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/terminal%20strip%20plan.PDF",
-                  "Hash": "236f764244fcfcda1f0ae6cb279085a50a15827b3080d900fe90267b0ce33e76",
-                  "TamanoBytes": 45384
-                },
-                {
-                  "Nombre": "terminal strips.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/terminal%20strips.PDF",
-                  "Hash": "18b842007bddff0e4adb5d563f9c57dc13d644bf5a9013e1daba0a656cebb278",
-                  "TamanoBytes": 1112116
-                },
-                {
-                  "Nombre": "wire plan.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/PLANOS%20SCHAAF%202/wire%20plan.PDF",
-                  "Hash": "a1e9557f3ed079290fe5f163fc7e6b01783d3bc5ebcc87f026674e55a47040dc",
-                  "TamanoBytes": 1457847
+                  "Nombre": "01 - 00 - LAMINADO - C2778 Linea Laminado Electricos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Planos/07%20-%20PLANOS%20PALITOS3/01%20-%2000%20-%20LAMINADO%20-%20C2778%20Linea%20Laminado%20Electricos.pdf",
+                  "Hash": "08e3b0145061b344d62d4035969e99255d7c9f77281fc0cc30beee1c86425f93",
+                  "TamanoBytes": 922409
                 }
               ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "08 - PLANOS FRYPACK",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "09 - PLANOS HALOILA",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "10 - PLANOS KETAN",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "11 - PLANOS OBIN",
+              "Archivos": [],
               "Subcarpetas": []
             }
           ]

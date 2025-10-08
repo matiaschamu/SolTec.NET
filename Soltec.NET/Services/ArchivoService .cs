@@ -62,4 +62,18 @@ public class ArchivoService : IArchivoService
             throw;
         }
     }
+
+    public async Task<string?> LeerArchivoLocalAsync(string carpeta, string nombreArchivo)
+    {
+        var pathArchivo = Path.Combine(FileSystem.AppDataDirectory, carpeta, nombreArchivo);
+        if (!File.Exists(pathArchivo))
+            return null;
+
+        return await File.ReadAllTextAsync(pathArchivo);
+    }
+
+    public string ObtenerRutaArchivo(string carpeta, string nombreArchivo)
+    {
+        return Path.Combine(FileSystem.AppDataDirectory, carpeta, nombreArchivo);
+    }
 }

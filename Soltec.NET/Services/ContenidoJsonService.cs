@@ -32,11 +32,14 @@ namespace Soltec.NET.Services
         // - ContenidoService (para obtener la estructura de carpetas desde el servidor)
         private readonly IPreferenciasService _prefs;
         private readonly HttpClient _http;
+        private readonly IConexionService _conexion;
+        private static Carpeta? _cacheRaiz = null;
 
-        public ContenidoJsonService(IPreferenciasService prefs, HttpClient http)
+        public ContenidoJsonService(IPreferenciasService prefs, HttpClient http, IConexionService conexion)
         {
             _prefs = prefs;
             _http = http;
+            _conexion = conexion;
         }
 
         /// <summary>
@@ -97,35 +100,80 @@ namespace Soltec.NET.Services
         /// </remarks>
         public async Task<Carpeta?> CargarCarpetaDesdeJSonAsync(string nombreCarpeta)
         {
-            var raiz = await _http.GetFromJsonAsync<Carpeta>("https://matiaschamu.github.io/SolTec.NET/Extras/content.json");
+            const string carpetaLocal = "Cache";
+            const string archivoLocal = "content.json";
+            
+            var archivoService = new ArchivoService();
+
+            if (_cacheRaiz != null)
+                return BuscarCarpetaEnRaiz(_cacheRaiz, nombreCarpeta);
+
+            Carpeta? raiz = null;
+
+            bool hayInternet = _conexion.HayConexion();
+
+            if (hayInternet)
+                hayInternet = await _conexion.HayInternetRealAsync(); // Confirmar salida real
+
+            if (hayInternet)
+            {
+                try
+                {
+                    // Intentar descargar JSON remoto
+                    var bytes = await _http.GetByteArrayAsync("https://matiaschamu.github.io/SolTec.NET/Extras/content.json");
+                    var json = System.Text.Encoding.UTF8.GetString(bytes);
+
+                    // Guardar una copia local
+                    //var archivoService = new ArchivoService();
+                    await archivoService.GuardarArchivoLocal(carpetaLocal, archivoLocal, bytes);
+
+                    raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(json);
+                }
+                catch
+                {
+                    // Si falla la descarga, intentar leer JSON local
+                    //var archivoService = new ArchivoService();
+                    var jsonLocal = await archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
+
+                    if (!string.IsNullOrEmpty(jsonLocal))
+                        raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(jsonLocal);
+                }
+            }
+            else
+            {
+                // Sin Internet, leer local directamente
+                var jsonLocal = await archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
+                if (!string.IsNullOrEmpty(jsonLocal))
+                    raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(jsonLocal);
+            }
+
 
             if (raiz == null) return null;
 
-            // 1. Obtiene todas las partes de la ruta (Content, Manuales, abb1, etc.)
-            var partesRuta = nombreCarpeta.Split('/', StringSplitOptions.RemoveEmptyEntries);
+            _cacheRaiz = raiz;
 
-            // 2. Comienza la búsqueda desde la raíz del JSON
+            // Buscar la carpeta solicitada dentro de la raíz cargada
+            return BuscarCarpetaEnRaiz(_cacheRaiz, nombreCarpeta);
+        }
+
+        private Carpeta? BuscarCarpetaEnRaiz(Carpeta raiz, string nombreCarpeta)
+        {
+            var partesRuta = nombreCarpeta.Split('/', StringSplitOptions.RemoveEmptyEntries);
             IEnumerable<Carpeta>? coleccionActual = raiz.Subcarpetas;
             Carpeta? actual = null;
 
-            // 3. Recorre la ruta paso a paso
             foreach (var nombre in partesRuta)
             {
-                // 4. Busca la carpeta actual en la colección
-                //    Usamos StringComparison.OrdinalIgnoreCase para ser flexibles con mayúsculas/minúsculas
                 actual = coleccionActual?.FirstOrDefault(c =>
                     string.Equals(c.Nombre, nombre, StringComparison.OrdinalIgnoreCase)
                 );
 
-                // 5. Si no se encuentra el segmento de la ruta, la ruta es inválida
                 if (actual == null)
                     return null;
 
-                // 6. Prepara la siguiente iteración: el nuevo punto de inicio es Subcarpetas del nodo encontrado
                 coleccionActual = actual.Subcarpetas;
             }
 
-            // El último nodo 'actual' encontrado es la carpeta que se solicitó
             return actual;
         }
     }
