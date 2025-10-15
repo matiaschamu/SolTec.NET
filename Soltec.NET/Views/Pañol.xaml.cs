@@ -77,13 +77,15 @@ public partial class PanolPage : ContentPage
 	}
 
 	public async Task<List<ListadoPañol>> BuscarListadoPañol(string textoBusqueda)
+
+
 	{
 		if (string.IsNullOrWhiteSpace(textoBusqueda))
 		{
 			return new List<ListadoPañol>();
 		}
 
-		var textoBusquedaNormalizado = textoBusqueda.ToLower().Trim();
+		var textoBusquedaNormalizado = textoBusqueda.ToLower().Trim().Replace("'", "''");
 		var palabras = textoBusquedaNormalizado.Split(new[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
 
 		// La lista final para los resultados
@@ -103,12 +105,13 @@ public partial class PanolPage : ContentPage
 			}
 		}
 
-		// --- Nivel 2: Coincidencia de todas las palabras ---
-		// Se construye la consulta con múltiples cláusulas AND
-		var sqlTodasPalabras = "SELECT * FROM ListadoPañol WHERE ";
-		sqlTodasPalabras += string.Join(" AND ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%' LIMIT 10"));
+        // --- Nivel 2: Coincidencia de todas las palabras ---
+        // Se construye la consulta con múltiples cláusulas AND
+        var sqlTodasPalabras = "SELECT * FROM ListadoPañol WHERE ";
+        sqlTodasPalabras += string.Join(" AND ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%'"));
+        sqlTodasPalabras += " LIMIT 10";
 
-		var resultadosTodasPalabras = await _dbConnection.QueryAsync<ListadoPañol>(sqlTodasPalabras);
+        var resultadosTodasPalabras = await _dbConnection.QueryAsync<ListadoPañol>(sqlTodasPalabras);
 
 		foreach (var item in resultadosTodasPalabras)
 		{
@@ -118,12 +121,13 @@ public partial class PanolPage : ContentPage
 			}
 		}
 
-		// --- Nivel 3: Coincidencia de al menos una palabra ---
-		// Se construye la consulta con múltiples cláusulas OR
-		var sqlUnaPalabra = "SELECT * FROM ListadoPañol WHERE ";
-		sqlUnaPalabra += string.Join(" OR ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%' LIMIT 10"));
+        // --- Nivel 3: Coincidencia de al menos una palabra ---
+        // Se construye la consulta con múltiples cláusulas OR
+        var sqlUnaPalabra = "SELECT * FROM ListadoPañol WHERE ";
+        sqlUnaPalabra += string.Join(" OR ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%'"));
+        sqlUnaPalabra += " LIMIT 10";
 
-		var resultadosUnaPalabra = await _dbConnection.QueryAsync<ListadoPañol>(sqlUnaPalabra);
+        var resultadosUnaPalabra = await _dbConnection.QueryAsync<ListadoPañol>(sqlUnaPalabra);
 
 		foreach (var item in resultadosUnaPalabra)
 		{
