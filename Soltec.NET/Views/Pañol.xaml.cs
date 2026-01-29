@@ -76,69 +76,51 @@ public partial class PanolPage : ContentPage
 		_dbConnection = new SQLiteAsyncConnection(databasePath);
 	}
 
-	public async Task<List<ListadoPañol>> BuscarListadoPañol(string textoBusqueda)
+    public async Task<List<ListadoPañol>> BuscarListadoPañol(string textoBusqueda)
+    {
+        if (_dbConnection == null || string.IsNullOrWhiteSpace(textoBusqueda))
+            return new List<ListadoPañol>();
 
+        var textoLimpio = textoBusqueda.ToLower().Trim();
+        var palabras = textoLimpio.Split(new[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
 
-	{
-		if (string.IsNullOrWhiteSpace(textoBusqueda))
-		{
-			return new List<ListadoPañol>();
-		}
+        if (palabras.Length == 0) return new List<ListadoPañol>();
 
-		var textoBusquedaNormalizado = textoBusqueda.ToLower().Trim().Replace("'", "''");
-		var palabras = textoBusquedaNormalizado.Split(new[] { ' ' }, System.StringSplitOptions.RemoveEmptyEntries);
+        var partesScore = new List<string>();
 
-		// La lista final para los resultados
-		var resultadoFinal = new List<ListadoPañol>();
-		var nombresAgregados = new HashSet<string>();
+        for (int i = 0; i < palabras.Length; i++)
+        {
+            string p = palabras[i];
+            int factorPosicion = palabras.Length - i;
 
-		// --- Nivel 1: Coincidencia exacta ---
-		// Se construye la consulta SQL para una coincidencia exacta e insensible a mayúsculas
-		var sqlExacta = $"SELECT * FROM ListadoPañol WHERE lower(Nombre) = '{textoBusquedaNormalizado}' LIMIT 10";
-		var resultadosExactos = await _dbConnection.QueryAsync<ListadoPañol>(sqlExacta);
+            // Nombre y Código siguen buscando por palabras (más flexible)
+            // Ubicación ahora busca el término exacto (con guiones) dentro de la columna
+            partesScore.Add($@"
+            (CASE 
+                WHEN lower(Nombre) LIKE '%{p}%' THEN {10 * factorPosicion}
+                WHEN lower(Codigo) LIKE '%{p}%' THEN {5 * factorPosicion}
+                WHEN lower(Ubicacion) LIKE '%{p}%' THEN {2 * factorPosicion}
+                ELSE 0 
+            END)");
+        }
 
-		foreach (var item in resultadosExactos)
-		{
-			if (nombresAgregados.Add(item.Nombre))
-			{
-				resultadoFinal.Add(item);
-			}
-		}
+        string scoringSql = string.Join(" + ", partesScore);
 
-        // --- Nivel 2: Coincidencia de todas las palabras ---
-        // Se construye la consulta con múltiples cláusulas AND
-        var sqlTodasPalabras = "SELECT * FROM ListadoPañol WHERE ";
-        sqlTodasPalabras += string.Join(" AND ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%'"));
-        sqlTodasPalabras += " LIMIT 10";
+        // Consulta final
+        var query = $@"
+        SELECT *, ({scoringSql}) AS Score 
+        FROM ListadoPañol 
+        WHERE Score > 0 
+        ORDER BY 
+            Score DESC, 
+            -- Si la ubicación es EXACTAMENTE igual a lo que escribió el usuario (sin importar Mayús/Minús)
+            (CASE WHEN lower(Ubicacion) = '{textoLimpio}' THEN 5 ELSE 0 END) DESC,
+            (CASE WHEN lower(Nombre) LIKE '{palabras[0]}%' THEN 1 ELSE 0 END) DESC,
+            Nombre ASC 
+        LIMIT 100";
 
-        var resultadosTodasPalabras = await _dbConnection.QueryAsync<ListadoPañol>(sqlTodasPalabras);
-
-		foreach (var item in resultadosTodasPalabras)
-		{
-			if (nombresAgregados.Add(item.Nombre))
-			{
-				resultadoFinal.Add(item);
-			}
-		}
-
-        // --- Nivel 3: Coincidencia de al menos una palabra ---
-        // Se construye la consulta con múltiples cláusulas OR
-        var sqlUnaPalabra = "SELECT * FROM ListadoPañol WHERE ";
-        sqlUnaPalabra += string.Join(" OR ", palabras.Select(p => $"lower(Nombre) LIKE '%{p}%'"));
-        sqlUnaPalabra += " LIMIT 10";
-
-        var resultadosUnaPalabra = await _dbConnection.QueryAsync<ListadoPañol>(sqlUnaPalabra);
-
-		foreach (var item in resultadosUnaPalabra)
-		{
-			if (nombresAgregados.Add(item.Nombre))
-			{
-				resultadoFinal.Add(item);
-			}
-		}
-
-		return resultadoFinal;
-	}
+        return await _dbConnection.QueryAsync<ListadoPañol>(query);
+    }
 }
 
 public class ListadoPañol
