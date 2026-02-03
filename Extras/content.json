@@ -581,6 +581,30 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "Contemp",
+              "Archivos": [
+                {
+                  "Nombre": "Contemp C515 - C514.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Contemp/Contemp%20C515%20-%20C514.pdf",
+                  "Hash": "0781373c5f5413841cd752936bb85b098caa481a1ab7af66faef12d2a1a161e2",
+                  "TamanoBytes": 2480452
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "Contempo",
+              "Archivos": [
+                {
+                  "Nombre": "Contemp C515 - C514.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Contempo/Contemp%20C515%20-%20C514.pdf",
+                  "Hash": "0781373c5f5413841cd752936bb85b098caa481a1ab7af66faef12d2a1a161e2",
+                  "TamanoBytes": 2480452
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "Dell",
               "Archivos": [
                 {
@@ -984,6 +1008,18 @@
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Guacp/Manual%20de%20parametros%20GUACP.pdf",
                   "Hash": "b6cf0f5eb5ef3c02a4d76e3ca494536ba041e63c34d4a1f56fb0fe9f1230790f",
                   "TamanoBytes": 1844586
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "Hach",
+              "Archivos": [
+                {
+                  "Nombre": "HACH-SC4500.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hach/HACH-SC4500.pdf",
+                  "Hash": "162b7c68315d5010e31914d7b1ba000cd0112c1529eebfb97a90ba09868a5df3",
+                  "TamanoBytes": 4791263
                 }
               ],
               "Subcarpetas": []
@@ -3830,14 +3866,14 @@
                   "TamanoBytes": 207086
                 },
                 {
-                  "Nombre": "PROC034 \u2013 Migracion Programa de PLC con Workbench Connection .pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC034%20%E2%80%93%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection%20.pdf",
+                  "Nombre": "PROC034 - Migracion Programa de PLC con Workbench Connection .pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC034%20-%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection%20.pdf",
                   "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7",
                   "TamanoBytes": 623361
                 },
                 {
-                  "Nombre": "PROC035 \u2013 Carga de Parametros del PLC al controlador del motor GUACP.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC035%20%E2%80%93%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
+                  "Nombre": "PROC035 - Carga de Parametros del PLC al controlador del motor GUACP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC035%20-%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
                   "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62",
                   "TamanoBytes": 482515
                 },
@@ -3852,6 +3888,12 @@
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC038%20-%20Limpieza%20PCs.pdf",
                   "Hash": "aaadd7b2d8936381c6f4083b5eb4d64c32bd6003e34441f385833bfa898ee7f3",
                   "TamanoBytes": 437102
+                },
+                {
+                  "Nombre": "PROC039 - BackUp Programa de PLC Workbench.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC039%20-%20BackUp%20Programa%20de%20PLC%20Workbench.pdf",
+                  "Hash": "6ef5632b88c5aaf5f6ee056f5e50e9986ef194e3cabb9922adbcea23a1cbcb86",
+                  "TamanoBytes": 554063
                 }
               ],
               "Subcarpetas": []
