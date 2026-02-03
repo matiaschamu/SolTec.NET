@@ -8,8 +8,18 @@ namespace Soltec.NET
 		{
 			InitializeComponent();
 		}
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
-		private async void OnPañolClicked(object sender, TappedEventArgs e)
+            // Obtenemos la versión y el build
+            string version = AppInfo.Current.Version.Build.ToString();
+
+            // Seteamos el título dinámicamente
+            this.Title = $"Soltec 4.0 (v{version})";
+        }
+
+        private async void OnPañolClicked(object sender, TappedEventArgs e)
 		{
 			await Shell.Current.GoToAsync("PanolPage");
 		}

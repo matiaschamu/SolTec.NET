@@ -593,18 +593,6 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "Contempo",
-              "Archivos": [
-                {
-                  "Nombre": "Contemp C515 - C514.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Contempo/Contemp%20C515%20-%20C514.pdf",
-                  "Hash": "0781373c5f5413841cd752936bb85b098caa481a1ab7af66faef12d2a1a161e2",
-                  "TamanoBytes": 2480452
-                }
-              ],
-              "Subcarpetas": []
-            },
-            {
               "Nombre": "Dell",
               "Archivos": [
                 {
