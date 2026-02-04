@@ -26,8 +26,8 @@
 		<ApplicationId>com.companyname.soltec.net</ApplicationId>
 
 		<!-- Versions -->
-		<ApplicationDisplayVersion>1.0.82</ApplicationDisplayVersion>
-		<ApplicationVersion>82</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+		<ApplicationVersion>87</ApplicationVersion>
 
 		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<WindowsPackageType>None</WindowsPackageType>
@@ -44,13 +44,13 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-maccatalyst|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
 	  <AndroidKeyStore>False</AndroidKeyStore>
@@ -59,18 +59,18 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-maccatalyst|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
 	  <AndroidKeyStore>False</AndroidKeyStore>
@@ -80,8 +80,8 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
 	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
 	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
@@ -89,8 +89,8 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	  <AndroidUseAapt2>True</AndroidUseAapt2>
 	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
 	  <AndroidPackageFormat>aab</AndroidPackageFormat>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
 	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
@@ -99,8 +99,8 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 	  <AndroidUseAapt2>True</AndroidUseAapt2>
 	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
 	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-	  <ApplicationDisplayVersion>1.0.86</ApplicationDisplayVersion>
-	  <ApplicationVersion>86</ApplicationVersion>
+	  <ApplicationDisplayVersion>1.0.87</ApplicationDisplayVersion>
+	  <ApplicationVersion>87</ApplicationVersion>
 	</PropertyGroup>
 	
 	<ItemGroup>

@@ -57,24 +57,20 @@ public partial class PanolPage : ContentPage
 		}
 	}
 
-	private async void InitializeDatabase()
-	{
-		// Obtener la ruta del archivo de base de datos
-		var databasePath = Path.Combine(FileSystem.AppDataDirectory, "Almacen.db");
+    private async void InitializeDatabase()
+    {
+        // Obtener la ruta del archivo de base de datos
+        var databasePath = Path.Combine(FileSystem.AppDataDirectory, "Almacen.db");
 
-		// Copiar el archivo desde Resources/Raw si no existe
-		if (!File.Exists(databasePath))
-		{
-			using (var stream = await FileSystem.OpenAppPackageFileAsync("Content/Almacen/Almacen.db"))
-			using (var fileStream = new FileStream(databasePath, FileMode.Create))
-			{
-				await stream.CopyToAsync(fileStream);
-			}
-		}
+        using (var stream = await FileSystem.OpenAppPackageFileAsync("Content/Almacen/Almacen.db"))
+        using (var fileStream = new FileStream(databasePath, FileMode.Create))
+        {
+            await stream.CopyToAsync(fileStream);
+        }
 
-		// Conectar a la base de datos
-		_dbConnection = new SQLiteAsyncConnection(databasePath);
-	}
+        // Conectar a la base de datos
+        _dbConnection = new SQLiteAsyncConnection(databasePath);
+    }
 
     public async Task<List<ListadoPañol>> BuscarListadoPañol(string textoBusqueda)
     {
