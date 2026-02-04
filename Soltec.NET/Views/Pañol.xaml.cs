@@ -12,21 +12,42 @@ public partial class PanolPage : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = this;
-		InitializeDatabase();
+		//InitializeDatabase();
 	}
 
 	// Usar OnAppearing para ejecutar código asíncrono cuando la página se muestra
 	protected override async void OnAppearing()
 	{
-		base.OnAppearing();
-		await CargarTotalRegistros();
-	}
+        base.OnAppearing();
+
+        try
+        {
+            // Solo inicializamos si no existe la conexión
+            if (_dbConnection == null)
+            {
+                await InitializeDatabase();
+            }
+
+            await CargarTotalRegistros();
+        }
+        catch (Exception ex)
+        {
+            // Esto evita que la app se cierre si falla la DB y te permite ver el error
+            await DisplayAlert("Error", $"No se pudo cargar la base de datos: {ex.Message}", "OK");
+        }
+    }
 
 	private async Task CargarTotalRegistros()
 	{
-		int totalRegistros = await ObtenerTotalRegistros();
-		BusquedaEntry.Placeholder = $"Buscar repuestos... ({totalRegistros} en total)";
-	}
+        if (_dbConnection == null) return;
+
+        int totalRegistros = await _dbConnection.Table<ListadoPañol>().CountAsync();
+
+        // MAUI requiere que cambios en la UI ocurran en el hilo principal
+        MainThread.BeginInvokeOnMainThread(() => {
+            BusquedaEntry.Placeholder = $"Buscar repuestos... ({totalRegistros} en total)";
+        });
+    }
 
 	// Tu método para obtener el total de registros
 	private async Task<int> ObtenerTotalRegistros()
@@ -57,19 +78,37 @@ public partial class PanolPage : ContentPage
 		}
 	}
 
-    private async void InitializeDatabase()
+    private async Task InitializeDatabase()
     {
-        // Obtener la ruta del archivo de base de datos
         var databasePath = Path.Combine(FileSystem.AppDataDirectory, "Almacen.db");
 
-        using (var stream = await FileSystem.OpenAppPackageFileAsync("Content/Almacen/Almacen.db"))
-        using (var fileStream = new FileStream(databasePath, FileMode.Create))
+        try
         {
-            await stream.CopyToAsync(fileStream);
-        }
+            // 1. Si existe una conexión previa, hay que cerrarla y eliminarla
+            if (_dbConnection != null)
+            {
+                await _dbConnection.CloseAsync();
+                _dbConnection = null;
+                // Un pequeño delay para que el SO libere el handle del archivo
+                await Task.Delay(100);
+            }
 
-        // Conectar a la base de datos
-        _dbConnection = new SQLiteAsyncConnection(databasePath);
+            // 2. Intentar copiar el archivo desde el paquete
+            using (var stream = await FileSystem.OpenAppPackageFileAsync("Content/Almacen/Almacen.db"))
+            using (var fileStream = new FileStream(databasePath, FileMode.Create, FileAccess.Write, FileShare.None))
+            {
+                await stream.CopyToAsync(fileStream);
+            }
+
+            // 3. Establecer la nueva conexión
+            _dbConnection = new SQLiteAsyncConnection(databasePath);
+        }
+        catch (IOException)
+        {
+            // Si el archivo sigue bloqueado, esperamos un momento y reintentamos una vez
+            await Task.Delay(500);
+            _dbConnection = new SQLiteAsyncConnection(databasePath);
+        }
     }
 
     public async Task<List<ListadoPañol>> BuscarListadoPañol(string textoBusqueda)
