@@ -2,15 +2,6 @@
 	<PropertyGroup>
 		<TargetFrameworks>net9.0-ios;net9.0-maccatalyst;net9.0-android35.0</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
-		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net9.0-tizen</TargetFrameworks> -->
-
-		<!-- Note for MacCatalyst:
-		The default runtime is maccatalyst-x64, except in Release config, in which case the default is maccatalyst-x64;maccatalyst-arm64.
-		When specifying both architectures, use the plural <RuntimeIdentifiers> instead of the singular <RuntimeIdentifier>.
-		The Mac App Store will NOT accept apps with ONLY maccatalyst-arm64 indicated;
-		either BOTH runtimes must be indicated or ONLY macatalyst-x64. -->
-		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
 		<OutputType>Exe</OutputType>
 		<RootNamespace>Soltec.NET</RootNamespace>
@@ -19,17 +10,12 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<!-- Display name -->
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
+		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<!-- App Identifier -->
-		<ApplicationId>com.companyname.soltec.net</ApplicationId>
-
-		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
 		<ApplicationVersion>88</ApplicationVersion>
 
-		<!-- To develop, package, and publish an app to the Microsoft Store, see: https://aka.ms/MauiTemplateUnpackaged -->
 		<WindowsPackageType>None</WindowsPackageType>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
@@ -37,110 +23,55 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
-		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
-		<Description>SolTec.NET es una aplicación móvil desarrollada en .NET MAUI para Android y iOS.
-Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y funciones necesarias en el día a día.</Description>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-ios|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-maccatalyst|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
-	  <AndroidKeyStore>False</AndroidKeyStore>
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-ios|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-maccatalyst|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
-	  <AndroidKeyStore>False</AndroidKeyStore>
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
-	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-windows10.0.19041.0|AnyCPU'">
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
-	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <AndroidUseAapt2>True</AndroidUseAapt2>
-	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
-	  <AndroidPackageFormat>aab</AndroidPackageFormat>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
-	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
-	  <ApplicationId>com.companyname.soltecpep</ApplicationId>
-	  <AndroidPackageFormat>aab</AndroidPackageFormat>
-	  <AndroidUseAapt2>True</AndroidUseAapt2>
-	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
-	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
-	  <ApplicationDisplayVersion>1.0.88</ApplicationDisplayVersion>
-	  <ApplicationVersion>88</ApplicationVersion>
-	</PropertyGroup>
-	
-	<ItemGroup>
-		<!-- App Icon -->
-		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
-		<!-- Images -->
+		<Description>SolTec.NET es una aplicación móvil desarrollada en .NET MAUI.</Description>
+
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
+		<AndroidKeyStore>False</AndroidKeyStore>
+		<DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+		<AndroidUseAapt2>True</AndroidUseAapt2>
+		<AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+		<AndroidPackageFormat>apk</AndroidPackageFormat>
+		<RuntimeIdentifiers>android-arm64;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|x64'">
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <AndroidPackageFormat>apk</AndroidPackageFormat>
+	  <RuntimeIdentifiers>android-arm64;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
+		<AndroidKeyStore>False</AndroidKeyStore>
+		<DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+		<AndroidPackageFormat>aab</AndroidPackageFormat>
+		<AndroidUseAapt2>True</AndroidUseAapt2>
+		<AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|x64'">
+	  <AndroidKeyStore>False</AndroidKeyStore>
+	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
+	  <AndroidPackageFormat>aab</AndroidPackageFormat>
+	  <AndroidUseAapt2>True</AndroidUseAapt2>
+	  <AndroidCreatePackagePerAbi>False</AndroidCreatePackagePerAbi>
+	  <RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
-
-		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
-
-		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <AndroidResource Remove="Assets\**" />
-	  <Compile Remove="Assets\**" />
-	  <EmbeddedResource Remove="Assets\**" />
-	  <MauiCss Remove="Assets\**" />
-	  <MauiXaml Remove="Assets\**" />
-	  <None Remove="Assets\**" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Remove="Resources\AppIcon\soltec_icon.png" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<MauiIcon Include="Resources\AppIcon\soltec_icon.svg" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <None Include="..\README.md">
-	    <Pack>True</Pack>
-	    <PackagePath>\</PackagePath>
-	  </None>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -159,39 +90,12 @@ Su objetivo es servir como una utilidad de trabajo que centraliza herramientas y
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
-		<Compile Update="Views\ConfiguracionView.xaml.cs">
-		  <DependentUpon>ConfiguracionView.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\CalculoMotores.xaml.cs">
-			<DependentUpon>CalculoMotores.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\ContenidoDetalleView.xaml.cs">
-			<DependentUpon>ContenidoDetalleView.xaml</DependentUpon>
-		</Compile>
-		<Compile Update="Views\Pañol.xaml.cs">
-			<DependentUpon>Pañol.xaml</DependentUpon>
-		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-		<EmbeddedResource Update="Properties\Resources.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
-		<MauiXaml Update="Views\ConfiguracionView.xaml">
-		  <Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
-		<MauiXaml Update="Views\CalculoMotores.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
-		<MauiXaml Update="Views\ContenidoDetalleView.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
-		<MauiXaml Update="Views\Pañol.xaml">
-			<Generator>MSBuild:Compile</Generator>
-		</MauiXaml>
+		<MauiXaml Update="Views\ConfiguracionView.xaml" Generator="MSBuild:Compile" />
+		<MauiXaml Update="Views\CalculoMotores.xaml" Generator="MSBuild:Compile" />
+		<MauiXaml Update="Views\ContenidoDetalleView.xaml" Generator="MSBuild:Compile" />
+		<MauiXaml Update="Views\Pañol.xaml" Generator="MSBuild:Compile" />
 	</ItemGroup>
 </Project>
