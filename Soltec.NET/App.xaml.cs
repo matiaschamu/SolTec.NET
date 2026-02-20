@@ -12,7 +12,12 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
 		{
-			return new Window(new AppShell());
+			var window = new Window(new AppShell())
+			{
+				MinimumWidth = 320,
+				MinimumHeight = 200
+			};
+			return window;
 		}
 
 #if __ANDROID__

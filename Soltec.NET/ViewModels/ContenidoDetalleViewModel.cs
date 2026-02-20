@@ -60,7 +60,7 @@ namespace Soltec.NET.ViewModels
         public async Task CargarDatosAsync(string rutaBaseContenido)
         {
             Titulo = Path.GetFileName(rutaBaseContenido);
-            Contenidos.Clear();
+            await MainThread.InvokeOnMainThreadAsync(() => Contenidos.Clear());
 
             var carpetas = await _contenidoJsonService.ObtenerCarpetasAsync(rutaBaseContenido);
 
@@ -96,7 +96,8 @@ namespace Soltec.NET.ViewModels
                     {
                         Nombre = archivo.Nombre,
                         Url = existeLocal ? rutaLocal : archivo.Url,
-                        EstaOffline = existeLocal
+                        EstaOffline = existeLocal,
+                        AbrirManualCommand = AbrirManualCommand
                     });
                 }
 
@@ -144,7 +145,7 @@ namespace Soltec.NET.ViewModels
                     Contenido.Color = new SolidColorBrush(Colors.Green);
                 }
 
-                Contenidos.Add(Contenido);
+                await MainThread.InvokeOnMainThreadAsync(() => Contenidos.Add(Contenido));
             }
         }
 

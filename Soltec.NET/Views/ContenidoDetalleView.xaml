@@ -18,60 +18,57 @@
     </ContentPage.Resources>
     
     <ScrollView Padding="10">
-        <VerticalStackLayout Spacing="12">
-            <CollectionView ItemsSource="{Binding Contenidos}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="model:Contenidos">
-                        <toolkit:Expander>
+        <VerticalStackLayout Spacing="12" BindableLayout.ItemsSource="{Binding Contenidos}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate x:DataType="model:Contenidos">
+                    <toolkit:Expander>
 
-                             <!--Header--> 
-                            <toolkit:Expander.Header>
-                                <Border StrokeShape="RoundRectangle 12"
-                                        Background="{Binding Color}"
-                                        Padding="10">
-                                    <Border.Shadow>
-                                        <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
-                                    </Border.Shadow>
-                                    <Label Text="{Binding Nombre}"
-                                           FontSize="20"
-                                           TextColor="White"
-                                           FontAttributes="Bold"/>
-                                </Border>
-                            </toolkit:Expander.Header>
+                        <!--Header-->
+                        <toolkit:Expander.Header>
+                            <Border StrokeShape="RoundRectangle 12"
+                                    Background="{Binding Color}"
+                                    Padding="10">
+                                <Border.Shadow>
+                                    <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
+                                </Border.Shadow>
+                                <Label Text="{Binding Nombre}"
+                                        FontSize="20"
+                                        TextColor="White"
+                                        FontAttributes="Bold"/>
+                            </Border>
+                        </toolkit:Expander.Header>
 
-                             <!--Contenido--> 
-                            <toolkit:Expander.Content>
-                                <Border StrokeShape="RoundRectangle 10"
-                                        BackgroundColor="White"
-                                        Padding="10">
-                                    <Border.Shadow>
-                                        <Shadow Brush="Black" Opacity="0.2" Offset="2,2" Radius="5"/>
-                                    </Border.Shadow>
+                        <!--Contenido-->
+                        <toolkit:Expander.Content>
+                            <Border StrokeShape="RoundRectangle 10"
+                                    BackgroundColor="White"
+                                    Padding="10"
+                                    Margin="0,4,0,0">
+                                <Border.Shadow>
+                                    <Shadow Brush="Black" Opacity="0.2" Offset="2,2" Radius="5"/>
+                                </Border.Shadow>
 
-                                    <VerticalStackLayout Spacing="6">
-                                        <CollectionView ItemsSource="{Binding Manuales}">
-                                            <CollectionView.ItemTemplate>
-                                                <DataTemplate x:DataType="model:Manual">
-                                                    <Label FontSize="16" Text="{Binding NombreConIcono}"
-                                                            TextColor="{Binding EstaOffline, Converter={StaticResource BoolToColorConverter}}"
-                                                            Margin="0,0,0,8">
-                                                        <Label.GestureRecognizers>
-                                                            <TapGestureRecognizer Command="{Binding Source={x:Reference ContenidoDetalleView}, Path=BindingContext.AbrirManualCommand}" CommandParameter="{Binding .}" />
-                                                        </Label.GestureRecognizers>
-                                                    </Label>
-                                                </DataTemplate>
-                                            </CollectionView.ItemTemplate>
-                                        </CollectionView>
-                                    </VerticalStackLayout>
+                                <VerticalStackLayout Spacing="6" BindableLayout.ItemsSource="{Binding Manuales}">
+                                    <BindableLayout.ItemTemplate>
+                                        <DataTemplate x:DataType="model:Manual">
+                                            <Label FontSize="16" Text="{Binding NombreConIcono}"
+                                                    TextColor="{Binding EstaOffline, Converter={StaticResource BoolToColorConverter}}"
+                                                    Margin="0,0,0,8">
+                                                <Label.GestureRecognizers>
+                                                    <TapGestureRecognizer Command="{Binding AbrirManualCommand}"
+                                                                          CommandParameter="{Binding .}" />
+                                                </Label.GestureRecognizers>
+                                            </Label>
+                                        </DataTemplate>
+                                    </BindableLayout.ItemTemplate>
+                                </VerticalStackLayout>
 
-                                </Border>
-                            </toolkit:Expander.Content>
+                            </Border>
+                        </toolkit:Expander.Content>
 
-                        </toolkit:Expander>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-
+                    </toolkit:Expander>
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

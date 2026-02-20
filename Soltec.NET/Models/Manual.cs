@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace Soltec.NET.Models
 {
@@ -11,6 +12,7 @@ namespace Soltec.NET.Models
     {
         public string Nombre { get; set; }
         public string Url { get; set; }
+        public ICommand? AbrirManualCommand { get; set; }
 
         private bool _estaOffline;
         public bool EstaOffline
