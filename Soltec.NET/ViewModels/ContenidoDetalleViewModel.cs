@@ -96,6 +96,7 @@ namespace Soltec.NET.ViewModels
                     {
                         Nombre = archivo.Nombre,
                         Url = existeLocal ? rutaLocal : archivo.Url,
+                        RutaLocalDir = rutaLocalDir,
                         EstaOffline = existeLocal,
                         AbrirManualCommand = AbrirManualCommand
                     });
@@ -158,6 +159,7 @@ namespace Soltec.NET.ViewModels
             {
                 if (manual.EstaOffline && File.Exists(manual.Url))
                 {
+                    // Ya está offline: abrir directamente
                     await Launcher.OpenAsync(new OpenFileRequest
                     {
                         File = new ReadOnlyFile(manual.Url)
@@ -165,7 +167,37 @@ namespace Soltec.NET.ViewModels
                 }
                 else
                 {
-                    await Launcher.OpenAsync(new Uri(manual.Url));
+                    // Está online: descargar, guardar y abrir
+                    byte[] bytes;
+                    try
+                    {
+                        bytes = await _archivoService.DescargarArchivo(manual.Url);
+                    }
+                    catch
+                    {
+                        // Sin conexión: intentar abrir la URL de todas formas
+                        await Launcher.OpenAsync(new Uri(manual.Url));
+                        return;
+                    }
+
+                    // Guardar localmente
+                    var rutaLocalDir = manual.RutaLocalDir
+                        ?? Path.Combine(FileSystem.AppDataDirectory, manual.Nombre);
+                    if (!Directory.Exists(rutaLocalDir))
+                        Directory.CreateDirectory(rutaLocalDir);
+
+                    var rutaLocal = Path.Combine(rutaLocalDir, manual.Nombre);
+                    await File.WriteAllBytesAsync(rutaLocal, bytes);
+
+                    // Actualizar estado del manual a Offline
+                    manual.Url = rutaLocal;
+                    manual.EstaOffline = true;
+
+                    // Abrir el archivo local
+                    await Launcher.OpenAsync(new OpenFileRequest
+                    {
+                        File = new ReadOnlyFile(rutaLocal)
+                    });
                 }
             }
             catch (Exception ex)

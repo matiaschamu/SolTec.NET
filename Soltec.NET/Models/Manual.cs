@@ -12,6 +12,7 @@ namespace Soltec.NET.Models
     {
         public string Nombre { get; set; }
         public string Url { get; set; }
+        public string? RutaLocalDir { get; set; }
         public ICommand? AbrirManualCommand { get; set; }
 
         private bool _estaOffline;
