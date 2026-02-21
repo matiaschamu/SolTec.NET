@@ -1,4 +1,5 @@
 ﻿using Soltec.NET.Models;
+using System.Threading;
 
 namespace Soltec.NET.Services;
 
@@ -7,7 +8,7 @@ public interface ISincronizacionService
     Task<(string estado, string progreso)> SincronizarCarpetaAsync(
         CarpetaItemsUpdate carpetaItem,
         ConfiguracionManual config,
-        bool modoOffline);
+        CancellationToken ct);
 }
 
 public class SincronizacionService : ISincronizacionService
@@ -34,7 +35,8 @@ public class SincronizacionService : ISincronizacionService
     /// <returns>Estado final de sincronización y progreso vacío.</returns>
     public async Task<(string estado, string progreso)> SincronizarCarpetaAsync(
         CarpetaItemsUpdate carpetaItem,
-        ConfiguracionManual config,        bool modoOffline)
+        ConfiguracionManual config,
+        CancellationToken ct)
     {
         carpetaItem.EstadoArchivos = "Sincronizando...";
         carpetaItem.ProgresoDescarga = "";
@@ -59,6 +61,8 @@ public class SincronizacionService : ISincronizacionService
 
             foreach (var (carpeta, archivo) in todosArchivos)
             {
+                ct.ThrowIfCancellationRequested();
+
                 procesados++;
                 var claveUnica = $"{carpeta.Nombre}/{archivo.Nombre}";
                 bool necesitaDescarga = true;
@@ -82,7 +86,7 @@ public class SincronizacionService : ISincronizacionService
                 }
 
                 // Descargar si corresponde
-                if (necesitaDescarga && modoOffline)
+                if (necesitaDescarga)
                 {
                     var bytes = await _archivoService.DescargarArchivo(archivo.Url);
                     //await _archivoService.GuardarArchivoLocal(carpeta.Nombre, archivo.Nombre, bytes);
@@ -107,9 +111,13 @@ public class SincronizacionService : ISincronizacionService
             else
                 return ("Ya estaba actualizado", "");
         }
-        catch
+        catch (OperationCanceledException)
         {
-            return ("Error en la sincronización", "");
+            return ("Sincronización cancelada", "");
+        }
+        catch (Exception ex)
+        {
+            return ($"Error en la sincronización: {ex.Message}", "");
         }
     }
 }

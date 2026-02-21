@@ -19,6 +19,8 @@ namespace Soltec.NET.ViewModels
         public Models.ConfiguracionManual Config { get; set; } = new Models.ConfiguracionManual();
         public ObservableCollection<CarpetaItemsUpdate> CarpetasUpdate { get; set; } = new ObservableCollection<Models.CarpetaItemsUpdate>();
         public ICommand SincronizarCarpetaCommand { get; set; }
+        public ICommand DetenerSincronizacionCommand { get; set; }
+        public ICommand BorrarCarpetaIndividualCommand { get; set; }
         public ICommand BorrarTodoCommand { get; set; }
 
         public ConfiguracionViewModel(IArchivoService archivoService, IPreferenciasService prefs, ISincronizacionService sincronizacionService, IContenidoJsonService contenidoJsonService)
@@ -28,8 +30,16 @@ namespace Soltec.NET.ViewModels
             _sincronizacionService = sincronizacionService;
             _contenidoJsonService= contenidoJsonService;
 
+            Config.HashArchivosLocales = _prefs.LeerHashArchivos();
+
             SincronizarCarpetaCommand = new Command<Models.CarpetaItemsUpdate>(async (carpetaItem) =>
                 await SincronizarCarpeta(carpetaItem));
+
+            DetenerSincronizacionCommand = new Command<Models.CarpetaItemsUpdate>((carpetaItem) =>
+                carpetaItem?.DetenerSincronizacion());
+
+            BorrarCarpetaIndividualCommand = new Command<Models.CarpetaItemsUpdate>(async (carpetaItem) =>
+                await BorrarCarpetaIndividual(carpetaItem));
 
             BorrarTodoCommand = new Command(async () => await BorrarTodo());
 
@@ -50,11 +60,45 @@ namespace Soltec.NET.ViewModels
             }
             
         }
+        private async Task BorrarCarpetaIndividual(Models.CarpetaItemsUpdate carpetaItem)
+        {
+            if (carpetaItem == null) return;
+
+            bool confirm = await Application.Current.MainPage.DisplayAlert("Confirmar", $"¿Estás seguro de que deseas borrar todo el contenido de {carpetaItem.Nombre}?", "Sí", "No");
+            if (!confirm) return;
+
+            try
+            {
+                _archivoService.BorrarCarpeta(carpetaItem.Nombre);
+                carpetaItem.EstadoArchivos = "Contenido borrado";
+                carpetaItem.ProgresoDescarga = "";
+                
+                // Opcional: Limpiar hashes específicos si fuera necesario, 
+                // pero al no tener el hash por carpeta en el diccionario actual (es global por archivo),
+                // la siguiente sincronización los volverá a detectar como faltantes.
+
+                await Application.Current.MainPage.DisplayAlert("Éxito", $"Se borró el contenido de {carpetaItem.Nombre}.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo borrar: {ex.Message}", "OK");
+            }
+        }
+
         private async Task BorrarTodo()
         {
+            bool confirm = await Application.Current.MainPage.DisplayAlert("Confirmar", "¿Estás seguro de que deseas borrar TODO el contenido de la aplicación? Esta acción no se puede deshacer.", "Sí", "No");
+            if (!confirm) return;
+
             try
             {
                 _archivoService.BorrarTodo();
+
+                foreach (var carpeta in CarpetasUpdate)
+                {
+                    carpeta.EstadoArchivos = "Contenido borrado";
+                    carpeta.ProgresoDescarga = "";
+                }
 
                 //CarpetasUpdate.Clear();
                 _prefs.GuardarHashArchivos(new Dictionary<string, string>());
@@ -72,9 +116,19 @@ namespace Soltec.NET.ViewModels
         private async Task SincronizarCarpeta(Models.CarpetaItemsUpdate carpetaItem)
         {
             if (carpetaItem == null) return;
-            var (estado, progreso) = await _sincronizacionService.SincronizarCarpetaAsync(carpetaItem, Config, carpetaItem.ModoOffline);
-            carpetaItem.EstadoArchivos = estado;
-            carpetaItem.ProgresoDescarga = progreso;
+            
+            var token = carpetaItem.IniciarSincronizacion();
+            
+            try
+            {
+                var (estado, progreso) = await _sincronizacionService.SincronizarCarpetaAsync(carpetaItem, Config, token);
+                carpetaItem.EstadoArchivos = estado;
+                carpetaItem.ProgresoDescarga = progreso;
+            }
+            finally
+            {
+                carpetaItem.IsSincronizando = false;
+            }
         }
         private void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string propertyName = "")
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

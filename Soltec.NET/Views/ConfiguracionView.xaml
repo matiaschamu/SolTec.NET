@@ -17,36 +17,46 @@
                HorizontalOptions="Center" />
 
             <CollectionView ItemsSource="{Binding CarpetasUpdate}">
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:CarpetaItemsUpdate">
                         <Frame HasShadow="True"
-                           CornerRadius="12"
-                           Padding="15"
-                           BackgroundColor="Gray"
-                           Margin="0,0,0,15">
+                               CornerRadius="15"
+                               Padding="20"
+                               BackgroundColor="White"
+                               BorderColor="#CFD8DC">
 
-                            <VerticalStackLayout Spacing="12">
+                            <VerticalStackLayout Spacing="15">
 
                                 <Label Text="{Binding Nombre}" 
-                                   FontAttributes="Bold" 
-                                   FontSize="18"
-                                   TextColor="#37474F"/>
+                                       FontAttributes="Bold" 
+                                       FontSize="20"
+                                       TextColor="#263238"/>
 
-                                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
-                                    <Label Text="Usar offline" 
-                                       VerticalOptions="Center"
-                                       TextColor="#455A64"/>
-                                    <Switch IsToggled="{Binding ModoOffline}"
-                                        OnColor="#4CAF50" />
-                                </HorizontalStackLayout>
+                                 <Button Text="Sincronizar"
+                                     CornerRadius="8"
+                                     Command="{Binding BindingContext.SincronizarCarpetaCommand, Source={x:Reference ViewConfiguracion}}"
+                                     CommandParameter="{Binding .}"
+                                     IsEnabled="{Binding CanSincronizar}" 
+                                     BackgroundColor="{Binding BotonColor}"
+                                     TextColor="{Binding TextoBotonColor}"/>
 
-                                <Button Text="Sincronizar"
-                                    CornerRadius="8"
-                                    Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.SincronizarCarpetaCommand}"
-                                    CommandParameter="{Binding .}"
-                                    IsEnabled="{Binding ModoOffline}" 
-                                    BackgroundColor="{Binding BotonColor}"
-                                    TextColor="{Binding TextoBotonColor}"/>
+                                 <Button Text="Detener Sincronización"
+                                     CornerRadius="8"
+                                     Command="{Binding BindingContext.DetenerSincronizacionCommand, Source={x:Reference ViewConfiguracion}}"
+                                     CommandParameter="{Binding .}"
+                                     IsVisible="{Binding IsSincronizando}" 
+                                     BackgroundColor="Red"
+                                     TextColor="White"/>
+
+                                 <Button Text="Borrar Contenido"
+                                     CornerRadius="8"
+                                     Command="{Binding BindingContext.BorrarCarpetaIndividualCommand, Source={x:Reference ViewConfiguracion}}"
+                                     CommandParameter="{Binding .}"
+                                     BackgroundColor="#E57373"
+                                     TextColor="White"/>
 
                                 <Label Text="{Binding EstadoArchivos}" 
                                    FontAttributes="Bold"

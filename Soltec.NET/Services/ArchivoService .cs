@@ -9,6 +9,7 @@ public interface IArchivoService
     Task GuardarArchivoLocal(string carpeta, string nombreArchivo, byte[] contenido);
     bool ArchivoExiste(string carpeta, string nombreArchivo);
     void BorrarTodo();
+    void BorrarCarpeta(string carpeta);
 }
 
 public class ArchivoService : IArchivoService
@@ -59,6 +60,23 @@ public class ArchivoService : IArchivoService
         {
             // Podés loguear el error si querés
             System.Diagnostics.Debug.WriteLine($"Error al borrar contenido: {ex.Message}");
+            throw;
+        }
+    }
+
+    public void BorrarCarpeta(string carpeta)
+    {
+        try
+        {
+            var pathCarpeta = Path.Combine(FileSystem.AppDataDirectory, carpeta);
+            if (Directory.Exists(pathCarpeta))
+            {
+                Directory.Delete(pathCarpeta, true);
+            }
+        }
+        catch (Exception ex)
+        {
+            System.Diagnostics.Debug.WriteLine($"Error al borrar carpeta {carpeta}: {ex.Message}");
             throw;
         }
     }

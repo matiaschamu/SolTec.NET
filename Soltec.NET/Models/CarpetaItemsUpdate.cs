@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.Threading;
 
 namespace Soltec.NET.Models
 {
@@ -18,6 +19,7 @@ namespace Soltec.NET.Models
                     OnPropertyChanged();
                     OnPropertyChanged(nameof(BotonColor));
                     OnPropertyChanged(nameof(TextoBotonColor));
+                    OnPropertyChanged(nameof(CanSincronizar));
 
                     // Guardar en preferencias
                     Preferences.Set($"ModoOffline_{Nombre}", value);
@@ -39,8 +41,38 @@ namespace Soltec.NET.Models
             set { _progresoDescarga = value; OnPropertyChanged(); }
         }
 
-        public Color BotonColor => ModoOffline ? Colors.Green : Colors.LightGray;
-        public Color TextoBotonColor => ModoOffline ? Colors.White : Colors.DarkGray;
+        private bool _isSincronizando;
+        public bool IsSincronizando
+        {
+            get => _isSincronizando;
+            set
+            {
+                _isSincronizando = value;
+                OnPropertyChanged();
+                OnPropertyChanged(nameof(CanSincronizar));
+            }
+        }
+
+        public bool CanSincronizar => !IsSincronizando;
+
+        public Color BotonColor => CanSincronizar ? Colors.Green : Colors.LightGray;
+        public Color TextoBotonColor => CanSincronizar ? Colors.White : Colors.DarkGray;
+
+        private CancellationTokenSource _cts;
+
+        public CancellationToken IniciarSincronizacion()
+        {
+            _cts?.Cancel();
+            _cts = new CancellationTokenSource();
+            IsSincronizando = true;
+            return _cts.Token;
+        }
+
+        public void DetenerSincronizacion()
+        {
+            _cts?.Cancel();
+            IsSincronizando = false;
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string name = null)
