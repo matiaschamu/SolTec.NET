@@ -43,6 +43,14 @@ public class SincronizacionService : ISincronizacionService
 
         try
         {
+            // --- INICIO LIMPIEZA HUÉRFANOS ---
+            // Obtener todos los archivos locales actuales para esta categoría
+            var archivosLocales = new HashSet<string>(
+                _archivoService.ListarArchivosRecursivos(carpetaItem.Nombre),
+                StringComparer.OrdinalIgnoreCase
+            );
+            // ---------------------------------
+
             // Obtener carpeta remota
             var carpetaRemota = await _contenidoJsonService.CargarCarpetaDesdeJSonAsync("Content/" + carpetaItem.Nombre);
             if (carpetaRemota == null)
@@ -68,15 +76,14 @@ public class SincronizacionService : ISincronizacionService
                 bool necesitaDescarga = true;
 
                 var nombreCarpetaLocal = carpetaItem.Nombre + (string.IsNullOrEmpty(carpeta.Nombre) ? "/Otros" : "/" + carpeta.Nombre);
+                var pathArchivoLocal = Path.Combine(FileSystem.AppDataDirectory, nombreCarpetaLocal, archivo.Nombre);
 
                 // Verificar si ya existe
                 if (_archivoService.ArchivoExiste(nombreCarpetaLocal, archivo.Nombre))
                 {
                     try
                     {
-                        var pathLocal = Path.Combine(FileSystem.AppDataDirectory, nombreCarpetaLocal, archivo.Nombre);
-                        var hashLocal = _archivoService.CalcularHashLocal(pathLocal);
-
+                        var hashLocal = _archivoService.CalcularHashLocal(pathArchivoLocal);
                         necesitaDescarga = !hashLocal.Equals(archivo.Hash, StringComparison.OrdinalIgnoreCase);
                     }
                     catch
@@ -89,11 +96,7 @@ public class SincronizacionService : ISincronizacionService
                 if (necesitaDescarga)
                 {
                     var bytes = await _archivoService.DescargarArchivo(archivo.Url);
-                    //await _archivoService.GuardarArchivoLocal(carpeta.Nombre, archivo.Nombre, bytes);
-
-                    // Asegurarse de que carpeta.Nombre es la subcarpeta correcta y no algo vacío
                     await _archivoService.GuardarArchivoLocal(nombreCarpetaLocal, archivo.Nombre, bytes);
-
 
                     config.HashArchivosLocales[claveUnica] = archivo.Hash;
                     _prefs.GuardarHashArchivos(config.HashArchivosLocales);
@@ -101,10 +104,28 @@ public class SincronizacionService : ISincronizacionService
                     huboDescargas = true;
                 }
 
+                // --- TRACKING LIMPIEZA ---
+                // Una vez procesado (ya sea porque estaba bien o se bajó de nuevo), lo marcamos como válido
+                archivosLocales.Remove(pathArchivoLocal);
+                // ------------------------
+
                 bytesRestantes -= archivo.TamanoBytes;
                 carpetaItem.ProgresoDescarga =
                     $"({procesados}/{totalArchivos}) - {bytesRestantes / (1024 * 1024.0):F2} MB restantes - {archivo.Nombre}";
             }
+
+            // --- EJECUCIÓN LIMPIEZA ---
+            // Los archivos que quedaron en el set no están en el JSON remoto
+            foreach (var archivoHuerfano in archivosLocales)
+            {
+                try
+                {
+                    if (File.Exists(archivoHuerfano))
+                        File.Delete(archivoHuerfano);
+                }
+                catch { /* Ignorar errores de borrado */ }
+            }
+            // --------------------------
 
             if (huboDescargas)
                 return ("Actualizado correctamente", "");

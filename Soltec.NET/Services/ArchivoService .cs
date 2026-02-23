@@ -10,6 +10,7 @@ public interface IArchivoService
     bool ArchivoExiste(string carpeta, string nombreArchivo);
     void BorrarTodo();
     void BorrarCarpeta(string carpeta);
+    IEnumerable<string> ListarArchivosRecursivos(string carpeta);
 }
 
 public class ArchivoService : IArchivoService
@@ -93,5 +94,14 @@ public class ArchivoService : IArchivoService
     public string ObtenerRutaArchivo(string carpeta, string nombreArchivo)
     {
         return Path.Combine(FileSystem.AppDataDirectory, carpeta, nombreArchivo);
+    }
+
+    public IEnumerable<string> ListarArchivosRecursivos(string carpeta)
+    {
+        var pathCarpeta = Path.Combine(FileSystem.AppDataDirectory, carpeta);
+        if (!Directory.Exists(pathCarpeta))
+            return Enumerable.Empty<string>();
+
+        return Directory.EnumerateFiles(pathCarpeta, "*", SearchOption.AllDirectories);
     }
 }
