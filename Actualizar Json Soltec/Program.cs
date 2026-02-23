@@ -10,7 +10,18 @@ class Program
     static int totalArchivos = 0;
     static void Main()
     {
-        string rootFolder = @"H:\OneDrive\01-Onedrive-matiaschamu\02-Trabajos\02-Programacion (Varios)\03-Proyectos_Android\03-SolTec.NET\Extras";
+        // Se asume que el ejecutable está en bin/Debug/net9.0 y Extras está 4 niveles hacia arriba,
+        // o que se ejecuta desde la raíz del proyecto y Extras es un hermano.
+        // Aquí usamos la ruta relativa desde la carpeta de la solución.
+        string currentDir = Directory.GetCurrentDirectory();
+        string rootFolder = Path.GetFullPath(Path.Combine(currentDir, "..", "Extras"));
+        
+        if (!Directory.Exists(rootFolder))
+        {
+            // Intento alternativo si se ejecuta desde bin/
+            rootFolder = Path.GetFullPath(Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "Extras"));
+        }
+
         string baseUrl = "https://matiaschamu.github.io/SolTec.NET/Extras/";
 
         totalArchivos = ContarArchivos(rootFolder);

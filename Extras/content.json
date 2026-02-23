@@ -389,6 +389,36 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "Anca Motion",
+              "Archivos": [
+                {
+                  "Nombre": "ANCA MOTION - AMD2000 - Manual.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Anca%20Motion/ANCA%20MOTION%20-%20AMD2000%20-%20Manual.pdf",
+                  "Hash": "100119b4cd6aec7dd0a69a5550efa8dad3f20373d380140160c41e87bd1a66e4",
+                  "TamanoBytes": 5542728
+                },
+                {
+                  "Nombre": "ANCA MOTION - AMD2000-Configuration-Guide.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Anca%20Motion/ANCA%20MOTION%20-%20AMD2000-Configuration-Guide.pdf",
+                  "Hash": "bac552ec366aa037104779799bd1b13e01937d9a1b6f58cde72ff17cbc406615",
+                  "TamanoBytes": 5695228
+                },
+                {
+                  "Nombre": "ANCA MOTION - AMD2000-User-Guide rev10.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Anca%20Motion/ANCA%20MOTION%20-%20AMD2000-User-Guide%20rev10.pdf",
+                  "Hash": "98bbbf4688b837a1dc3664768874dc25c2b210704429f5a69cc21d6c621d91ba",
+                  "TamanoBytes": 5468657
+                },
+                {
+                  "Nombre": "ANCA MOTION - AMD2000-User-Guide.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Anca%20Motion/ANCA%20MOTION%20-%20AMD2000-User-Guide.pdf",
+                  "Hash": "0b336efce5c324c1a8be7a9a1ad15f561e0985495ebe2fa051bd863d698fe525",
+                  "TamanoBytes": 3572628
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "Atlas Copco",
               "Archivos": [
                 {
@@ -2591,16 +2621,6 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "02 - PLANOS MAPA",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "03 - PLANOS PC32",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
               "Nombre": "04 - PLANOS SCHAAF2",
               "Archivos": [
                 {
@@ -3534,26 +3554,6 @@
                   "TamanoBytes": 922409
                 }
               ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "08 - PLANOS FRYPACK",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "09 - PLANOS HALOILA",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "10 - PLANOS KETAN",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "11 - PLANOS OBIN",
-              "Archivos": [],
               "Subcarpetas": []
             }
           ]
