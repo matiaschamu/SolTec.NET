@@ -15,7 +15,8 @@ namespace Soltec.NET.Services
         /// Ejemplo: "Manuales", "Videos", etc.
         /// </summary>
         Task<IEnumerable<CarpetaItemsUpdate>> ObtenerCarpetasAsync(string nombreRaiz);
-        Task<Carpeta?> CargarCarpetaDesdeJSonAsync(string nombreCarpeta);
+        Task<Carpeta?> CargarCarpetaDesdeJSonAsync(string nombreCarpeta, bool forzarDescarga = false);
+        void InvalidarCacheRaiz();
     }
 
 
@@ -61,6 +62,7 @@ namespace Soltec.NET.Services
                 return nodo.Subcarpetas.Select(c => new CarpetaItemsUpdate
                 {
                     Nombre = c.Nombre,
+                    RutaJson = $"{nombreRaiz}/{c.Nombre}",
                     ModoOffline = _prefs.LeerModoOffline(c.Nombre),
                     EstadoArchivos = "Verificar...",
                     ProgresoDescarga = ""
@@ -98,12 +100,14 @@ namespace Soltec.NET.Services
         /// ⚠️ Nota: Este método solo busca carpetas a un nivel dentro de "Content". Si la carpeta buscada está más profunda,
         ///       no será encontrada. Para eso se necesitaría un método recursivo que explore toda la jerarquía.
         /// </remarks>
-        public async Task<Carpeta?> CargarCarpetaDesdeJSonAsync(string nombreCarpeta)
+        public async Task<Carpeta?> CargarCarpetaDesdeJSonAsync(string nombreCarpeta, bool forzarDescarga = false)
         {
             const string carpetaLocal = "Cache";
             const string archivoLocal = "content.json";
             
             var archivoService = new ArchivoService();
+
+            if (forzarDescarga) _cacheRaiz = null;
 
             if (_cacheRaiz != null)
                 return BuscarCarpetaEnRaiz(_cacheRaiz, nombreCarpeta);
@@ -175,6 +179,11 @@ namespace Soltec.NET.Services
             }
 
             return actual;
+        }
+
+        public void InvalidarCacheRaiz()
+        {
+            _cacheRaiz = null;
         }
     }
 }

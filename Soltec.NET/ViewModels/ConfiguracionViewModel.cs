@@ -49,6 +49,7 @@ namespace Soltec.NET.ViewModels
         {
             try
             {
+                _contenidoJsonService.InvalidarCacheRaiz();
                 var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
                 foreach (var carpeta in carpetas)
                     CarpetasUpdate.Add(carpeta);

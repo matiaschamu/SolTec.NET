@@ -6,6 +6,7 @@ namespace Soltec.NET.Models
     public class CarpetaItemsUpdate : INotifyPropertyChanged
     {
         public string Nombre { get; set; }
+        public string RutaJson { get; set; } // Ruta completa en el JSON (ej: "Content/Manuales/ABB")
 
         private bool _modoOffline;
         public bool ModoOffline

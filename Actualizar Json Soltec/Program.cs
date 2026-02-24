@@ -37,7 +37,7 @@ class Program
 
     static int ContarArchivos(string folder)
     {
-        int count = Directory.GetFiles(folder, "*.pdf").Length;
+        int count = Directory.GetFiles(folder, "*.*").Count(f => f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase));
         foreach (var dir in Directory.GetDirectories(folder))
             count += ContarArchivos(dir);
         return count;
@@ -52,17 +52,31 @@ class Program
             Subcarpetas = new List<FolderInfo>()
         };
 
-        // Archivos PDF
-        foreach (var file in Directory.GetFiles(currentFolder, "*.pdf"))
+        // Archivos PDF (insensible a mayúsculas/minúsculas)
+        var archivosPdf = Directory.GetFiles(currentFolder, "*.*")
+                                   .Where(f => f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase));
+
+        foreach (var file in archivosPdf)
         {
             string relativePath = Path.GetRelativePath(baseFolder, file).Replace("\\", "/");
+            
+            // Forzar extensión .pdf en minúscula para la URL (GitHub Pages es case-sensitive)
+            if (relativePath.EndsWith(".PDF", StringComparison.OrdinalIgnoreCase))
+            {
+                relativePath = relativePath.Substring(0, relativePath.Length - 4) + ".pdf";
+            }
+
             string encodedPath = Uri.EscapeDataString(relativePath).Replace("%2F", "/");
 
             FileInfo fi = new FileInfo(file);
 
+            string fileName = Path.GetFileName(file);
+            if (fileName.EndsWith(".PDF", StringComparison.OrdinalIgnoreCase))
+                fileName = fileName.Substring(0, fileName.Length - 4) + ".pdf";
+
             folder.Archivos.Add(new PdfInfo
             {
-                Nombre = Path.GetFileName(file),
+                Nombre = fileName,
                 Url = baseUrl + encodedPath,
                 Hash = CalcularHash(file),
                 TamanoBytes = fi.Length

@@ -54,8 +54,9 @@ public class SincronizacionService : ISincronizacionService
             );
             // ---------------------------------
             
-            // Obtener carpeta remota
-            var carpetaRemota = await _contenidoJsonService.CargarCarpetaDesdeJSonAsync("Content/" + carpetaItem.Nombre);
+            // Obtener carpeta remota usando la ruta completa del JSON si está disponible
+            string rutaCarga = !string.IsNullOrEmpty(carpetaItem.RutaJson) ? carpetaItem.RutaJson : "Content/" + carpetaItem.Nombre;
+            var carpetaRemota = await _contenidoJsonService.CargarCarpetaDesdeJSonAsync(rutaCarga);
             if (carpetaRemota == null)
                 return ("No encontrada en servidor", "");
 

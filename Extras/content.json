@@ -224,8 +224,8 @@
                   "TamanoBytes": 1048388
                 },
                 {
-                  "Nombre": "Minotaur MSR138DP.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR138DP.PDF",
+                  "Nombre": "Minotaur MSR138DP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/Minotaur%20MSR138DP.pdf",
                   "Hash": "1330663428c9921d81f4b33025086acdb8df80b0b7152b5decb9422c96b563b3",
                   "TamanoBytes": 83952
                 },
@@ -776,8 +776,8 @@
               "Nombre": "Festo",
               "Archivos": [
                 {
-                  "Nombre": "CPE-G_ES.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/CPE-G_ES.PDF",
+                  "Nombre": "CPE-G_ES.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/CPE-G_ES.pdf",
                   "Hash": "507c54799518f1bbc150206378ea30b91ad7185906942565fb3aa7aabcd1f5c9",
                   "TamanoBytes": 3675290
                 },
@@ -806,8 +806,8 @@
                   "TamanoBytes": 1142317
                 },
                 {
-                  "Nombre": "SPAB_EN.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/SPAB_EN.PDF",
+                  "Nombre": "SPAB_EN.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Festo/SPAB_EN.pdf",
                   "Hash": "ab802803b4f3a6fe501e68858f7bbfefbd3d50189a2408017871c1e00cf5f358",
                   "TamanoBytes": 286599
                 },
@@ -1154,8 +1154,8 @@
                   "TamanoBytes": 33264
                 },
                 {
-                  "Nombre": "ifm 01D100 Sensor Optico 2.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/ifm%2001D100%20Sensor%20Optico%202.PDF",
+                  "Nombre": "ifm 01D100 Sensor Optico 2.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/ifm%2001D100%20Sensor%20Optico%202.pdf",
                   "Hash": "5d16d41965f6e271e2d0ce8c393b0da21a72c48faa034bf5d5f4cada6ab39836",
                   "TamanoBytes": 281457
                 },
@@ -2000,14 +2000,14 @@
                   "TamanoBytes": 805992
                 },
                 {
-                  "Nombre": "Sick C4000 XC40E.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/Sick%20C4000%20XC40E.PDF",
+                  "Nombre": "Sick C4000 XC40E.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/Sick%20C4000%20XC40E.pdf",
                   "Hash": "26f02313f07d837b5901d4bf324854707b6df767f33d686deb659148a7728f04",
                   "TamanoBytes": 2638929
                 },
                 {
-                  "Nombre": "SICK C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/SICK%20C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.PDF",
+                  "Nombre": "SICK C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Sick/SICK%20C4000_ATEX_II_3G_3D_Safety_Light_Curtain_IM0039082.pdf",
                   "Hash": "7515dfcf2910212630062e058afc32ca69d2b83bedd60a807cac6185b542007b",
                   "TamanoBytes": 1332505
                 },
@@ -3656,8 +3656,8 @@
                   "TamanoBytes": 1035902
                 },
                 {
-                  "Nombre": "PROC001 - Procedimiento de cambio de firmware controladores Allen-Bradley.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC001%20-%20Procedimiento%20de%20cambio%20de%20firmware%20controladores%20Allen-Bradley.PDF",
+                  "Nombre": "PROC001 - Procedimiento de cambio de firmware controladores Allen-Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC001%20-%20Procedimiento%20de%20cambio%20de%20firmware%20controladores%20Allen-Bradley.pdf",
                   "Hash": "9d7780f00a231fd40a38f44b5e3f8b471f0841af3612b6e411b3e05f3501319a",
                   "TamanoBytes": 273805
                 },
@@ -3668,20 +3668,20 @@
                   "TamanoBytes": 136177
                 },
                 {
-                  "Nombre": "PROC003 - Procedimiento actualizacion antivirus PCs de control de procesos.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC003%20-%20Procedimiento%20actualizacion%20antivirus%20PCs%20de%20control%20de%20procesos.PDF",
+                  "Nombre": "PROC003 - Procedimiento actualizacion antivirus PCs de control de procesos.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC003%20-%20Procedimiento%20actualizacion%20antivirus%20PCs%20de%20control%20de%20procesos.pdf",
                   "Hash": "33843c0b21945ce7cd23b27434046d433fba04180cc566f6609a33c1fd758100",
                   "TamanoBytes": 336520
                 },
                 {
-                  "Nombre": "PROC004 - Procedimiento configuracion de red balanzas Metler Toledo Jaguar.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC004%20-%20Procedimiento%20configuracion%20de%20red%20balanzas%20Metler%20Toledo%20Jaguar.PDF",
+                  "Nombre": "PROC004 - Procedimiento configuracion de red balanzas Metler Toledo Jaguar.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC004%20-%20Procedimiento%20configuracion%20de%20red%20balanzas%20Metler%20Toledo%20Jaguar.pdf",
                   "Hash": "82c84a34b81a400cbd691df2cf1c1f5d2f57fb7b29727263cdb466fa97c0f02e",
                   "TamanoBytes": 245882
                 },
                 {
-                  "Nombre": "PROC005 - Comprobacion celdas de carga K-tron linea MAPA.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC005%20-%20Comprobacion%20celdas%20de%20carga%20K-tron%20linea%20MAPA.PDF",
+                  "Nombre": "PROC005 - Comprobacion celdas de carga K-tron linea MAPA.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC005%20-%20Comprobacion%20celdas%20de%20carga%20K-tron%20linea%20MAPA.pdf",
                   "Hash": "77125e36ee7b073358c139e7d27a8de14ad05204465b51a078a14b8bad780cad",
                   "TamanoBytes": 231874
                 },
@@ -3752,8 +3752,8 @@
                   "TamanoBytes": 2073278
                 },
                 {
-                  "Nombre": "PROC017 - Cambio de Sensor Ultrasonico Hydepark Telemechanique.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC017%20-%20Cambio%20de%20Sensor%20Ultrasonico%20Hydepark%20Telemechanique.PDF",
+                  "Nombre": "PROC017 - Cambio de Sensor Ultrasonico Hydepark Telemechanique.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC017%20-%20Cambio%20de%20Sensor%20Ultrasonico%20Hydepark%20Telemechanique.pdf",
                   "Hash": "28e68e483bcc309a83b2ef5ffbc8b89f5e81dc87dc02692e021efa0b90bdf725",
                   "TamanoBytes": 332105
                 },
@@ -3806,8 +3806,8 @@
                   "TamanoBytes": 744866
                 },
                 {
-                  "Nombre": "PROC026 - Backup programa Backup PLC Control CompactLogix Allen-Bradley.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC026%20-%20Backup%20programa%20Backup%20PLC%20Control%20CompactLogix%20Allen-Bradley.PDF",
+                  "Nombre": "PROC026 - Backup programa Backup PLC Control CompactLogix Allen-Bradley.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC026%20-%20Backup%20programa%20Backup%20PLC%20Control%20CompactLogix%20Allen-Bradley.pdf",
                   "Hash": "ad384406b1053855cb75b6f78ece4331785c9b8e6064f79146dd0a05fac25056",
                   "TamanoBytes": 882662
                 },
@@ -3854,14 +3854,14 @@
                   "TamanoBytes": 207086
                 },
                 {
-                  "Nombre": "PROC034 - Migracion Programa de PLC con Workbench Connection.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC034%20-%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection.PDF",
+                  "Nombre": "PROC034 - Migracion Programa de PLC con Workbench Connection.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC034%20-%20Migracion%20Programa%20de%20PLC%20con%20Workbench%20Connection.pdf",
                   "Hash": "79d4bb6a71c8011577d0ae2b0732b18fad1975861398aca45054303e9dfffed7",
                   "TamanoBytes": 623361
                 },
                 {
-                  "Nombre": "PROC035 - Carga de Parametros del PLC al controlador del motor GUACP.PDF",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC035%20-%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.PDF",
+                  "Nombre": "PROC035 - Carga de Parametros del PLC al controlador del motor GUACP.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC035%20-%20Carga%20de%20Parametros%20del%20PLC%20al%20controlador%20del%20motor%20GUACP.pdf",
                   "Hash": "626f3e310aaa8739cff27f6ec3d11921dc9a4ca3bb591e954168c37749773c62",
                   "TamanoBytes": 482515
                 },

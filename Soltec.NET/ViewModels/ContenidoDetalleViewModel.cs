@@ -181,8 +181,8 @@ namespace Soltec.NET.ViewModels
                     }
 
                     // Guardar localmente
-                    var rutaLocalDir = manual.RutaLocalDir
-                        ?? Path.Combine(FileSystem.AppDataDirectory, manual.Nombre);
+                    var rutaLocalDir = manual.RutaLocalDir 
+                        ?? Path.Combine(FileSystem.AppDataDirectory, "Descargas");
                     if (!Directory.Exists(rutaLocalDir))
                         Directory.CreateDirectory(rutaLocalDir);
 
