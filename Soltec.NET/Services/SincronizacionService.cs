@@ -1,5 +1,8 @@
 ﻿using Soltec.NET.Models;
 using System.Threading;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Soltec.NET.Services;
 
@@ -44,13 +47,13 @@ public class SincronizacionService : ISincronizacionService
         try
         {
             // --- INICIO LIMPIEZA HUÉRFANOS ---
-            // Obtener todos los archivos locales actuales para esta categoría
+            // Obtener todos los archivos locales actuales para esta categoría normalizados
             var archivosLocales = new HashSet<string>(
-                _archivoService.ListarArchivosRecursivos(carpetaItem.Nombre),
+                _archivoService.ListarArchivosRecursivos(carpetaItem.Nombre).Select(p => Path.GetFullPath(p)),
                 StringComparer.OrdinalIgnoreCase
             );
             // ---------------------------------
-
+            
             // Obtener carpeta remota
             var carpetaRemota = await _contenidoJsonService.CargarCarpetaDesdeJSonAsync("Content/" + carpetaItem.Nombre);
             if (carpetaRemota == null)
@@ -75,8 +78,10 @@ public class SincronizacionService : ISincronizacionService
                 var claveUnica = $"{carpeta.Nombre}/{archivo.Nombre}";
                 bool necesitaDescarga = true;
 
-                var nombreCarpetaLocal = carpetaItem.Nombre + (string.IsNullOrEmpty(carpeta.Nombre) ? "/Otros" : "/" + carpeta.Nombre);
-                var pathArchivoLocal = Path.Combine(FileSystem.AppDataDirectory, nombreCarpetaLocal, archivo.Nombre);
+                // Normalización de ruta local para esta subcarpeta y archivo
+                var subCarpeta = string.IsNullOrEmpty(carpeta.Nombre) ? "Otros" : carpeta.Nombre;
+                var nombreCarpetaLocal = Path.Combine(carpetaItem.Nombre, subCarpeta);
+                var pathArchivoLocal = Path.GetFullPath(Path.Combine(FileSystem.AppDataDirectory, nombreCarpetaLocal, archivo.Nombre));
 
                 // Verificar si ya existe
                 if (_archivoService.ArchivoExiste(nombreCarpetaLocal, archivo.Nombre))

@@ -1,4 +1,6 @@
 ﻿using System.Security.Cryptography;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Soltec.NET.Services;
 
@@ -102,6 +104,7 @@ public class ArchivoService : IArchivoService
         if (!Directory.Exists(pathCarpeta))
             return Enumerable.Empty<string>();
 
-        return Directory.EnumerateFiles(pathCarpeta, "*", SearchOption.AllDirectories);
+        return Directory.EnumerateFiles(pathCarpeta, "*", SearchOption.AllDirectories)
+                        .Select(f => Path.GetFullPath(f));
     }
 }
