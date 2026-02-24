@@ -62,6 +62,9 @@ namespace Soltec.NET.ViewModels
             Titulo = Path.GetFileName(rutaBaseContenido);
             await MainThread.InvokeOnMainThreadAsync(() => Contenidos.Clear());
 
+            // Invalidar el caché para asegurar que buscamos carpetas nuevas en el servidor
+            _contenidoJsonService.InvalidarCacheRaiz();
+
             var carpetas = await _contenidoJsonService.ObtenerCarpetasAsync(rutaBaseContenido);
 
             foreach (var carpeta in carpetas)

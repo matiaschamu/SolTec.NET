@@ -123,8 +123,9 @@ namespace Soltec.NET.Services
             {
                 try
                 {
-                    // Intentar descargar JSON remoto
-                    var bytes = await _http.GetByteArrayAsync("https://matiaschamu.github.io/SolTec.NET/Extras/content.json");
+                    // Intentar descargar JSON remoto (agregando un timestamp para evitar el caché agresivo de GitHub Pages)
+                    string urlCacheBuster = $"https://matiaschamu.github.io/SolTec.NET/Extras/content.json?t={DateTime.UtcNow.Ticks}";
+                    var bytes = await _http.GetByteArrayAsync(urlCacheBuster);
                     var json = System.Text.Encoding.UTF8.GetString(bytes);
 
                     // Guardar una copia local
