@@ -1,4 +1,6 @@
 ﻿using Soltec.NET.Views;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Networking;
 
 namespace Soltec.NET
 {
@@ -11,6 +13,34 @@ namespace Soltec.NET
 			Routing.RegisterRoute("ContenidoDetallePage", typeof(ContenidoDetallePage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
             Routing.RegisterRoute("ConfiguracionView", typeof(ConfiguracionView));
+        }
+
+        protected override async void OnNavigating(ShellNavigatingEventArgs args)
+        {
+            base.OnNavigating(args);
+
+            // Interceptar navegación a Configuración
+            if (args.Target != null && args.Target.Location.OriginalString.Contains("Configuracion", StringComparison.OrdinalIgnoreCase))
+            {
+                bool hasInternet = Connectivity.Current.NetworkAccess == NetworkAccess.Internet;
+                if (!hasInternet)
+                {
+                    var archivoService = new Soltec.NET.Services.ArchivoService();
+                    string json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
+                    
+                    if (string.IsNullOrEmpty(json))
+                    {
+                        args.Cancel();
+                        
+                        // Usar Device.BeginInvokeOnMainThread o Dispatcher para mostrar el alert
+                        // ya que OnNavigating puede ser llamado desde un hilo que no es el principal en algunas ocasiones
+                        Application.Current?.Dispatcher.Dispatch(async () =>
+                        {
+                            await Current.DisplayAlert("Sin Conexión", "No tienes internet y no hay datos guardados. Conéctate a internet la primera vez que abras la aplicación.", "OK");
+                        });
+                    }
+                }
+            }
         }
 	}
 }

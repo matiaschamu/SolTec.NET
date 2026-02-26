@@ -7,8 +7,9 @@
              Title="Configuracion"
              BackgroundColor="#F5F7FA"
              x:DataType="viewmodels:ConfiguracionViewModel">
-    <ScrollView>
-        <VerticalStackLayout Padding="20" Spacing="20">
+    <Grid>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="20">
 
             <Label Text="Configuración" 
                FontSize="26" 
@@ -72,10 +73,19 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
             <Button Text="Borrar todo el contenido"
-        BackgroundColor="Red"
-        TextColor="White"
-        CornerRadius="8"
-        Command="{Binding BorrarTodoCommand}" />
-        </VerticalStackLayout>
-    </ScrollView>
+                BackgroundColor="Red"
+                TextColor="White"
+                CornerRadius="8"
+                Command="{Binding BorrarTodoCommand}" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <ActivityIndicator IsRunning="{Binding IsCargando}" 
+                       IsVisible="{Binding IsCargando}" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       Color="#1565C0"
+                       HeightRequest="50"
+                       WidthRequest="50" />
+    </Grid>
 </ContentPage>

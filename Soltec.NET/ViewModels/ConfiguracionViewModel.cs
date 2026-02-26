@@ -15,6 +15,19 @@ namespace Soltec.NET.ViewModels
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        private bool _isCargando;
+        public bool IsCargando
+        {
+            get => _isCargando;
+            set
+            {
+                if (_isCargando != value)
+                {
+                    _isCargando = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         public Models.ConfiguracionManual Config { get; set; } = new Models.ConfiguracionManual();
         public ObservableCollection<CarpetaItemsUpdate> CarpetasUpdate { get; set; } = new ObservableCollection<Models.CarpetaItemsUpdate>();
@@ -43,23 +56,40 @@ namespace Soltec.NET.ViewModels
 
             BorrarTodoCommand = new Command(async () => await BorrarTodo());
 
+            // Ya no lo cargamos en el constructor únicamente para evitar fallos silenciosos iniciales
             _ = CargarCarpetas();
         }
-        private async Task CargarCarpetas()
+
+        public async Task CargarCarpetas()
         {
+            if (IsCargando) return;
+            IsCargando = true;
+
             try
             {
                 _contenidoJsonService.InvalidarCacheRaiz();
                 var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
-                foreach (var carpeta in carpetas)
-                    CarpetasUpdate.Add(carpeta);
+                
+                await MainThread.InvokeOnMainThreadAsync(() => {
+                    CarpetasUpdate.Clear();
+                    foreach (var carpeta in carpetas)
+                        CarpetasUpdate.Add(carpeta);
+                });
+                
+                if (CarpetasUpdate.Count == 0)
+                {
+                     // Si después de cargar no hay nada, avisar al usuario (podría ser error de red)
+                     await Application.Current.MainPage.DisplayAlert("Aviso", "No se encontraron carpetas. Verifica tu conexión a internet.", "OK");
+                }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo cargar la configuración: {ex.Message}", "OK");
             }
-            
+            finally
+            {
+                IsCargando = false;
+            }
         }
         private async Task BorrarCarpetaIndividual(Models.CarpetaItemsUpdate carpetaItem)
         {

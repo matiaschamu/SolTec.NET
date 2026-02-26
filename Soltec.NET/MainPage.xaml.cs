@@ -19,6 +19,22 @@ namespace Soltec.NET
             this.Title = $"Soltec 4.0 (v{version})";
         }
 
+        private async Task<bool> IsContentAvailable()
+        {
+            bool hasInternet = Connectivity.Current.NetworkAccess == NetworkAccess.Internet;
+
+            var archivoService = new Soltec.NET.Services.ArchivoService();
+            string json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
+            bool hasJson = !string.IsNullOrEmpty(json);
+
+            if (!hasInternet && !hasJson)
+            {
+                await DisplayAlert("Sin Conexión", "No tienes internet y no hay datos guardados. Conéctate a internet la primera vez que abras la aplicación.", "OK");
+                return false;
+            }
+            return true;
+        }
+
         private async void OnPañolClicked(object sender, TappedEventArgs e)
 		{
 			await Shell.Current.GoToAsync("PanolPage");
@@ -26,16 +42,19 @@ namespace Soltec.NET
 
 		private async void OnManualesClicked(object sender, TappedEventArgs e)
 		{
+            if (!await IsContentAvailable()) return;
 			await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Manuales"}");
 		}
 
 		private async void OnPlanosClicked(object sender, TappedEventArgs e)
 		{
+            if (!await IsContentAvailable()) return;
             await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Planos"}");
         }
 
 		private async void OnPoliticasClicked(object sender, TappedEventArgs e)
 		{
+            if (!await IsContentAvailable()) return;
             await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/ProcedimientosPoliticas"}");
         }
 
