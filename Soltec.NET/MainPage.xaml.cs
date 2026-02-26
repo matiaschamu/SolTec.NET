@@ -62,13 +62,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -100,13 +100,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -138,13 +138,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -176,13 +176,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -214,13 +214,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -252,13 +252,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -290,13 +290,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -328,13 +328,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
@@ -371,13 +371,13 @@ namespace Soltec.NET
 				await Launcher.Default.OpenAsync(new OpenFileRequest
 				{
 					File = new ReadOnlyFile(tempFilePath),
-					Title = "Abrir GPID.pdf"
+					Title = $"Abrir {fileName}"
 				});
 			}
 			catch (FileNotFoundException)
 			{
 				// Handle the case where the file is not found in the package
-				await DisplayAlert("Error", "El archivo 'GPID.pdf' no se encontró.", "OK");
+				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{

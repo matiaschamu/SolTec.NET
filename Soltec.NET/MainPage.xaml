@@ -7,7 +7,7 @@
     <ScrollView>
         <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Start" JustifyContent="Start" Margin="10" Padding="0">
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#007BFF" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#4C51BF" StrokeShape="RoundRectangle 15,15,15,15">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPañolClicked" />
                 </Border.GestureRecognizers>
@@ -19,7 +19,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#28A745" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#2B6CB0" StrokeShape="RoundRectangle 15,15,15,15">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnManualesClicked" />
                 </Border.GestureRecognizers>
@@ -31,7 +31,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#DC3545" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="#805AD5" StrokeShape="RoundRectangle 15,15,15,15">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPlanosClicked" />
                 </Border.GestureRecognizers>
@@ -43,7 +43,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#6C757D" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#2C3E50" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPoliticasClicked" />
                 </Border.GestureRecognizers>
@@ -58,19 +58,19 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#FFC107" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#0F4C5C" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnCeldasDeCargaClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Celdas&#10;de carga&#10;⚖️" TextColor="#343A40"
+                    <Label Text="Celdas&#10;de carga&#10;⚖️" TextColor="White"
                        HorizontalOptions="Center"
                        HorizontalTextAlignment="Center"
                        LineBreakMode="WordWrap" />
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#17A2B8" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#34495E" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnGPIDClicked" />
                 </Border.GestureRecognizers>
@@ -82,7 +82,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#6610F2" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#5B2C6F" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnClavesClicked" />
                 </Border.GestureRecognizers>
@@ -94,7 +94,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#20C997" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#1F618D" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnQRClicked" />
                 </Border.GestureRecognizers>
@@ -106,7 +106,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#FD7E14" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#B03A2E" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTermocuplaClicked" />
                 </Border.GestureRecognizers>
@@ -118,7 +118,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#E83E8C" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#7D3C98" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnMachosClicked" />
                 </Border.GestureRecognizers>
@@ -130,7 +130,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#2C3E50" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#2874A6" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnRoscasClicked" />
                 </Border.GestureRecognizers>
@@ -142,7 +142,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#3498DB" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#117A65" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnHPKwCorrienteClicked" />
                 </Border.GestureRecognizers>
@@ -154,7 +154,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#9B59B6" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#900C3F" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnMotoresClicked" />
                 </Border.GestureRecognizers>
@@ -166,7 +166,7 @@
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#F39C12" StrokeShape="RoundRectangle 10,10,10,10">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="#212F3D" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnConversionClicked" />
                 </Border.GestureRecognizers>
