@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soltec.NET", "Soltec.NET\So
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Actualizar Json Soltec", "Actualizar Json Soltec\Actualizar Json Soltec.csproj", "{0EEF1CA1-7D60-0702-C2DE-675324617FE9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validar Json Soltec", "Validar Json Soltec\Validar Json Soltec.csproj", "{732E094B-497C-4F5E-AEE3-23E013BFCA5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,14 @@ Global
 		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Release|x64.ActiveCfg = Release|Any CPU
 		{0EEF1CA1-7D60-0702-C2DE-675324617FE9}.Release|x64.Build.0 = Release|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Debug|x64.Build.0 = Debug|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Release|x64.ActiveCfg = Release|Any CPU
+		{732E094B-497C-4F5E-AEE3-23E013BFCA5B}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
