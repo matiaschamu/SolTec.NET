@@ -133,6 +133,9 @@ public class SincronizacionService : ISincronizacionService
             }
             // --------------------------
 
+            // Limpiar subcarpetas vacías
+            _archivoService.LimpiarCarpetasVacias(carpetaItem.Nombre);
+
             if (huboDescargas)
                 return ("Actualizado correctamente", "");
             else

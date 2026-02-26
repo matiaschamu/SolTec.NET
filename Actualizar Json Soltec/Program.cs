@@ -24,6 +24,9 @@ class Program
 
         string baseUrl = "https://matiaschamu.github.io/SolTec.NET/Extras/";
 
+        Console.WriteLine("Buscando archivos con nombres problemáticos...");
+        ProcesarNombresProblematicos(rootFolder);
+
         totalArchivos = ContarArchivos(rootFolder);
         Console.WriteLine($"Total de archivos PDF a procesar: {totalArchivos}");
 
@@ -33,6 +36,8 @@ class Program
         File.WriteAllText(Path.Combine(rootFolder, "content.json"), jsonString);
 
         Console.WriteLine("JSON generado con estructura de carpetas y hash de archivos.");
+        Console.WriteLine("\nProceso terminado. Presiona Enter para salir...");
+        Console.ReadLine();
     }
 
     static int ContarArchivos(string folder)
@@ -59,20 +64,10 @@ class Program
         foreach (var file in archivosPdf)
         {
             string relativePath = Path.GetRelativePath(baseFolder, file).Replace("\\", "/");
-            
-            // Forzar extensión .pdf en minúscula para la URL (GitHub Pages es case-sensitive)
-            if (relativePath.EndsWith(".PDF", StringComparison.OrdinalIgnoreCase))
-            {
-                relativePath = relativePath.Substring(0, relativePath.Length - 4) + ".pdf";
-            }
-
             string encodedPath = Uri.EscapeDataString(relativePath).Replace("%2F", "/");
 
             FileInfo fi = new FileInfo(file);
-
             string fileName = Path.GetFileName(file);
-            if (fileName.EndsWith(".PDF", StringComparison.OrdinalIgnoreCase))
-                fileName = fileName.Substring(0, fileName.Length - 4) + ".pdf";
 
             folder.Archivos.Add(new PdfInfo
             {
@@ -101,6 +96,88 @@ class Program
         using var stream = File.OpenRead(filePath);
         var hash = sha256.ComputeHash(stream);
         return BitConverter.ToString(hash).Replace("-", "").ToLower();
+    }
+
+    static void ProcesarNombresProblematicos(string rootFolder)
+    {
+        var allPdfs = Directory.GetFiles(rootFolder, "*.*", SearchOption.AllDirectories)
+                               .Where(f => f.EndsWith(".pdf", StringComparison.OrdinalIgnoreCase)).ToList();
+
+        bool anyProblem = false;
+        List<(string OriginalPath, string OriginalName, string SuggestedName)> suggestions = new();
+
+        foreach (var file in allPdfs)
+        {
+            string name = Path.GetFileName(file);
+            string suggested = GetSuggestedName(name);
+
+            // Si el nombre original (ignorando el cambio en la extensión .pdf) cambió, guardarlo como sugerencia.
+            if (!name.Equals(suggested, StringComparison.Ordinal))
+            {
+                suggestions.Add((file, name, suggested));
+                anyProblem = true;
+            }
+        }
+
+        if (anyProblem)
+        {
+            Console.WriteLine("\n--- RESUMEN DE NOMBRES PROBLEMÁTICOS ---");
+            foreach (var s in suggestions)
+            {
+                Console.WriteLine($"[!] Original: {s.OriginalName}");
+                Console.WriteLine($"    Sugerido: {s.SuggestedName}");
+            }
+            Console.WriteLine("----------------------------------------\n");
+
+            foreach (var s in suggestions)
+            {
+                Console.Write($"¿Desea cambiar el nombre de '{s.OriginalName}' a '{s.SuggestedName}'? (y/n): ");
+                string resp = Console.ReadLine();
+                if (resp != null && resp.Trim().ToLower() == "y")
+                {
+                    string newPath = Path.Combine(Path.GetDirectoryName(s.OriginalPath), s.SuggestedName);
+                    try
+                    {
+                        File.Move(s.OriginalPath, newPath);
+                        Console.WriteLine($" -> Cambiado a: {s.SuggestedName}\n");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($" -> Error al renombrar: {ex.Message}\n");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine(" -> Omitido.\n");
+                }
+            }
+            Console.WriteLine("Procesamiento de nombres finalizado.\n");
+        }
+    }
+
+    static string GetSuggestedName(string name)
+    {
+        string newName = name;
+        
+        // Reemplazos de caracteres problemáticos
+        newName = newName.Replace("á", "a").Replace("é", "e").Replace("í", "i").Replace("ó", "o").Replace("ú", "u");
+        newName = newName.Replace("Á", "A").Replace("É", "E").Replace("Í", "I").Replace("Ó", "O").Replace("Ú", "U");
+        newName = newName.Replace("ñ", "n").Replace("Ñ", "N");
+        newName = newName.Replace("ü", "u").Replace("Ü", "U");
+
+        string problemCharacters = "#%&{}<>*?/$!'\":@+`|=";
+        foreach (char c in problemCharacters)
+        {
+            newName = newName.Replace(c.ToString(), "_");
+        }
+
+        // Permitimos cambiar mayúsculas/minúsculas SOLO en la extensión
+        if (newName.EndsWith(".PDF", StringComparison.Ordinal))
+        {
+            newName = newName.Substring(0, newName.Length - 4) + ".pdf";
+        }
+
+        return newName;
     }
 }
 

@@ -13,6 +13,7 @@ public interface IArchivoService
     void BorrarTodo();
     void BorrarCarpeta(string carpeta);
     IEnumerable<string> ListarArchivosRecursivos(string carpeta);
+    void LimpiarCarpetasVacias(string carpetaBase);
 }
 
 public class ArchivoService : IArchivoService
@@ -106,5 +107,36 @@ public class ArchivoService : IArchivoService
 
         return Directory.EnumerateFiles(pathCarpeta, "*", SearchOption.AllDirectories)
                         .Select(f => Path.GetFullPath(f));
+    }
+
+    public void LimpiarCarpetasVacias(string carpetaBase)
+    {
+        var pathCarpetaBase = Path.Combine(FileSystem.AppDataDirectory, carpetaBase);
+        if (!Directory.Exists(pathCarpetaBase))
+            return;
+
+        LimpiarVaciasRecursivo(pathCarpetaBase, pathCarpetaBase);
+    }
+
+    private void LimpiarVaciasRecursivo(string path, string pathBase)
+    {
+        foreach (var dir in Directory.GetDirectories(path))
+        {
+            LimpiarVaciasRecursivo(dir, pathBase);
+        }
+
+        // Si la carpeta está vacía y NO es la raíz base, borrarla
+        if (!Directory.EnumerateFileSystemEntries(path).Any() && 
+            !string.Equals(path, pathBase, StringComparison.OrdinalIgnoreCase))
+        {
+            try
+            {
+                Directory.Delete(path, false);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"No se pudo borrar la carpeta vacía {path}: {ex.Message}");
+            }
+        }
     }
 }
