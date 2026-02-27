@@ -18,16 +18,19 @@
     </ContentPage.Resources>
     
     <ScrollView Padding="10">
-        <VerticalStackLayout Spacing="12" BindableLayout.ItemsSource="{Binding Contenidos}">
+        <VerticalStackLayout Spacing="12" 
+                             BindableLayout.ItemsSource="{Binding Contenidos}"
+                             VerticalOptions="Start">
             <BindableLayout.ItemTemplate>
                 <DataTemplate x:DataType="model:Contenidos">
-                    <toolkit:Expander>
+                    <toolkit:Expander VerticalOptions="Start">
 
                         <!--Header-->
                         <toolkit:Expander.Header>
                             <Border StrokeShape="RoundRectangle 12"
                                     Background="{Binding Color}"
-                                    Padding="10">
+                                    Padding="10"
+                                    VerticalOptions="Start">
                                 <Border.Shadow>
                                     <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
                                 </Border.Shadow>
@@ -43,7 +46,9 @@
                             <Border StrokeShape="RoundRectangle 10"
                                     BackgroundColor="White"
                                     Padding="10"
-                                    Margin="0,4,0,0">
+                                    Margin="0,4,0,0"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Fill">
                                 <Border.Shadow>
                                     <Shadow Brush="Black" Opacity="0.2" Offset="2,2" Radius="5"/>
                                 </Border.Shadow>
