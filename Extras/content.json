@@ -1409,6 +1409,48 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "KVM",
+              "Archivos": [
+                {
+                  "Nombre": "IOGEAR GCS138.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/IOGEAR%20GCS138.pdf",
+                  "Hash": "7bb37baab76532df5b3a693262b54f174cb419f9f78d0cc7174defe96cc9632f",
+                  "TamanoBytes": 186394
+                },
+                {
+                  "Nombre": "IOGEAR GCS138_Manual.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/IOGEAR%20GCS138_Manual.pdf",
+                  "Hash": "cbe186393587fce50f58a133950f982d75302f72bd25f6ba87eb5c169b239853",
+                  "TamanoBytes": 3804565
+                },
+                {
+                  "Nombre": "IOGEAR GCS1758_Manual.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/IOGEAR%20GCS1758_Manual.pdf",
+                  "Hash": "f02b02a4272493a83e9bc1b604d57cf69829f020af514375441b35041dbf5ae4",
+                  "TamanoBytes": 2149016
+                },
+                {
+                  "Nombre": "MiniViwe - CS 14.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/MiniViwe%20-%20CS%2014.pdf",
+                  "Hash": "d78e696d77126ed16bb92e97e738102bbf23adefe8a2ad76031bbfab0e54ef8a",
+                  "TamanoBytes": 5885994
+                },
+                {
+                  "Nombre": "X2-Dual Access v1-1a.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/X2-Dual%20Access%20v1-1a.pdf",
+                  "Hash": "3907523874fbff73796fbaf15b8c50ce237924a0f412d31d8e0fdfb7ac194253",
+                  "TamanoBytes": 1312300
+                },
+                {
+                  "Nombre": "X2-Series v1-3a.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/KVM/X2-Series%20v1-3a.pdf",
+                  "Hash": "fbe92fc3a0179d7551ecf4e0ab8944fbf9f565d28c62d5f9fd7409ec5c5cd645",
+                  "TamanoBytes": 1110825
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "Lenze",
               "Archivos": [
                 {
@@ -1566,6 +1608,12 @@
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Omron/Omron_e5cc-800.pdf",
                   "Hash": "1d3aef924e9dc75d630115b4ef0b849cbbdf2d4afdaf81ca9ee9aeaedd096142",
                   "TamanoBytes": 23931073
+                },
+                {
+                  "Nombre": "Sensor Inductivo - E2B-M12KS04-M1-B1.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Omron/Sensor%20Inductivo%20-%20E2B-M12KS04-M1-B1.pdf",
+                  "Hash": "1cc0892513c7b93a8aff32f1a1cc7fe21b698b9e15b03ac0f5b729793c34725e",
+                  "TamanoBytes": 6918857
                 }
               ],
               "Subcarpetas": []
@@ -2213,6 +2261,18 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "Tecmar",
+              "Archivos": [
+                {
+                  "Nombre": "Manual apilador Tecmar.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Tecmar/Manual%20apilador%20Tecmar.pdf",
+                  "Hash": "8ad46104c16dad0db5ff0a52ca592cb73cb6d6c23f99bc0b0bf59fff3205e224",
+                  "TamanoBytes": 4342742
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "Telemecanique",
               "Archivos": [
                 {
@@ -2279,13 +2339,31 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "Triac",
+              "Nombre": "TRIAC Controls",
               "Archivos": [
                 {
+                  "Nombre": "Electric-Actuator-TRIAC-Overview.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TRIAC%20Controls/Electric-Actuator-TRIAC-Overview.pdf",
+                  "Hash": "f0ac109d667c7b3c6ad893f8081d61f102055d04440efd07f74388f355962bf3",
+                  "TamanoBytes": 4782224
+                },
+                {
                   "Nombre": "Triac WE 1350.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Triac/Triac%20WE%201350.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TRIAC%20Controls/Triac%20WE%201350.pdf",
                   "Hash": "2886412f6a43ccbd67ba446cbdda62f9c964ac5b8e6f18359916b361cbd73b72",
                   "TamanoBytes": 742679
+                },
+                {
+                  "Nombre": "triac_we_series.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TRIAC%20Controls/triac_we_series.pdf",
+                  "Hash": "f4717f96ebc21d0652571dce04b6098fb76de2721bddc39dae771ed1cfc22c13",
+                  "TamanoBytes": 2085318
+                },
+                {
+                  "Nombre": "WE_XE_XC_KE.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/TRIAC%20Controls/WE_XE_XC_KE.pdf",
+                  "Hash": "5f0ee296309895a3b37c7cab2309980c07f9f9f33f4178f79260524039b4e31c",
+                  "TamanoBytes": 13635796
                 }
               ],
               "Subcarpetas": []
@@ -2618,6 +2696,16 @@
                   "TamanoBytes": 181519
                 }
               ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "02 - PLANOS MAPA",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "03 - PLANOS PC32",
+              "Archivos": [],
               "Subcarpetas": []
             },
             {
@@ -3554,6 +3642,26 @@
                   "TamanoBytes": 922409
                 }
               ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "08 - PLANOS FRYPACK",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "09 - PLANOS HALOILA",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "10 - PLANOS KETAN",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "11 - PLANOS OBIN",
+              "Archivos": [],
               "Subcarpetas": []
             }
           ]
