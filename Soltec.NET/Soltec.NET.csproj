@@ -13,8 +13,8 @@
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
 		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<ApplicationDisplayVersion>1.0.95</ApplicationDisplayVersion>
-		<ApplicationVersion>95</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.96</ApplicationDisplayVersion>
+		<ApplicationVersion>96</ApplicationVersion>
 
 		<WindowsPackageType>None</WindowsPackageType>
 

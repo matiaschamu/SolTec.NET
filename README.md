@@ -1,5 +1,7 @@
 # SolTec.NET
 
+[![Build iOS](https://github.com/matiaschamu/SolTec.NET/actions/workflows/ios-build.yml/badge.svg)](https://github.com/matiaschamu/SolTec.NET/actions/workflows/ios-build.yml)
+
 **SolTec.NET** es una aplicación móvil desarrollada en **.NET MAUI** para **Android** y **iOS**.  
 Su objetivo es servir como una **utilidad de trabajo** que centraliza herramientas y funciones necesarias en el día a día.
 
