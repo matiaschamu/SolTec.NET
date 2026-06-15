@@ -24,7 +24,7 @@ namespace Soltec.NET
             bool hasInternet = Connectivity.Current.NetworkAccess == NetworkAccess.Internet;
 
             var archivoService = new Soltec.NET.Services.ArchivoService();
-            string json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
+            string? json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
             bool hasJson = !string.IsNullOrEmpty(json);
 
             if (!hasInternet && !hasJson)

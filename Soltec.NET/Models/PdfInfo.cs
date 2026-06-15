@@ -8,8 +8,8 @@ namespace Soltec.NET.Models
 {
     public class PdfInfo
     {
-        public string Nombre { get; set; }
-        public string Url { get; set; }
-        public string Hash { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
+        public string Hash { get; set; } = string.Empty;
     }
 }

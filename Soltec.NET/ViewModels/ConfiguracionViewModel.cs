@@ -13,7 +13,7 @@ namespace Soltec.NET.ViewModels
         private readonly ISincronizacionService _sincronizacionService;
         private readonly IContenidoJsonService _contenidoJsonService;
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         private bool _isCargando;
         public bool IsCargando
@@ -184,9 +184,9 @@ namespace Soltec.NET.ViewModels
                 var pathArchivo = Path.Combine(pathCarpeta, nombreArchivo);
                 await File.WriteAllBytesAsync(pathArchivo, bytes);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                //await DisplayAlert("Error", $"No se pudo descargar {nombreArchivo}: {ex.Message}", "OK");
+                //await DisplayAlert("Error", $"No se pudo descargar {nombreArchivo}", "OK");
             }
         }
     }

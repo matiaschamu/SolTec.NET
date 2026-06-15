@@ -5,8 +5,8 @@ namespace Soltec.NET.Models
 {
     public class CarpetaItemsUpdate : INotifyPropertyChanged
     {
-        public string Nombre { get; set; }
-        public string RutaJson { get; set; } // Ruta completa en el JSON (ej: "Content/Manuales/ABB")
+        public string Nombre { get; set; } = string.Empty;
+        public string RutaJson { get; set; } = string.Empty; // Ruta completa en el JSON (ej: "Content/Manuales/ABB")
 
         private bool _modoOffline;
         public bool ModoOffline
@@ -59,7 +59,7 @@ namespace Soltec.NET.Models
         public Color BotonColor => CanSincronizar ? Colors.Green : Colors.LightGray;
         public Color TextoBotonColor => CanSincronizar ? Colors.White : Colors.DarkGray;
 
-        private CancellationTokenSource _cts;
+        private CancellationTokenSource? _cts;
 
         public CancellationToken IniciarSincronizacion()
         {
@@ -75,8 +75,8 @@ namespace Soltec.NET.Models
             IsSincronizando = false;
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string? name = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 }

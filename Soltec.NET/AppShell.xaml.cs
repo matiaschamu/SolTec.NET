@@ -26,7 +26,7 @@ namespace Soltec.NET
                 if (!hasInternet)
                 {
                     var archivoService = new Soltec.NET.Services.ArchivoService();
-                    string json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
+                    string? json = await archivoService.LeerArchivoLocalAsync("Cache", "content.json");
                     
                     if (string.IsNullOrEmpty(json))
                     {

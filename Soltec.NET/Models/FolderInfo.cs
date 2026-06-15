@@ -8,7 +8,7 @@ namespace Soltec.NET.Models
 {
     public class FolderInfo
     {
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } = string.Empty;
         public List<PdfInfo> Archivos { get; set; } = new();
         public List<FolderInfo> Subcarpetas { get; set; } = new();
     }

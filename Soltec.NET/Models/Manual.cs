@@ -10,8 +10,8 @@ namespace Soltec.NET.Models
 {
     public class Manual : INotifyPropertyChanged
     {
-        public string Nombre { get; set; }
-        public string Url { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
         public string? RutaLocalDir { get; set; }
         public ICommand? AbrirManualCommand { get; set; }
 
@@ -34,8 +34,8 @@ namespace Soltec.NET.Models
             ? $"📂 {Nombre} (Offline)"
             : $"🌐 {Nombre} (Online)";
 
-        public event PropertyChangedEventHandler PropertyChanged;
-        protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string name = null)
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void OnPropertyChanged([System.Runtime.CompilerServices.CallerMemberName] string? name = null)
             => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
     }
 }

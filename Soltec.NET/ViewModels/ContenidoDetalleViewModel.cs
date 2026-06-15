@@ -13,7 +13,7 @@ namespace Soltec.NET.ViewModels
         private readonly IPreferenciasService _prefs;
         private readonly ISincronizacionService _sincronizacionService;
         private readonly IContenidoJsonService _contenidoJsonService;
-        private string _ruta;
+        private string _ruta = string.Empty;
         public string Ruta
         {
             get => _ruta;
@@ -27,7 +27,7 @@ namespace Soltec.NET.ViewModels
                 }
             }
         }
-        private string _titulo;
+        private string _titulo = string.Empty;
         public string Titulo
         {
             get => _titulo;
@@ -51,9 +51,9 @@ namespace Soltec.NET.ViewModels
         public void ApplyQueryAttributes(IDictionary<string, object> query)
         {
             // Shell envía el parámetro de consulta. El nombre debe coincidir con el usado en MainPage.cs
-            if (query.TryGetValue("Ruta", out object rutaValue))
+            if (query.TryGetValue("Ruta", out object? rutaValue))
             {
-                Ruta = rutaValue.ToString();
+                Ruta = rutaValue?.ToString() ?? string.Empty;
             }
         }
 
