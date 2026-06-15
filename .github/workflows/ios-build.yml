@@ -11,19 +11,23 @@ jobs:
   build-ios:
     runs-on: macos-latest
 
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup .NET
+      - name: Setup .NET 9
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '9.0.x'
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+          dotnet-version: '9.0.300'
+
+      - name: Pin .NET SDK version
+        run: echo '{"sdk":{"version":"9.0.300","rollForward":"latestPatch"}}' > global.json
 
       - name: Install MAUI workloads
-        run: dotnet workload restore Soltec.NET/Soltec.NET.csproj
+        run: dotnet workload install maui-ios maccatalyst --skip-manifest-update
 
       - name: Build for iOS Simulator
         run: >
