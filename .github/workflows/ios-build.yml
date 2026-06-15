@@ -27,7 +27,7 @@ jobs:
         run: echo '{"sdk":{"version":"9.0.300","rollForward":"latestPatch"}}' > global.json
 
       - name: Install MAUI workloads
-        run: dotnet workload install maui-ios maccatalyst --skip-manifest-update
+        run: dotnet workload install maui --skip-manifest-update
 
       - name: Build for iOS Simulator
         run: >
