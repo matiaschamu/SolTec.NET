@@ -23,7 +23,7 @@ jobs:
           FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Install MAUI workloads
-        run: dotnet workload install maui-ios
+        run: dotnet workload restore Soltec.NET/Soltec.NET.csproj
 
       - name: Build for iOS Simulator
         run: >
