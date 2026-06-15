@@ -19,19 +19,17 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
+        env:
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
       - name: Install MAUI workloads
         run: dotnet workload install maui-ios
 
-      - name: Restore dependencies
-        run: dotnet restore Soltec.NET/Soltec.NET.csproj -f net9.0-ios
-
       - name: Build for iOS Simulator
         run: >
           dotnet build Soltec.NET/Soltec.NET.csproj
-          -f net9.0-ios
+          --framework net9.0-ios
           -p:RuntimeIdentifier=iossimulator-x64
-          -p:MtouchSimulatorVersion=latest
           -p:CodesignKey=""
           -p:CodesignProvision=""
           --configuration Release
