@@ -7,6 +7,36 @@
       "Archivos": [],
       "Subcarpetas": [
         {
+          "Nombre": "Conmon",
+          "Archivos": [],
+          "Subcarpetas": [
+            {
+              "Nombre": "PC32",
+              "Archivos": [
+                {
+                  "Nombre": "PROCEDIMIENTO INTERLOCKS 2026.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Conmon/PC32/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
+                  "Hash": "472b76e5e85c9fd60a44fb6bc5d501b46e1012b1307cf64643500c5915a7e34b",
+                  "TamanoBytes": 70461
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "PCFlex",
+              "Archivos": [
+                {
+                  "Nombre": "PROCEDIMIENTO INTERLOCKS 2026.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Conmon/PCFlex/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
+                  "Hash": "472b76e5e85c9fd60a44fb6bc5d501b46e1012b1307cf64643500c5915a7e34b",
+                  "TamanoBytes": 70461
+                }
+              ],
+              "Subcarpetas": []
+            }
+          ]
+        },
+        {
           "Nombre": "Manuales",
           "Archivos": [],
           "Subcarpetas": [
@@ -1637,6 +1667,18 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "Orientalmotor",
+              "Archivos": [
+                {
+                  "Nombre": "ARL Series-MECHATROLINK-II.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Orientalmotor/ARL%20Series-MECHATROLINK-II.pdf",
+                  "Hash": "90f0ac928d590e6668f87be8c75b2a8ee0ff328c3f021ece6d76b4abeae25587",
+                  "TamanoBytes": 976306
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "Panasonic",
               "Archivos": [
                 {
@@ -2699,16 +2741,6 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "02 - PLANOS MAPA",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "03 - PLANOS PC32",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
               "Nombre": "04 - PLANOS SCHAAF2",
               "Archivos": [
                 {
@@ -3642,26 +3674,6 @@
                   "TamanoBytes": 922409
                 }
               ],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "08 - PLANOS FRYPACK",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "09 - PLANOS HALOILA",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "10 - PLANOS KETAN",
-              "Archivos": [],
-              "Subcarpetas": []
-            },
-            {
-              "Nombre": "11 - PLANOS OBIN",
-              "Archivos": [],
               "Subcarpetas": []
             }
           ]
