@@ -170,6 +170,12 @@
                   "TamanoBytes": 1749606
                 },
                 {
+                  "Nombre": "GuardMaster 440N-Z21S17H Sensor Tipo9.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440N-Z21S17H%20Sensor%20Tipo9.pdf",
+                  "Hash": "c7f7d84cb14a0d377b64097f5c3a95a9985ce385dd6b22c6288a6e695dd45264",
+                  "TamanoBytes": 1795052
+                },
+                {
                   "Nombre": "GuardMaster 440r-GuardLink.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Allen%20Bradley/GuardMaster%20440r-GuardLink.pdf",
                   "Hash": "277fe9fb2b41c256a03ce75f89a73b84255d86a0d565552fad94cd694a87ab4d",
@@ -1076,6 +1082,12 @@
               "Nombre": "Hardy",
               "Archivos": [
                 {
+                  "Nombre": "Hardy - HI HBB01.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Hardy%20-%20HI%20HBB01.pdf",
+                  "Hash": "47545cbcee81434f62220cf43d69ba8908d4881e66ca51d02b3e469794aa7cfd",
+                  "TamanoBytes": 1153867
+                },
+                {
                   "Nombre": "Hardy 4050 - Controller_Parameters.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Hardy/Hardy%204050%20-%20Controller_Parameters.pdf",
                   "Hash": "2688b41433b954809664f8b75c42d80919945f104084a821abfab414254a2835",
@@ -1116,6 +1128,12 @@
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/Honeywell%20DC1000%20Series.pdf",
                   "Hash": "1792e58bbddf57a852f67320113937f07c444a3b9e2a5c44a5430aa65f8fb517",
                   "TamanoBytes": 923673
+                },
+                {
+                  "Nombre": "honeywell DC1010.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Honeywell/honeywell%20DC1010.pdf",
+                  "Hash": "4b8cd8bcdf6ad6bbe2f025dccfd2136574540b64a6f5f1c7efd75a027e389ec7",
+                  "TamanoBytes": 5524550
                 },
                 {
                   "Nombre": "Honeywell L91B Presuretrol.pdf",
@@ -1410,6 +1428,12 @@
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krohne/Caudalimetro%20Krohne%20OPTIMASS%207400.pdf",
                   "Hash": "61bf5f82330983e72e04a998d33c421f948e482e34a714f2c0f348ccf3696087",
                   "TamanoBytes": 4027401
+                },
+                {
+                  "Nombre": "Krohne - MA_IFC050.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Krohne/Krohne%20-%20MA_IFC050.pdf",
+                  "Hash": "c6897bdcd7d745deddbf13cc22ec7f9a8df82228234fff575b12d188038f8b3e",
+                  "TamanoBytes": 3204404
                 }
               ],
               "Subcarpetas": []
@@ -1681,6 +1705,18 @@
             {
               "Nombre": "Panasonic",
               "Archivos": [
+                {
+                  "Nombre": "Barrera SF4C - GUACP Catalogo.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/Barrera%20SF4C%20-%20GUACP%20Catalogo.pdf",
+                  "Hash": "280bd7cb6425b6e416305397720c502c099736c03871e0be54d4d49cd3c88036",
+                  "TamanoBytes": 7661875
+                },
+                {
+                  "Nombre": "Barrera SF4C - GUACP Manual.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/Barrera%20SF4C%20-%20GUACP%20Manual.pdf",
+                  "Hash": "66134594b5f6a04267e1f2f4934b43c4663822d427012348d06d4caddcdf6f10",
+                  "TamanoBytes": 2264848
+                },
                 {
                   "Nombre": "Minas A Series.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Panasonic/Minas%20A%20Series.pdf",
@@ -2741,6 +2777,16 @@
               "Subcarpetas": []
             },
             {
+              "Nombre": "02 - PLANOS MAPA",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "03 - PLANOS PC32",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
               "Nombre": "04 - PLANOS SCHAAF2",
               "Archivos": [
                 {
@@ -3675,6 +3721,26 @@
                 }
               ],
               "Subcarpetas": []
+            },
+            {
+              "Nombre": "08 - PLANOS FRYPACK",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "09 - PLANOS HALOILA",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "10 - PLANOS KETAN",
+              "Archivos": [],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "11 - PLANOS OBIN",
+              "Archivos": [],
+              "Subcarpetas": []
             }
           ]
         },
@@ -4018,8 +4084,8 @@
                 {
                   "Nombre": "PROC041 - Ethernet Gateway Lexium Driver.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ProcedimientosPoliticas/Procedimientos%20Comunes/PROC041%20-%20Ethernet%20Gateway%20Lexium%20Driver.pdf",
-                  "Hash": "1db905114421c7f2b004d22c7bd01183661f7add674a1c294555ac7c2b113393",
-                  "TamanoBytes": 283034
+                  "Hash": "a53119fd949fc1c2113842fe0162d0f1754604b8677e704e99dea0c6c10bbe85",
+                  "TamanoBytes": 325618
                 }
               ],
               "Subcarpetas": []
