@@ -7,15 +7,15 @@
       "Archivos": [],
       "Subcarpetas": [
         {
-          "Nombre": "Conmon",
+          "Nombre": "Intercambiadores",
           "Archivos": [],
           "Subcarpetas": [
             {
-              "Nombre": "PC32",
+              "Nombre": "03-PC32",
               "Archivos": [
                 {
                   "Nombre": "PROCEDIMIENTO INTERLOCKS 2026.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Conmon/PC32/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Intercambiadores/03-PC32/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
                   "Hash": "472b76e5e85c9fd60a44fb6bc5d501b46e1012b1307cf64643500c5915a7e34b",
                   "TamanoBytes": 70461
                 }
@@ -23,11 +23,11 @@
               "Subcarpetas": []
             },
             {
-              "Nombre": "PCFlex",
+              "Nombre": "06-PCFlex",
               "Archivos": [
                 {
                   "Nombre": "PROCEDIMIENTO INTERLOCKS 2026.pdf",
-                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Conmon/PCFlex/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Intercambiadores/06-PCFlex/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
                   "Hash": "472b76e5e85c9fd60a44fb6bc5d501b46e1012b1307cf64643500c5915a7e34b",
                   "TamanoBytes": 70461
                 }
