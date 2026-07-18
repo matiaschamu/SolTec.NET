@@ -6,16 +6,18 @@
 
     <!-- Note: For Android please see also Platforms\Android\Resources\values\colors.xml -->
 
-    <Color x:Key="Primary">#512BD4</Color>
-    <Color x:Key="PrimaryDark">#ac99ea</Color>
+    <!-- Acento de los controles nativos (Button, Slider, Switch, ProgressBar...). -->
+    <!-- Repuntado del violeta de plantilla al AZUL DE MARCA (= AccentBlue #1565C0). -->
+    <!-- Styles.xaml usa estas keys; por eso se conservan los nombres. -->
+    <Color x:Key="Primary">#1565C0</Color>
+    <Color x:Key="PrimaryDark">#64B5F6</Color>
     <Color x:Key="PrimaryDarkText">#242424</Color>
-    <Color x:Key="Secondary">#DFD8F7</Color>
-    <Color x:Key="SecondaryDarkText">#9880e5</Color>
-    <Color x:Key="Tertiary">#2B0B98</Color>
+    <Color x:Key="Secondary">#BBDEFB</Color>
+    <Color x:Key="SecondaryDarkText">#90CAF9</Color>
+    <Color x:Key="Tertiary">#0D47A1</Color>
 
     <Color x:Key="White">White</Color>
     <Color x:Key="Black">Black</Color>
-    <Color x:Key="Magenta">#D600AA</Color>
     <Color x:Key="MidnightBlue">#190649</Color>
     <Color x:Key="OffBlack">#1f1f1f</Color>
 
@@ -71,6 +73,16 @@
     <Color x:Key="DangerSoft">#E57373</Color>
     <Color x:Key="PriceGreen">#28A745</Color>
     <Color x:Key="QuantityBlue">#007BFF</Color>
+
+    <!-- Estado de un manual (lo resuelve BoolToColorConverter desde código) -->
+    <Color x:Key="ManualOffline">#006400</Color>
+    <!-- descargado / disponible offline -->
+    <Color x:Key="ManualOnline">#4682B4</Color>
+    <!-- solo online -->
+    <Color x:Key="ManualEstadoFallback">#808080</Color>
+    <!-- value no booleano -->
+    <SolidColorBrush x:Key="ManualOfflineBrush" Color="{StaticResource ManualOffline}" />
+    <SolidColorBrush x:Key="ManualOnlineBrush" Color="{StaticResource ManualOnline}" />
 
     <!-- Tiles del menú principal (dashboard de herramientas) -->
     <Color x:Key="TilePanol">#4C51BF</Color>
