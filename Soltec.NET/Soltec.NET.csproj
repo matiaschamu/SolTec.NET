@@ -66,7 +66,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#1565C0" BaseSize="256,256" />
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 		<MauiFont Include="Resources\Fonts\*" />
@@ -91,6 +91,35 @@
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
 	</ItemGroup>
+
+	<!--
+		Splash con versión automática:
+		Toma Resources\Splash\splash.svg (diseño limpio, sin versión), le inyecta el
+		texto "v$(ApplicationDisplayVersion)" antes de </svg> y genera una copia en obj\.
+		Luego apunta el MauiSplashScreen a esa copia. Corre antes de que el resizetizer
+		recolecte/hashee el splash, así la versión siempre coincide con el .csproj.
+	-->
+	<Target Name="GenerarSplashConVersion" BeforeTargets="ResizetizeCollectItems">
+		<PropertyGroup>
+			<_SplashTemplate>$(MSBuildProjectDirectory)\Resources\Splash\splash.svg</_SplashTemplate>
+			<_SplashGeneradoDir>$(IntermediateOutputPath)splashversion\</_SplashGeneradoDir>
+			<_SplashGenerado>$(_SplashGeneradoDir)splash.svg</_SplashGenerado>
+			<_SplashTextoVersion>&lt;text x="256" y="486" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#FFFFFF" text-anchor="middle"&gt;v$(ApplicationDisplayVersion)&lt;/text&gt;</_SplashTextoVersion>
+		</PropertyGroup>
+
+		<MakeDir Directories="$(_SplashGeneradoDir)" />
+
+		<WriteLinesToFile
+			File="$(_SplashGenerado)"
+			Lines="$([System.IO.File]::ReadAllText('$(_SplashTemplate)').Replace('&lt;/svg&gt;','$(_SplashTextoVersion)%0a&lt;/svg&gt;'))"
+			Overwrite="true"
+			WriteOnlyWhenDifferent="true" />
+
+		<ItemGroup>
+			<MauiSplashScreen Remove="@(MauiSplashScreen)" />
+			<MauiSplashScreen Include="$(_SplashGenerado)" Color="#1565C0" BaseSize="256,256" />
+		</ItemGroup>
+	</Target>
 
 	<ItemGroup>
 		<MauiXaml Update="Views\ConfiguracionView.xaml" Generator="MSBuild:Compile" />

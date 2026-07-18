@@ -108,7 +108,7 @@ Paleta de marca"**. **Ninguna vista debe hardcodear colores**: se referencian co
   de color; un rediseño se hace tocando solo esas keys. Layout y tipografía de los
   tiles: ver §4.4.
 
-### 4.4 Menú principal (MainPage) e ícono
+### 4.4 Menú principal (MainPage), ícono y splash
 - **Tiles uniformes:** todos los botones del menú tienen la **misma** altura (80),
   radio de esquina (10) y estilo de texto. Ninguno resalta sobre otro — todas las
   categorías valen igual; solo cambian el **ancho** (100% para los de fila completa
@@ -122,6 +122,17 @@ Paleta de marca"**. **Ninguna vista debe hardcodear colores**: se referencian co
   icon de Android no recorta el logo (antes cortaba el texto "SOLTEC"). `MauiIcon`
   usa `Color="#FEFEFE"`. Si se reemplaza el SVG, **mantener ese padding** o el ícono
   se recorta de nuevo.
+- **Splash** (`Resources/Splash/splash.svg`): fondo **azul de marca `#1565C0`** +
+  tarjeta blanca redondeada con el logo centrado. El `MauiSplashScreen` usa
+  `Color="#1565C0"` (debe coincidir con el fondo del SVG para que no se vea borde).
+  El `splash.svg` commiteado se mantiene **limpio (sin versión)** — es el _template_.
+- **Versión en el splash (automática):** el target MSBuild `GenerarSplashConVersion`
+  (en el `.csproj`, `BeforeTargets="ResizetizeCollectItems"`) inyecta
+  `v$(ApplicationDisplayVersion)` como `<text>` en una copia del splash dentro de
+  `obj/` y apunta el `MauiSplashScreen` a esa copia. La versión sale **sola** del
+  `.csproj` en cada build; **no** editar el número a mano ni escribirlo en
+  `splash.svg`. Para cambiar formato/posición del texto, tocar `_SplashTextoVersion`
+  en el target.
 
 ---
 
