@@ -32,12 +32,28 @@ Aplicación multiplataforma (Android, iOS, Mac Catalyst y Windows) construida co
 y patrón **MVVM** apoyado en [CommunityToolkit.Mvvm](https://github.com/CommunityToolkit/dotnet).
 
 ### Características
+- **Menú de inicio** con accesos rápidos a las categorías de documentación
+  (Pañol, Manuales, Planos, **Intercambiadores y Hornos**) y a las utilidades
+  (motores, celdas de carga, conversiones, etc.). Los botones son uniformes y su
+  tipografía se controla desde un único estilo (`TileLabel`).
+- **Categorías de contenido _data-driven_**: una misma pantalla genérica
+  (`ContenidoDetallePage?Ruta=Content/<Categoría>`) lista las carpetas y sus PDFs de
+  cualquier categoría. Agregar una categoría nueva no requiere pantalla ni lógica de
+  sincronización propias: basta con un acceso en el menú y la carpeta en `Extras/`.
 - Catálogo de manuales técnicos navegable por carpetas.
 - Modo **offline**: descarga y sincronización de archivos por carpeta para consultarlos sin conexión.
+  La pantalla de **Configuración** lista automáticamente todas las categorías para sincronizarlas.
 - Detección de conectividad y validación de caché local de `content.json` al iniciar.
 - Verificación de integridad de descargas mediante **hash SHA-256**.
 - Cálculo de motores y otras utilidades de trabajo.
 - Persistencia de preferencias y almacenamiento local con **SQLite**.
+
+### Diseño y recursos
+- **Paleta de colores centralizada** en `Resources/Styles/Colors.xaml` (marca azul
+  `#1565C0`). Las vistas referencian los colores con `{StaticResource}`; no se
+  hardcodean colores inline.
+- **Ícono de la app** (`Resources/AppIcon/soltec_icon.svg`) con _padding_ interno
+  para que la máscara de los _adaptive icons_ de Android no recorte el logo.
 
 ### Arquitectura
 ```
