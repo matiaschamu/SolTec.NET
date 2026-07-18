@@ -32,11 +32,11 @@
                                     Padding="10"
                                     VerticalOptions="Start">
                                 <Border.Shadow>
-                                    <Shadow Brush="Black" Opacity="0.3" Offset="3,3" Radius="6"/>
+                                    <Shadow Brush="{StaticResource BlackBrush}" Opacity="0.3" Offset="3,3" Radius="6"/>
                                 </Border.Shadow>
                                 <Label Text="{Binding Nombre}"
                                         FontSize="20"
-                                        TextColor="White"
+                                        TextColor="{StaticResource White}"
                                         FontAttributes="Bold"/>
                             </Border>
                         </toolkit:Expander.Header>
@@ -44,13 +44,13 @@
                         <!--Contenido-->
                         <toolkit:Expander.Content>
                             <Border StrokeShape="RoundRectangle 10"
-                                    BackgroundColor="White"
+                                    BackgroundColor="{StaticResource White}"
                                     Padding="10"
                                     Margin="0,4,0,0"
                                     VerticalOptions="Start"
                                     HorizontalOptions="Fill">
                                 <Border.Shadow>
-                                    <Shadow Brush="Black" Opacity="0.2" Offset="2,2" Radius="5"/>
+                                    <Shadow Brush="{StaticResource BlackBrush}" Opacity="0.2" Offset="2,2" Radius="5"/>
                                 </Border.Shadow>
 
                                 <VerticalStackLayout Spacing="6" BindableLayout.ItemsSource="{Binding Manuales}">

@@ -42,4 +42,49 @@
     <SolidColorBrush x:Key="Gray600Brush" Color="{StaticResource Gray600}"/>
     <SolidColorBrush x:Key="Gray900Brush" Color="{StaticResource Gray900}"/>
     <SolidColorBrush x:Key="Gray950Brush" Color="{StaticResource Gray950}"/>
+
+    <!-- ================================================================= -->
+    <!-- SolTec — Paleta de marca                                          -->
+    <!-- Fuente única de verdad para los colores de la app.                -->
+    <!-- Estética objetivo: minimalista y moderna (ver AGENTS.md §4).      -->
+    <!-- No hardcodear colores nuevos en los XAML: agregarlos acá.         -->
+    <!-- (Las keys de arriba son la plantilla MAUI; las usa Styles.xaml.)  -->
+    <!-- ================================================================= -->
+
+    <!-- Superficies y neutros -->
+    <Color x:Key="AppBackground">#F5F7FA</Color>
+    <Color x:Key="CardBorder">#CFD8DC</Color>
+    <Color x:Key="PanolCardBackground">#F9F9F9</Color>
+    <Color x:Key="PanolCardBorder">#BDBDBD</Color>
+    <SolidColorBrush x:Key="PanolCardBorderBrush" Color="{StaticResource PanolCardBorder}" />
+
+    <!-- Texto -->
+    <Color x:Key="TextPrimary">#263238</Color>
+    <Color x:Key="TextHeading">#607D8B</Color>
+    <Color x:Key="TextStrong">#333333</Color>
+    <Color x:Key="TextBody">#555555</Color>
+    <Color x:Key="TextMuted">#777777</Color>
+
+    <!-- Acentos semánticos -->
+    <Color x:Key="AccentBlue">#1565C0</Color>
+    <Color x:Key="Danger">Red</Color>
+    <Color x:Key="DangerSoft">#E57373</Color>
+    <Color x:Key="PriceGreen">#28A745</Color>
+    <Color x:Key="QuantityBlue">#007BFF</Color>
+
+    <!-- Tiles del menú principal (dashboard de herramientas) -->
+    <Color x:Key="TilePanol">#4C51BF</Color>
+    <Color x:Key="TileManuales">#2B6CB0</Color>
+    <Color x:Key="TilePlanos">#805AD5</Color>
+    <Color x:Key="TilePoliticas">#2C3E50</Color>
+    <Color x:Key="TileCeldasCarga">#0F4C5C</Color>
+    <Color x:Key="TileGPID">#34495E</Color>
+    <Color x:Key="TileClaves">#5B2C6F</Color>
+    <Color x:Key="TileQR">#1F618D</Color>
+    <Color x:Key="TileTermocupla">#B03A2E</Color>
+    <Color x:Key="TileMachos">#7D3C98</Color>
+    <Color x:Key="TileRoscas">#2874A6</Color>
+    <Color x:Key="TileHPKw">#117A65</Color>
+    <Color x:Key="TileMotores">#900C3F</Color>
+    <Color x:Key="TileConversion">#212F3D</Color>
 </ResourceDictionary>

@@ -19,8 +19,8 @@
                         VerticalOptions="Fill">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="local:ListadoPañol">
-                    <Border BackgroundColor="#F9F9F9" 
-                            Stroke="#BDBDBD" 
+                    <Border BackgroundColor="{StaticResource PanolCardBackground}"
+                            Stroke="{StaticResource PanolCardBorderBrush}"
                             StrokeThickness="2" 
                             Padding="10" 
                             Margin="0,0,0,8">
@@ -42,19 +42,19 @@
                                    Text="{Binding Nombre}"
                                    FontSize="18"
                                    FontFamily="OpenSans-SemiBold"
-                                   TextColor="#333" 
+                                   TextColor="{StaticResource TextStrong}"
                                    FontAttributes="Bold" />
 
                             <VerticalStackLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Start">
                                 <Label Text="{Binding Codigo}"
                                        FontSize="14"
                                        FontFamily="OpenSans-Regular"
-                                       TextColor="#555"
+                                       TextColor="{StaticResource TextBody}"
                                        FontAttributes="Bold"/>
                                 <Label Text="{Binding Ubicacion}"
                                        FontSize="14"
                                        FontFamily="OpenSans-Light"
-                                       TextColor="#777"
+                                       TextColor="{StaticResource TextMuted}"
                                        FontAttributes="Bold" />
                             </VerticalStackLayout>
 
@@ -62,12 +62,12 @@
                                 <Label Text="Costo unitario"
                                        FontSize="12"
                                        FontFamily="OpenSans-Regular"
-                                       TextColor="#555"
+                                       TextColor="{StaticResource TextBody}"
                                        HorizontalTextAlignment="Center" />
                                 <Label Text="{Binding Precio, StringFormat='${0}'}"
                                        FontSize="16"
                                        FontFamily="OpenSans-SemiBold"
-                                       TextColor="#28a745"
+                                       TextColor="{StaticResource PriceGreen}"
                                        HorizontalTextAlignment="Center"
                                        FontAttributes="Bold"/>
                             </VerticalStackLayout>
@@ -76,12 +76,12 @@
                                 <Label Text="Cant."
                                        FontSize="12"
                                        FontFamily="OpenSans-Regular"
-                                       TextColor="#555"
+                                       TextColor="{StaticResource TextBody}"
                                        HorizontalTextAlignment="Center" />
                                 <Label Text="{Binding Cantidad}"
                                        FontSize="16"
                                        FontFamily="OpenSans-SemiBold"
-                                       TextColor="#007bff"
+                                       TextColor="{StaticResource QuantityBlue}"
                                        HorizontalTextAlignment="Center"
                                        FontAttributes="Bold"/>
                             </VerticalStackLayout>
