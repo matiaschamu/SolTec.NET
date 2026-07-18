@@ -52,6 +52,12 @@ namespace Soltec.NET
             await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Planos"}");
         }
 
+		private async void OnIntercambiadoresClicked(object sender, TappedEventArgs e)
+		{
+            if (!await IsContentAvailable()) return;
+            await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Intercambiadores"}");
+        }
+
 		private async void OnPoliticasClicked(object sender, TappedEventArgs e)
 		{
             if (!await IsContentAvailable()) return;

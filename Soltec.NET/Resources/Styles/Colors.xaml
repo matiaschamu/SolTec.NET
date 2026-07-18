@@ -99,4 +99,7 @@
     <Color x:Key="TileHPKw">#117A65</Color>
     <Color x:Key="TileMotores">#900C3F</Color>
     <Color x:Key="TileConversion">#212F3D</Color>
+    <Color x:Key="TileIntercambiadores">#D35400</Color>
+    <!-- naranja "calor/hornos" -->
+
 </ResourceDictionary>

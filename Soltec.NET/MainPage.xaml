@@ -1,45 +1,59 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Soltec.NET.MainPage"
              Title="Soltec 4.0">
 
+    <ContentPage.Resources>
+        <!-- Estilo compartido de los textos de los tiles del menú.
+             👉 Cambiá SOLO el FontSize de abajo para probar tamaños:
+                se aplica a TODOS los botones a la vez. -->
+        <Style x:Key="TileLabel" TargetType="Label">
+            <Setter Property="FontSize" Value="16" />
+            <Setter Property="TextColor" Value="{StaticResource White}" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="LineBreakMode" Value="WordWrap" />
+        </Style>
+    </ContentPage.Resources>
+
     <ScrollView>
         <FlexLayout Direction="Row" Wrap="Wrap" AlignItems="Start" JustifyContent="Start" Margin="10" Padding="0">
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="{StaticResource TilePanol}" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="100%" HeightRequest="80" Margin="5" BackgroundColor="{StaticResource TilePanol}" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPañolClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Pañol 🛠️" TextColor="{StaticResource White}" FontSize="20"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Pañol 🛠️" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="{StaticResource TileManuales}" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="{StaticResource TileManuales}" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnManualesClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Manuales 📖" TextColor="{StaticResource White}" FontSize="20"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Manuales 📖" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
-            <Border FlexLayout.Basis="100%" HeightRequest="100" Margin="5" BackgroundColor="{StaticResource TilePlanos}" StrokeShape="RoundRectangle 15,15,15,15">
+            <Border FlexLayout.Basis="48%" FlexLayout.Grow="1" HeightRequest="80" Margin="5" BackgroundColor="{StaticResource TilePlanos}" StrokeShape="RoundRectangle 10,10,10,10">
                 <Border.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnPlanosClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Planos 🗺️" TextColor="{StaticResource White}" FontSize="20"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Planos 🗺️" Style="{StaticResource TileLabel}" />
+                </Grid>
+            </Border>
+
+            <Border FlexLayout.Basis="100%" HeightRequest="80" Margin="5" BackgroundColor="{StaticResource TileIntercambiadores}" StrokeShape="RoundRectangle 10,10,10,10">
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnIntercambiadoresClicked" />
+                </Border.GestureRecognizers>
+                <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                    <Label Text="Intercambiadores y Hornos 🔥" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -48,13 +62,7 @@
                     <TapGestureRecognizer Tapped="OnPoliticasClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="10" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Políticas y&#10;Procedimientos&#10;📜" 
-               TextColor="{StaticResource White}"
-               HorizontalOptions="Center"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               LineBreakMode="WordWrap"
-               FontSize="14" />
+                    <Label Text="Políticas y&#10;Procedimientos&#10;📜" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -63,10 +71,7 @@
                     <TapGestureRecognizer Tapped="OnCeldasDeCargaClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Celdas&#10;de carga&#10;⚖️" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Celdas&#10;de carga&#10;⚖️" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -75,10 +80,7 @@
                     <TapGestureRecognizer Tapped="OnGPIDClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="GPID 🤖" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="GPID 🤖" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -87,10 +89,7 @@
                     <TapGestureRecognizer Tapped="OnClavesClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Claves 🔑" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Claves 🔑" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -99,10 +98,7 @@
                     <TapGestureRecognizer Tapped="OnQRClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="QR 📱" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="QR 📱" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -111,10 +107,7 @@
                     <TapGestureRecognizer Tapped="OnTermocuplaClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Termocupla&#10;PT100 🌡️" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Termocupla&#10;PT100 🌡️" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -123,10 +116,7 @@
                     <TapGestureRecognizer Tapped="OnMachosClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Machos 🔩" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Machos 🔩" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -135,10 +125,7 @@
                     <TapGestureRecognizer Tapped="OnRoscasClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Roscas&#10;de gas 🗜️" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Roscas&#10;de gas 🗜️" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -147,10 +134,7 @@
                     <TapGestureRecognizer Tapped="OnHPKwCorrienteClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="HP/Kw&#10;Corriente&#10;⚡" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="HP/Kw&#10;Corriente&#10;⚡" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -159,10 +143,7 @@
                     <TapGestureRecognizer Tapped="OnMotoresClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Motores 💥" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Motores 💥" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
@@ -171,10 +152,7 @@
                     <TapGestureRecognizer Tapped="OnConversionClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Conversión de unidades 🔄" TextColor="{StaticResource White}"
-                       HorizontalOptions="Center"
-                       HorizontalTextAlignment="Center"
-                       LineBreakMode="WordWrap" />
+                    <Label Text="Conversión de unidades 🔄" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 
