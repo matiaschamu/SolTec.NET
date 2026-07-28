@@ -32,6 +32,7 @@ namespace Soltec.NET
 
         /// <summary>
         /// Avisa si hay una versión más nueva publicada y ofrece abrir Google Play.
+        /// Se repite en cada inicio hasta que el técnico actualice.
         /// </summary>
         private async Task VerificarActualizacionAsync()
         {
@@ -40,8 +41,6 @@ namespace Soltec.NET
 
             var nueva = await actualizaciones.ObtenerActualizacionDisponibleAsync();
             if (nueva is null) return;
-
-            actualizaciones.MarcarComoAvisada(nueva);
 
             bool actualizar = await DisplayAlert(
                 "Actualización disponible",

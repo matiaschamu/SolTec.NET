@@ -25,7 +25,7 @@ consulta de contenidos) y permite usarlos **online y offline**.
 |---|---|
 | Nombre visible | **Soltec 4.0** |
 | Application ID | `com.companyname.soltecpep` |
-| Versión (display / build) | `1.0.97` / `97` |
+| Versión (display / build) | `1.0.98` / `98` |
 | Framework | .NET 9 · MAUI (MVVM con CommunityToolkit.Mvvm) |
 | Plataformas | Android · iOS · Mac Catalyst · Windows |
 | Fuente | **Open Sans** (Regular / Semibold) |
@@ -225,8 +225,10 @@ ofrece abrir la ficha de Play.
   motivo.
 - El chequeo corre **una vez por sesión**, con timeout de 5 s, y **falla en silencio**:
   sin conexión no molesta ni demora el arranque (principio §2.1).
-- Se avisa **una sola vez por versión** (`PreferenciasService.GuardarVersionAvisada`).
-  Para insistir hasta que actualicen, no llamar a `MarcarComoAvisada` en `MainPage`.
+- **Se avisa en cada inicio hasta que el técnico actualice.** Es deliberado: no hay
+  "no volver a mostrar". El aviso desaparece solo cuando el `versionCode` instalado
+  alcanza al publicado. Por eso el §6.1 exige que el AAB ya esté en Play antes de
+  pushear el JSON: si no, el aviso queda trabado y no hay forma de sacarlo.
 
 ---
 

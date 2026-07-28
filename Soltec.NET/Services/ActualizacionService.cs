@@ -6,15 +6,10 @@ namespace Soltec.NET.Services
     public interface IActualizacionService
     {
         /// <summary>
-        /// Devuelve la versión publicada si es más nueva que la instalada y todavía no se avisó.
+        /// Devuelve la versión publicada si es más nueva que la instalada.
         /// Devuelve null en cualquier otro caso (sin conexión, error, o ya al día).
         /// </summary>
         Task<VersionApp?> ObtenerActualizacionDisponibleAsync();
-
-        /// <summary>
-        /// Deja registrado que ya se avisó de esta versión, para no repetir el aviso.
-        /// </summary>
-        void MarcarComoAvisada(VersionApp version);
 
         /// <summary>
         /// Abre la ficha de la app en Google Play.
@@ -26,6 +21,8 @@ namespace Soltec.NET.Services
     /// Chequea si hay una versión más nueva de la app comparando el ApplicationVersion
     /// instalado contra el publicado en Extras/app-version.json.
     /// La actualización en sí la hace Google Play; acá solo se avisa.
+    /// El aviso se repite en cada inicio hasta que el técnico actualice: es una
+    /// herramienta de trabajo y la documentación desactualizada es un problema real.
     /// </summary>
     public class ActualizacionService : IActualizacionService
     {
@@ -37,13 +34,11 @@ namespace Soltec.NET.Services
 
         private readonly HttpClient _http;
         private readonly IConexionService _conexion;
-        private readonly IPreferenciasService _prefs;
 
-        public ActualizacionService(HttpClient http, IConexionService conexion, IPreferenciasService prefs)
+        public ActualizacionService(HttpClient http, IConexionService conexion)
         {
             _http = http;
             _conexion = conexion;
-            _prefs = prefs;
         }
 
         public async Task<VersionApp?> ObtenerActualizacionDisponibleAsync()
@@ -63,10 +58,6 @@ namespace Soltec.NET.Services
                 if (publicada == null || publicada.VersionCode <= VersionInstalada())
                     return null;
 
-                // Ya se avisó de esta versión y el técnico eligió seguir: no insistir.
-                if (publicada.VersionCode <= _prefs.LeerVersionAvisada())
-                    return null;
-
                 return publicada;
             }
             catch
@@ -75,11 +66,6 @@ namespace Soltec.NET.Services
                 // le importe al usuario. Se ignora y la app sigue normal.
                 return null;
             }
-        }
-
-        public void MarcarComoAvisada(VersionApp version)
-        {
-            _prefs.GuardarVersionAvisada(version.VersionCode);
         }
 
         public async Task AbrirTiendaAsync()
