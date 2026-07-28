@@ -25,7 +25,7 @@ consulta de contenidos) y permite usarlos **online y offline**.
 |---|---|
 | Nombre visible | **Soltec 4.0** |
 | Application ID | `com.companyname.soltecpep` |
-| Versión (display / build) | `1.0.98` / `98` |
+| Versión (display / build) | `1.0.99` / `99` |
 | Framework | .NET 9 · MAUI (MVVM con CommunityToolkit.Mvvm) |
 | Plataformas | Android · iOS · Mac Catalyst · Windows |
 | Fuente | **Open Sans** (Regular / Semibold) |
