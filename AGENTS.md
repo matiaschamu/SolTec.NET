@@ -25,7 +25,7 @@ consulta de contenidos) y permite usarlos **online y offline**.
 |---|---|
 | Nombre visible | **Soltec 4.0** |
 | Application ID | `com.companyname.soltecpep` |
-| Versión (display / build) | `1.0.99` / `99` |
+| Versión (display / build) | `1.0.100` / `100` |
 | Framework | .NET 9 · MAUI (MVVM con CommunityToolkit.Mvvm) |
 | Plataformas | Android · iOS · Mac Catalyst · Windows |
 | Fuente | **Open Sans** (Regular / Semibold) |
@@ -213,9 +213,9 @@ ofrece abrir la ficha de Play.
 
 ```
 1. Subir ApplicationDisplayVersion / ApplicationVersion en el .csproj
-2. Actualizar Extras/app-version.json con el MISMO VersionCode + notas
-3. git commit + push        → GitHub Pages publica el aviso
-4. Subir el AAB a Play (canal interno)
+2. Actualizar VersionCode / VersionName en Extras/app-version.json (mismos números)
+3. Subir el AAB a Play (canal interno) y esperar a que esté disponible
+4. git commit + push        → GitHub Pages publica el aviso
 ```
 
 - **Regla:** `VersionCode` del JSON debe ser **igual** a `ApplicationVersion` del
@@ -223,6 +223,9 @@ ofrece abrir la ficha de Play.
   tiene; si queda atrasado, nadie se entera.
 - **Publicar el JSON recién cuando el AAB ya esté disponible en Play**, por el mismo
   motivo.
+- El campo `Notas` es **genérico** (invita a actualizar) y no hace falta tocarlo en cada
+  versión: solo se cambian los dos números. Si se deja vacío, la app arma sola un texto
+  con el número de versión.
 - El chequeo corre **una vez por sesión**, con timeout de 5 s, y **falla en silencio**:
   sin conexión no molesta ni demora el arranque (principio §2.1).
 - **Se avisa en cada inicio hasta que el técnico actualice.** Es deliberado: no hay

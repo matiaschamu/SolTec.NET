@@ -18,7 +18,8 @@ namespace Soltec.NET.Models
         public string VersionName { get; set; } = string.Empty;
 
         /// <summary>
-        /// Texto breve que se le muestra al técnico contando qué trae la versión.
+        /// Texto que se le muestra al técnico en el aviso. Es genérico e invita a
+        /// actualizar: no hace falta reescribirlo en cada versión.
         /// </summary>
         public string Notas { get; set; } = string.Empty;
     }

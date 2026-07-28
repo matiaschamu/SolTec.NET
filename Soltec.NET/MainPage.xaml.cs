@@ -42,9 +42,14 @@ namespace Soltec.NET
             var nueva = await actualizaciones.ObtenerActualizacionDisponibleAsync();
             if (nueva is null) return;
 
+            // El texto lo pone app-version.json; acá solo se le antepone la versión.
+            var mensaje = string.IsNullOrWhiteSpace(nueva.Notas)
+                ? $"Ya está disponible la versión {nueva.VersionName} de Soltec 4.0."
+                : $"Soltec 4.0 v{nueva.VersionName}\n\n{nueva.Notas}";
+
             bool actualizar = await DisplayAlert(
                 "Actualización disponible",
-                $"Hay una versión nueva de Soltec 4.0 (v{nueva.VersionName}).\n\n{nueva.Notas}",
+                mensaje,
                 "Ir a Play Store",
                 "Más tarde");
 
