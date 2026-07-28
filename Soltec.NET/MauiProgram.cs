@@ -27,6 +27,7 @@ namespace Soltec.NET
             builder.Services.AddSingleton<ISincronizacionService, SincronizacionService>();
             builder.Services.AddSingleton<IContenidoJsonService, ContenidoJsonService>();
             builder.Services.AddSingleton<IConexionService, ConexionService>();
+            builder.Services.AddSingleton<IActualizacionService, ActualizacionService>();
             builder.Services.AddHttpClient(); // necesario para ContenidoService
 
             // ViewModels

@@ -21,7 +21,8 @@ La solución [`Soltec.NET.sln`](Soltec.NET.sln) agrupa tres proyectos:
 
 Carpetas auxiliares:
 
-- **`Extras/`** — Contenido (PDFs organizados en carpetas) y el `content.json` generado. Se publica en GitHub Pages.
+- **`Extras/`** — Contenido (PDFs organizados en carpetas), el `content.json` generado y el
+  `app-version.json` con la última versión publicada de la app. Se publica en GitHub Pages.
 - **`Recursos/`** — Recursos de diseño y material de apoyo del proyecto.
 
 ---
@@ -44,6 +45,8 @@ y patrón **MVVM** apoyado en [CommunityToolkit.Mvvm](https://github.com/Communi
 - Modo **offline**: descarga y sincronización de archivos por carpeta para consultarlos sin conexión.
   La pantalla de **Configuración** lista automáticamente todas las categorías para sincronizarlas.
 - Detección de conectividad y validación de caché local de `content.json` al iniciar.
+- **Aviso de nueva versión**: al abrir el menú compara la versión instalada contra
+  `Extras/app-version.json` y ofrece abrir Google Play si hay una más nueva.
 - Verificación de integridad de descargas mediante **hash SHA-256**.
 - Cálculo de motores y otras utilidades de trabajo.
 - Persistencia de preferencias y almacenamiento local con **SQLite**.
@@ -62,6 +65,7 @@ Soltec.NET/
 ├── ViewModels/    # Lógica de presentación (ConfiguracionViewModel, ContenidoDetalleViewModel)
 ├── Views/         # Páginas XAML (Configuración, Cálculo de motores, Detalle de contenido, Pañol)
 ├── Services/      # Acceso a datos y lógica de negocio
+│   ├── ActualizacionService.cs    # Aviso de nueva versión publicada
 │   ├── ArchivoService.cs          # Lectura/escritura de archivos locales
 │   ├── BuscarCarpetasOnline.cs    # Búsqueda de carpetas en el servidor
 │   ├── ConexionService.cs         # Estado de conectividad

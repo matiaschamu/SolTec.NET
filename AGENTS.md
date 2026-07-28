@@ -25,7 +25,7 @@ consulta de contenidos) y permite usarlos **online y offline**.
 |---|---|
 | Nombre visible | **Soltec 4.0** |
 | Application ID | `com.companyname.soltecpep` |
-| Versión (display / build) | `1.0.96` / `96` |
+| Versión (display / build) | `1.0.97` / `97` |
 | Framework | .NET 9 · MAUI (MVVM con CommunityToolkit.Mvvm) |
 | Plataformas | Android · iOS · Mac Catalyst · Windows |
 | Fuente | **Open Sans** (Regular / Semibold) |
@@ -157,10 +157,10 @@ Resources/   Íconos, fuentes, imágenes, splash, estilos
 ```
 
 **Servicios** (mantenerlos chicos y con una responsabilidad):
-`ArchivoService` (I/O local) · `BuscarCarpetasOnline` · `ConexionService`
-(conectividad) · `ContenidoJsonService` (parseo del catálogo) · `ConverterService`
-(converters XAML) · `PreferenciasService` (prefs persistentes) ·
-`SincronizacionService` (descarga/sync offline).
+`ActualizacionService` (aviso de nueva versión, §6.1) · `ArchivoService` (I/O local) ·
+`BuscarCarpetasOnline` · `ConexionService` (conectividad) · `ContenidoJsonService`
+(parseo del catálogo) · `ConverterService` (converters XAML) · `PreferenciasService`
+(prefs persistentes) · `SincronizacionService` (descarga/sync offline).
 
 **Convenciones:**
 - **MVVM estricto**: la lógica va en ViewModels/Services, no en el code-behind.
@@ -203,6 +203,30 @@ El contenido y la app se actualizan por caminos separados. Para publicar conteni
   desactualizado = archivos que la app no ve o 404 en el técnico.
 - Ojo con **case-sensitivity** de URLs (GitHub Pages es sensible a mayúsculas) y con
   acentos/`ñ`/caracteres especiales en nombres: el generador los normaliza, respetarlo.
+
+### 6.1 Aviso de nueva versión de la app
+
+La app se distribuye por **Google Play (canal interno)**, así que Play se encarga de
+instalar la actualización. Lo que la app agrega es el **aviso**: al abrir el menú
+consulta `Extras/app-version.json` y, si hay una versión más nueva que la instalada,
+ofrece abrir la ficha de Play.
+
+```
+1. Subir ApplicationDisplayVersion / ApplicationVersion en el .csproj
+2. Actualizar Extras/app-version.json con el MISMO VersionCode + notas
+3. git commit + push        → GitHub Pages publica el aviso
+4. Subir el AAB a Play (canal interno)
+```
+
+- **Regla:** `VersionCode` del JSON debe ser **igual** a `ApplicationVersion` del
+  `.csproj`. Si el JSON queda adelantado, se avisa de una versión que Play todavía no
+  tiene; si queda atrasado, nadie se entera.
+- **Publicar el JSON recién cuando el AAB ya esté disponible en Play**, por el mismo
+  motivo.
+- El chequeo corre **una vez por sesión**, con timeout de 5 s, y **falla en silencio**:
+  sin conexión no molesta ni demora el arranque (principio §2.1).
+- Se avisa **una sola vez por versión** (`PreferenciasService.GuardarVersionAvisada`).
+  Para insistir hasta que actualicen, no llamar a `MarcarComoAvisada` en `MainPage`.
 
 ---
 

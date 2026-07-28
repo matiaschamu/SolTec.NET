@@ -1,9 +1,14 @@
-﻿using Soltec.NET.Views;
+﻿using Soltec.NET.Services;
+using Soltec.NET.Views;
 
 namespace Soltec.NET
 {
 	public partial class MainPage : ContentPage
 	{
+        // El chequeo de actualización corre una sola vez por sesión, no cada vez
+        // que se vuelve al menú desde una pantalla.
+        private static bool _actualizacionVerificada;
+
 		public MainPage()
 		{
 			InitializeComponent();
@@ -17,6 +22,35 @@ namespace Soltec.NET
 
             // Seteamos el título dinámicamente
             this.Title = $"Soltec 4.0 (v{version})";
+
+            if (_actualizacionVerificada) return;
+            _actualizacionVerificada = true;
+
+            // Sin await: si no hay red o el servidor tarda, el menú se muestra igual.
+            _ = VerificarActualizacionAsync();
+        }
+
+        /// <summary>
+        /// Avisa si hay una versión más nueva publicada y ofrece abrir Google Play.
+        /// </summary>
+        private async Task VerificarActualizacionAsync()
+        {
+            var actualizaciones = IPlatformApplication.Current?.Services.GetService<IActualizacionService>();
+            if (actualizaciones is null) return;
+
+            var nueva = await actualizaciones.ObtenerActualizacionDisponibleAsync();
+            if (nueva is null) return;
+
+            actualizaciones.MarcarComoAvisada(nueva);
+
+            bool actualizar = await DisplayAlert(
+                "Actualización disponible",
+                $"Hay una versión nueva de Soltec 4.0 (v{nueva.VersionName}).\n\n{nueva.Notas}",
+                "Ir a Play Store",
+                "Más tarde");
+
+            if (actualizar)
+                await actualizaciones.AbrirTiendaAsync();
         }
 
         private async Task<bool> IsContentAvailable()

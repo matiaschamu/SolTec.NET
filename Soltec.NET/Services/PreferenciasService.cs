@@ -11,6 +11,10 @@ namespace Soltec.NET.Services
         void GuardarHashArchivos(Dictionary<string, string> hashes);
 
         Dictionary<string, string> LeerHashArchivos();
+
+        void GuardarVersionAvisada(int versionCode);
+
+        int LeerVersionAvisada();
     }
     public class PreferenciasService: IPreferenciasService
     {
@@ -34,6 +38,19 @@ namespace Soltec.NET.Services
         {
             var json = Preferences.Get("HashArchivosLocales", "{}");
             return JsonSerializer.Deserialize<Dictionary<string, string>>(json) ?? new Dictionary<string, string>();
+        }
+
+        /// <summary>
+        /// Última versión de la app de la que ya se avisó, para no repetir el aviso.
+        /// </summary>
+        public void GuardarVersionAvisada(int versionCode)
+        {
+            Preferences.Set("UltimaVersionAvisada", versionCode);
+        }
+
+        public int LeerVersionAvisada()
+        {
+            return Preferences.Get("UltimaVersionAvisada", 0);
         }
     }
 }

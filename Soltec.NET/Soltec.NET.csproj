@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFrameworks>net9.0-ios;net9.0-maccatalyst;net9.0-android35.0</TargetFrameworks>
+		<TargetFrameworks>net9.0-ios;net9.0-maccatalyst;net9.0-android36.0</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net9.0-windows10.0.19041.0</TargetFrameworks>
 
 		<OutputType>Exe</OutputType>
@@ -13,8 +13,8 @@
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
 		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<ApplicationDisplayVersion>1.0.96</ApplicationDisplayVersion>
-		<ApplicationVersion>96</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.97</ApplicationDisplayVersion>
+		<ApplicationVersion>97</ApplicationVersion>
 
 		<WindowsPackageType>None</WindowsPackageType>
 
@@ -29,7 +29,7 @@
 		<Platforms>AnyCPU;x64</Platforms>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android36.0|AnyCPU'">
 		<AndroidKeyStore>False</AndroidKeyStore>
 		<DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
 		<AndroidUseAapt2>True</AndroidUseAapt2>
@@ -38,7 +38,7 @@
 		<RuntimeIdentifiers>android-arm64;android-x64</RuntimeIdentifiers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android35.0|x64'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net9.0-android36.0|x64'">
 	  <AndroidKeyStore>False</AndroidKeyStore>
 	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
 	  <AndroidUseAapt2>True</AndroidUseAapt2>
@@ -47,7 +47,7 @@
 	  <RuntimeIdentifiers>android-arm64;android-x64</RuntimeIdentifiers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|AnyCPU'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android36.0|AnyCPU'">
 		<AndroidKeyStore>False</AndroidKeyStore>
 		<DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
 		<AndroidPackageFormat>aab</AndroidPackageFormat>
@@ -56,7 +56,7 @@
 		<RuntimeIdentifiers>android-arm;android-arm64;android-x86;android-x64</RuntimeIdentifiers>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android35.0|x64'">
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net9.0-android36.0|x64'">
 	  <AndroidKeyStore>False</AndroidKeyStore>
 	  <DefineConstants>$(DefineConstants);__ANDROID__</DefineConstants>
 	  <AndroidPackageFormat>aab</AndroidPackageFormat>

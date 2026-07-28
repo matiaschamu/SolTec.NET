@@ -3,4 +3,11 @@
 	<application android:allowBackup="true" android:icon="@mipmap/soltec_icon" android:roundIcon="@mipmap/soltec_icon" android:supportsRtl="true" android:usesCleartextTraffic="true"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- Necesario desde Android 11 para poder abrir la ficha de la app en Google Play (market://). -->
+	<queries>
+		<intent>
+			<action android:name="android.intent.action.VIEW" />
+			<data android:scheme="market" />
+		</intent>
+	</queries>
 </manifest>

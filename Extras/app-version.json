@@ -1,0 +1,5 @@
+{
+  "VersionCode": 97,
+  "VersionName": "1.0.97",
+  "Notas": "Se actualiza el target de Android a API 36 (Android 16)."
+}
