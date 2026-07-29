@@ -16,6 +16,25 @@
 		<ApplicationDisplayVersion>1.0.100</ApplicationDisplayVersion>
 		<ApplicationVersion>100</ApplicationVersion>
 
+		<!--
+			Versión que se ANUNCIA en el aviso de actualización (ver AGENTS.md §6.1).
+			OJO: no es la que estás compilando arriba, es la que ya está disponible en el
+			canal ALPHA (el más amplio). Se sube recién cuando promovés de prueba interna
+			a alpha, no cuando lanzás a prueba interna.
+			Motivo: la app no puede saber de qué canal de Play fue instalada. Si acá
+			pusieras la versión de prueba interna, los técnicos de alpha verían el aviso
+			en cada inicio durante 3 días sin tener cómo actualizar.
+		-->
+		<VersionEnAlpha>100</VersionEnAlpha>
+		<VersionEnAlphaNombre>1.0.100</VersionEnAlphaNombre>
+
+		<!--
+			Texto del aviso de actualización. Es genérico: no hace falta cambiarlo en cada
+			versión. Ojo: no usar ';' acá, MSBuild lo interpreta como separador y partiría
+			el JSON en dos líneas.
+		-->
+		<NotasActualizacion>Se encontró una nueva versión de la aplicación. Actualizala desde Google Play para seguir trabajando con la última versión.</NotasActualizacion>
+
 		<WindowsPackageType>None</WindowsPackageType>
 
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
@@ -119,6 +138,30 @@
 			<MauiSplashScreen Remove="@(MauiSplashScreen)" />
 			<MauiSplashScreen Include="$(_SplashGenerado)" Color="#1565C0" BaseSize="256,256" />
 		</ItemGroup>
+	</Target>
+
+	<!--
+		Genera Extras/app-version.json a partir de VersionEnAlpha / VersionEnAlphaNombre,
+		para que el aviso de actualización no se escriba a mano (ver AGENTS.md §6.1).
+		Deliberadamente NO usa ApplicationVersion: lo que se anuncia es lo que está en
+		alpha, no lo que se está compilando para prueba interna.
+		Solo se regenera el archivo si el contenido cambió, así no ensucia el working tree
+		en cada build. Corre únicamente en el TFM de Android para no escribirlo varias
+		veces en paralelo cuando se compilan todas las plataformas juntas.
+		Publicarlo sigue siendo manual: recién con el git push los técnicos ven el aviso.
+	-->
+	<Target Name="GenerarAppVersionJson" BeforeTargets="Build"
+			Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<PropertyGroup>
+			<_AppVersionJson>$(MSBuildProjectDirectory)\..\Extras\app-version.json</_AppVersionJson>
+			<_AppVersionContenido>{%0a  &quot;VersionCode&quot;: $(VersionEnAlpha),%0a  &quot;VersionName&quot;: &quot;$(VersionEnAlphaNombre)&quot;,%0a  &quot;Notas&quot;: &quot;$(NotasActualizacion)&quot;%0a}</_AppVersionContenido>
+		</PropertyGroup>
+
+		<WriteLinesToFile
+			File="$(_AppVersionJson)"
+			Lines="$(_AppVersionContenido)"
+			Overwrite="true"
+			WriteOnlyWhenDifferent="true" />
 	</Target>
 
 	<ItemGroup>

@@ -8,6 +8,7 @@ public interface IArchivoService
 {
     Task<byte[]> DescargarArchivo(string url);
     string CalcularHashLocal(string pathArchivo);
+    string CalcularHash(byte[] contenido);
     Task GuardarArchivoLocal(string carpeta, string nombreArchivo, byte[] contenido);
     bool ArchivoExiste(string carpeta, string nombreArchivo);
     void BorrarTodo();
@@ -18,10 +19,12 @@ public interface IArchivoService
 
 public class ArchivoService : IArchivoService
 {
+    // Uno solo para toda la app: crear un HttpClient por descarga agota los sockets.
+    private static readonly HttpClient _http = new();
+
     public async Task<byte[]> DescargarArchivo(string url)
     {
-        using var http = new HttpClient();
-        return await http.GetByteArrayAsync(url);
+        return await _http.GetByteArrayAsync(url);
     }
 
     public string CalcularHashLocal(string pathArchivo)
@@ -30,6 +33,14 @@ public class ArchivoService : IArchivoService
         using var stream = File.OpenRead(pathArchivo);
         var hashBytes = sha.ComputeHash(stream);
         return Convert.ToHexString(hashBytes);
+    }
+
+    /// <summary>
+    /// Hash de un contenido recién descargado, para validarlo ANTES de guardarlo en disco.
+    /// </summary>
+    public string CalcularHash(byte[] contenido)
+    {
+        return Convert.ToHexString(SHA256.HashData(contenido));
     }
 
     public async Task GuardarArchivoLocal(string carpeta, string nombreArchivo, byte[] contenido)
@@ -48,21 +59,44 @@ public class ArchivoService : IArchivoService
         return File.Exists(pathArchivo);
     }
 
+    /// <summary>
+    /// Borra el contenido descargado, pero <b>conserva los .json</b>.
+    /// El content.json cacheado es lo que permite navegar el catálogo sin conexión:
+    /// si se borrara, un técnico sin señal quedaría sin poder ver ni la lista de manuales.
+    /// </summary>
     public void BorrarTodo()
     {
         try
         {
             var pathData = FileSystem.AppDataDirectory;
+            if (!Directory.Exists(pathData))
+                return;
 
-            if (Directory.Exists(pathData))
+            // ToList() porque se borra mientras se recorre.
+            var archivos = Directory.EnumerateFiles(pathData, "*", SearchOption.AllDirectories).ToList();
+
+            foreach (var archivo in archivos)
             {
-                Directory.Delete(pathData, true); // elimina todo recursivamente
-                Directory.CreateDirectory(pathData); // recrea vacío
+                if (Path.GetExtension(archivo).Equals(".json", StringComparison.OrdinalIgnoreCase))
+                    continue;
+
+                try
+                {
+                    File.Delete(archivo);
+                }
+                catch (Exception ex)
+                {
+                    // Un archivo bloqueado (ej: la base del pañol abierta en Windows) no
+                    // debe abortar el borrado del resto.
+                    System.Diagnostics.Debug.WriteLine($"No se pudo borrar {archivo}: {ex.Message}");
+                }
             }
+
+            // Quitar las carpetas que quedaron sin nada adentro.
+            LimpiarVaciasRecursivo(pathData, pathData);
         }
         catch (Exception ex)
         {
-            // Podés loguear el error si querés
             System.Diagnostics.Debug.WriteLine($"Error al borrar contenido: {ex.Message}");
             throw;
         }

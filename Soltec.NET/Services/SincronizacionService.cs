@@ -61,6 +61,7 @@ public class SincronizacionService : ISincronizacionService
                 return ("No encontrada en servidor", "");
 
             bool huboDescargas = false;
+            int archivosConError = 0;
             var todosArchivos = new List<(Carpeta Carpeta, Archivo Archivo)>();
 
             foreach (var c in carpetaRemota.Subcarpetas ?? new List<Carpeta>())
@@ -102,12 +103,36 @@ public class SincronizacionService : ISincronizacionService
                 if (necesitaDescarga)
                 {
                     var bytes = await _archivoService.DescargarArchivo(archivo.Url);
-                    await _archivoService.GuardarArchivoLocal(nombreCarpetaLocal, archivo.Nombre, bytes);
 
-                    config.HashArchivosLocales[claveUnica] = archivo.Hash;
-                    _prefs.GuardarHashArchivos(config.HashArchivosLocales);
+                    // Validar la descarga ANTES de guardarla: una descarga truncada o alterada
+                    // no puede quedar en disco marcada como contenido offline válido.
+                    var hashDescargado = _archivoService.CalcularHash(bytes);
 
-                    huboDescargas = true;
+                    if (hashDescargado.Equals(archivo.Hash, StringComparison.OrdinalIgnoreCase))
+                    {
+                        await _archivoService.GuardarArchivoLocal(nombreCarpetaLocal, archivo.Nombre, bytes);
+
+                        config.HashArchivosLocales[claveUnica] = archivo.Hash;
+                        _prefs.GuardarHashArchivos(config.HashArchivosLocales);
+
+                        huboDescargas = true;
+                    }
+                    else
+                    {
+                        // Si había una copia local, ya sabíamos que no coincidía con el servidor
+                        // y la descarga tampoco sirvió: se borra para no mostrarla como verificada.
+                        try
+                        {
+                            if (File.Exists(pathArchivoLocal))
+                                File.Delete(pathArchivoLocal);
+                        }
+                        catch { /* Ignorar errores de borrado */ }
+
+                        config.HashArchivosLocales.Remove(claveUnica);
+                        _prefs.GuardarHashArchivos(config.HashArchivosLocales);
+
+                        archivosConError++;
+                    }
                 }
 
                 // --- TRACKING LIMPIEZA ---
@@ -135,6 +160,9 @@ public class SincronizacionService : ISincronizacionService
 
             // Limpiar subcarpetas vacías
             _archivoService.LimpiarCarpetasVacias(carpetaItem.Nombre);
+
+            if (archivosConError > 0)
+                return ($"{archivosConError} archivo(s) no pasaron la verificación", "");
 
             if (huboDescargas)
                 return ("Actualizado correctamente", "");

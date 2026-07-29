@@ -2,6 +2,9 @@
 
 [![Build iOS](https://github.com/matiaschamu/SolTec.NET/actions/workflows/ios-build.yml/badge.svg)](https://github.com/matiaschamu/SolTec.NET/actions/workflows/ios-build.yml)
 
+> 📋 **¿Vas a publicar un manual o sacar una versión nueva?**
+> Seguí la chuleta paso a paso: [GUIA_PUBLICACION.md](GUIA_PUBLICACION.md)
+
 **SolTec.NET** es una solución de .NET 9 compuesta por una aplicación móvil multiplataforma
 y dos herramientas de consola de soporte. La app centraliza manuales técnicos y utilidades
 de trabajo, permitiendo consultarlos **online y offline**; las herramientas de consola

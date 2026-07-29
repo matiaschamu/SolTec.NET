@@ -169,7 +169,13 @@ Resources/   Íconos, fuentes, imágenes, splash, estilos
   coherencia: no mezclar inglés salvo términos técnicos establecidos.
 - **Nullability**: el proyecto ya limpió warnings de nullability; no reintroducirlos.
 - Persistencia local con **SQLite** (`sqlite-net-pcl`); prefs con `PreferenciasService`.
-- Verificar **SHA-256** en descargas; no saltear la validación de integridad.
+- Verificar **SHA-256** en descargas; no saltear la validación de integridad. Se valida
+  **antes de escribir en disco**, tanto en `SincronizacionService` como al abrir un
+  manual online: nada que no coincida con el hash del `content.json` puede quedar
+  guardado ni marcarse como offline.
+- **`ArchivoService.BorrarTodo()` conserva los `.json`.** Borra los manuales descargados
+  pero deja el `content.json` cacheado: sin él, un técnico sin señal no podría ni ver la
+  lista de manuales. No volver a borrarlo entero.
 
 ### Navegación de contenido (data-driven)
 Las categorías de documentación **no** tienen pantalla ni lógica propia: son datos.
@@ -211,18 +217,43 @@ instalar la actualización. Lo que la app agrega es el **aviso**: al abrir el me
 consulta `Extras/app-version.json` y, si hay una versión más nueva que la instalada,
 ofrece abrir la ficha de Play.
 
+**La app se publica en dos canales de Play**: primero *prueba interna*, y ~3 días
+después se promueve a *alpha*. La app **no puede saber de qué canal fue instalada** (no
+existe API para eso), así que el JSON anuncia siempre **la versión que ya está en
+alpha** — el canal más amplio. Nunca la de prueba interna, o los técnicos de alpha
+verían el aviso en cada inicio sin poder actualizar.
+
+Por eso hay **dos versiones** en el `.csproj` y no hay que confundirlas:
+
+| Propiedad | Qué es |
+|---|---|
+| `ApplicationVersion` / `ApplicationDisplayVersion` | La que se compila y se sube a prueba interna |
+| `VersionEnAlpha` / `VersionEnAlphaNombre` | La que ya está en alpha = **la que se anuncia** |
+
 ```
-1. Subir ApplicationDisplayVersion / ApplicationVersion en el .csproj
-2. Actualizar VersionCode / VersionName en Extras/app-version.json (mismos números)
-3. Subir el AAB a Play (canal interno) y esperar a que esté disponible
-4. git commit + push        → GitHub Pages publica el aviso
+Día 0 — lanzamiento a prueba interna
+  1. Subir ApplicationVersion / ApplicationDisplayVersion   (VersionEnAlpha NO se toca)
+  2. Compilar Android → el target GenerarAppVersionJson reescribe app-version.json
+                        (sigue mostrando la versión vieja: es correcto)
+  3. Subir el AAB a prueba interna
+  4. git commit + push  → seguro, el aviso no cambió
+
+Día 3 — promoción a alpha
+  5. Promover el AAB de prueba interna a alpha en Play
+  6. Subir VersionEnAlpha / VersionEnAlphaNombre a esa versión
+  7. Compilar Android → se regenera app-version.json con la versión nueva
+  8. git commit + push  → recién ahora los técnicos ven el aviso
 ```
 
-- **Regla:** `VersionCode` del JSON debe ser **igual** a `ApplicationVersion` del
-  `.csproj`. Si el JSON queda adelantado, se avisa de una versión que Play todavía no
-  tiene; si queda atrasado, nadie se entera.
-- **Publicar el JSON recién cuando el AAB ya esté disponible en Play**, por el mismo
-  motivo.
+- **`app-version.json` se genera solo**: lo escribe el target MSBuild
+  `GenerarAppVersionJson` (en el `.csproj`, `BeforeTargets="Build"`, solo en el TFM de
+  Android). **No editarlo a mano**: el próximo build lo pisa. Para cambiar el texto del
+  aviso, tocar `NotasActualizacion` en el `.csproj`.
+- Se reescribe solo si el contenido cambió (`WriteOnlyWhenDifferent`), así no ensucia el
+  working tree en cada build. Se escribe **sin BOM**, igual que `content.json`.
+- Como `Extras/` se pushea seguido para publicar PDFs, este desacople es lo que evita
+  que un push de contenido cualquiera dispare sin querer el aviso de una versión que
+  todavía está solo en prueba interna.
 - El campo `Notas` es **genérico** (invita a actualizar) y no hace falta tocarlo en cada
   versión: solo se cambian los dos números. Si se deja vacío, la app arma sola un texto
   con el número de versión.
@@ -259,6 +290,15 @@ cd "Validar Json Soltec"    && dotnet run
 - **Idioma**: responder y nombrar en **español**.
 - **Cambios de app vs contenido**: no mezclar en el mismo commit un cambio de código
   con una recarga masiva de PDFs, salvo que sea intencional.
+- **Mensajes de commit**: seguir la convención del historial, **no** conventional commits
+  (`feat:` / `fix:`). El formato es:
+  ```
+  Version 1.0.0.<build>, <cambio 1>, <cambio 2>, ...
+  ```
+  Descripciones en presente impersonal ("Se agrega...", "Se actualiza..."), separadas por
+  comas, en una línea. El `<build>` es el `ApplicationVersion` del `.csproj` — ojo que en
+  el commit se escribe con cuatro números (`1.0.0.100`) aunque el `.csproj` diga `1.0.100`.
+  Un cuerpo debajo con el detalle y el porqué es bienvenido.
 - **No romper offline ni la validación de hash** por conveniencia.
 - Preferir cambios chicos, legibles y en el estilo del código vecino (un solo mantenedor).
 ```

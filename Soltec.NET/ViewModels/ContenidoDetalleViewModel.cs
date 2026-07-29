@@ -99,6 +99,7 @@ namespace Soltec.NET.ViewModels
                     {
                         Nombre = archivo.Nombre,
                         Url = existeLocal ? rutaLocal : archivo.Url,
+                        Hash = archivo.Hash,
                         RutaLocalDir = rutaLocalDir,
                         EstaOffline = existeLocal,
                         AbrirManualCommand = AbrirManualCommand
@@ -183,8 +184,23 @@ namespace Soltec.NET.ViewModels
                         return;
                     }
 
+                    // Mismo criterio que la sincronización: no se guarda nada que no pase el
+                    // hash. Si el content.json no trajera hash, se abre igual (no debería pasar).
+                    if (!string.IsNullOrEmpty(manual.Hash))
+                    {
+                        var hashDescargado = _archivoService.CalcularHash(bytes);
+                        if (!hashDescargado.Equals(manual.Hash, StringComparison.OrdinalIgnoreCase))
+                        {
+                            await Application.Current.MainPage.DisplayAlert(
+                                "Archivo dañado",
+                                "El manual descargado no pasó la verificación de integridad y no se guardó. Probá de nuevo con mejor señal.",
+                                "OK");
+                            return;
+                        }
+                    }
+
                     // Guardar localmente
-                    var rutaLocalDir = manual.RutaLocalDir 
+                    var rutaLocalDir = manual.RutaLocalDir
                         ?? Path.Combine(FileSystem.AppDataDirectory, "Descargas");
                     if (!Directory.Exists(rutaLocalDir))
                         Directory.CreateDirectory(rutaLocalDir);

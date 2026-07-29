@@ -12,6 +12,12 @@ namespace Soltec.NET.Models
     {
         public string Nombre { get; set; } = string.Empty;
         public string Url { get; set; } = string.Empty;
+
+        /// <summary>
+        /// SHA-256 esperado según content.json, para validar la descarga al abrir el manual.
+        /// </summary>
+        public string Hash { get; set; } = string.Empty;
+
         public string? RutaLocalDir { get; set; }
         public ICommand? AbrirManualCommand { get; set; }
 

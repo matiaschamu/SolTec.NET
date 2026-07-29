@@ -170,24 +170,5 @@ namespace Soltec.NET.ViewModels
                 Preferences.Set($"ModoOffline_{carpeta.Nombre}", carpeta.ModoOffline);
             }
         }
-        private async Task DescargarArchivo(string url, string carpetaFabricante, string nombreArchivo)
-        {
-            try
-            {
-                var http = new HttpClient();
-                var bytes = await http.GetByteArrayAsync(url);
-
-                var pathCarpeta = Path.Combine(FileSystem.AppDataDirectory, carpetaFabricante);
-                if (!Directory.Exists(pathCarpeta))
-                    Directory.CreateDirectory(pathCarpeta);
-
-                var pathArchivo = Path.Combine(pathCarpeta, nombreArchivo);
-                await File.WriteAllBytesAsync(pathArchivo, bytes);
-            }
-            catch (Exception)
-            {
-                //await DisplayAlert("Error", $"No se pudo descargar {nombreArchivo}", "OK");
-            }
-        }
     }
 }
