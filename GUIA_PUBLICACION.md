@@ -50,8 +50,8 @@ No hace falta programar una pantalla: las categorías son datos.
 
 - La pantalla de **Configuración se autollena**: la categoría aparece sola como
   sincronizable, no hay que tocar nada.
-- El nombre del tile puede diferir del de la carpeta (ej. tile "Intercambiadores y
-  Hornos" → carpeta `Intercambiadores`), pero **el título de la pantalla sale del
+- El nombre del tile puede diferir del de la carpeta (ej. tile "ConMon" → carpeta
+  `Intercambiadores`), pero **el título de la pantalla sale del
   nombre de la carpeta**.
 - Esto **sí** requiere versión nueva de la app (tocaste `MainPage.xaml`).
 

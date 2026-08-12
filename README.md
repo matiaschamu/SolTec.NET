@@ -37,7 +37,7 @@ y patrón **MVVM** apoyado en [CommunityToolkit.Mvvm](https://github.com/Communi
 
 ### Características
 - **Menú de inicio** con accesos rápidos a las categorías de documentación
-  (Pañol, Manuales, Planos, **Intercambiadores y Hornos**) y a las utilidades
+  (Pañol, Manuales, Planos, **ConMon**) y a las utilidades
   (motores, celdas de carga, conversiones, etc.). Los botones son uniformes y su
   tipografía se controla desde un único estilo (`TileLabel`).
 - **Categorías de contenido _data-driven_**: una misma pantalla genérica

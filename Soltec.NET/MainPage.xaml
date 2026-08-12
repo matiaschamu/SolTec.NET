@@ -53,7 +53,7 @@
                     <TapGestureRecognizer Tapped="OnIntercambiadoresClicked" />
                 </Border.GestureRecognizers>
                 <Grid Padding="5" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
-                    <Label Text="Intercambiadores y Hornos 🔥" Style="{StaticResource TileLabel}" />
+                    <Label Text="ConMon 📈" Style="{StaticResource TileLabel}" />
                 </Grid>
             </Border>
 

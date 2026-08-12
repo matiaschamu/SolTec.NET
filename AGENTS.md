@@ -188,7 +188,7 @@ Las categorías de documentación **no** tienen pantalla ni lógica propia: son 
 - **Agregar una categoría nueva** = (1) un tile en `MainPage` que navegue a su
   `Ruta`, y (2) crear la carpeta con PDFs en `Extras/Content/<Categoria>` + regenerar
   el JSON (§6). El nombre del tile puede diferir del de la carpeta (ej. botón
-  "Intercambiadores y Hornos" → carpeta `Content/Intercambiadores`), pero el
+  "ConMon" → carpeta `Content/Intercambiadores`), pero el
   **título de la pantalla sale del nombre de la carpeta**.
 
 ---
@@ -299,6 +299,9 @@ cd "Validar Json Soltec"    && dotnet run
   comas, en una línea. El `<build>` es el `ApplicationVersion` del `.csproj` — ojo que en
   el commit se escribe con cuatro números (`1.0.0.100`) aunque el `.csproj` diga `1.0.100`.
   Un cuerpo debajo con el detalle y el porqué es bienvenido.
+  **Este formato es una decisión deliberada del dueño y debe conservarse en todos los
+  commits**; antes de crear uno, revisar los últimos mensajes del historial para mantener
+  el mismo tono y estructura.
 - **No romper offline ni la validación de hash** por conveniencia.
 - Preferir cambios chicos, legibles y en el estilo del código vecino (un solo mantenedor).
 ```
