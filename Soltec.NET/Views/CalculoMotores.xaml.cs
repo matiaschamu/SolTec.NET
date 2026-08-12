@@ -1,9 +1,12 @@
-﻿namespace Soltec.NET.Views;
+using Soltec.NET.ViewModels;
+
+namespace Soltec.NET.Views;
 
 public partial class MotoresPage : ContentPage
 {
-	public MotoresPage()
-	{
-		InitializeComponent();
-	}
+    public MotoresPage()
+    {
+        InitializeComponent();
+        BindingContext = new MotoresViewModel();
+    }
 }

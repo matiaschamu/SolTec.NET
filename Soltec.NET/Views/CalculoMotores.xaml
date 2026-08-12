@@ -1,12 +1,246 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Soltec.NET.ViewModels"
              x:Class="Soltec.NET.Views.MotoresPage"
-             Title="Calculo Motores">
+             x:DataType="viewmodels:MotoresViewModel"
+             Title="Análisis de motores"
+             BackgroundColor="{StaticResource AppBackground}">
+    <ContentPage.Resources>
+        <Style x:Key="TituloSeccion" TargetType="Label">
+            <Setter Property="FontFamily" Value="OpenSansSemibold" />
+            <Setter Property="FontSize" Value="19" />
+            <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+        </Style>
+        <Style x:Key="EtiquetaCampo" TargetType="Label">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextColor" Value="{StaticResource TextMuted}" />
+        </Style>
+        <Style x:Key="ValorResultado" TargetType="Label">
+            <Setter Property="FontFamily" Value="OpenSansSemibold" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="{StaticResource AccentBlue}" />
+        </Style>
+        <Style x:Key="Tarjeta" TargetType="Border">
+            <Setter Property="BackgroundColor" Value="{StaticResource White}" />
+            <Setter Property="Stroke" Value="{StaticResource CardBorder}" />
+            <Setter Property="StrokeThickness" Value="1" />
+            <Setter Property="Padding" Value="18" />
+            <Setter Property="StrokeShape" Value="RoundRectangle 15" />
+            <Setter Property="Shadow">
+                <Setter.Value>
+                    <Shadow Brush="{StaticResource Gray400Brush}" Opacity="0.14" Radius="8" Offset="0,3" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="Entrada" TargetType="Entry">
+            <Setter Property="Keyboard" Value="Numeric" />
+            <Setter Property="BackgroundColor" Value="{StaticResource MotorInputBackground}" />
+            <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+            <Setter Property="Margin" Value="0,2,0,7" />
+        </Style>
+        <Style x:Key="Selector" TargetType="Picker">
+            <Setter Property="BackgroundColor" Value="{StaticResource MotorInputBackground}" />
+            <Setter Property="TextColor" Value="{StaticResource TextPrimary}" />
+            <Setter Property="Margin" Value="0,2,0,7" />
+        </Style>
+    </ContentPage.Resources>
 
-    <VerticalStackLayout Padding="20">
-        <Label Text="Pagina de Motores"
-               FontSize="24"
-               HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="18,20,18,36" Spacing="16">
+            <Label Text="Análisis de motores" FontFamily="OpenSansSemibold" FontSize="27" TextColor="{StaticResource TextHeading}" />
+            <Label Text="Calculá potencia, corriente, carga, conexión, variador, par y estado de fases desde una sola ficha." TextColor="{StaticResource TextBody}" />
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="5">
+                    <Label Text="Datos del motor" Style="{StaticResource TituloSeccion}" />
+                    <Label Text="Alimentación" Style="{StaticResource EtiquetaCampo}" />
+                    <Picker ItemsSource="{Binding TiposAlimentacion}" SelectedItem="{Binding TipoAlimentacion}" Style="{StaticResource Selector}" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Tensión de línea (V)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding TensionLinea}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" IsVisible="{Binding EsTrifasico}">
+                            <Label Text="Conexión" Style="{StaticResource EtiquetaCampo}" />
+                            <Picker ItemsSource="{Binding Conexiones}" SelectedItem="{Binding Conexion}" Style="{StaticResource Selector}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Potencia mecánica (kW)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding PotenciaNominalKw}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Equivalencia" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding PotenciaHp}" Style="{StaticResource ValorResultado}" Margin="0,10,0,0" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Rendimiento (%)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding RendimientoPorcentaje}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Factor de potencia (cos φ)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding FactorPotencia}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="Carga estimada del motor (%)" Style="{StaticResource EtiquetaCampo}" />
+                    <Entry Text="{Binding CargaPorcentaje}" Style="{StaticResource Entrada}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}" BackgroundColor="{StaticResource MotorResultBackground}">
+                <VerticalStackLayout Spacing="13">
+                    <Label Text="Resultado desde kW" Style="{StaticResource TituloSeccion}" />
+                    <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto,Auto" ColumnSpacing="12" RowSpacing="13">
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="0">
+                            <Label Text="Corriente de línea nominal" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding CorrienteNominal}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="1">
+                            <Label Text="Corriente según carga" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding CorrienteSegunCarga}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="0">
+                            <Label Text="Tensión de fase" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding TensionDeFase}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="1">
+                            <Label Text="Corriente de fase" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding CorrienteDeFase}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="2" Grid.Column="0">
+                            <Label Text="Entrada activa" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding PotenciaEntrada}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Row="2" Grid.Column="1">
+                            <Label Text="Potencia aparente / reactiva" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding PotenciaAparente}" Style="{StaticResource ValorResultado}" />
+                            <Label Text="{Binding PotenciaReactiva}" TextColor="{StaticResource TextBody}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="En estrella: Vfase = Vlínea/√3 e Ifase = Ilínea. En triángulo: Vfase = Vlínea e Ifase = Ilínea/√3. Se supone que la placa admite la conexión elegida."
+                           FontSize="12" TextColor="{StaticResource TextMuted}" IsVisible="{Binding EsTrifasico}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Estimación desde corriente medida" Style="{StaticResource TituloSeccion}" />
+                    <Label Text="Corriente de línea medida (A)" Style="{StaticResource EtiquetaCampo}" />
+                    <Entry Text="{Binding CorrienteMedida}" Style="{StaticResource Entrada}" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Potencia mecánica estimada" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding PotenciaEstimada}" Style="{StaticResource ValorResultado}" />
+                            <Label Text="{Binding PotenciaEstimadaHp}" TextColor="{StaticResource TextBody}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Carga estimada" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding CargaEstimada}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="A baja carga esta aproximación pierde precisión porque el factor de potencia y el rendimiento no permanecen constantes."
+                           FontSize="12" TextColor="{StaticResource TextMuted}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Variador de frecuencia" Style="{StaticResource TituloSeccion}" />
+                    <Label Text="Límite elegido respecto de la corriente nominal (%)" Style="{StaticResource EtiquetaCampo}" />
+                    <Entry Text="{Binding LimiteVariadorPorcentaje}" Style="{StaticResource Entrada}" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Salida nominal mínima del VFD" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding CorrienteMinimaVariador}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Límite calculado" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding LimiteCorrienteVariador}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="La corriente nominal se programa con el valor de placa, no con una regla porcentual. El porcentaje solo permite evaluar un límite: confirmalo junto con su tiempo de actuación en el manual del variador. El VFD debe cumplir corriente y potencia."
+                           FontSize="12" TextColor="{StaticResource TextMuted}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Velocidad, deslizamiento y par" Style="{StaticResource TituloSeccion}" />
+                    <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Frecuencia (Hz)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding Frecuencia}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Cantidad de polos" Style="{StaticResource EtiquetaCampo}" />
+                            <Picker ItemsSource="{Binding CantidadesPolos}" SelectedItem="{Binding Polos}" Style="{StaticResource Selector}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="RPM medidas o de placa" Style="{StaticResource EtiquetaCampo}" />
+                    <Entry Text="{Binding RpmMedidas}" Style="{StaticResource Entrada}" />
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="8">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Sincrónica" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding VelocidadSincronica}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Deslizamiento" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding Deslizamiento}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2">
+                            <Label Text="Par nominal" Style="{StaticResource EtiquetaCampo}" />
+                            <Label Text="{Binding ParNominal}" Style="{StaticResource ValorResultado}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}" IsVisible="{Binding EsTrifasico}">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Balance de corrientes" Style="{StaticResource TituloSeccion}" />
+                    <Grid ColumnDefinitions="*,*,*" ColumnSpacing="9">
+                        <VerticalStackLayout Grid.Column="0">
+                            <Label Text="Fase A (A)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding CorrienteFaseA}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1">
+                            <Label Text="Fase B (A)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding CorrienteFaseB}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2">
+                            <Label Text="Fase C (A)" Style="{StaticResource EtiquetaCampo}" />
+                            <Entry Text="{Binding CorrienteFaseC}" Style="{StaticResource Entrada}" />
+                        </VerticalStackLayout>
+                    </Grid>
+                    <Label Text="{Binding DesequilibrioCorriente}" Style="{StaticResource ValorResultado}" />
+                    <Label Text="{Binding EstadoDesequilibrio}" TextColor="{Binding ColorDesequilibrio}" FontFamily="OpenSansSemibold" />
+                    <Label Text="Cálculo: 100 × máxima desviación respecto del promedio ÷ corriente promedio. Medí también las tres tensiones: un pequeño desequilibrio de tensión puede producir uno de corriente mucho mayor."
+                           FontSize="12" TextColor="{StaticResource TextMuted}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Style="{StaticResource Tarjeta}">
+                <VerticalStackLayout Spacing="7">
+                    <Label Text="Fórmulas utilizadas" Style="{StaticResource TituloSeccion}" />
+                    <Label Text="Trifásico: I = Psalida × 1000 ÷ (√3 × Vlínea × cos φ × η)" TextColor="{StaticResource TextBody}" />
+                    <Label Text="Monofásico: I = Psalida × 1000 ÷ (V × cos φ × η)" TextColor="{StaticResource TextBody}" />
+                    <Label Text="Inversa: Psalida = factor de sistema × V × I × cos φ × η ÷ 1000" TextColor="{StaticResource TextBody}" />
+                    <Label Text="HP = kW ÷ 0,746 · rpm sincrónicas = 120 × Hz ÷ polos · par = 9550 × kW ÷ rpm" TextColor="{StaticResource TextBody}" />
+                    <Label Text="η es rendimiento. La estimación por carga supone η y cos φ constantes; no es válida como ensayo de rendimiento ni reemplaza la placa."
+                           FontSize="12" TextColor="{StaticResource TextMuted}" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="{StaticResource MotorNoticeBackground}" Stroke="{StaticResource CardBorder}"
+                    StrokeShape="RoundRectangle 12" Padding="15">
+                <Label Text="{Binding Advertencia}" TextColor="{StaticResource MotorNoticeText}" FontSize="13" />
+            </Border>
+
+            <Button Text="Restaurar ejemplo: 15 HP · 380 V · trifásico" Command="{Binding RestaurarValoresCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

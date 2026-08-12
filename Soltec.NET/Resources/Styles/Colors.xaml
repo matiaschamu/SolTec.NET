@@ -67,6 +67,12 @@
     <Color x:Key="TextBody">#555555</Color>
     <Color x:Key="TextMuted">#777777</Color>
 
+    <!-- Calculadora de motores -->
+    <Color x:Key="MotorInputBackground">#F8FAFC</Color>
+    <Color x:Key="MotorResultBackground">#EAF2FB</Color>
+    <Color x:Key="MotorNoticeBackground">#FFF8E1</Color>
+    <Color x:Key="MotorNoticeText">#795548</Color>
+
     <!-- Acentos semánticos -->
     <Color x:Key="AccentBlue">#1565C0</Color>
     <Color x:Key="Danger">Red</Color>
