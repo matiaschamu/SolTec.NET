@@ -159,8 +159,9 @@ Resources/   Íconos, fuentes, imágenes, splash, estilos
 **Servicios** (mantenerlos chicos y con una responsabilidad):
 `ActualizacionService` (aviso de nueva versión, §6.1) · `ArchivoService` (I/O local) ·
 `BuscarCarpetasOnline` · `ConexionService` (conectividad) · `ContenidoJsonService`
-(parseo del catálogo) · `ConverterService` (converters XAML) · `PreferenciasService`
-(prefs persistentes) · `SincronizacionService` (descarga/sync offline).
+(parseo del catálogo) · `ConverterService` (converters XAML) · `NumeroRegionalService`
+(normalización regional y precio unitario de Pañol) · `PreferenciasService` (prefs
+persistentes) · `SincronizacionService` (descarga/sync offline).
 
 **Convenciones:**
 - **MVVM estricto**: la lógica va en ViewModels/Services, no en el code-behind.
@@ -169,6 +170,9 @@ Resources/   Íconos, fuentes, imágenes, splash, estilos
   coherencia: no mezclar inglés salvo términos técnicos establecidos.
 - **Nullability**: el proyecto ya limpió warnings de nullability; no reintroducirlos.
 - Persistencia local con **SQLite** (`sqlite-net-pcl`); prefs con `PreferenciasService`.
+- En **Pañol**, `Precio` representa el valor total del stock: el costo unitario mostrado
+  es `Precio / Cantidad`. Ambos campos pueden mezclar separadores regionales; convertirlos
+  mediante `NumeroRegionalService`, preservando el tipo original informado por SQLite.
 - Verificar **SHA-256** en descargas; no saltear la validación de integridad. Se valida
   **antes de escribir en disco**, tanto en `SincronizacionService` como al abrir un
   manual online: nada que no coincida con el hash del `content.json` puede quedar

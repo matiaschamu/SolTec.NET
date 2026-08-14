@@ -64,7 +64,7 @@
                                        FontFamily="OpenSans-Regular"
                                        TextColor="{StaticResource TextBody}"
                                        HorizontalTextAlignment="Center" />
-                                <Label Text="{Binding Precio, StringFormat='${0}'}"
+                                <Label Text="{Binding PrecioUnitarioFormateado}"
                                        FontSize="16"
                                        FontFamily="OpenSans-SemiBold"
                                        TextColor="{StaticResource PriceGreen}"

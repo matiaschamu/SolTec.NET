@@ -1,7 +1,9 @@
 ﻿namespace Soltec.NET.Views;
 
+using Soltec.NET.Services;
 using SQLite;
 using System.Collections.ObjectModel;
+using System.Globalization;
 
 public partial class PanolPage : ContentPage
 {
@@ -143,7 +145,10 @@ public partial class PanolPage : ContentPage
 
         // Consulta final
         var query = $@"
-        SELECT *, ({scoringSql}) AS Score 
+        SELECT *,
+               typeof(Precio) AS TipoPrecioSqlite,
+               typeof(Cantidad) AS TipoCantidadSqlite,
+               ({scoringSql}) AS Score
         FROM ListadoPañol 
         WHERE Score > 0 
         ORDER BY 
@@ -168,4 +173,26 @@ public class ListadoPañol
     public string Cantidad { get; set; } = string.Empty;
     public string Precio { get; set; } = string.Empty;
     public string Nombre { get; set; } = string.Empty;
+    public string TipoPrecioSqlite { get; set; } = string.Empty;
+    public string TipoCantidadSqlite { get; set; } = string.Empty;
+
+    [Ignore]
+    public string PrecioUnitarioFormateado
+    {
+        get
+        {
+            decimal precioUnitario;
+            bool calculoValido = NumeroRegionalService.TryCalcularPrecioUnitario(
+                Precio,
+                TipoPrecioSqlite,
+                Cantidad,
+                TipoCantidadSqlite,
+                out precioUnitario);
+
+            if (!calculoValido)
+                return "Sin datos";
+
+            return $"${precioUnitario.ToString("N2", CultureInfo.CurrentCulture)}";
+        }
+    }
 }
