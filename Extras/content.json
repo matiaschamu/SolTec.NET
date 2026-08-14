@@ -1262,6 +1262,12 @@
                   "TamanoBytes": 465606
                 },
                 {
+                  "Nombre": "IFM-SM6100-Caudalimetro.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/IFM-SM6100-Caudalimetro.pdf",
+                  "Hash": "6f89f1b354b895d09f82cf1c086d3014abcb9ce9a9ddcdbdd950902348d5fdc5",
+                  "TamanoBytes": 1477598
+                },
+                {
                   "Nombre": "KN5101 01 EN US.pdf",
                   "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/Manuales/Ifm/KN5101%2001%20EN%20US.pdf",
                   "Hash": "ab8b4e9d3b2b74769f2e9151c8b28d499b8f2ae5402bc9325865c892d9c8536c",
