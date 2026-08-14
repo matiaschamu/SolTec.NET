@@ -7,6 +7,36 @@
       "Archivos": [],
       "Subcarpetas": [
         {
+          "Nombre": "ConMon",
+          "Archivos": [],
+          "Subcarpetas": [
+            {
+              "Nombre": "00-Lubricantes",
+              "Archivos": [
+                {
+                  "Nombre": "DATOS DE LUBRICANTES EQUIPOS CRITICOS.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ConMon/00-Lubricantes/DATOS%20DE%20LUBRICANTES%20EQUIPOS%20CRITICOS.pdf",
+                  "Hash": "4f0009a539a514823fed89bf5958e9acb478be5d111d7e6e98eb40fcb1e7317e",
+                  "TamanoBytes": 125663
+                }
+              ],
+              "Subcarpetas": []
+            },
+            {
+              "Nombre": "01-Intercambiadores",
+              "Archivos": [
+                {
+                  "Nombre": "PROCEDIMIENTO INTERLOCKS 2026.pdf",
+                  "Url": "https://matiaschamu.github.io/SolTec.NET/Extras/Content/ConMon/01-Intercambiadores/PROCEDIMIENTO%20INTERLOCKS%202026.pdf",
+                  "Hash": "472b76e5e85c9fd60a44fb6bc5d501b46e1012b1307cf64643500c5915a7e34b",
+                  "TamanoBytes": 70461
+                }
+              ],
+              "Subcarpetas": []
+            }
+          ]
+        },
+        {
           "Nombre": "Intercambiadores",
           "Archivos": [],
           "Subcarpetas": [
