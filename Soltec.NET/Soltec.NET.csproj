@@ -13,8 +13,8 @@
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
 		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<ApplicationDisplayVersion>1.0.102</ApplicationDisplayVersion>
-		<ApplicationVersion>102</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.103</ApplicationDisplayVersion>
+		<ApplicationVersion>103</ApplicationVersion>
 
 		<!--
 			Versión que se ANUNCIA en el aviso de actualización (ver AGENTS.md §6.1).
