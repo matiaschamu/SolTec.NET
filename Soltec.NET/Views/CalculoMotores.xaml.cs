@@ -9,4 +9,10 @@ public partial class MotoresPage : ContentPage
         InitializeComponent();
         BindingContext = new MotoresViewModel();
     }
+
+    protected override bool OnBackButtonPressed()
+    {
+        return Shell.Current is AppShell shell && shell.IntentarVolverAlInicio()
+            || base.OnBackButtonPressed();
+    }
 }

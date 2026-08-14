@@ -17,6 +17,12 @@ public partial class PanolPage : ContentPage
 		//InitializeDatabase();
 	}
 
+    protected override bool OnBackButtonPressed()
+    {
+        return Shell.Current is AppShell shell && shell.IntentarVolverAlInicio()
+            || base.OnBackButtonPressed();
+    }
+
 	// Usar OnAppearing para ejecutar código asíncrono cuando la página se muestra
 	protected override async void OnAppearing()
 	{

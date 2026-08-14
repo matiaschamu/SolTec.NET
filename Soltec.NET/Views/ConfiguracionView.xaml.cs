@@ -12,6 +12,12 @@ public partial class ConfiguracionView : ContentPage
         this.BindingContext = vm;
     }
 
+    protected override bool OnBackButtonPressed()
+    {
+        return Shell.Current is AppShell shell && shell.IntentarVolverAlInicio()
+            || base.OnBackButtonPressed();
+    }
+
     protected override async void OnAppearing()
     {
         base.OnAppearing();

@@ -11,8 +11,10 @@ public partial class ContenidoDetallePage : ContentPage
         _viewModel = vm;
         BindingContext = _viewModel;
     }
+
+    protected override bool OnBackButtonPressed()
+    {
+        return Shell.Current is AppShell shell && shell.IntentarVolverAlInicio()
+            || base.OnBackButtonPressed();
+    }
 }
-
-
-
-    

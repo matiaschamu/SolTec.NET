@@ -48,9 +48,14 @@ namespace Soltec.NET
 
         protected override bool OnBackButtonPressed()
         {
+            return IntentarVolverAlInicio() || base.OnBackButtonPressed();
+        }
+
+        internal bool IntentarVolverAlInicio()
+        {
             var rutaActual = CurrentState.Location.OriginalString.TrimEnd('/');
             if (string.Equals(rutaActual, RutaInicio, StringComparison.OrdinalIgnoreCase))
-                return base.OnBackButtonPressed();
+                return false;
 
             if (!_volviendo)
             {
@@ -65,8 +70,7 @@ namespace Soltec.NET
         {
             try
             {
-                var destino = Navigation.NavigationStack.Count > 1 ? ".." : RutaInicio;
-                await GoToAsync(destino);
+                await GoToAsync(RutaInicio);
             }
             catch (Exception ex)
             {

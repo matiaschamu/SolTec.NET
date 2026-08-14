@@ -183,6 +183,10 @@ persistentes) · `SincronizacionService` (descarga/sync offline).
 
 ### Navegación de contenido (data-driven)
 Las categorías de documentación **no** tienen pantalla ni lógica propia: son datos.
+- **Atrás desde pantallas secundarias:** Android entrega primero el gesto/botón a la
+  `ContentPage` visible. Pañol, contenido, Motores y Configuración sobrescriben
+  `OnBackButtonPressed` y delegan en `AppShell.IntentarVolverAlInicio`; mantener ese
+  patrón en toda pantalla secundaria nueva para volver al menú en vez de cerrar la app.
 - **Una sola pantalla genérica**: `ContenidoDetallePage?Ruta=Content/<Categoria>`
   lista las subcarpetas y sus PDFs. Manuales, Planos e **Intercambiadores** usan la
   misma página; solo cambia la `Ruta`.
