@@ -48,8 +48,8 @@ y patrón **MVVM** apoyado en [CommunityToolkit.Mvvm](https://github.com/Communi
 - Modo **offline**: descarga y sincronización de archivos por carpeta para consultarlos sin conexión.
   La pantalla de **Configuración** lista automáticamente todas las categorías para sincronizarlas.
 - Detección de conectividad y validación de caché local de `content.json` al iniciar.
-- **Aviso de nueva versión**: al abrir el menú compara la versión instalada contra
-  `Extras/app-version.json` y ofrece abrir Google Play si hay una más nueva.
+- **Aviso de nueva versión en Android**: al abrir el menú compara la versión instalada
+  contra `Extras/app-version.json` y ofrece abrir Google Play si hay una más nueva.
 - Verificación de integridad de descargas mediante **hash SHA-256**.
 - Cálculo de motores y otras utilidades de trabajo.
 - Persistencia de preferencias y almacenamiento local con **SQLite**.

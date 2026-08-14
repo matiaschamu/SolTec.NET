@@ -68,7 +68,10 @@ namespace Soltec.NET.ViewModels
             try
             {
                 _contenidoJsonService.InvalidarCacheRaiz();
-                var carpetas = await _contenidoJsonService.ObtenerCarpetasInicialesAsync();
+                var carpetas = (await _contenidoJsonService.ObtenerCarpetasInicialesAsync())
+                    // Compatibilidad temporal: las versiones anteriores todavía usan
+                    // esta carpeta publicada, pero la app nueva sincroniza ConMon.
+                    .Where(c => !string.Equals(c.Nombre, "Intercambiadores", StringComparison.OrdinalIgnoreCase));
                 
                 await MainThread.InvokeOnMainThreadAsync(() => {
                     CarpetasUpdate.Clear();

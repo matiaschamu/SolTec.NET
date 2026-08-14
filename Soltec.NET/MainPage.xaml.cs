@@ -31,7 +31,9 @@ namespace Soltec.NET
         }
 
         /// <summary>
-        /// Avisa si hay una versión más nueva publicada y ofrece abrir Google Play.
+        /// En Android, avisa si hay una versión más nueva publicada y ofrece abrir Google Play.
+        /// En las demás plataformas el servicio no devuelve actualizaciones porque el
+        /// catálogo remoto corresponde exclusivamente al canal de Google Play.
         /// Se repite en cada inicio hasta que el técnico actualice.
         /// </summary>
         private async Task VerificarActualizacionAsync()
@@ -93,7 +95,7 @@ namespace Soltec.NET
 		private async void OnIntercambiadoresClicked(object sender, TappedEventArgs e)
 		{
             if (!await IsContentAvailable()) return;
-            await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/Intercambiadores"}");
+            await Shell.Current.GoToAsync($"{nameof(ContenidoDetallePage)}?Ruta={"Content/ConMon"}");
         }
 
 		private async void OnPoliticasClicked(object sender, TappedEventArgs e)

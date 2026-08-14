@@ -6,6 +6,9 @@ namespace Soltec.NET
 {
 	public partial class AppShell : Shell
 	{
+		private const string RutaInicio = "//Inicio/Principal";
+		private bool _volviendo;
+
 		public AppShell()
 		{
 			InitializeComponent();
@@ -40,6 +43,38 @@ namespace Soltec.NET
                         });
                     }
                 }
+            }
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            var rutaActual = CurrentState.Location.OriginalString.TrimEnd('/');
+            if (string.Equals(rutaActual, RutaInicio, StringComparison.OrdinalIgnoreCase))
+                return base.OnBackButtonPressed();
+
+            if (!_volviendo)
+            {
+                _volviendo = true;
+                _ = VolverAsync();
+            }
+
+            return true;
+        }
+
+        private async Task VolverAsync()
+        {
+            try
+            {
+                var destino = Navigation.NavigationStack.Count > 1 ? ".." : RutaInicio;
+                await GoToAsync(destino);
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"No se pudo volver a la pantalla anterior: {ex.Message}");
+            }
+            finally
+            {
+                _volviendo = false;
             }
         }
 	}

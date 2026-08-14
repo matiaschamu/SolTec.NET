@@ -12,7 +12,7 @@ namespace Soltec.NET.Services
         Task<VersionApp?> ObtenerActualizacionDisponibleAsync();
 
         /// <summary>
-        /// Abre la ficha de la app en Google Play.
+        /// Abre la ficha de la app en Google Play. Solo aplica en Android.
         /// </summary>
         Task AbrirTiendaAsync();
     }
@@ -43,7 +43,10 @@ namespace Soltec.NET.Services
 
         public async Task<VersionApp?> ObtenerActualizacionDisponibleAsync()
         {
-            if (!_conexion.HayConexion())
+            // app-version.json anuncia el versionCode publicado en Google Play.
+            // No se compara ni se ofrece esa descarga en plataformas que usan
+            // otros canales de distribución.
+            if (DeviceInfo.Current.Platform != DevicePlatform.Android || !_conexion.HayConexion())
                 return null;
 
             try
@@ -70,6 +73,9 @@ namespace Soltec.NET.Services
 
         public async Task AbrirTiendaAsync()
         {
+            if (DeviceInfo.Current.Platform != DevicePlatform.Android)
+                return;
+
             var id = AppInfo.Current.PackageName;
 
             // market:// abre la app de Play directo; si no está disponible, se cae al navegador.
@@ -83,8 +89,7 @@ namespace Soltec.NET.Services
             if (int.TryParse(AppInfo.Current.BuildString, out var build))
                 return build;
 
-            // En el resto de las plataformas se usa el tercer número de la versión visible.
-            // Si tampoco se puede leer, se devuelve el máximo para no avisar de más.
+            // Si no se puede leer, se devuelve el máximo para no avisar de más.
             var buildDeVersion = AppInfo.Current.Version.Build;
             return buildDeVersion >= 0 ? buildDeVersion : int.MaxValue;
         }

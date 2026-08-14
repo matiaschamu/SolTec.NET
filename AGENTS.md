@@ -184,11 +184,12 @@ Las categorías de documentación **no** tienen pantalla ni lógica propia: son 
   misma página; solo cambia la `Ruta`.
 - **Configuración se autollena**: `ConfiguracionViewModel` lista **toda** subcarpeta
   de `Content` como tarjeta sincronizable (`ObtenerCarpetasInicialesAsync`). No hay
-  que programar sync por categoría.
+  que programar sync por categoría. Excepción temporal: oculta `Intercambiadores`,
+  conservada en el catálogo solo para compatibilidad con versiones anteriores;
+  la app actual usa y sincroniza exclusivamente `ConMon`.
 - **Agregar una categoría nueva** = (1) un tile en `MainPage` que navegue a su
   `Ruta`, y (2) crear la carpeta con PDFs en `Extras/Content/<Categoria>` + regenerar
-  el JSON (§6). El nombre del tile puede diferir del de la carpeta (ej. botón
-  "ConMon" → carpeta `Content/Intercambiadores`), pero el
+  el JSON (§6). El nombre del tile puede diferir del de la carpeta, pero el
   **título de la pantalla sale del nombre de la carpeta**.
 
 ---
@@ -215,7 +216,9 @@ El contenido y la app se actualizan por caminos separados. Para publicar conteni
 La app se distribuye por **Google Play (canal interno)**, así que Play se encarga de
 instalar la actualización. Lo que la app agrega es el **aviso**: al abrir el menú
 consulta `Extras/app-version.json` y, si hay una versión más nueva que la instalada,
-ofrece abrir la ficha de Play.
+ofrece abrir la ficha de Play. Este chequeo se ejecuta **solo en Android**: el JSON
+publica el `versionCode` de Google Play y no representa las versiones ni los canales
+de distribución de iOS, Mac Catalyst o Windows.
 
 **La app se publica en dos canales de Play**: primero *prueba interna*, y ~3 días
 después se promueve a *alpha*. La app **no puede saber de qué canal fue instalada** (no

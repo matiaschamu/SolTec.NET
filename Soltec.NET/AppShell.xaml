@@ -8,8 +8,8 @@
     Title="Soltec.NET">
 
     <!-- Página principal -->
-    <FlyoutItem Title="Inicio" Icon="home.png">
-        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    <FlyoutItem Route="Inicio" Title="Inicio" Icon="home.png">
+        <ShellContent Route="Principal" ContentTemplate="{DataTemplate local:MainPage}" />
     </FlyoutItem>
 
     <!-- Otra página --><!--
@@ -38,8 +38,8 @@
     </FlyoutItem>-->
     
     <!-- Otra página -->
-    <FlyoutItem Title="Configuracion" Icon="settings.png">
-        <ShellContent ContentTemplate="{DataTemplate views:ConfiguracionView}" />
+    <FlyoutItem Route="Configuracion" Title="Configuracion" Icon="settings.png">
+        <ShellContent Route="Preferencias" ContentTemplate="{DataTemplate views:ConfiguracionView}" />
     </FlyoutItem>
 
 </Shell>
