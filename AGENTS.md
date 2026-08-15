@@ -25,7 +25,7 @@ consulta de contenidos) y permite usarlos **online y offline**.
 |---|---|
 | Nombre visible | **Soltec 4.0** |
 | Application ID | `com.companyname.soltecpep` |
-| Versión (display / build) | `1.0.103` / `103` |
+| Versión (display / build) | `1.0.104` / `104` |
 | Framework | .NET 9 · MAUI (MVVM con CommunityToolkit.Mvvm) |
 | Plataformas | Android · iOS · Mac Catalyst · Windows |
 | Fuente | **Open Sans** (Regular / Semibold) |
@@ -183,10 +183,11 @@ persistentes) · `SincronizacionService` (descarga/sync offline).
 
 ### Navegación de contenido (data-driven)
 Las categorías de documentación **no** tienen pantalla ni lógica propia: son datos.
-- **Atrás desde pantallas secundarias:** Android entrega primero el gesto/botón a la
-  `ContentPage` visible. Pañol, contenido, Motores y Configuración sobrescriben
-  `OnBackButtonPressed` y delegan en `AppShell.IntentarVolverAlInicio`; mantener ese
-  patrón en toda pantalla secundaria nueva para volver al menú en vez de cerrar la app.
+- **Atrás desde pantallas secundarias:** Android lo captura en `MainActivity` mediante
+  `OnBackPressedDispatcher` y delega en `AppShell.IntentarVolverAlInicio`; así también
+  cubre la navegación gestual, que Shell no siempre reenvía a la `ContentPage`. Pañol,
+  contenido, Motores y Configuración conservan `OnBackButtonPressed` como respaldo.
+  Toda pantalla secundaria debe volver al menú en vez de cerrar la app.
 - **Una sola pantalla genérica**: `ContenidoDetallePage?Ruta=Content/<Categoria>`
   lista las subcarpetas y sus PDFs. Manuales, Planos e **Intercambiadores** usan la
   misma página; solo cambia la `Ruta`.
