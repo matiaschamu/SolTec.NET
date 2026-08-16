@@ -77,6 +77,33 @@
                 TextColor="{StaticResource White}"
                 CornerRadius="8"
                 Command="{Binding BorrarTodoCommand}" />
+
+            <Frame IsVisible="{Binding RegistroDiagnosticoDisponible}"
+                   HasShadow="True"
+                   CornerRadius="15"
+                   Padding="20"
+                   BackgroundColor="{StaticResource White}"
+                   BorderColor="{StaticResource CardBorder}">
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="Diagnóstico de errores"
+                           FontAttributes="Bold"
+                           FontSize="20"
+                           TextColor="{StaticResource TextPrimary}" />
+                    <Label Text="Los registros se guardan solamente en este dispositivo. Podés exportarlos manualmente para analizar un problema."
+                           FontSize="14"
+                           TextColor="{StaticResource TextMuted}" />
+                    <Button Text="Exportar diagnóstico"
+                            CornerRadius="8"
+                            Command="{Binding ExportarDiagnosticoCommand}"
+                            BackgroundColor="{StaticResource AccentBlue}"
+                            TextColor="{StaticResource White}" />
+                    <Button Text="Borrar registros"
+                            CornerRadius="8"
+                            Command="{Binding BorrarDiagnosticoCommand}"
+                            BackgroundColor="{StaticResource DangerSoft}"
+                            TextColor="{StaticResource White}" />
+                </VerticalStackLayout>
+            </Frame>
             </VerticalStackLayout>
         </ScrollView>
 

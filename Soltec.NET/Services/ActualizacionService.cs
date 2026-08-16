@@ -1,5 +1,6 @@
 using Soltec.NET.Models;
 using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET.Services
 {
@@ -34,11 +35,16 @@ namespace Soltec.NET.Services
 
         private readonly HttpClient _http;
         private readonly IConexionService _conexion;
+        private readonly ILogger<ActualizacionService> _logger;
 
-        public ActualizacionService(HttpClient http, IConexionService conexion)
+        public ActualizacionService(
+            HttpClient http,
+            IConexionService conexion,
+            ILogger<ActualizacionService> logger)
         {
             _http = http;
             _conexion = conexion;
+            _logger = logger;
         }
 
         public async Task<VersionApp?> ObtenerActualizacionDisponibleAsync()
@@ -63,8 +69,9 @@ namespace Soltec.NET.Services
 
                 return publicada;
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogWarning(ex, "No se pudo consultar app-version.json");
                 // Sin salida a internet, JSON mal formado o timeout: no es un error que
                 // le importe al usuario. Se ignora y la app sigue normal.
                 return null;

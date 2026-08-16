@@ -4,15 +4,18 @@ using Soltec.NET.Services;
 using SQLite;
 using System.Collections.ObjectModel;
 using System.Globalization;
+using Microsoft.Extensions.Logging;
 
 public partial class PanolPage : ContentPage
 {
 	private SQLiteAsyncConnection? _dbConnection;
+	private readonly ILogger<PanolPage>? _logger;
 	public ObservableCollection<ListadoPañol> ResultadosBusqueda { get; } = new ObservableCollection<ListadoPañol>();
 
 	public PanolPage()
 	{
 		InitializeComponent();
+		_logger = IPlatformApplication.Current?.Services.GetService<ILogger<PanolPage>>();
 		BindingContext = this;
 		//InitializeDatabase();
 	}
@@ -40,6 +43,7 @@ public partial class PanolPage : ContentPage
         }
         catch (Exception ex)
         {
+            _logger?.LogError(ex, "No se pudo cargar la base de datos del pañol");
             // Esto evita que la app se cierre si falla la DB y te permite ver el error
             await DisplayAlert("Error", $"No se pudo cargar la base de datos: {ex.Message}", "OK");
         }
@@ -111,8 +115,9 @@ public partial class PanolPage : ContentPage
             // 3. Establecer la nueva conexión
             _dbConnection = new SQLiteAsyncConnection(databasePath);
         }
-        catch (IOException)
+        catch (IOException ex)
         {
+            _logger?.LogWarning(ex, "La base del pañol estaba bloqueada; se reintentará la conexión");
             // Si el archivo sigue bloqueado, esperamos un momento y reintentamos una vez
             await Task.Delay(500);
             _dbConnection = new SQLiteAsyncConnection(databasePath);

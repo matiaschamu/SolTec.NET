@@ -1,6 +1,7 @@
 ﻿using Soltec.NET.Views;
 using Microsoft.Maui.Controls;
 using Microsoft.Maui.Networking;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET
 {
@@ -8,10 +9,14 @@ namespace Soltec.NET
 	{
 		private const string RutaInicio = "//Inicio/Principal";
 		private bool _volviendo;
+		private readonly ILogger<AppShell>? _logger;
 
 		public AppShell()
 		{
 			InitializeComponent();
+			_logger = IPlatformApplication.Current?.Services.GetService<ILogger<AppShell>>();
+			Navigated += (_, args) =>
+				_logger?.LogInformation("Navegación a {Ruta}", args.Current?.Location?.ToString());
 			Routing.RegisterRoute("PanolPage", typeof(PanolPage));
 			Routing.RegisterRoute("ContenidoDetallePage", typeof(ContenidoDetallePage));
 			Routing.RegisterRoute("MotoresPage", typeof(MotoresPage));
@@ -74,7 +79,7 @@ namespace Soltec.NET
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"No se pudo volver a la pantalla anterior: {ex.Message}");
+                _logger?.LogError(ex, "No se pudo volver a la pantalla de inicio");
             }
             finally
             {

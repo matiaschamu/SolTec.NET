@@ -292,6 +292,31 @@ cd "Validar Json Soltec"    && dotnet run
 - **CI**: `.github/workflows/ios-build.yml` compila la app para el Simulador de iOS en
   cada push a `main`.
 
+### 7.1 Registro de diagnóstico opcional
+
+La app tiene un registro de errores enteramente offline con exportación manual desde
+Configuración. Se controla antes de compilar con la propiedad MSBuild
+`RegistroDiagnosticoHabilitado` de `Soltec.NET.csproj`:
+
+- `false` (valor predeterminado): no instala el proveedor de archivo ni los capturadores
+  globales, no escribe diagnósticos y oculta la tarjeta de exportación. Usar para alpha/
+  producción.
+- `true`: guarda logs JSON Lines rotativos dentro de `AppDataDirectory/Diagnosticos`,
+  captura excepciones globales y muestra “Diagnóstico de errores” en Configuración. Usar
+  para prueba interna.
+
+Se puede cambiar el bit en el `.csproj` o sobreescribirlo solo para una compilación sin
+modificar el archivo:
+
+```bash
+dotnet build Soltec.NET/Soltec.NET.csproj -f net9.0-android36.0 -c Release \
+  -p:RegistroDiagnosticoHabilitado=true
+```
+
+`ArchivoService.BorrarTodo()` conserva la carpeta `Diagnosticos`; esos archivos se borran
+exclusivamente desde el botón “Borrar registros”. No registrar contraseñas, tokens ni
+datos personales en mensajes o propiedades de `ILogger`.
+
 ---
 
 ## 8. Cómo trabajar en este repo (para agentes)

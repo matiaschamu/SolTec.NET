@@ -38,10 +38,22 @@ namespace Soltec.NET
             builder.Services.AddSingleton<ConfiguracionView>();
             builder.Services.AddTransient<ContenidoDetallePage>();
 
+#if REGISTRO_DIAGNOSTICO
+            var registroDiagnostico = new RegistroDiagnosticoService();
+            builder.Services.AddSingleton<IRegistroDiagnosticoService>(registroDiagnostico);
+            builder.Logging.AddProvider(new ProveedorLoggerArchivo(registroDiagnostico));
+#endif
+
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-			return builder.Build();
+			var app = builder.Build();
+
+#if REGISTRO_DIAGNOSTICO
+            CapturadorErroresGlobales.Inicializar(registroDiagnostico);
+#endif
+
+            return app;
 		}
 	}
 }

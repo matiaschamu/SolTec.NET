@@ -10,11 +10,24 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
+		<!--
+			Registro de diagnóstico enteramente local. Es independiente de Debug/Release
+			porque prueba interna y alpha se compilan ambas en Release.
+
+			- false: no instala capturadores, no escribe logs y oculta la exportación.
+			- true: registra errores y permite exportarlos manualmente desde Configuración.
+
+			También se puede sobreescribir sin editar el archivo:
+			dotnet build ... -p:RegistroDiagnosticoHabilitado=true
+		-->
+		<RegistroDiagnosticoHabilitado Condition="'$(RegistroDiagnosticoHabilitado)' == ''">true</RegistroDiagnosticoHabilitado>
+		<DefineConstants Condition="'$(RegistroDiagnosticoHabilitado)' == 'true'">$(DefineConstants);REGISTRO_DIAGNOSTICO</DefineConstants>
+
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
 		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<ApplicationDisplayVersion>1.0.104</ApplicationDisplayVersion>
-		<ApplicationVersion>104</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.105</ApplicationDisplayVersion>
+		<ApplicationVersion>105</ApplicationVersion>
 
 		<!--
 			Versión que se ANUNCIA en el aviso de actualización (ver AGENTS.md §6.1).

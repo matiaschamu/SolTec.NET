@@ -2,8 +2,11 @@
 {
 	public partial class App : Application
 	{
-		public App()
+		private readonly Microsoft.Extensions.Logging.ILogger<App> _logger;
+
+		public App(Microsoft.Extensions.Logging.ILogger<App> logger)
 		{
+			_logger = logger;
 			InitializeComponent();
 #if __ANDROID__
             BorrarArchivosObb();
@@ -26,7 +29,7 @@
             try
             {
                 var context = Android.App.Application.Context;
-                string obbDir = context.ObbDir?.AbsolutePath;
+                string? obbDir = context.ObbDir?.AbsolutePath;
 
                 if (!string.IsNullOrEmpty(obbDir) && Directory.Exists(obbDir))
                 {
@@ -38,7 +41,10 @@
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"Error al borrar OBB: {ex.Message}");
+                Microsoft.Extensions.Logging.LoggerExtensions.LogError(
+                    _logger,
+                    ex,
+                    "No se pudieron borrar los archivos OBB residuales");
             }
         }
 #endif

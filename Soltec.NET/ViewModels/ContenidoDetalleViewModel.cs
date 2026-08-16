@@ -4,6 +4,7 @@ using Soltec.NET.Services;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Microsoft.Maui.Graphics;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET.ViewModels
 {
@@ -13,6 +14,7 @@ namespace Soltec.NET.ViewModels
         private readonly IPreferenciasService _prefs;
         private readonly ISincronizacionService _sincronizacionService;
         private readonly IContenidoJsonService _contenidoJsonService;
+        private readonly ILogger<ContenidoDetalleViewModel> _logger;
         private string _ruta = string.Empty;
         public string Ruta
         {
@@ -38,12 +40,18 @@ namespace Soltec.NET.ViewModels
 
         public ICommand AbrirManualCommand { get; }
 
-        public ContenidoDetalleViewModel(IArchivoService archivoService, IPreferenciasService prefs, ISincronizacionService sincronizacionService, IContenidoJsonService contenidoJsonService)
+        public ContenidoDetalleViewModel(
+            IArchivoService archivoService,
+            IPreferenciasService prefs,
+            ISincronizacionService sincronizacionService,
+            IContenidoJsonService contenidoJsonService,
+            ILogger<ContenidoDetalleViewModel> logger)
         {
             _archivoService = archivoService;
             _prefs = prefs;
             _sincronizacionService = sincronizacionService;
             _contenidoJsonService = contenidoJsonService;
+            _logger = logger;
 
             AbrirManualCommand = new Command<Manual>(async (manual) => await AbrirManual(manual));
         }
@@ -58,6 +66,32 @@ namespace Soltec.NET.ViewModels
         }
 
         public async Task CargarDatosAsync(string rutaBaseContenido)
+        {
+            try
+            {
+                await CargarDatosInternosAsync(rutaBaseContenido);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(
+                    ex,
+                    "No se pudo cargar el contenido de {Ruta}",
+                    rutaBaseContenido);
+
+                await MainThread.InvokeOnMainThreadAsync(async () =>
+                {
+                    if (Shell.Current is { } shell)
+                    {
+                        await shell.DisplayAlert(
+                            "Error",
+                            $"No se pudo cargar el contenido: {ex.Message}",
+                            "OK");
+                    }
+                });
+            }
+        }
+
+        private async Task CargarDatosInternosAsync(string rutaBaseContenido)
         {
             Titulo = Path.GetFileName(rutaBaseContenido);
             await MainThread.InvokeOnMainThreadAsync(() => Contenidos.Clear());
@@ -177,8 +211,12 @@ namespace Soltec.NET.ViewModels
                     {
                         bytes = await _archivoService.DescargarArchivo(manual.Url);
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        _logger.LogWarning(
+                            ex,
+                            "No se pudo descargar {Manual}; se intentará abrir su URL",
+                            manual.Nombre);
                         // Sin conexión: intentar abrir la URL de todas formas
                         await Launcher.OpenAsync(new Uri(manual.Url));
                         return;
@@ -191,6 +229,11 @@ namespace Soltec.NET.ViewModels
                         var hashDescargado = _archivoService.CalcularHash(bytes);
                         if (!hashDescargado.Equals(manual.Hash, StringComparison.OrdinalIgnoreCase))
                         {
+                            _logger.LogError(
+                                "El manual {Manual} no pasó la validación SHA-256. Hash esperado: {HashEsperado}; hash obtenido: {HashObtenido}",
+                                manual.Nombre,
+                                manual.Hash,
+                                hashDescargado);
                             await Application.Current.MainPage.DisplayAlert(
                                 "Archivo dañado",
                                 "El manual descargado no pasó la verificación de integridad y no se guardó. Probá de nuevo con mejor señal.",
@@ -221,6 +264,7 @@ namespace Soltec.NET.ViewModels
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "No se pudo abrir el manual {Manual}", manual.Nombre);
                 await Application.Current.MainPage.DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
             }
         }

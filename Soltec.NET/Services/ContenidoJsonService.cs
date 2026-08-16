@@ -1,6 +1,7 @@
 ﻿using Soltec.NET.Models;
 using Soltec.NET.Services;
 using System.Net.Http.Json;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET.Services
 {
@@ -34,13 +35,22 @@ namespace Soltec.NET.Services
         private readonly IPreferenciasService _prefs;
         private readonly HttpClient _http;
         private readonly IConexionService _conexion;
+        private readonly IArchivoService _archivoService;
+        private readonly ILogger<ContenidoJsonService> _logger;
         private static Carpeta? _cacheRaiz = null;
 
-        public ContenidoJsonService(IPreferenciasService prefs, HttpClient http, IConexionService conexion)
+        public ContenidoJsonService(
+            IPreferenciasService prefs,
+            HttpClient http,
+            IConexionService conexion,
+            IArchivoService archivoService,
+            ILogger<ContenidoJsonService> logger)
         {
             _prefs = prefs;
             _http = http;
             _conexion = conexion;
+            _archivoService = archivoService;
+            _logger = logger;
         }
 
         /// <summary>
@@ -68,8 +78,9 @@ namespace Soltec.NET.Services
                     ProgresoDescarga = ""
                 }).ToList();
             }
-            catch
+            catch (Exception ex)
             {
+                _logger.LogError(ex, "No se pudieron obtener las carpetas de {Ruta}", nombreRaiz);
                 return Enumerable.Empty<CarpetaItemsUpdate>();
             }
         }
@@ -105,8 +116,6 @@ namespace Soltec.NET.Services
             const string carpetaLocal = "Cache";
             const string archivoLocal = "content.json";
             
-            var archivoService = new ArchivoService();
-
             if (forzarDescarga) _cacheRaiz = null;
 
             if (_cacheRaiz != null)
@@ -130,15 +139,16 @@ namespace Soltec.NET.Services
 
                     // Guardar una copia local
                     //var archivoService = new ArchivoService();
-                    await archivoService.GuardarArchivoLocal(carpetaLocal, archivoLocal, bytes);
+                    await _archivoService.GuardarArchivoLocal(carpetaLocal, archivoLocal, bytes);
 
                     raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(json);
                 }
-                catch
+                catch (Exception ex)
                 {
+                    _logger.LogWarning(ex, "Falló la actualización de content.json; se intentará usar el caché local");
                     // Si falla la descarga, intentar leer JSON local
                     //var archivoService = new ArchivoService();
-                    var jsonLocal = await archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
+                    var jsonLocal = await _archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
 
                     if (!string.IsNullOrEmpty(jsonLocal))
                         raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(jsonLocal);
@@ -147,7 +157,7 @@ namespace Soltec.NET.Services
             else
             {
                 // Sin Internet, leer local directamente
-                var jsonLocal = await archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
+                var jsonLocal = await _archivoService.LeerArchivoLocalAsync(carpetaLocal, archivoLocal);
                 if (!string.IsNullOrEmpty(jsonLocal))
                     raiz = System.Text.Json.JsonSerializer.Deserialize<Carpeta>(jsonLocal);
             }

@@ -1,5 +1,6 @@
 ﻿using Soltec.NET.Services;
 using Soltec.NET.Views;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET
 {
@@ -8,10 +9,12 @@ namespace Soltec.NET
         // El chequeo de actualización corre una sola vez por sesión, no cada vez
         // que se vuelve al menú desde una pantalla.
         private static bool _actualizacionVerificada;
+		private readonly ILogger<MainPage>? _logger;
 
 		public MainPage()
 		{
 			InitializeComponent();
+			_logger = IPlatformApplication.Current?.Services.GetService<ILogger<MainPage>>();
 		}
         protected override void OnAppearing()
         {
@@ -132,11 +135,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -170,11 +175,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -208,11 +215,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -246,11 +255,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -284,11 +295,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -322,11 +335,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -360,11 +375,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -398,11 +415,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}
@@ -441,11 +460,13 @@ namespace Soltec.NET
 			}
 			catch (FileNotFoundException)
 			{
+				_logger?.LogError("No se encontró el recurso incluido {Archivo}", resourcePath);
 				// Handle the case where the file is not found in the package
 				await DisplayAlert("Error", $"El archivo '{fileName}' no se encontró.", "OK");
 			}
 			catch (Exception ex)
 			{
+				_logger?.LogError(ex, "No se pudo abrir el recurso incluido {Archivo}", resourcePath);
 				// Handle other potential exceptions (e.g., no PDF viewer installed)
 				await DisplayAlert("Error", $"No se pudo abrir el archivo: {ex.Message}", "OK");
 			}

@@ -3,6 +3,7 @@ using System.Threading;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET.Services;
 
@@ -19,14 +20,17 @@ public class SincronizacionService : ISincronizacionService
     private readonly IArchivoService _archivoService;
     private readonly IContenidoJsonService  _contenidoJsonService;
     private readonly IPreferenciasService _prefs;
+    private readonly ILogger<SincronizacionService> _logger;
 
     public SincronizacionService(IArchivoService archivoService,
                                  IContenidoJsonService contenidoJsonService,
-                                 IPreferenciasService prefs)
+                                 IPreferenciasService prefs,
+                                 ILogger<SincronizacionService> logger)
     {
         _archivoService = archivoService;
         _contenidoJsonService = contenidoJsonService;
         _prefs = prefs;
+        _logger = logger;
     }
 
     /// <summary>
@@ -46,6 +50,10 @@ public class SincronizacionService : ISincronizacionService
 
         try
         {
+            _logger.LogInformation(
+                "Comienza la sincronización de {Carpeta}",
+                carpetaItem.Nombre);
+
             // --- INICIO LIMPIEZA HUÉRFANOS ---
             // Obtener todos los archivos locales actuales para esta categoría normalizados
             var archivosLocales = new HashSet<string>(
@@ -93,8 +101,12 @@ public class SincronizacionService : ISincronizacionService
                         var hashLocal = _archivoService.CalcularHashLocal(pathArchivoLocal);
                         necesitaDescarga = !hashLocal.Equals(archivo.Hash, StringComparison.OrdinalIgnoreCase);
                     }
-                    catch
+                    catch (Exception ex)
                     {
+                        _logger.LogWarning(
+                            ex,
+                            "No se pudo calcular el hash local de {Archivo}; se forzará su descarga",
+                            pathArchivoLocal);
                         necesitaDescarga = true; // si falla el hash, forzar descarga
                     }
                 }
@@ -119,6 +131,13 @@ public class SincronizacionService : ISincronizacionService
                     }
                     else
                     {
+                        _logger.LogError(
+                            "La descarga no pasó la validación SHA-256. Carpeta: {Carpeta}; archivo: {Archivo}; hash esperado: {HashEsperado}; hash obtenido: {HashObtenido}",
+                            carpetaItem.Nombre,
+                            archivo.Nombre,
+                            archivo.Hash,
+                            hashDescargado);
+
                         // Si había una copia local, ya sabíamos que no coincidía con el servidor
                         // y la descarga tampoco sirvió: se borra para no mostrarla como verificada.
                         try
@@ -126,7 +145,10 @@ public class SincronizacionService : ISincronizacionService
                             if (File.Exists(pathArchivoLocal))
                                 File.Delete(pathArchivoLocal);
                         }
-                        catch { /* Ignorar errores de borrado */ }
+                        catch (Exception ex)
+                        {
+                            _logger.LogWarning(ex, "No se pudo borrar la copia inválida {Archivo}", pathArchivoLocal);
+                        }
 
                         config.HashArchivosLocales.Remove(claveUnica);
                         _prefs.GuardarHashArchivos(config.HashArchivosLocales);
@@ -154,7 +176,10 @@ public class SincronizacionService : ISincronizacionService
                     if (File.Exists(archivoHuerfano))
                         File.Delete(archivoHuerfano);
                 }
-                catch { /* Ignorar errores de borrado */ }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning(ex, "No se pudo borrar el archivo huérfano {Archivo}", archivoHuerfano);
+                }
             }
             // --------------------------
 
@@ -165,16 +190,24 @@ public class SincronizacionService : ISincronizacionService
                 return ($"{archivosConError} archivo(s) no pasaron la verificación", "");
 
             if (huboDescargas)
+            {
+                _logger.LogInformation("Finalizó la sincronización de {Carpeta} con descargas", carpetaItem.Nombre);
                 return ("Actualizado correctamente", "");
+            }
             else
+            {
+                _logger.LogInformation("Finalizó la sincronización de {Carpeta}; ya estaba actualizada", carpetaItem.Nombre);
                 return ("Ya estaba actualizado", "");
+            }
         }
         catch (OperationCanceledException)
         {
+            _logger.LogInformation("Se canceló la sincronización de {Carpeta}", carpetaItem.Nombre);
             return ("Sincronización cancelada", "");
         }
         catch (Exception ex)
         {
+            _logger.LogError(ex, "Falló la sincronización de {Carpeta}", carpetaItem.Nombre);
             return ($"Error en la sincronización: {ex.Message}", "");
         }
     }

@@ -1,6 +1,7 @@
 ﻿using System.Security.Cryptography;
 using System.Linq;
 using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 
 namespace Soltec.NET.Services;
 
@@ -11,6 +12,8 @@ public interface IArchivoService
     string CalcularHash(byte[] contenido);
     Task GuardarArchivoLocal(string carpeta, string nombreArchivo, byte[] contenido);
     bool ArchivoExiste(string carpeta, string nombreArchivo);
+    Task<string?> LeerArchivoLocalAsync(string carpeta, string nombreArchivo);
+    string ObtenerRutaArchivo(string carpeta, string nombreArchivo);
     void BorrarTodo();
     void BorrarCarpeta(string carpeta);
     IEnumerable<string> ListarArchivosRecursivos(string carpeta);
@@ -21,6 +24,12 @@ public class ArchivoService : IArchivoService
 {
     // Uno solo para toda la app: crear un HttpClient por descarga agota los sockets.
     private static readonly HttpClient _http = new();
+    private readonly ILogger<ArchivoService>? _logger;
+
+    public ArchivoService(ILogger<ArchivoService>? logger = null)
+    {
+        _logger = logger;
+    }
 
     public async Task<byte[]> DescargarArchivo(string url)
     {
@@ -74,9 +83,18 @@ public class ArchivoService : IArchivoService
 
             // ToList() porque se borra mientras se recorre.
             var archivos = Directory.EnumerateFiles(pathData, "*", SearchOption.AllDirectories).ToList();
+            string directorioDiagnosticos = Path.GetFullPath(
+                Path.Combine(pathData, "Diagnosticos")) + Path.DirectorySeparatorChar;
 
             foreach (var archivo in archivos)
             {
+                string archivoCompleto = Path.GetFullPath(archivo);
+
+                // Los diagnósticos tienen su propio botón de borrado. No deben desaparecer
+                // al limpiar manuales, porque justamente pueden explicar ese problema.
+                if (archivoCompleto.StartsWith(directorioDiagnosticos, StringComparison.OrdinalIgnoreCase))
+                    continue;
+
                 if (Path.GetExtension(archivo).Equals(".json", StringComparison.OrdinalIgnoreCase))
                     continue;
 
@@ -88,7 +106,7 @@ public class ArchivoService : IArchivoService
                 {
                     // Un archivo bloqueado (ej: la base del pañol abierta en Windows) no
                     // debe abortar el borrado del resto.
-                    System.Diagnostics.Debug.WriteLine($"No se pudo borrar {archivo}: {ex.Message}");
+                    _logger?.LogWarning(ex, "No se pudo borrar {Archivo}", archivo);
                 }
             }
 
@@ -97,7 +115,7 @@ public class ArchivoService : IArchivoService
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Error al borrar contenido: {ex.Message}");
+            _logger?.LogError(ex, "Error al borrar todo el contenido descargado");
             throw;
         }
     }
@@ -114,7 +132,7 @@ public class ArchivoService : IArchivoService
         }
         catch (Exception ex)
         {
-            System.Diagnostics.Debug.WriteLine($"Error al borrar carpeta {carpeta}: {ex.Message}");
+            _logger?.LogError(ex, "Error al borrar la carpeta {Carpeta}", carpeta);
             throw;
         }
     }
@@ -169,7 +187,7 @@ public class ArchivoService : IArchivoService
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine($"No se pudo borrar la carpeta vacía {path}: {ex.Message}");
+                _logger?.LogWarning(ex, "No se pudo borrar la carpeta vacía {Carpeta}", path);
             }
         }
     }
