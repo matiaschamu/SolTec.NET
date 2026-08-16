@@ -20,14 +20,14 @@
 			También se puede sobreescribir sin editar el archivo:
 			dotnet build ... -p:RegistroDiagnosticoHabilitado=true
 		-->
-		<RegistroDiagnosticoHabilitado Condition="'$(RegistroDiagnosticoHabilitado)' == ''">true</RegistroDiagnosticoHabilitado>
+		<RegistroDiagnosticoHabilitado Condition="'$(RegistroDiagnosticoHabilitado)' == ''">false</RegistroDiagnosticoHabilitado>
 		<DefineConstants Condition="'$(RegistroDiagnosticoHabilitado)' == 'true'">$(DefineConstants);REGISTRO_DIAGNOSTICO</DefineConstants>
 
 		<ApplicationTitle>Soltec 4.0</ApplicationTitle>
 		<ApplicationId>com.companyname.soltecpep</ApplicationId>
 
-		<ApplicationDisplayVersion>1.0.105</ApplicationDisplayVersion>
-		<ApplicationVersion>105</ApplicationVersion>
+		<ApplicationDisplayVersion>1.0.106</ApplicationDisplayVersion>
+		<ApplicationVersion>106</ApplicationVersion>
 
 		<!--
 			Versión que se ANUNCIA en el aviso de actualización (ver AGENTS.md §6.1).
