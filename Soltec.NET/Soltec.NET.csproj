@@ -38,8 +38,8 @@
 			pusieras la versión de prueba interna, los técnicos de alpha verían el aviso
 			en cada inicio durante 3 días sin tener cómo actualizar.
 		-->
-		<VersionEnAlpha>100</VersionEnAlpha>
-		<VersionEnAlphaNombre>1.0.100</VersionEnAlphaNombre>
+		<VersionEnAlpha>104</VersionEnAlpha>
+		<VersionEnAlphaNombre>1.0.104</VersionEnAlphaNombre>
 
 		<!--
 			Texto del aviso de actualización. Es genérico: no hace falta cambiarlo en cada
